@@ -1,0 +1,10 @@
+channels c=1e6 nk=0 PCG10     rel err 2.7e-01: G2-LF    1.21  OA2-LF  1.061  joint  1.058
+channels c=1e6 nk=0 PCG30     rel err 2.1e-02: G2-LF    5.52  OA2-LF  1.050  joint  1.043
+channels c=1e6 nk=0 PCG100    rel err 2.2e-04: G2-LF   71.53  OA2-LF  1.247  joint  1.028
+channels c=1e6 nk=0 u_c       rel err 3.0e-01: G2-LF    1.42  OA2-LF  1.167  joint  1.151
+channels c=1e6 nk=0 noise 10% rel err 1.0e-01: G2-LF   11.60  OA2-LF  1.406  joint  1.375
+barriers c=1e6 nk=1 PCG10     rel err 1.0e+00: G2-LF    1.32  OA2-LF  1.025  joint  1.020
+barriers c=1e6 nk=1 PCG30     rel err 1.0e+00: G2-LF    1.10  OA2-LF  1.025  joint  1.020
+barriers c=1e6 nk=1 PCG100    rel err 9.9e-01: G2-LF    4.23  OA2-LF  1.025  joint  1.020
+barriers c=1e6 nk=1 u_c       rel err 5.6e-01: G2-LF    2.47  OA2-LF  1.126  joint  1.114
+barriers c=1e6 nk=1 noise 10% rel err 1.0e-01: G2-LF    6.32  OA2-LF  1.349  joint  1.344

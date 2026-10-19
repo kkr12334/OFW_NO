@@ -1,0 +1,24 @@
+
+== channels: set T, 300 operators, set-up 33 s
+    CHEB-T gershgorin q=4   mean log error -3.40766
+    CHEB-T gershgorin q=10  mean log error -3.86669
+    CHEB-T gershgorin q=30  mean log error -3.56925
+    CHEB-T lanczos    q=4   mean log error -3.50786
+    CHEB-T lanczos    q=10  mean log error -3.98288
+    CHEB-T lanczos    q=30  mean log error -3.61379
+    check: CHEB-equivalent coefficients (torch, no backstop) -3.982883 vs CHEB lanczos q=10 (numpy) -3.982883
+/home/claude/ofw/ext/stage1_fit.py:119: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  last = float(L)
+    POLY-S start CHEB-equivalent: objective -4.34870 (geo-mean error 1.2924e-02), |grad| 6.2e-08, 76 evals, 110 s
+    POLY-S start zero: objective -4.34870 (geo-mean error 1.2924e-02), |grad| 8.2e-08, 99 evals, 148 s
+    POLY-L start CHEB-equivalent: objective -4.35611 (geo-mean error 1.2828e-02), |grad| 9.6e-07, 528 evals, 1498 s
+    POLY-L start zero: objective -1.92448 (geo-mean error 1.4595e-01), |grad| 1.3e+01, 386 evals, 542 s
+
+== barriers: set T, 300 operators, set-up 29 s
+    CHEB-T gershgorin q=4   mean log error -3.06104
+    CHEB-T gershgorin q=10  mean log error -3.35944
+    CHEB-T gershgorin q=30  mean log error -2.97762
+    CHEB-T lanczos    q=4   mean log error -3.13770
+    CHEB-T lanczos    q=10  mean log error -3.42669
+    CHEB-T lanczos    q=30  mean log error -2.98690

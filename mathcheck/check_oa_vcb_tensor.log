@@ -1,0 +1,5 @@
+0. pattern: all 12 tow samples on the structural pattern (an entry outside would have raised); near-kernel vectors per sample [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+1. containment (Jacobi weights): network vs numpy deflated + projected cycle, max rel. diff 1.1e-10
+2. energy guarantee, 3 random weight sets x 12 samples: 0 violations; ratio in [0.541, 0.814] (untrained); homogeneity 3.3e-15
+3. near-kernel detection on 100 tow test samples: 12 vectors, 11% of samples have one, Rayleigh quotients max 4.9e-02
+4. classical one-pass on the same 12 samples (energy, from the Galerkin u_c): {'V(4,4) op.-adapted': 0.0287, 'classical member (+defl.+proj.)': 0.0214, 'coarse solve alone': 0.2724}

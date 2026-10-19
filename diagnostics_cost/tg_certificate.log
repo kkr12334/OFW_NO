@@ -1,0 +1,2 @@
+L3 k0 2: lambda(B_TG A) in [0.098, 1.0000] (min over samples / max); guaranteed factor 1/sqrt(lambda_min) = 3.20; eta costs 0.22 ms (+ coarse factorisation 2.5 ms, already paid by the surrogate pipeline)
+L4 k0 3: lambda(B_TG A) in [0.117, 1.0000] (min over samples / max); guaranteed factor 1/sqrt(lambda_min) = 2.93; eta costs 0.83 ms (+ coarse factorisation 11.4 ms, already paid by the surrogate pipeline)

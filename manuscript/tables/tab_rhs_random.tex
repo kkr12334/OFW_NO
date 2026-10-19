@@ -1,0 +1,28 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{The OA-VCB checkpoints trained on the random-load distribution (Section~\ref{sec:k0}; one model per held-out data seed 1--3) on the loads of Table~\ref{tab:rhs}, same operators. (a) Pooled over the 300 operators: mean energy errors of the random-load models and of the reference, reference/random-model $G$ [95\% CI] and $W$, and samples worse than $u_c$. (b) Per seed (1 / 2 / 3): reference/random-model $G$ and $W$; mean error of the fixed-load models of Table~\ref{tab:rhs}; and pooled fixed-load/random-load $G$ and $W$ (above 1 and above 0.5 favour the random-load models). The prespecified criterion per seed and load family was $G\ge2$ and $W\ge0.8$.}\label{tab:rhsrandom}
+{\small (a) Pooled}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllll}\toprule
+load & random-load & reference & $G$ [95\% CI] & $W$ & $>u_c$ \\\midrule
+$f=1$ & 3.99e-3 & 2.57e-2 & 6.87 [6.62, 7.13] & 1.00 & 0 \\
+$f=-1$ & 4.21e-3 & 2.57e-2 & 6.51 [6.27, 6.75] & 1.00 & 0 \\
+$f=3$ (homogeneity check) & 3.99e-3 & 2.57e-2 & 6.87 [6.62, 7.13] & 1.00 & 0 \\
+random-load distribution (Sec.~\ref{sec:k0}) & 4.43e-3 & 2.59e-2 & 6.22 [5.99, 6.44] & 1.00 & 0 \\
+smooth, both signs & 4.00e-3 & 2.49e-2 & 6.38 [6.20, 6.56] & 1.00 & 0 \\
+localised source & 1.25e-2 & 2.21e-2 & 2.51 [2.25, 2.79] & 0.84 & 0 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\par\medskip
+{\small (b) Per seed, and against the fixed-load models}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllll}\toprule
+load & $G$ per seed & $W$ per seed & fixed-load & fixed/random $G$ & $W$ \\\midrule
+$f=1$ & 6.90 / 6.75 / 6.98 & 1.00 / 1.00 / 1.00 & 2.75e-3 & 0.70 & 0.01 \\
+$f=-1$ & 6.67 / 6.39 / 6.47 & 1.00 / 1.00 / 1.00 & 1.37e-1 & 30.8 & 1.00 \\
+$f=3$ (homogeneity check) & 6.90 / 6.75 / 6.98 & 1.00 / 1.00 / 1.00 & 2.75e-3 & 0.70 & 0.01 \\
+random-load distribution (Sec.~\ref{sec:k0}) & 6.27 / 6.05 / 6.34 & 1.00 / 1.00 / 1.00 & 1.01e-1 & 10.3 & 0.86 \\
+smooth, both signs & 6.41 / 6.31 / 6.42 & 1.00 / 1.00 / 1.00 & 1.55e-1 & 31.1 & 1.00 \\
+localised source & 2.80 / 2.15 / 2.61 & 0.89 / 0.79 / 0.83 & 1.08e-1 & 5.7 & 0.99 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

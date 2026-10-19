@@ -1,0 +1,29 @@
+1. ELEMENT
+   zero eigenvalues per element (|ev| < 1e-10 max ev): [3]  (expect 3 rigid modes)
+   min nonzero / max eigenvalue over elements: 2.63e-01 / 4.22e+00;  symmetric: 3.3e-16
+   ||K r|| / ||K|| ||r|| for the 3 rigid modes: ['5.7e-17', '5.6e-17', '7.0e-17']
+   patch test: max |K u_lin| at interior nodes 8.0e-16 (boundary nodes carry the traction)
+
+2. MESH / BOUNDARY CONDITIONS
+   level 3: 3678 unknown nodes, 192 traction-free pore nodes, 256 clamped nodes; clamped nodes all on the outer square: True
+   A symmetric: 8.9e-16;  smallest eigenvalue > 0: 2.88e-03
+   load: sum F_x 0.00e+00, sum F_y -0.8361 (area of the free domain incl. clamped-node share)
+
+3. SOLVER CONVERGENCE (E = 1 and bands 1e2), energy error vs level-5 reference
+   E = 1     : energy error L1..L4 0.206, 0.119, 0.066, 0.033;  rates 0.79, 0.85, 0.99
+   bands 1e2 : energy error L1..L4 1.831, 1.310, 0.830, 0.464;  rates 0.48, 0.66, 0.84
+
+4. GALERKIN COARSE OPERATOR = ASSEMBLED COARSE OPERATOR (E = 1)
+   level 2->1: max |P^T A P - A_coarse| / max|A| = 2.4e-15
+   level 3->2: max |P^T A P - A_coarse| / max|A| = 5.0e-15
+
+5. VECTOR TRANSFORMS on the level-3 bands 1e2 operator
+   hb    rho 0: build    341 ms, kappa(BA)    1180.68, PCG its 372
+   exact rho 0: build  42492 ms, kappa(BA)       1.00, PCG its 1
+   local rho 2: build    938 ms, kappa(BA)      20.06, PCG its 40
+   local rho 3: build   2507 ms, kappa(BA)       2.55, PCG its 15
+   local rho 4: build   6647 ms, kappa(BA)       1.27, PCG its 8
+
+6. RIGID-BODY MODES through the level-3 predict (interior new nodes, away from the clamp)
+   translation x: reproduction error  HB 0.0e+00,  exact 2.1e-05,  local rho2 7.2e-02,  local rho4 3.7e-03
+   rotation     : reproduction error  HB 0.0e+00,  exact 9.5e-05,  local rho2 8.5e-02,  local rho4 6.2e-03

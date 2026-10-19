@@ -1,0 +1,366 @@
+{
+ "values": {
+  "G_ch3": "28,644",
+  "REF_ch3": "9.1\u00b710\u207b\u00b9\u2076",
+  "G_ch4": "1,444",
+  "REF_ch4": "1.4\u00b710\u207b\u00b9\u2075",
+  "G_ba3": "28,644",
+  "REF_ba3": "1.2\u00b710\u207b\u00b9\u00b3",
+  "G_ba4": "1,444",
+  "REF_ba4": "2.8\u00b710\u207b\u00b9\u2074",
+  "PEAK": "3.2",
+  "REPRO_CH": "5.5\u00b710\u207b\u00b9\u00b3",
+  "REPRO_BA": "3.7\u00b710\u207b\u00b9\u00b2",
+  "CH_Q": "7.15",
+  "CH_LIFT": "24",
+  "CH_M0_E2": "24.1",
+  "CH_SUP_M1": "11.37",
+  "CH_SUP_M2": "13.42",
+  "BA_Q": "15.71",
+  "BA_LIFT": "24",
+  "BA_M0_E2": "24.2",
+  "BA_SUP_M1": "16.39",
+  "BA_SUP_M2": "14.41",
+  "NK_DIFF": "3.4\u00b710\u207b\u2078",
+  "NK_DIFF_G": "2.3\u00b710\u207b\u2074",
+  "CH_NOPS": "7",
+  "CH_M3_MAX_PRIM": "1.41",
+  "M6_MAX": "1.41",
+  "M6_MAX_BA": "1.36",
+  "CG_MIN": "2.07",
+  "CG_MAX": "2.26",
+  "CH_E3_MED_MAX": "1.023",
+  "CH_E3_MAX_1e4": "1.177",
+  "BA_E3_MAX_1e4": "2.34",
+  "BA_E3_MAX_1e6": "20.90",
+  "EXP_M0": "0.49\u20130.50",
+  "EXP_M1SZ": "0.41\u20130.49",
+  "EXP_M5": "0.49\u20130.50",
+  "EXP_N_BIG": "19",
+  "EXP_N_STRADDLE": "18",
+  "EXP_ISLAND_SIZES": "9 of 12 islands have one element; the largest have 18, 45",
+  "G0_1e4": "3.07",
+  "G0_1e6": "27.39",
+  "AFF_GROWTH": "8.3\u20138.9",
+  "CH_G3_LAM": "4.10",
+  "CH_G3_IDX": "54.64",
+  "CH_G0_IDX": "41.68",
+  "CH_G0_LAM": "1.17",
+  "OAVCB_M3_MIN": "1.05",
+  "OAVCB_M3_MAX": "1.89",
+  "OAVCB_M0_MIN": "9.2",
+  "OAVCB_M0_MAX": "33.5",
+  "GOAL_CH_OAVCB": "0.26%",
+  "GOAL_BA_OAVCB": "3.0%",
+  "STOP_M3_RANGE": "30\u201380",
+  "WORK_M3": "61\u00b710\u2076",
+  "WORK_M6": "8.2\u00b710\u2076",
+  "WORK_M0": "2.5\u00b710\u2076",
+  "L4_M3_MAX_RATIO": "1.00",
+  "L4_M1SZ_L3": "28.83",
+  "L4_M1SZ_L4": "1.37",
+  "L4_M3_L3": "3.07",
+  "L4_M3_L4": "1.34",
+  "IDX_CH_1e4": "1.65",
+  "IDX_BA_1e4": "7.44",
+  "IDX_CH_1e4_MAX": "5.47",
+  "IDX_BA_1e4_MAX": "14.34",
+  "IDX_G1_CH": "40.64",
+  "IDX_G1_BA": "45.36",
+  "IDX_P95": "0.96\u20131.12",
+  "IDX_GROWTH_CH": "10.0",
+  "IDX_GROWTH_BA": "10.0"
+ },
+ "checks": [
+  {
+   "name": "channels L3: complete, every gate passed, no warnings",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels L3: produced by the deviation-1 code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels L3: expected number of (geometry, contrast) records",
+   "passed": true,
+   "detail": "32"
+  },
+  {
+   "name": "channels L4: complete, every gate passed, no warnings",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels L4: produced by the deviation-1 code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels L4: expected number of (geometry, contrast) records",
+   "passed": true,
+   "detail": "4"
+  },
+  {
+   "name": "barriers L3: complete, every gate passed, no warnings",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barriers L3: produced by the deviation-1 code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barriers L3: expected number of (geometry, contrast) records",
+   "passed": true,
+   "detail": "32"
+  },
+  {
+   "name": "barriers L4: complete, every gate passed, no warnings",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barriers L4: produced by the deviation-1 code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barriers L4: expected number of (geometry, contrast) records",
+   "passed": true,
+   "detail": "4"
+  },
+  {
+   "name": "current files match the deviation-1 hashes",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "analysis script unchanged since the amendment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "pilot_analysis.json newer than all run records",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels repeat reproduces v0 (no resolution flips, < 1e-10)",
+   "passed": true,
+   "detail": "(5.487532664077919e-13, 0)"
+  },
+  {
+   "name": "barrier repeat reproduces earlier records (< 1e-10)",
+   "passed": true,
+   "detail": "3.714661661368215e-12"
+  },
+  {
+   "name": "channels candidate classification = Support",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barriers candidate classification = Inconclusive (E1, E2 pass; E3 fails)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barriers E3 fails at 1e4 specifically (median > 1.10 or p90 > 1.5) and passes at 1 and 1e2",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "adaptation = benefit in both families",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "classical separation in both families",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barrier near-kernel informative; channel near-kernel uninformative",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "barrier near-kernel dims at 1e4 are [0,2,1,0,...] (geometries 1 and 2)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "Z changed nothing measurable (M4/M3 and M1S/M1SZ within 1e-3 of 1)",
+   "passed": true,
+   "detail": "(3.3761883733163245e-08, 0.00022518089810485975)"
+  },
+  {
+   "name": "barriers: matched control >= 1.5x M3 on all 8 geometries at 1e4",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels M3 maxima at primary contrasts below 1.5",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "M6 worst effectivity over all 64 L3 cases <= 1.41",
+   "passed": true,
+   "detail": "1.4052473052947019"
+  },
+  {
+   "name": "C_glob values (8 per family) below 1/beta_* = 2.8873",
+   "passed": true,
+   "detail": "2.263208812058546"
+  },
+  {
+   "name": "barriers: exactly 3 of 8 geometries with loss > 1.5 at 1e4 and 6 of 8 at 1e6",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "growth exponents of M0, M1SZ, M5 within [0.40, 0.51] (10\u00b2 to 10\u2076)",
+   "passed": true,
+   "detail": "{'channels': {'M0': np.float64(0.4945455380133657), 'M1SZ': np.float64(0.4098603769047601), 'M5': np.float64(0.49297629626196066), 'M3': np.float64(0.002048457662923247)}, 'barriers': {'M0': np.float64(0.501241983592275), 'M1SZ': np.float64(0.4869711428061472), 'M5': np.float64(0.5005517330502858), 'M3': np.float64(0.13093875240662603)}}"
+  },
+  {
+   "name": "channels M3 flat (exponent < 0.02)",
+   "passed": true,
+   "detail": "0.002048457662923247"
+  },
+  {
+   "name": "barriers M3 flat up to 1e2: E3 at 1e2 within thresholds and W max < 1.5",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "exploration covers all 8 barrier geometries (1e4) and 8 channel geometries (1e6)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "exploration index agrees with the runner diagnostic (worst OAZ index per geometry, 1e-9)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "most high-index barrier members straddle (>= 80%)",
+   "passed": true,
+   "detail": "(18, 19)"
+  },
+  {
+   "name": "no saved worst barrier member carries an island component",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "top-4 geometries by index at 1e4 = top-4 by loss at 1e6 (as sets)",
+   "passed": true,
+   "detail": "([0, 6, 3, 5], [0, 5, 3, 6])"
+  },
+  {
+   "name": "geometries with a detected near-kernel (1, 2) unaffected at 1e6 (loss < 1.1)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "the geometries affected at 1e4 are 0, 3, 5 and grow by 8 to 10 from 1e4 to 1e6",
+   "passed": true,
+   "detail": "[8.920270342018762, 8.295117050951555, 8.587987316947046]"
+  },
+  {
+   "name": "geometry 0 growth 1e4->1e6 close to sqrt(100) = 10 (between 5 and 12)",
+   "passed": true,
+   "detail": "8.920270342018762"
+  },
+  {
+   "name": "channels geometry 3 is the stress outlier and its worst member lies in one channel component",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels geometry 0: large index (> 20) but small loss (< 1.3) at 1e6",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "goal statement: coarse/coarse intervals wide at 1e4 (M3 polar median > 50% in both families)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "goal statement: learned/coarse intervals informative (M3 polar median < 5% in both families)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "every stopping cell attained by all geometries, relative trigger only",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "summary: product eps 1e-3 at 1e4, median M3 80 vs M0 160 in both families",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "at 1e4 and 1e6, M0 needs 160 at eps 1e-3 and M3 fewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "at c = 1, the three certificates stop within one check of each other (medians)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "at eps 1e-6 the difference largely disappears (>= 6 of 8 cells equal)",
+   "passed": true,
+   "detail": "7"
+  },
+  {
+   "name": "about 7x the global optimum (6.5 to 7.9)",
+   "passed": true,
+   "detail": "7.3473614343425835"
+  },
+  {
+   "name": "L4 reading rule met in both families",
+   "passed": true,
+   "detail": "0.9996271336892901"
+  },
+  {
+   "name": "L4: matched control robust at L4 in every (family, geometry) at 1e4 (W < 1.5)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "OAZ p95 near one (0.9 to 1.2)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "channels: largest OAZ index grows about x10 from 1e4 to 1e6 (8 to 12)",
+   "passed": true,
+   "detail": "9.985919683264807"
+  },
+  {
+   "name": "barriers: largest OAZ index grows about x10 from 1e4 to 1e6 (8 to 12)",
+   "passed": true,
+   "detail": "9.974953709058092"
+  },
+  {
+   "name": "every placeholder has a value",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "no placeholder left",
+   "passed": true,
+   "detail": ""
+  }
+ ]
+}

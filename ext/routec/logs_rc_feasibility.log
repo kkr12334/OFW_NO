@@ -1,0 +1,27 @@
+(1) B is (3486, 7424); eig(B B^T) min/max = 5.198e-11 / 2.161e-07  (cond 4157.1)
+(2) channels: interior vertices with mixed K per operator 453; non-quasi-monotone 1.9 (min 0, max 7) of 3486
+(2) barriers: interior vertices with mixed K per operator 453; non-quasi-monotone 1.9 (min 0, max 7) of 3486
+(3) channels id 300: near-kernel dim 0
+      k=2: dim 814, |sum-1| max 9.86e-01, nodes with |sum-1|>1e-12: 1774, min(sum) 0.014, max(sum) 1.007, overlap max 24 mean 13.8, support nodes mean 59 max 89, neg entries 2376
+      k=1: dim 174, |sum-1| max 9.95e-01, nodes with |sum-1|>1e-12: 3312, min(sum) 0.005, max(sum) 1.019, overlap max 174 mean 109.2, support nodes mean 2188 max 3247, neg entries 1778
+      k=0: dim 28, |sum-1| max 1.68e+00, nodes with |sum-1|>1e-12: 3458, min(sum) -0.675, max(sum) 1.743, overlap max 28 mean 27.8, support nodes mean 3459 max 3459, neg entries 24812
+(3) channels id 301: near-kernel dim 0
+      k=2: dim 814, |sum-1| max 8.17e-01, nodes with |sum-1|>1e-12: 1774, min(sum) 0.183, max(sum) 1.418, overlap max 24 mean 13.8, support nodes mean 59 max 89, neg entries 2376
+      k=1: dim 174, |sum-1| max 2.23e+00, nodes with |sum-1|>1e-12: 3312, min(sum) -1.228, max(sum) 1.091, overlap max 174 mean 109.2, support nodes mean 2188 max 3247, neg entries 5516
+      k=0: dim 28, |sum-1| max 2.12e+00, nodes with |sum-1|>1e-12: 3458, min(sum) -1.120, max(sum) 1.154, overlap max 28 mean 27.8, support nodes mean 3459 max 3459, neg entries 9392
+(3) channels id 302: near-kernel dim 0
+      k=2: dim 814, |sum-1| max 8.17e-01, nodes with |sum-1|>1e-12: 1774, min(sum) 0.183, max(sum) 1.010, overlap max 24 mean 13.8, support nodes mean 59 max 89, neg entries 2388
+      k=1: dim 174, |sum-1| max 1.44e+00, nodes with |sum-1|>1e-12: 3312, min(sum) -0.444, max(sum) 1.214, overlap max 174 mean 109.2, support nodes mean 2188 max 3247, neg entries 7484
+      k=0: dim 28, |sum-1| max 2.01e+00, nodes with |sum-1|>1e-12: 3458, min(sum) -1.011, max(sum) 1.013, overlap max 28 mean 27.8, support nodes mean 3459 max 3459, neg entries 14754
+(3) barriers id 300: near-kernel dim 1
+      k=2: dim 814, |sum-1| max 9.94e-01, nodes with |sum-1|>1e-12: 1773, min(sum) 0.006, max(sum) 1.010, overlap max 24 mean 13.8, support nodes mean 59 max 89, neg entries 2430
+      k=1: dim 174, |sum-1| max 1.25e+00, nodes with |sum-1|>1e-12: 3312, min(sum) -0.249, max(sum) 1.000, overlap max 174 mean 109.2, support nodes mean 2188 max 3247, neg entries 2873
+      k=0: dim 28, |sum-1| max 1.19e+00, nodes with |sum-1|>1e-12: 3458, min(sum) -0.192, max(sum) 1.126, overlap max 28 mean 27.8, support nodes mean 3459 max 3459, neg entries 15992
+(3) barriers id 301: near-kernel dim 0
+      k=2: dim 814, |sum-1| max 9.04e-01, nodes with |sum-1|>1e-12: 1773, min(sum) 0.096, max(sum) 1.007, overlap max 24 mean 13.8, support nodes mean 59 max 89, neg entries 2351
+      k=1: dim 174, |sum-1| max 2.21e+00, nodes with |sum-1|>1e-12: 3312, min(sum) -1.206, max(sum) 1.173, overlap max 174 mean 109.2, support nodes mean 2188 max 3247, neg entries 5668
+      k=0: dim 28, |sum-1| max 1.51e+00, nodes with |sum-1|>1e-12: 3458, min(sum) -0.511, max(sum) 1.043, overlap max 28 mean 27.8, support nodes mean 3459 max 3459, neg entries 8246
+(3) barriers id 302: near-kernel dim 0
+      k=2: dim 814, |sum-1| max 9.93e-01, nodes with |sum-1|>1e-12: 1773, min(sum) 0.007, max(sum) 1.135, overlap max 24 mean 13.8, support nodes mean 59 max 89, neg entries 2422
+      k=1: dim 174, |sum-1| max 2.13e+00, nodes with |sum-1|>1e-12: 3312, min(sum) -1.126, max(sum) 1.432, overlap max 174 mean 109.2, support nodes mean 2188 max 3247, neg entries 5076
+      k=0: dim 28, |sum-1| max 1.64e+00, nodes with |sum-1|>1e-12: 3458, min(sum) -0.638, max(sum) 1.236, overlap max 28 mean 27.8, support nodes mean 3459 max 3459, neg entries 15091

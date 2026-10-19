@@ -1,0 +1,43 @@
+coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 4x
+coarse mesh perforated, bc dirichlet
+level 4: 14398 interior nodes, field channels, contrast 1e+04, 400 samples, device cuda
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=16  rank_scale=None
+  solved 400 samples in 47s
+code version (md5 of the *.py files) f8653612eb84; run key b68267e41f
+  exact coarse solve to level 3 (Galerkin on the level-3 mesh): 28 ms/sample, on its own it already gives rel-L2 6.925e-02 -- the network learns the rest
+  operator data for the energy loss built in 19s
+  V-cycle operator data (4 levels, 4 smoothing steps of the predict, coarsest 28 nodes) built in 652s (1629 ms/sample); near-kernel vectors per sample: max 1, mean 0.03, 2% of samples have one
+
+[oa-vcb] width 12, params 20,672 (target 22,000), learned V-cycle, 4 levels, operator-adapted transfers, Galerkin levels, exact coarsest solve, operator-consistent smoothers (nu 4, shared), near-kernel deflation + Galerkin output projection; loss on projected + plain output
+    oa-vcb     ep    1/300  train mix 1.542e+03  (86s)
+    oa-vcb     ep   50/300  train mix 1.951e-01  (4290s)
+    oa-vcb     ep  100/300  train mix 3.747e-02  (8575s)
+    oa-vcb     ep  150/300  train mix 2.805e-02  (12855s)
+    oa-vcb     ep  200/300  train mix 1.900e-02  (17138s)
+    oa-vcb     ep  250/300  train mix 1.593e-02  (21423s)
+    oa-vcb     ep  300/300  train mix 1.432e-02  (25705s)
+    oa-vcb     TEST  nodal rel-l2 4.994e-04  FE rel-L2 4.828e-04  energy 2.215e-03  (train 25705s; model saved)
+               energy worse than u_c alone on 0/100 test samples; plain cycle output (no projection): nodal rel-l2 5.520e-04  energy 2.258e-03
+               + energy line search: rel-L2 4.994e-04  energy 2.215e-03  (alpha median 1.000, range 1.00-1.00)
+
+
+RESULTS  route V, level 4, coarse mesh perforated (n=9), bc dirichlet, channels, contrast 1e+04, 300 train / 100 test, 300 epochs, rank 16, loss mix, exact coarse solve to level 3 (galerkin)
+(rel-l2 = nodal Euclidean; FE-L2 = mass-matrix norm; +setup = per-sample operator data the model needs (transform / hierarchy), CPU, excluding the coarse solve (27 ms/sample))
+model          params nodal rel-l2      FE-L2  energy err  train s  infer ms  +setup ms
+oa-vcb         20,672    4.994e-04  4.828e-04   2.215e-03    25705      97.3       1619
+
+CLASSICAL, same u_c (galerkin coarse space), same 100 test samples (CPU; coarse factor+solve 23.6 ms, one TG-PCG iteration 2.64 ms per sample)
+method                             nodal rel-l2  energy err      FE-L2
+coarse solve alone                    6.957e-02   2.577e-01  6.954e-02
+Chebyshev post(4), best q=30          6.172e-02   1.262e-01  6.134e-02
+Chebyshev post(16), best q=100        4.543e-02   5.514e-02  4.403e-02
+two-grid PCG, 1 its                   3.747e-02   1.305e-01  3.720e-02
+two-grid PCG, 2 its                   9.178e-03   4.771e-02  9.008e-03
+two-grid PCG, 3 its                   4.640e-03   2.170e-02  4.540e-03
+two-grid PCG, 4 its                   1.980e-03   9.586e-03  1.930e-03
+two-grid PCG, 6 its                   3.837e-04   2.029e-03  3.695e-04
+two-grid PCG, 8 its                   7.853e-05   4.286e-04  7.558e-05
+V(4,4) Chebyshev, geometric           3.343e-02   6.046e-02  3.269e-02   (21.8 ms incl. build)
+V(4,4) Chebyshev, operator-adapted    1.951e-02   4.288e-02  1.918e-02   (1429.5 ms incl. build)
+V(4,4) op.-adapted + defl. + proj.    5.995e-03   2.008e-02  5.921e-03   (1419.0 ms incl. build)
+  two-grid PCG iterations to match oa-vcb          : median 6  (min 5, max 9)

@@ -1,0 +1,63 @@
+% Section 1 -- introduction.  v3, 13 Oct 2026 (FINAL_SUBMISSION_REVIEW_ASTRA: compressed; three contributions; residual-polynomial
+% wording; no baseline-superiority claim).  Numbers: manuscript/tables/numbers.txt.
+\section{Introduction}\label{sec:intro}
+Many tasks in computational mechanics solve the same elliptic problem for many coefficient fields: uncertainty
+quantification for random media, inverse problems and design loops over heterogeneous materials. Neural operators
+\cite{kovachki2023,li2021fno,tripura2023wno} promise to amortise such solves by learning the map from coefficient to
+solution. At high contrast this is difficult. When the coefficient varies by four orders of magnitude or more, a small nodal
+error can hide a large error in the energy norm, the norm in which the discrete problem is posed and in which multigrid and
+coarse-space theory measure accuracy. Learned surrogates are moreover often compared with classical methods that receive
+less information or are not run to a matched accuracy, which overstates their benefit \cite{mcgreivy2024,chatain2025}.
+
+Classical solvers treat high contrast with operator-dependent multilevel structure. Algebraic multigrid builds its
+interpolation from the matrix \cite{vanek1996,xu2017acta}; operator-adapted wavelets
+\cite{amaratunga2006,sudarshan2006,sudarshan2005thesis,dheedene2005thesis} and gamblets \cite{owhadi2017} decompose the
+solution space into levels that are energy-orthogonal for the given operator; localized orthogonal decomposition and
+spectral coarse spaces make the coarse level robust to the contrast
+\cite{malqvist2014,peterseim2016,hellman2017,galvis2010,spillane2014geneo}. Learned multigrid methods keep this structure
+and learn some of its components, but they iterate the resulting cycle or use it as a preconditioner
+\cite{greenfeld2019,luz2020,huang2023,wangluo2026,zhanglisaad2026}. We ask a narrower, architectural question. Given one
+pass through a fixed multilevel architecture on a hierarchy adapted to the operator of each sample, can learned smoothers
+make that pass measurably more accurate than the same pass with classical smoothers, when both use the same hierarchy,
+coarse solution and correction ingredients? How does that answer depend on the classical smoothing budget, and what does the
+learned accuracy cost compared with classical solvers run to the same accuracy?
+
+To answer it we construct OA-VCB, a learned V-cycle on an unstructured finite element hierarchy
+(Section~\ref{sec:method}). Its transfers are computed from the operator of each sample by a few Jacobi steps towards the
+ideal, Schur-complement prolongation of operator-adapted wavelets; its coarse operators are Galerkin products; its coarsest
+level is solved exactly. The only learned parts are the smoothers, small nonlinear networks that see the residual and the
+local operator weights. Floating conductive regions, whose indicator functions are near-kernel vectors of the operator, are
+detected from the matrix and deflated, and the output is the Galerkin projection of the cycle's directions. Every learned
+result is paired, sample by sample, with a \emph{classical reference}: the same cycle with degree-four Chebyshev smoothers
+and the same coarse solution, deflation and output projection.
+
+Our contributions are the following.
+\begin{itemize}
+\item A learned V-cycle for unstructured finite element discretisations of high-contrast elliptic problems whose transfers,
+coarse operators and deflation vectors are computed from each operator. With $\nu$ update stages per smoother it represents
+every classical cycle on the same hierarchy whose smoothers have a fixed, level-independent residual polynomial of degree at
+most $\nu$, including weighted Jacobi and fixed-interval Chebyshev smoothing; it is positively homogeneous in the load; and
+its output is never worse in the energy norm than the coarse approximation it starts from (Section~\ref{sec:method}).
+\item A controlled paired evaluation on three held-out data seeds. With four update stages per pre- and post-smoother, one
+learned pass is about ten times more accurate in the energy norm than the degree-four Chebyshev reference on conductive
+channels ($G = 9.7$--$10.2$, more accurate on every test sample; $9.7$--$10.7$ over three training initialisations) and about
+twice as accurate on insulating barriers (Section~\ref{sec:accuracy}). The margin depends strongly on the classical smoothing
+budget: sixteen Chebyshev steps narrow it to $1.8$ on channels and reverse the paired advantage on barriers, and three
+classical passes are more accurate than the learned pass on both families at about a third of its time
+(Section~\ref{sec:avt}). Ablations show that the
+operator-adapted transfers, the near-kernel deflation, the Galerkin output and the nonlinearity of the smoothers each
+contribute under this training protocol (Section~\ref{sec:design}).
+\item A measured account of the limits (Sections~\ref{sec:cost} and~\ref{sec:failure}): a fixed-load network loses its
+advantage on other loads, while distributional training restores it on that distribution; substantial error remains on
+floating islands, which a harmonic enrichment with a prespecified written protocol reduces only modestly; and on one CPU the
+implementation is one to two orders of magnitude more expensive than converged-to-target classical solvers at matched
+accuracy, with no break-even on the tested configurations.
+\end{itemize}
+Our objective is to isolate the contribution of learned smoothing within an operator-adapted multilevel construction. The
+matched classical reference is a control for this architectural question, not a claim of equal work; practical solver
+comparisons are made separately, at matched accuracy, and give no computational reason to replace the tested solvers with
+OA-VCB. The structural properties are proved; the accuracy results are empirical, and we give no convergence or
+approximation theory for the learned smoothers. Learned operator baselines of similar size, adapted to this setting, are
+reported for context in \appref{app:baselines}; their rows assess our adaptations, not the published architectures on their
+own benchmarks. Section~\ref{sec:related} reviews related work and Section~\ref{sec:discussion} draws the implications of the results
+for the design and evaluation of learned multilevel components.

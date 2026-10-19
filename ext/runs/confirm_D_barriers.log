@@ -1,0 +1,22 @@
+GATE pass: fitted coefficients hash = frozen
+D barriers: data generated in 7 s (100 samples)
+GATE pass: frozen fixed-load scale = training scale of seed-1 set T (1.181379922392435)
+  classical 1/100 (0 s)
+  classical 21/100 (3 s)
+  classical 41/100 (5 s)
+  classical 61/100 (7 s)
+  classical 81/100 (10 s)
+GATE pass: CHEB common path = legacy anchor (rel. diff <= 1e-8 on every sample) (8.394396289190809e-13)
+GATE pass: all checkpoints match checkpoint_map SHA-256
+GATE pass: three OA-VCB initialisations present (['OA-VCB init0', 'OA-VCB init1', 'OA-VCB init2'])
+GATE pass: set D reproduces ext/dev/stage1_dev_D.json (all methods, rel. diff <= 1e-9) (0.0)
+GATE pass: set-D labels = frozen counts ({'EDP': 4, 'discordant': 3, 'island': 39, 'strict non-island': 54})
+GATE pass: all checkpoints match checkpoint_map SHA-256 (final)
+
+== D barriers: 100 samples, strata {'EDP': 4, 'discordant': 3, 'island': 39, 'strict non-island': 54}, 73 s
+  OA-VCB init0: P1 R 1.570 [1.409, 1.736] W 0.88 -> partly accounted for / inconclusive;  P2 1.906 [1.691, 2.141]
+  OA-VCB init1: P1 R 1.536 [1.379, 1.696] W 0.85 -> partly accounted for / inconclusive;  P2 1.865 [1.660, 2.094]
+  OA-VCB init2: P1 R 1.502 [1.330, 1.678] W 0.84 -> partly accounted for / inconclusive;  P2 1.823 [1.609, 2.052]
+  P3 (CHEB-legacy -> PCG) 1.359 [1.302, 1.417];  P1 family label: partly accounted for / inconclusive
+  failures: none
+exit 0

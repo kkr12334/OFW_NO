@@ -1,0 +1,93 @@
+coarse mesh 'polygon': 83 nodes, 126 elements, 20.6 deg min angle -> refined 3x
+coarse mesh polygon, bc dirichlet
+level 3: 3881 interior nodes, field channels, contrast 1e+04, 400 samples, device cuda
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=16  rank_scale=None
+  solved 400 samples in 10s
+code version (md5 of the *.py files) f8653612eb84; run key 326aa84634
+  exact coarse solve to level 2 (Galerkin on the level-2 mesh): 8 ms/sample, on its own it already gives rel-L2 1.566e-01 -- the network learns the rest
+  operator data for the energy loss built in 7s
+  V-cycle operator data (3 levels, 4 smoothing steps of the predict, coarsest 45 nodes) built in 89s (222 ms/sample); near-kernel vectors per sample: max 1, mean 0.01, 1% of samples have one
+
+[oa-vcb] width 12, params 20,672 (target 22,000), learned V-cycle, 3 levels, operator-adapted transfers, Galerkin levels, exact coarsest solve, operator-consistent smoothers (nu 4, shared), near-kernel deflation + Galerkin output projection; loss on projected + plain output
+    oa-vcb     ep    1/300  train mix 1.780e+02  (10s)
+    oa-vcb     ep   50/300  train mix 1.371e-01  (502s)
+    oa-vcb     ep  100/300  train mix 4.118e-02  (1007s)
+    oa-vcb     ep  150/300  train mix 2.682e-02  (1507s)
+    oa-vcb     ep  200/300  train mix 2.086e-02  (2007s)
+    oa-vcb     ep  250/300  train mix 1.582e-02  (2506s)
+    oa-vcb     ep  300/300  train mix 1.469e-02  (3005s)
+    oa-vcb     TEST  nodal rel-l2 1.225e-03  FE rel-L2 1.138e-03  energy 3.544e-03  (train 3005s; model saved)
+               energy worse than u_c alone on 0/100 test samples; plain cycle output (no projection): nodal rel-l2 1.522e-03  energy 3.725e-03
+               + energy line search: rel-L2 1.225e-03  energy 3.544e-03  (alpha median 1.000, range 1.00-1.00)
+  operator weights a_ij/a_ii (22684 edges) + residual input built in 1s; rel. spread of |D^-1 r| over samples 0.08
+
+[oa-ll-op] width 16, params 21,603 (target 22,000), learnable lifting on the mesh hierarchy: 3 lifting levels (2948, 718, 170 detail nodes), coarse 45
+    oa-ll-op   ep    1/300  train mix 1.862e+01  (2s)
+    oa-ll-op   ep   50/300  train mix 5.063e-01  (107s)
+    oa-ll-op   ep  100/300  train mix 1.484e-01  (214s)
+    oa-ll-op   ep  150/300  train mix 1.015e-01  (320s)
+    oa-ll-op   ep  200/300  train mix 8.901e-02  (427s)
+    oa-ll-op   ep  250/300  train mix 7.088e-02  (534s)
+    oa-ll-op   ep  300/300  train mix 6.477e-02  (640s)
+    oa-ll-op   TEST  nodal rel-l2 1.317e-02  FE rel-L2 1.273e-02  energy 3.062e-02  (train 640s; model saved)
+               energy worse than u_c alone on 0/100 test samples
+               + energy line search: rel-L2 1.279e-02  energy 3.039e-02  (alpha median 0.998, range 0.97-1.02)
+
+[gnn-op] width 16, params 20,273 (target 22,000), MeshGraphNet-style GNN, 10 steps, + residual input and operator edge weights (= oa-ll-op inputs)
+    gnn-op     ep    1/300  train mix 2.983e+00  (4s)
+    gnn-op     ep   50/300  train mix 2.797e-01  (196s)
+    gnn-op     ep  100/300  train mix 2.862e-01  (392s)
+    gnn-op     ep  150/300  train mix 2.389e-01  (588s)
+    gnn-op     ep  200/300  train mix 1.424e-01  (783s)
+    gnn-op     ep  250/300  train mix 1.092e-01  (979s)
+    gnn-op     ep  300/300  train mix 1.005e-01  (1175s)
+    gnn-op     TEST  nodal rel-l2 1.847e-02  FE rel-L2 1.767e-02  energy 3.742e-02  (train 1175s; model saved)
+               energy worse than u_c alone on 0/100 test samples
+               + energy line search: rel-L2 1.821e-02  energy 3.727e-02  (alpha median 0.997, range 0.97-1.03)
+
+
+RESULTS  route V, level 3, coarse mesh polygon (n=9), bc dirichlet, channels, contrast 1e+04, 300 train / 100 test, 300 epochs, rank 16, loss mix, exact coarse solve to level 2 (galerkin)
+(rel-l2 = nodal Euclidean; FE-L2 = mass-matrix norm; +setup = per-sample operator data the model needs (transform / hierarchy), CPU, excluding the coarse solve (8 ms/sample))
+model          params nodal rel-l2      FE-L2  energy err  train s  infer ms  +setup ms
+oa-ll-op       21,603    1.317e-02  1.273e-02   3.062e-02      640       3.9          0
+oa-vcb         20,672    1.225e-03  1.138e-03   3.544e-03     3005      16.3        219
+gnn-op         20,273    1.847e-02  1.767e-02   3.742e-02     1175       6.6          0
+
+CLASSICAL, same u_c (galerkin coarse space), same 100 test samples (CPU; coarse factor+solve 3.8 ms, one TG-PCG iteration 0.44 ms per sample)
+method                             nodal rel-l2  energy err      FE-L2
+coarse solve alone                    1.613e-01   3.998e-01  1.605e-01
+Chebyshev post(4), best q=30          1.337e-01   1.994e-01  1.315e-01
+Chebyshev post(16), best q=100        7.462e-02   7.537e-02  7.173e-02
+two-grid PCG, 1 its                   8.722e-02   2.072e-01  8.531e-02
+two-grid PCG, 2 its                   2.378e-02   7.811e-02  2.211e-02
+two-grid PCG, 3 its                   1.163e-02   3.512e-02  1.063e-02
+two-grid PCG, 4 its                   4.953e-03   1.563e-02  4.461e-03
+two-grid PCG, 6 its                   9.407e-04   3.212e-03  8.472e-04
+two-grid PCG, 8 its                   1.736e-04   6.300e-04  1.557e-04
+V(4,4) Chebyshev, geometric           6.985e-02   9.847e-02  6.762e-02   (6.0 ms incl. build)
+V(4,4) Chebyshev, operator-adapted    4.551e-02   7.213e-02  4.405e-02   (166.3 ms incl. build)
+V(4,4) op.-adapted + defl. + proj.    1.406e-02   3.303e-02  1.316e-02   (168.4 ms incl. build)
+  two-grid PCG iterations to match oa-ll-op        : median 4  (min 3, max 5)
+  two-grid PCG iterations to match oa-vcb          : median 6  (min 5, max 8)
+  two-grid PCG iterations to match gnn-op          : median 3  (min 3, max 4)
+coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 3x
+coarse mesh perforated, bc dirichlet
+level 3: 3486 interior nodes, field channels, contrast 1e+04, 400 samples, device cuda
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=16  rank_scale=None
+  solved 400 samples in 7s
+code version (md5 of the *.py files) f8653612eb84; run key b5dbb3938b
+  exact coarse solve to level 2 (Galerkin on the level-2 mesh): 6 ms/sample, on its own it already gives rel-L2 1.429e-01 -- the network learns the rest
+  baselines: grid 63x63 (3459 points inside the domain) for 3486 mesh unknowns
+  operator data for the energy loss built in 5s
+Traceback (most recent call last):
+  File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_oa_layer.py", line 783, in <module>
+    model = build(kind, lo).to(dev)
+            ~~~~~^^^^^^^^^^
+  File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_oa_layer.py", line 766, in build
+    return WNO2dOfficial(cin, width=h, size=(ng, ng))
+  File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/baselines_extra.py", line 206, in __init__
+    self.conv = nn.ModuleList([WaveConv2dOfficial(width, width, self.level, sz, wavelet) for _ in range(layers)])
+                               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/baselines_extra.py", line 162, in __init__
+    from pytorch_wavelets import DWT, IDWT
+ModuleNotFoundError: No module named 'pytorch_wavelets'

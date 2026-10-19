@@ -1,0 +1,18 @@
+GATE pass: fitted coefficients hash = frozen
+R3 barriers: data generated in 7 s (100 samples)
+  classical 1/100 (0 s)
+  classical 21/100 (3 s)
+  classical 41/100 (5 s)
+  classical 61/100 (7 s)
+  classical 81/100 (10 s)
+GATE pass: CHEB common path = legacy anchor (rel. diff <= 1e-8 on every sample) (1.1320944182102721e-12)
+GATE pass: all checkpoints match checkpoint_map SHA-256
+GATE pass: all checkpoints match checkpoint_map SHA-256 (final)
+
+== R3 barriers: 100 samples, strata {'EDP': 5, 'discordant': 3, 'island': 40, 'strict non-island': 52}, 67 s
+  OA-VCB init0: P1 R 1.396 [1.237, 1.563] W 0.79 -> partly accounted for / inconclusive;  P2 1.764 [1.531, 2.028]
+  OA-VCB init1: P1 R 1.387 [1.225, 1.554] W 0.80 -> partly accounted for / inconclusive;  P2 1.752 [1.523, 2.004]
+  OA-VCB init2: P1 R 1.303 [1.156, 1.464] W 0.71 -> partly accounted for / inconclusive;  P2 1.646 [1.438, 1.892]
+  P3 (CHEB-legacy -> PCG) 1.384 [1.322, 1.452];  P1 family label: partly accounted for / inconclusive
+  failures: none
+exit 0

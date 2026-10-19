@@ -1,0 +1,11 @@
+elasticity: lam* (max per-level estimate over 60 training samples) = 3.493
+plain V(4,4) reproduces the driver's record: max rel diff 1.3e-06
+mean energy error: u_c 3.8690e-01  plain V(4,4) 7.5312e-02  member (V(4,4)+Galerkin output) 5.5026e-02  OA-VCB 2.4656e-02
+member/OA-VCB: G 2.32 [2.20, 2.44]  W 1.00  worst ratio 1.12
+plain V(4,4)/OA-VCB: G 3.22 [3.07, 3.39]  W 1.00  worst ratio 1.67
+Jacobi member (contained)/OA-VCB: G 4.22 [3.93, 4.53]  W 1.00  worst ratio 1.70
+fixed Chebyshev lam=3 (contained)/OA-VCB: G 2.26 [2.15, 2.37]  W 1.00  worst ratio 1.11
+fixed Chebyshev lam* (contained)/OA-VCB: G 2.46 [2.34, 2.59]  W 1.00  worst ratio 1.21
+oa-ll-op (init seeds 0-2): mean energy [0.2105, 0.2182, 0.2123];  member/oa-ll-op G 0.25, 0.24, 0.25;  OA-VCB/oa-ll-op G 9.25, 9.57, 9.33
+gnn-op (init seeds 0-2): mean energy [0.1961, 0.1952, 0.1961];  member/gnn-op G 0.27, 0.27, 0.27;  OA-VCB/gnn-op G 8.68, 8.64, 8.68
+two-grid PCG iterations to OA-VCB's per-sample energy error: median 11 (range 4-32), censored >60: 0

@@ -1,0 +1,10 @@
+STAGE1_PROTOCOL_AMENDMENT_2_2026-10-18.md: OK
+[2026-10-17T23:47:15Z] start timing_v2_C_channels
+[2026-10-17T23:58:20Z] end timing_v2_C_channels exit 0
+[2026-10-17T23:58:20Z] start timing_v2_C_barriers
+[2026-10-18T00:09:24Z] end timing_v2_C_barriers exit 0
+[2026-10-18T00:09:24Z] start reserve_channels
+[2026-10-18T00:11:41Z] end reserve_channels exit 0
+[2026-10-18T00:11:41Z] start reserve_barriers
+[2026-10-18T00:12:48Z] end reserve_barriers exit 0
+[2026-10-18T00:12:48Z] chain done

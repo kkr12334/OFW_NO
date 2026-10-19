@@ -1,0 +1,17 @@
+L4, k0 3, held-out data seed 1, 14398 unknowns, 100 test samples (ids 300-399), CPU 2 threads, min over 2 repeats
+
+oa-vcb (ckpt_b68267e41f_oa-vcb.pt, code f8653612eb84): mean energy error 2.2147e-03 (median 1.9294e-03); stored record reproduced to max rel diff 5.4e-06
+
+per-sample cost on this CPU, ms: mean (median).  u_c = level-3 Galerkin factor + solve:    11.34 (11.32)  [included in every row that starts from u_c]
+method                                                     energy err (mean)             ms/sample   notes
+oa-vcb, operator data (hierarchy + Galerkin levels + Z)                            969.25 (969.25)   per sample; + 981 ms once per mesh (patterns)
+oa-vcb, inference batch 8 (torch CPU)                                            1847.57 (1847.57)
+oa-vcb, inference batch 1 (torch CPU)                                            1737.83 (1737.83)
+oa-vcb TOTAL = u_c + operator data + inference (batch 8)           2.215e-03     2828.17 (2828.15)   batch 1:  2718.42 (2718.40)
+classical member, one pass (setup incl.) from u_c                  2.008e-02       903.02 (900.60)   G(member/oa-vcb) 9.72
+two-grid PCG (weighted Jacobi(1,1) + level-3 Galerkin), to oa-vcb error         (matched)         30.13 (29.40)   its median 6 (range 4-8), setup incl.
+SA-AMG PCG (pyamg 5.x defaults, V-cycle), to oa-vcb error          (matched)         49.00 (49.64)   its median 6 (range 4-7), setup incl.
+PCG + classical op.-adapted V(4,4) preconditioner, to oa-vcb error         (matched)       919.96 (914.32)   its median 3 (range 2-3), setup incl.
+direct (SuperLU factor + solve, exact)                                ~1e-15         55.81 (54.18)   does not use u_c
+
+ratios (mean time): oa-vcb total batch 8 / two-grid PCG 93.9, / SA-AMG PCG 57.7, / direct 50.7

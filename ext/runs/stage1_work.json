@@ -1,0 +1,269 @@
+{
+ "levels": [
+  {
+   "n": 3486,
+   "nnz": 23502,
+   "m": 20016
+  },
+  {
+   "n": 814,
+   "nnz": 52224,
+   "m": 51410
+  },
+  {
+   "n": 174,
+   "nnz": 30276,
+   "m": 30102
+  }
+ ],
+ "transfers": [
+  {
+   "nc": 814,
+   "nnzX": 47428
+  },
+  {
+   "nc": 174,
+   "nnzX": 66895
+  },
+  {
+   "nc": 28,
+   "nnzX": 4088
+  }
+ ],
+ "oa_vcb": {
+  "per_call_MAC": [
+   {
+    "dense_nodes": 24733170,
+    "dense_edges": 58847040,
+    "sparse": 2401920,
+    "total": 86191290
+   },
+   {
+    "dense_nodes": 5775330,
+    "dense_edges": 151145400,
+    "sparse": 6169200,
+    "total": 163138770
+   },
+   {
+    "dense_nodes": 1234530,
+    "dense_edges": 88499880,
+    "sparse": 3612240,
+    "total": 93357090
+   }
+  ],
+  "flopcounter_dense_MAC": [
+   83315610.0,
+   156920730.0,
+   89734410.0
+  ],
+  "per_pass_MAC": 685374300,
+  "per_pass_in_fine_matvecs": 29162.381924942558
+ },
+ "classical": {
+  "channels": {
+   "CHEB": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1095812.0,
+    "in_fine_matvecs": 46.62632967407029,
+    "oa_vcb_over_this": 625.4487996116122
+   },
+   "SD": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1167396.0,
+    "in_fine_matvecs": 49.67219811079908,
+    "oa_vcb_over_this": 587.0966664268166
+   },
+   "MR": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1203188.0,
+    "in_fine_matvecs": 51.19513232916348,
+    "oa_vcb_over_this": 569.6319278450251
+   },
+   "PCG": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1167396.0,
+    "in_fine_matvecs": 49.67219811079908,
+    "oa_vcb_over_this": 587.0966664268166
+   },
+   "CHEB-T": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1095812.0,
+    "in_fine_matvecs": 46.62632967407029,
+    "oa_vcb_over_this": 625.4487996116122
+   },
+   "POLY-S": {
+    "matvec_per_level": [
+     8.0,
+     8.0,
+     8.0
+    ],
+    "MAC_per_pass": 883808.0,
+    "in_fine_matvecs": 37.605650582929115,
+    "oa_vcb_over_this": 775.4787238857308
+   },
+   "POLY-L": {
+    "matvec_per_level": [
+     8.0,
+     8.0,
+     8.0
+    ],
+    "MAC_per_pass": 883808.0,
+    "in_fine_matvecs": 37.605650582929115,
+    "oa_vcb_over_this": 775.4787238857308
+   },
+   "SGS": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1060020.0,
+    "in_fine_matvecs": 45.1033954557059,
+    "oa_vcb_over_this": 646.5673289183223
+   },
+   "SGS-PCG": {
+    "matvec_per_level": [
+     30.0,
+     30.0,
+     30.0
+    ],
+    "MAC_per_pass": 3251644.0,
+    "in_fine_matvecs": 138.3560548038465,
+    "oa_vcb_over_this": 210.77777887124174
+   },
+   "K2 (CHEB)": {
+    "matvec_per_level": [
+     10.0,
+     22.0,
+     44.0
+    ],
+    "MAC_per_pass": 2771868.0,
+    "in_fine_matvecs": 117.9417921878989,
+    "oa_vcb_over_this": 247.26080029784967
+   }
+  },
+  "barriers": {
+   "CHEB": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1095812.0,
+    "in_fine_matvecs": 46.62632967407029,
+    "oa_vcb_over_this": 625.4487996116122
+   },
+   "SD": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1167396.0,
+    "in_fine_matvecs": 49.67219811079908,
+    "oa_vcb_over_this": 587.0966664268166
+   },
+   "MR": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1203188.0,
+    "in_fine_matvecs": 51.19513232916348,
+    "oa_vcb_over_this": 569.6319278450251
+   },
+   "PCG": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1167396.0,
+    "in_fine_matvecs": 49.67219811079908,
+    "oa_vcb_over_this": 587.0966664268166
+   },
+   "CHEB-T": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1095812.0,
+    "in_fine_matvecs": 46.62632967407029,
+    "oa_vcb_over_this": 625.4487996116122
+   },
+   "POLY-S": {
+    "matvec_per_level": [
+     8.0,
+     8.0,
+     8.0
+    ],
+    "MAC_per_pass": 883808.0,
+    "in_fine_matvecs": 37.605650582929115,
+    "oa_vcb_over_this": 775.4787238857308
+   },
+   "POLY-L": {
+    "matvec_per_level": [
+     8.0,
+     8.0,
+     8.0
+    ],
+    "MAC_per_pass": 883808.0,
+    "in_fine_matvecs": 37.605650582929115,
+    "oa_vcb_over_this": 775.4787238857308
+   },
+   "SGS": {
+    "matvec_per_level": [
+     10.0,
+     10.0,
+     10.0
+    ],
+    "MAC_per_pass": 1060020.0,
+    "in_fine_matvecs": 45.1033954557059,
+    "oa_vcb_over_this": 646.5673289183223
+   },
+   "SGS-PCG": {
+    "matvec_per_level": [
+     30.0,
+     30.0,
+     30.0
+    ],
+    "MAC_per_pass": 3251644.0,
+    "in_fine_matvecs": 138.3560548038465,
+    "oa_vcb_over_this": 210.77777887124174
+   },
+   "K2 (CHEB)": {
+    "matvec_per_level": [
+     10.0,
+     22.0,
+     44.0
+    ],
+    "MAC_per_pass": 2771868.0,
+    "in_fine_matvecs": 117.9417921878989,
+    "oa_vcb_over_this": 247.26080029784967
+   }
+  }
+ },
+ "fine_matvec_MAC": 23502
+}

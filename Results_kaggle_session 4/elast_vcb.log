@@ -1,0 +1,21 @@
+elasticity, porous bands composite, level 3: 7356 dofs (192 traction-free pore nodes), E_f/E_m 1e+02, vf 0.3, 400 samples, device cuda
+  direct solve 58 ms/sample
+  coarse galerkin solve to level 2: 17 ms/sample; alone it gives rel-L2 1.663e-01
+  V-cycle operator data (3 levels, coarsest 104 dofs) built in 423s (1057 ms/sample)
+
+[oa-vcb] width 15, params 20,672  (learned operator-adapted V-cycle on the dof graph, 3 levels, Galerkin output, loss on projected + plain)
+    oa-vcb     ep    1/300  train mix 2.061e+00  (51s)
+    oa-vcb     ep   50/300  train mix 1.311e-01  (2575s)
+    oa-vcb     ep  100/300  train mix 1.063e-01  (5151s)
+    oa-vcb     ep  150/300  train mix 9.392e-02  (7727s)
+    oa-vcb     ep  200/300  train mix 8.047e-02  (10305s)
+    oa-vcb     ep  250/300  train mix 7.409e-02  (12881s)
+    oa-vcb     ep  300/300  train mix 7.168e-02  (15458s)
+    oa-vcb     TEST  nodal rel-l2 7.123e-03  FE rel-L2 6.966e-03  energy 2.466e-02  (worse than u_c in energy on 0/100)
+  classical V(4,4), op.-adapted (dof graph)   nodal rel-l2 3.642e-02  FE rel-L2 3.623e-02  energy 7.531e-02  (857 ms/sample incl. build)
+
+
+RESULTS  elasticity, level 3, E_f/E_m 1e+02, 300/100, 300 epochs, loss mix, k0 2
+model          params  rel-L2 (u)  energy (stress)  train s  infer ms
+oa-vcb         20,672   7.123e-03        2.466e-02    15458      57.2
+classical V(4,4) op.-adapted         0   3.642e-02        7.531e-02        0     857.3

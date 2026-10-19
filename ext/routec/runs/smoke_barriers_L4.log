@@ -1,0 +1,2 @@
+barriers L4 id 300 c=1e+04 nk=1: 175s; worst M3 effectivity 1.348; gates passed 360
+complete -> /home/claude/ofw/ext/routec/runs/smoke_barriers_L4.json

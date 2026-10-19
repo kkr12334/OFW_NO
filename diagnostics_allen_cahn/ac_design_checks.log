@@ -1,0 +1,33 @@
+level 3: 3934 unknowns, coarse level 2 (1038 nodes), 16 test samples; fine solve 3.9s
+1. odd map: fine |S(-u0) + S(u0)| = 1.7e-15, coarse 1.3e-15
+2. dt 0.01: row sums of |D^-1 A_h - I|: max 0.154, median 0.040  (Jacobi contraction <= max)
+   whole trajectory with 1 Jacobi sweep(s) per step instead of the solve: error vs u_h(T) rel-L2 1.4e-02, H1 2.7e-02
+   whole trajectory with 2 Jacobi sweep(s) per step instead of the solve: error vs u_h(T) rel-L2 7.4e-04, H1 1.4e-03
+   whole trajectory with 3 Jacobi sweep(s) per step instead of the solve: error vs u_h(T) rel-L2 5.1e-05, H1 8.8e-05
+   coarse alone: rel-L2 0.154, H1 0.538
+3. interface band |u_c(T)| < 0.9: 35.1% of the area carries 97.9% of ||e||^2 (mass-weighted)
+4. coarse to T - tau, then the fine scheme (dt 0.01) for tau:
+   tau 0.04: rel-L2 0.151  H1 0.501   (fine cost 1% of a fine solve)
+   tau  0.2: rel-L2 0.142  H1 0.414   (fine cost 4% of a fine solve)
+   tau  0.4: rel-L2 0.134  H1 0.361   (fine cost 8% of a fine solve)
+   tau  0.8: rel-L2 0.123  H1 0.309   (fine cost 16% of a fine solve)
+   tau  1.6: rel-L2 0.108  H1 0.258   (fine cost 32% of a fine solve)
+   tau  5.0: rel-L2 0.093  H1 0.210   (fine cost 100% of a fine solve)
+5. coarse to T - tau, then 4 fine steps of tau/4 (one semi-implicit step, s Jacobi sweeps each):
+   tau 0.04: 1 sweep rel-L2 0.151 H1 0.501 | 2 sweeps 0.151 / 0.501 | exact step solve 0.151 / 0.501
+   tau  0.2: 1 sweep rel-L2 0.144 H1 0.425 | 2 sweeps 0.143 / 0.424 | exact step solve 0.143 / 0.424
+   tau  0.4: 1 sweep rel-L2 0.140 H1 0.387 | 2 sweeps 0.138 / 0.383 | exact step solve 0.137 / 0.381
+   tau  0.8: 1 sweep rel-L2 0.138 H1 0.359 | 2 sweeps 0.133 / 0.348 | exact step solve 0.131 / 0.344
+6. fine scheme from u_c(T) for tau_r (no extra input; time shifts to T + tau_r):
+   tau_r 0.2: exact fine relaxation rel-L2 0.141 H1 0.414 | 4 steps of tau_r/4, 1 sweep 0.143 / 0.425 | drift of the fine solution itself u_h(T+tau_r) vs u_h(T): 0.013 / 0.028
+   tau_r 0.4: exact fine relaxation rel-L2 0.134 H1 0.362 | 4 steps of tau_r/4, 1 sweep 0.138 / 0.386 | drift of the fine solution itself u_h(T+tau_r) vs u_h(T): 0.026 / 0.056
+   tau_r 0.8: exact fine relaxation rel-L2 0.127 H1 0.317 | 4 steps of tau_r/4, 1 sweep 0.134 / 0.356 | drift of the fine solution itself u_h(T+tau_r) vs u_h(T): 0.051 / 0.110
+   tau_r 1.6: exact fine relaxation rel-L2 0.132 H1 0.305 | 4 steps of tau_r/4, 1 sweep 0.130 / 0.336 | drift of the fine solution itself u_h(T+tau_r) vs u_h(T): 0.096 / 0.206
+7. initial-data defect e0 = u0 - P R u0: ||e0|| / ||u0|| = 0.191
+   alpha 0.1: ||D(alpha)/alpha - linearised|| / ||linearised|| = 0.05
+   alpha 0.5: ||D(alpha)/alpha - linearised|| / ||linearised|| = 0.24
+   alpha 1.0: ||D(alpha)/alpha - linearised|| / ||linearised|| = 0.44
+8. dt 0.01: q_i (1 + S dt) = (1 + S dt) m_i / (A_h)_ii in [0.846, 0.989], median 0.961
+8. dt 0.2: q_i (1 + S dt) = (1 + S dt) m_i / (A_h)_ii in [0.274, 0.857], median 0.628
+9. tau_r = 2/3 (4 steps of 1/6): 1 sweep rel-L2 0.135 H1 0.363 | exact step solve 0.132 / 0.353
+total 44s

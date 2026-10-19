@@ -1,0 +1,4 @@
+1. rigid-body modes, per level: max |Phi t_c - t_f| on rows not coupled to the boundary (op.-adapted) / everywhere (geometric) / share of such rows / median |Phi t_c - t_f| over all rows: [('4.0e-01', '1.0e+00', '0.93', '6.6e-17'), ('9.3e-03', '1.0e+00', '0.41', '1.5e-04'), ('nan', '1.0e+00', '0.00', '1.6e-02')]
+2. containment (Jacobi weights, Galerkin output): max rel. diff 1.4e-10
+3. energy guarantee, 3 x 12: 0 violations, ratio [0.690, 0.942] (untrained); homogeneity 2.4e-14
+4. classical one-pass, energy (12 samples): {'coarse solve alone': 0.3725, 'V(4,4) op.-adapted': 0.0756, 'classical member (+ projection)': 0.0562} | earlier learned, same protocol (seed 0): oa-ll-op 0.211, gnn-op 0.196; two-grid PCG 4 its 0.040

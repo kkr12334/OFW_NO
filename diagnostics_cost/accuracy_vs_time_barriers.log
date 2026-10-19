@@ -1,0 +1,39 @@
+barriers: L3, k0 2, held-out data seed 1, 3486 unknowns, 100 test samples, CPU Intel(R) Xeon(R) Processor @ 2.80GHz, 2 threads, min over 2 repeats
+OA-VCB stored record reproduced to max rel diff None
+  OA-VCB (one pass)                                    energy 4.357e-02      273.04 ms
+  reference, Chebyshev nu=4 (paper)                    energy 7.506e-02       79.72 ms
+  reference, Chebyshev nu=8                            energy 6.465e-02       83.01 ms
+  reference, Chebyshev nu=16                           energy 5.875e-02       84.66 ms
+  reference, symmetric Gauss-Seidel 4 sweeps           energy 7.298e-02       80.49 ms
+  reference nu=4, applied 2 times                      energy 2.661e-02       84.06 ms
+  reference nu=4, applied 3 times                      energy 1.213e-02       87.84 ms
+  reference nu=4, applied 4 times                      energy 6.160e-03       90.84 ms
+  two-grid PCG                    1 its: energy 3.009e-01       5.99 ms
+  two-grid PCG                    2 its: energy 2.198e-01       6.08 ms
+  two-grid PCG                    3 its: energy 1.655e-01       6.43 ms
+  two-grid PCG                    4 its: energy 1.115e-01       6.66 ms
+  two-grid PCG                    5 its: energy 5.837e-02       6.82 ms
+  two-grid PCG                    6 its: energy 2.672e-02       7.46 ms
+  two-grid PCG                    7 its: energy 1.423e-02       7.24 ms
+  two-grid PCG                    8 its: energy 8.674e-03       7.52 ms
+  two-grid PCG                    9 its: energy 5.820e-03       8.12 ms
+  two-grid PCG                   10 its: energy 4.326e-03       8.48 ms
+  two-grid PCG                   11 its: energy 3.412e-03       8.89 ms
+  two-grid PCG                   12 its: energy 2.229e-03       8.91 ms
+  SA-AMG PCG                      1 its: energy 2.906e-01      16.53 ms
+  SA-AMG PCG                      2 its: energy 2.580e-01      16.91 ms
+  SA-AMG PCG                      3 its: energy 2.339e-01      17.62 ms
+  SA-AMG PCG                      4 its: energy 2.029e-01      18.44 ms
+  SA-AMG PCG                      5 its: energy 1.549e-01      18.91 ms
+  SA-AMG PCG                      6 its: energy 1.052e-01      20.06 ms
+  SA-AMG PCG                      7 its: energy 6.489e-02      22.02 ms
+  SA-AMG PCG                      8 its: energy 3.991e-02      21.24 ms
+  SA-AMG PCG                      9 its: energy 2.458e-02      21.25 ms
+  SA-AMG PCG                     10 its: energy 1.589e-02      22.77 ms
+  PCG + classical V(4,4)          1 its: energy 2.162e-01      81.43 ms
+  PCG + classical V(4,4)          2 its: energy 6.732e-02      83.62 ms
+  PCG + classical V(4,4)          3 its: energy 1.909e-02      88.73 ms
+  PCG + classical V(4,4)          4 its: energy 7.341e-03      87.85 ms
+  PCG + classical V(4,4)          5 its: energy 2.832e-03      90.83 ms
+  sparse direct (SuperLU): 11.22 ms
+written /tmp/claude-0/-home-claude/79bf07e3-cd6c-5b52-90d1-47bd4e0186b1/scratchpad/accuracy_vs_time_barriers.json

@@ -1,0 +1,15 @@
+seed 2 (R):
+  oa-vcb: island samples 49, E0 mean 0.1364; E1 mean 0.1364 (max rel gain 7.8e-20)
+    rho 2: E2 mean 0.1119 (R_cap +0.179)  E4 mean 0.1346  G24 1.187  kappa quartiles 0.058 / 0.205 / 0.448
+  member: island samples 49, E0 mean 0.1589; E1 mean 0.1589 (max rel gain 5.3e-19)
+    rho 2: E2 mean 0.1329 (R_cap +0.164)  E4 mean 0.1544  G24 1.218  kappa quartiles 0.095 / 0.247 / 0.553
+seed 3 (R):
+  oa-vcb: island samples 43, E0 mean 0.1340; E1 mean 0.1340 (max rel gain 3.5e-20)
+    rho 2: E2 mean 0.1227 (R_cap +0.084)  E4 mean 0.1331  G24 1.108  kappa quartiles 0.022 / 0.087 / 0.294
+  member: island samples 43, E0 mean 0.1765; E1 mean 0.1765 (max rel gain 8.8e-19)
+    rho 2: E2 mean 0.1513 (R_cap +0.143)  E4 mean 0.1733  G24 1.209  kappa quartiles 0.072 / 0.257 / 0.491
+pooled:
+  oa-vcb: island samples 92, E0 mean 0.1352; E1 mean 0.1352 (max rel gain 7.8e-20)
+    rho 2: E2 mean 0.1170 (R_cap +0.135)  E4 mean 0.1339  G24 1.149  kappa quartiles 0.026 / 0.130 / 0.398
+  member: island samples 92, E0 mean 0.1671; E1 mean 0.1671 (max rel gain 8.8e-19)
+    rho 2: E2 mean 0.1415 (R_cap +0.153)  E4 mean 0.1632  G24 1.214  kappa quartiles 0.088 / 0.252 / 0.548

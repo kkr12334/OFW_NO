@@ -1,0 +1,19 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Plain and projected outputs of the same trained weights (mean energy error, held-out seed 1). Models with loss ``plain'' optimise the plain output only; models with loss ``plain + proj.'' optimise both output losses, and their projected output is the one deployed. In each row the other column is the same network evaluated with the other output.}\label{tab:factorial8}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllllll}\toprule
+class & model & deflation & loss & smoothers & plain output & projected output \\\midrule
+barriers & OA-VC & no & plain & learned & 0.2329 & 0.1206 \\
+channels & OA-VC & no & plain & learned & 0.0041 & 0.0035 \\
+barriers & OA-VCZ & yes & plain & learned & 0.0751 & 0.0487 \\
+channels & OA-VCZ & yes & plain & learned & 0.0035 & 0.0033 \\
+barriers & OA-VCQ & no & plain + proj. & learned & 0.3111 & 0.1072 \\
+barriers & OA-VCB & yes & plain + proj. & learned & 0.0663 & 0.0436 \\
+channels & OA-VCB & yes & plain + proj. & learned & 0.0026 & 0.0026 \\
+barriers & OA-VCL & yes & plain & residual-linear & 0.1508 & 0.0683 \\
+channels & OA-VCL & yes & plain & residual-linear & 0.0111 & 0.0104 \\
+barriers & OA-VCBL & yes & plain + proj. & residual-linear & 0.1518 & 0.0676 \\
+channels & OA-VCBL & yes & plain + proj. & residual-linear & 0.0107 & 0.0101 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

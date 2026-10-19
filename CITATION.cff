@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the paper and this release."
+title: "OA-VCB: code and data release for Operator-adapted learned multigrid cycles for high-contrast elliptic problems: accuracy, failure modes and cost"
+type: software
+authors:
+  - family-names: Ranjan
+    given-names: Kumar Kaushik
+    affiliation: "Department of Mechanical Engineering, Tolani Maritime Institute, Pune, India"
+license: MIT
+# doi: 10.5281/zenodo.XXXXXXX   # placeholder: set only after the Zenodo record exists
+# repository-code: set after the repository is public
+# version / date-released: set at the tagged release

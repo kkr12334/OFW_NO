@@ -1,0 +1,6 @@
+L3, k0 0, 30 test operators, model L3_k00_seed1_oa-vcb__ckpt_73fbf6857e.pt; energy error of the correction relative to the error it corrects
+load                              oa-vcb  classical member  classical V(4,4)  learned better on
+f = 1 (training load)             0.0073            0.0821            0.1294    100% of samples
+smooth random load                0.3854            0.0795            0.1276     23% of samples
+point source                      0.7672            0.0577            0.1227     10% of samples
+nodal white noise                 0.1530            0.0429            0.0649      0% of samples

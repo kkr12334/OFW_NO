@@ -1,0 +1,10 @@
+B channels m 0: reference energy 3.2253e-02  G(m / m=4) 1.244  operator complexity 1.27  build 1.9 ms
+B channels m 1: reference energy 2.8780e-02  G(m / m=4) 1.110  operator complexity 1.82  build 5.5 ms
+B channels m 2: reference energy 2.7754e-02  G(m / m=4) 1.072  operator complexity 2.63  build 12.8 ms
+B channels m 4: reference energy 2.5865e-02  G(m / m=4) 1.000  operator complexity 4.54  build 56.4 ms
+B channels m 8: reference energy 2.4203e-02  G(m / m=4) 0.930  operator complexity 7.44  build 231.5 ms
+B barriers m 0: reference energy 1.2318e-01  G(m / m=4) 2.818  operator complexity 1.27  build 2.0 ms
+B barriers m 1: reference energy 1.0210e-01  G(m / m=4) 1.773  operator complexity 1.82  build 5.3 ms
+B barriers m 2: reference energy 9.2267e-02  G(m / m=4) 1.382  operator complexity 2.63  build 13.6 ms
+B barriers m 4: reference energy 7.5060e-02  G(m / m=4) 1.000  operator complexity 4.54  build 54.1 ms
+B barriers m 8: reference energy 5.1879e-02  G(m / m=4) 0.695  operator complexity 7.44  build 218.3 ms

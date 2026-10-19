@@ -1,0 +1,11 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{The grid bridge on 40 training operators (channels, seed 1): numerical rank of the grid-to-mesh map $T$ (eigenvalues of $TT^\top$ above $10^{-12}$ times the largest); energy error of the round trip of the exact correction $t=u-u_c$ (mesh $\to$ grid by piecewise-linear interpolation, grid $\to$ mesh by bilinear interpolation), relative to $\|t\|_A$ and to $\|u\|_A$; and of the best approximation of $t$ in the numerically resolved range of $T$ (Galerkin solve on an orthonormal basis of that range). Mean relative energy errors over the samples.}\label{tab:bridge}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllll}\toprule
+grid & rank($T$) & round trip / $\|t\|_A$ & round trip / $\|u\|_A$ & best / $\|t\|_A$ & best / $\|u\|_A$ \\\midrule
+$63\times63$ & 3126 of 3486 & 12.62 & 4.77 & 3.25e-01 & 1.23e-01 \\
+$90\times90$ & 3486 of 3486 & 9.26 & 3.50 & 5.45e-12 & 2.07e-12 \\
+$126\times126$ & 3486 of 3486 & 6.79 & 2.56 & 2.54e-13 & 9.66e-14 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

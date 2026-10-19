@@ -1,0 +1,90 @@
+% Sections 5-6 -- design ablations; limitations and robustness.  v3, 13 Oct 2026 (FINAL_SUBMISSION_REVIEW_ASTRA: compressed;
+% protocol details, per-seed tables and the extensions moved to the appendix).
+\section{What the learned cycle gains: design ablations}\label{sec:design}
+
+\subsection{Deflation, output and non-linearity}\label{sec:ablation}
+\input{tables/tab_factorial}
+Table~\ref{tab:factorial} compares separately trained design variants on held-out seed 1; \appref{app:repeat} evaluates each
+trained network with both outputs, plain and projected (Table~\ref{tab:factorial8}). Except for the residual-linear channel
+control, each comparison rests on one initialisation seed per model.
+\emph{Deflation.} On barriers, adding indicator deflation improves the paired accuracy by $G = 2.14$ with plain output
+(OA-VC $\to$ OA-VCZ) and by $1.85$ with Galerkin output (OA-VCQ $\to$ OA-VCB). Without it no variant beats the reference by more
+than $15\%$. On channels deflation is inactive.
+\emph{Galerkin output and its training term.} On barriers the Galerkin output with the additional loss term adds $G = 1.63$
+without deflation (OA-VC $\to$ OA-VCQ) and $1.40$ with it (OA-VCZ $\to$ OA-VCB); on channels OA-VCB is $1.17$ times more accurate
+than OA-VCZ. The two components interact: without deflation, training for the projected output improves the projected output
+($0.121\to0.107$) but degrades the plain one ($0.233\to0.311$); with deflation both improve ($0.049\to0.044$ projected,
+$0.075\to0.066$ plain). The gains are therefore not independent and additive.
+\emph{Non-linearity.} The non-linear learned smoothers outperform the tested residual-linear controls, which keep the same
+operator-dependent structure but make the smoother maps linear in their right-hand side (OA-VCL is linear in $r$ for each
+$A$; OA-VCBL's Galerkin output is not). On channels the residual-linear models still gain over the Chebyshev reference
+($G = 2.59$ for OA-VCL, $2.72$ for OA-VCBL), and the non-linear smoothers add a further $3.36$ (plain output) and $3.76$ (Galerkin
+output); on barriers the residual-linear models gain little or lose ($G = 1.13$ and $0.70$), and non-linearity adds $1.9$--$2.2$.
+The product $2.72\times3.76 = 10.2$ follows algebraically from chaining paired geometric-mean ratios; it is not a causal
+decomposition. Over three initialisation seeds of OA-VCBL the two factors are $2.63$--$2.72$ and $3.76$--$4.08$ (OA-VCB of the
+same seed index). One OA-VCBL run (seed 2) ended with a different optimisation outcome, a $2.8$ times higher final training loss
+and a plain-cycle error of $5.9\times10^{-2}$ instead of $1.07\times10^{-2}$, while its projected mean error is similar
+($9.8\times10^{-3}$ against $1.01\times10^{-2}$; its paired gain is slightly lower, $2.63$): projected accuracy is stable despite
+the sensitivity of the plain cycle and of the training objective.
+
+\subsection{Operator-adapted transfers}\label{sec:transfers}
+\input{tables/tab_transfers}
+To isolate the operator-adapted transfers, OA-VCB was retrained with $m=0$ in \eqref{eq:jacobi} (the geometric prolongation)
+on the same data (Table~\ref{tab:transfers}). The adapted transfers make the learned cycle $1.9$ times more accurate on
+channels, on every sample of all three seeds, and $4.1$ times more accurate on barriers ($97\%$ of samples). They help the
+learned cycle more than the classical one ($1.24$ and $2.82$ for the references), and the margin of learning over the classical
+reference is larger with them ($10.2$ against $6.7$ on channels, seed 1; $2.13$ against $1.48$ on barriers). Because the two
+models are trained separately, the comparison measures the choice of transfers under our training protocol, including its
+effect on optimisation. The adapted transfers are also more expensive: operator data $121$--$152$ instead of $11$--$14$\,ms per
+sample on the training platform's CPU. Retraining with $m = 8$ keeps the margin over the correspondingly stronger reference
+($G = 11.17$ on channels, $2.01$ on barriers; \appref{app:sensitivity}), so it is not an artefact of the cheaper transfers.
+
+\section{Limitations and robustness}\label{sec:failure}
+
+\subsection{Floating islands}\label{sec:islands}
+Floating islands are present in $39$--$48\%$ of the barrier test samples, and island samples have larger mean energy errors
+for every method tested (Table~\ref{tab:islands}). Indicator deflation improves the tested barrier models
+(Section~\ref{sec:ablation}), while OA-VCB's remaining island errors ($0.10$--$0.14$) are still large. An island indicator is
+constant on the island, whereas the low-energy mode it approximates also varies across the surrounding barrier. We therefore
+asked, with a protocol fixed in writing before any number was computed (\appref{app:harmonic}), how much of OA-VCB's remaining
+error lies in $A$-harmonic extensions of the indicators into a patch of $\rho = 2$ graph rings, added as a sequential
+$A$-orthogonal correction of the frozen prediction; the outcome was decided on $100$ fresh coefficient fields per checkpoint.
+On the 89 detector-positive fresh operators, the correction reduces OA-VCB's mean energy error from $0.1219$ to $0.1043$
+($R = 14.4\%$, paired 95\% interval $9.8$--$19.5\%$; Table~\ref{tab:harmonic}) and outperforms a patch-indicator control of
+equal support by a paired factor $1.13$, but it does not meet the prespecified support threshold: the outcome is ``little
+support from the tested enrichment''. On a fixed 40-sample subset, extending the basis globally raises the reduction from
+$10.9\%$ to $20.9\%$, so localisation matters, but substantial error remains. After the same correction is applied to both,
+OA-VCB keeps its advantage over the reference on island samples ($G = 1.42$ [1.27, 1.60]). These results concern sequential
+post-processing of frozen predictions; they do not assess an enlarged output space or retraining with enriched deflation.
+
+\subsection{Dependence on the load}\label{sec:rhs}
+\input{tables/tab_loads}
+The models of Section~\ref{sec:accuracy} were trained with the single load $f=1$ and approximate the fixed-load map
+$a\mapsto u(a;f)$. Table~\ref{tab:loads} applies them and the models trained on a load distribution (Section~\ref{sec:k0}) to
+other loads on the same test operators. Positive scaling ($f=3$) reproduces the relative errors of $f=1$, as
+Proposition~\ref{prop:homogeneity} guarantees. The other tested load families reverse the fixed-load models' advantage: with
+$f=-1$ OA-VCB is less accurate than the reference on all 300 operators ($G = 0.21$), and for smooth loads of both signs,
+localised sources and the random-load distribution the reference is more accurate as well ($G = 0.20$--$0.60$). The energy
+safeguard holds throughout (never worse than $u_c$ on the $1{,}800$ load--sample pairs) and shows what it promises: no damage,
+not accuracy. Training on the load distribution changes this: the random-load models are more accurate than the reference by
+$G = 6.2$--$6.9$ on $f=\pm1$, smooth loads and held-out random loads, with $W = 1$ on every seed, at the price of a $1.44$-fold
+loss on $f=1$ against fixed-load training. On pure localised sources the pooled gain is $2.51$, but the per-seed win fractions
+are $0.89$, $0.79$ and $0.83$, so the criterion fixed before this test ($G\ge2$ and $W\ge0.8$ per seed) is missed on seed 2, by one
+sample. These tests support broader forcing coverage after distributional training; they do not establish arbitrary-load
+accuracy (load definitions and per-seed values in \appref{app:loads}).
+
+\subsection{Further settings}\label{sec:k0}\label{sec:l4}\label{sec:aniso}
+\input{tables/tab_settings}
+Table~\ref{tab:settings} summarises separately trained variations of the main configuration (details in
+\appref{app:settings}). Without an externally supplied coarse solution ($k_0=0$; the cycle still contains its exact 28-node
+coarsest solve) OA-VCB keeps $G = 10.8$--$11.4$ with $W = 1$, and the energy safeguard then only bounds the damage relative to
+$u=0$. A separately trained finer hierarchy ($L=4$, 14{,}398 unknowns) gives $G = 9.72$, a polygonal domain $9.39$, an anisotropic
+tensor coefficient $3.5$--$3.6$, and training and testing on the random-load distribution $6.05$--$6.34$, all with $W=1$.
+\emph{Refinement without retraining.} The L4-trained model applied unchanged to the next refined mesh (L5, 58{,}494 unknowns,
+100 test samples) keeps $G = 8.12$ [7.50, 8.67] with $W = 1$, a per-sample gain $0.84$ [0.76, 0.91] times that at L4 on the same
+coefficient draws. At L6 (235{,}774 unknowns) the evaluation was stopped by the platform's session limit after 21 of 24 planned
+samples; on these completed cases $G = 4.18$ [3.43, 4.88] with $W = 1$, about half the L5 gain on the same draws. This partial
+evaluation shows a retained but shrinking margin; it does not establish mesh independence, and the coarse level, the bottom
+level of the cycle and the distance from the training mesh change together. A model trained at L3 does not keep its margin at
+L4 ($G = 1.95$ on 20 samples). \emph{Plane-strain elasticity} (one data set, one training run; preliminary): without deflation and without
+tuning, OA-VCB is more accurate than its Chebyshev reference on every test sample ($G = 2.32$; \appref{app:settings}).

@@ -1,0 +1,163 @@
+{
+ "sources": {
+  "coarse_meshes.py": "0d76304d2b86eb6926bd9c0c846090a756ae5cf5fea4b9dd7f849e7d72825491",
+  "diagnostics_cost/s1_common.py": "0a93d102e8934f24aad7bb3d7110d703bcd1b92a60974b1b053bc3dc963ac9c4",
+  "ext/stage1_core.py": "fd6cdfcd3e83bed4f523def1f0be653afcf8145f03cd709c391ac51e06d26ddb",
+  "ext/stage1_labels.py": "5450b4280e07416de3dfdaef8c44b992ba124008891c9b548181c4ccf85b56ba",
+  "ext/stage1_loads.py": "ac154828b7bf417b7caff115503964a6d494c5273ec19360f15dad7e3db1f6b9",
+  "ext/stage1_manifest.py": "1f61668ae21fd084f75a9c63aa7740a1f0310aff16e9cf16d593b07b13c19da6",
+  "ext/stage1_models.py": "f21ea14fc6b8ed50fc95b6afdd631100da3c007453c9c45fb180c1b01ca20dcd",
+  "ext/stage1_stats.py": "827345d0d1291ec53b7be4aa5b105a68d703bf7ccfd3ccab75253af7562038ac",
+  "frozen_basis.py": "3c13f7433e71f028fd88c27025582a3ad0d6a4bb40f0ccc1f4d9ae9dffbb77d2",
+  "grf_field.py": "595897985cc4d40725a6df1e459250d578ea644463e7d74ae17a1d0106057805",
+  "oa_lifting.py": "58d0af2b9d01b1bfc4ba2009abcdf764e41357b60abada3b93edabcce8b54afb",
+  "oa_vcycle.py": "f5407fc5c60c14aa57b0b6797ea6216f645c1b9edea54d13167d3f30b375ee5c",
+  "ofwno_core.py": "87f06ac5d734925d3301789472c6271de72ca592f7bd0527be1e105e3f0c3bae",
+  "run_identity.py": "bf581bcc0759873a40288f8814336064742dedb7825eb8305d2be2555b82629a"
+ },
+ "code_hash": "f8653612eb84",
+ "versions": {
+  "python": "3.13.16",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "torch": "2.14.1+cpu",
+  "pyamg": "5.3.0",
+  "matplotlib": "3.11.2"
+ },
+ "threads": {
+  "torch": 2,
+  "OMP_NUM_THREADS": null,
+  "MKL_NUM_THREADS": null,
+  "OPENBLAS_NUM_THREADS": null
+ },
+ "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+ "checkpoints": {
+  "Results_kaggle_session 10/ckpt_26c738fc31_oa-vcb.pt": {
+   "sha256": "caf29a420d9c56044d92fff452d3d584074387e385fd94f55713f9c20482fdd1",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_41c9fb7915_oa-vcb.pt": {
+   "sha256": "320229c77bc0b2b1a4f47cd049c2aa74d02c1d69de11ac8454c25e90f45b1c0b",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_41c9fb7915_oa-vcbl.pt": {
+   "sha256": "a19a3d43179ade3f272e44508157624e0999493ace08a1f88d37136aa323e657",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_5b9487def3_oa-vcb.pt": {
+   "sha256": "a85300e1703a437c784a6d4be2d0233425e6edfd8f0248e58d871a41fcb6407b",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_5ef54cb850_oa-vcb.pt": {
+   "sha256": "8469806772b2eb1e3fb7df61b39f59ee7bbdfccc5da4f45d1d7bfe8155eb03d9",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_8eaab74301_oa-vcb.pt": {
+   "sha256": "78d4f9eaf236a84c5f44c48250924ee7822e5920199d73921c73787d172a939e",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_9423f464e9_oa-vcb.pt": {
+   "sha256": "eed06f123e5efd91ceba44f947b4eef58a98708b595ef533fd817f89c41d5f6b",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_99fae7705e_oa-vcb.pt": {
+   "sha256": "7e0cc3819a644388eda4dae421d4bbbd9bc5fc352631fd738ed964decf41b6d6",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_99ff561410_oa-vcb.pt": {
+   "sha256": "c9ac3cbee0a359d9f343c6dd9f655f7e5cfcc01054c1bb3d01e9c07e4d520f4f",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_a215520bc6_oa-vcb.pt": {
+   "sha256": "1eb953dd6fff5001a674126ad2f173685d1a743f5c330e8152c03409b96147a0",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_b6b1cc5891_oa-vcb.pt": {
+   "sha256": "5c1e49ff6a290b0f2bd1aab6bbe9406eb0526621dec22f442f683472973b6a78",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_bb8cf1b3c1_oa-vcb.pt": {
+   "sha256": "8c7df307d16b69a11f42cdd1c822e75085764d05a2b2ec2377ac71a3320e5edd",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_c246c8b283_oa-vcb.pt": {
+   "sha256": "4a42259bc74af83bc5f652c8ac484922f0e7cde90effe7e1e5e04400c0a199c8",
+   "matches_map": true
+  },
+  "Results_kaggle_session 10/ckpt_c246c8b283_oa-vcbl.pt": {
+   "sha256": "7553ab49d4574ff5cc0eeb615c8d9d978260157b16d143d393866817362e4697",
+   "matches_map": true
+  },
+  "Results_kaggle_session 2/ckpt_40ce3ac1f9_oa-vcbl.pt": {
+   "sha256": "ef4e4791ebe265a43601d18b7bc67479c67fae2537e570f2cc5f57f42e703074",
+   "matches_map": true
+  },
+  "Results_kaggle_session 2/ckpt_40ce3ac1f9_oa-vcl.pt": {
+   "sha256": "fd774d38d795073c85da6890b0ecdfb8d55bd72db31cf1bf3092bc6096bb8b0d",
+   "matches_map": true
+  },
+  "Results_kaggle_session 2/ckpt_7cae2898f7_oa-vcb.pt": {
+   "sha256": "00f740b2e375bd4a958a53ccf0aa11598bd05d2019bdc7593ebdb9000652d9f6",
+   "matches_map": true
+  },
+  "Results_kaggle_session 3-3b/ckpt_8266a233d9_oa-vcb.pt": {
+   "sha256": "73179eb056d34f2c5de323edb24b822db57aca6d1723fce0f0cecc7b9422dc65",
+   "matches_map": true
+  },
+  "Results_kaggle_session 3-3b/ckpt_8266a233d9_oa-vcbl.pt": {
+   "sha256": "358956f91f45db2db2d786e717219764ce1693f0cb87082cc1ba322bfbaa3d88",
+   "matches_map": true
+  },
+  "Results_kaggle_session 3-3b/ckpt_8266a233d9_oa-vcl.pt": {
+   "sha256": "c7f395495141f43ca3ae3fee1c4205197a11b601fc58e3141882d57d3333640b",
+   "matches_map": true
+  },
+  "Results_kaggle_session 7/ckpt_62400ed25c_oa-vcb.pt": {
+   "sha256": "0c1353ea31134e79e351aa84a3ed591d3c208ff387dc5cb437593e1c775183ac",
+   "matches_map": true
+  },
+  "Results_kaggle_session 7/ckpt_8063a3449e_oa-vcb.pt": {
+   "sha256": "7092542674c599d9e53debd32f8aeda9f614594518f7aa99412c19aa590a3d51",
+   "matches_map": true
+  },
+  "results_kaggle session 8/ckpt_72a88fbf17_oa-vcb.pt": {
+   "sha256": "7aec24888578b6aed10c23e19ecaea574c95cc97e67f46cd13d6aaa731f9ed64",
+   "matches_map": true
+  },
+  "results_kaggle session 8/ckpt_8c295c2e27_oa-vcb.pt": {
+   "sha256": "a332d01ed09232c0836e1cbbc3f4b9754b13e3f1d9a192b72f70a0d6917d0e13",
+   "matches_map": true
+  },
+  "resultskaggle_2026-10-06session_1/results/darcy_ours/ckpt_40ce3ac1f9_oa-vcb.pt": {
+   "sha256": "a269e368ace14005fdfde60bb9ea8af77b93858d690a82454a6a073e8c722160",
+   "matches_map": true
+  }
+ },
+ "ext_sources": {
+  "ext/stage0_repro.py": "4a5dafca1b37454ed79daf6dd8dae7c79498f4ca29acc7adfca95929391b4c86",
+  "ext/stage1_confirm.py": "1bc252e3db9cc29ddc93df4289b957e51c207b7a4ea74c2241b013605e12c744",
+  "ext/stage1_core.py": "fd6cdfcd3e83bed4f523def1f0be653afcf8145f03cd709c391ac51e06d26ddb",
+  "ext/stage1_d1.py": "3d9d6e1b08269b6b3c5bfd7f0d8bb33f4b6fa216bd7adfa5224318e4800d07c9",
+  "ext/stage1_d2.py": "3772e71cfe39c28c74d15f3bb8b6e12e515a5ab9ea1c59b3f7cae61880c054c8",
+  "ext/stage1_dev_run.py": "d546d9f2040a96d0563c99f841a171f72d62898492ccec1109df20c561e14bb5",
+  "ext/stage1_fit.py": "a98055cbbfe55a4b43489cc4b66c194db19fc728963f1dfe0ba51e402bd8c662",
+  "ext/stage1_freeze.py": "02f31499ea5481710046214d73168412e01f12eac7534be488e602c530a86274",
+  "ext/stage1_labels.py": "5450b4280e07416de3dfdaef8c44b992ba124008891c9b548181c4ccf85b56ba",
+  "ext/stage1_loads.py": "ac154828b7bf417b7caff115503964a6d494c5273ec19360f15dad7e3db1f6b9",
+  "ext/stage1_manifest.py": "1f61668ae21fd084f75a9c63aa7740a1f0310aff16e9cf16d593b07b13c19da6",
+  "ext/stage1_models.py": "f21ea14fc6b8ed50fc95b6afdd631100da3c007453c9c45fb180c1b01ca20dcd",
+  "ext/stage1_preconf.py": "0b3c89925c1ef78200b919434532034b044bcd756c8825b9b911af2ec452e60a",
+  "ext/stage1_stats.py": "827345d0d1291ec53b7be4aa5b105a68d703bf7ccfd3ccab75253af7562038ac",
+  "ext/stage1_timing.py": "58edf6331e234b2cb2334ef3300797092afd6daf8ae5b8a76130876e02b7b86b",
+  "ext/stage1_timing_report.py": "289c1c5a3c45ecc2c5bbf208b148ea0d02c2923ff97bcd49fafa99fabf187a06"
+ },
+ "frozen_inputs": {
+  "ext/stage1_preconfirmation.json": "9504aa86b5d568ef61c72affba91cafe5faea47e4badf5d310395ac54c91a8cc",
+  "ext/frozen_scales.json": "8d0cc6f1d29553c9559a2b5f085f48242bf24e9297fb2abace63e48eab941c55",
+  "ext/checkpoint_map.json": "da6caaa472230e3dee8d24929c06bc14eaa120f3c4190d2b64b92776e02fa6a5",
+  "ext/dev/stage1_fitted_methods.json": "9bb4ed8f19c464e785eeccec482829c3348c6c38d3b0b0033e690bb62f18af4a",
+  "ext/dev/stage1_fit.json": "6f7294895ee371316770765f3d7d8e8cf83e12ff49b16b3056a34fe14e7f649a",
+  "ext/STAGE1_PROTOCOL_2026-10-16.md": "324897bd94018407e396f19df7a9344eab74380d30e15d7107fb3cf59fd599fc",
+  "ext/STAGE1_PROTOCOL_AMENDMENT_1_2026-10-16.md": "406c5bd0890eff897543b877a557ec42f681bf34e4cbe1898271a2403e3658a8"
+ }
+}

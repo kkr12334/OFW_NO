@@ -1,0 +1,7 @@
+L3 barrier test set (samples 300-399): 50 of 100 with a floating island (islands per such sample: [31 14  4  1] for 1, 2, ...); min Rayleigh quotient of D^-1 A for an island indicator: 6.5e-06 (median 3.2e-05)
+energy error, mean | median                            with island          without island
+geometric coarse solve alone                         0.708 | 0.725           0.281 | 0.262
+classical V(4,4), operator-adapted                   0.592 | 0.676           0.031 | 0.018
+  + island deflation                                 0.336 | 0.320           0.031 | 0.018
+two-grid PCG, 4 its                                  0.297 | 0.233           0.010 | 0.004
+  + islands in the coarse space                      0.033 | 0.037           0.010 | 0.004

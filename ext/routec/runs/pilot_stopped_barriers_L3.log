@@ -1,0 +1,8 @@
+barriers L3 id 0 c=1e+00 nk=0: 130s; worst M3 effectivity 1.344; gates passed 875
+barriers L3 id 0 c=1e+02 nk=0: 129s; worst M3 effectivity 1.356; gates passed 875
+barriers L3 id 0 c=1e+04 nk=0: 136s; worst M3 effectivity 3.071; gates passed 955
+barriers L3 id 0 c=1e+06 nk=0: 125s; worst M3 effectivity 27.395; gates passed 875
+barriers L3 id 1 c=1e+00 nk=0: 128s; worst M3 effectivity 1.350; gates passed 875
+barriers L3 id 1 c=1e+02 nk=1: 125s; worst M3 effectivity 1.347; gates passed 875
+barriers L3 id 1 c=1e+04 nk=2: 129s; worst M3 effectivity 1.354; gates passed 955
+STOPPED at gate: id 1 c=1e+06: exact solves finite and residual small: None -> /home/claude/ofw/ext/routec/runs/pilot_barriers_L3.json

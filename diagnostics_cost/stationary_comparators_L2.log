@@ -1,0 +1,4 @@
+
+Darcy L2 (k0 1); oa-ll-op (trained, one coarse solve): 2.47e-02 / 0.045;  coarse alone 3.38e-01 / 0.580
+  post nu  4: Jacobi(best omega) 2.34e-01 / 0.260 | Chebyshev(best q) 1.96e-01 / 0.234 | sym. Gauss-Seidel 2.15e-01 / 0.232
+  post nu  8: Jacobi(best omega) 1.86e-01 / 0.187 | Chebyshev(best q) 1.24e-01 / 0.118 | sym. Gauss-Seidel 1.63e-01 / 0.160

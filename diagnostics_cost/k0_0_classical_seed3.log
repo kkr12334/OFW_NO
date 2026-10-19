@@ -1,0 +1,8 @@
+held-out data seed 3, k0 0, 100 test samples (ids 300-399); per-sample records -> k0_0_classical_seed3.jsonl
+  V(4,4) op.-adapted, from 0                       mean energy 1.3351e-01
+  V(4,4) op.-adapted + defl. + proj., from 0       mean energy 8.5476e-02
+  PCG + V(4,4) from 0, 1 its: 8.7366e-02    two-grid PCG from 0, 1 its: 2.6238e-01
+  PCG + V(4,4) from 0, 2 its: 8.7560e-03    two-grid PCG from 0, 2 its: 1.0011e-01
+  PCG + V(4,4) from 0, 3 its: 1.0499e-03    two-grid PCG from 0, 3 its: 4.1430e-02
+  PCG + V(4,4) from 0, 4 its: 1.0883e-04    two-grid PCG from 0, 4 its: 1.7562e-02
+  PCG + V(4,4) from 0, 6 its: 9.8710e-07    two-grid PCG from 0, 6 its: 3.0930e-03

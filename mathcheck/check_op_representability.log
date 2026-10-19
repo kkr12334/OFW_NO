@@ -1,0 +1,6 @@
+||A e - r|| / ||r|| = 5.5e-15   (error equation holds)
+network vs Jacobi iterate: max |diff| = 1.5e-16  (|x| ~ 2.2e-03)
+  ceiling of the class, nu= 1: ||e - x_nu||_A / ||e||_A = 0.783
+  ceiling of the class, nu= 4: ||e - x_nu||_A / ||e||_A = 0.700
+  ceiling of the class, nu=10: ||e - x_nu||_A / ||e||_A = 0.652
+  ceiling of the class, nu=50: ||e - x_nu||_A / ||e||_A = 0.511

@@ -1,0 +1,18 @@
+GATE pass: fitted coefficients hash = frozen
+R2 channels: data generated in 7 s (100 samples)
+  classical 1/100 (0 s)
+  classical 21/100 (2 s)
+  classical 41/100 (5 s)
+  classical 61/100 (7 s)
+  classical 81/100 (10 s)
+GATE pass: CHEB common path = legacy anchor (rel. diff <= 1e-8 on every sample) (8.881784197001252e-16)
+GATE pass: all checkpoints match checkpoint_map SHA-256
+GATE pass: all checkpoints match checkpoint_map SHA-256 (final)
+
+== R2 channels: 100 samples, strata {'discordant': 1, 'strict non-island': 99}, 70 s
+  OA-VCB init0 (random-load model): P1 R 4.141 [3.881, 4.393] W 0.99 -> not accounted for by Krylov smoothing;  P2 3.634 [3.407, 3.856]
+  OA-VCB init1: P1 R 6.100 [5.721, 6.460] W 1.00 -> not accounted for by Krylov smoothing;  P2 5.353 [5.035, 5.656]
+  OA-VCB init2: P1 R 6.186 [5.808, 6.555] W 1.00 -> not accounted for by Krylov smoothing;  P2 5.429 [5.103, 5.741]
+  P3 (CHEB-legacy -> PCG) 1.629 [1.606, 1.653];  P1 family label: not accounted for by Krylov smoothing
+  failures: none
+exit 0

@@ -1,0 +1,8 @@
+random-load checkpoint f8653612eb84 (cfg load random, data seed 1), U_scale 4.6785e-04; in-distribution anchor reproduces the stored record to 6.4e-06
+load                     u_c  random-load OA-VCB  fixed-load OA-VCB    member   member/random-model G [95% CI]  W   >u_c   random/fixed model: G, W
+f = 1 (training)       0.376           3.821e-03          2.555e-03 2.586e-02     6.90 [6.49, 7.30]  1.00    0   0.67, 0.01
+f = -1                 0.376           3.953e-03          9.266e-02 2.586e-02     6.67 [6.31, 7.03]  1.00    0   22.34, 1.00
+f = 3                  0.376           3.821e-03          2.555e-03 2.586e-02     6.90 [6.49, 7.30]  1.00    0   0.67, 0.01
+session-2 random       0.402           4.499e-03          8.904e-02 2.652e-02     6.27 [5.89, 6.65]  1.00    0   9.48, 0.84
+smooth +-              0.386           3.832e-03          1.229e-01 2.452e-02     6.41 [6.14, 6.68]  1.00    0   26.06, 1.00
+point source           0.625           1.199e-02          1.153e-01 2.195e-02     2.80 [2.28, 3.35]  0.89    0   7.41, 0.99

@@ -1,0 +1,6 @@
+channels u_c                    rel err 3.02e-01:  oracle (MVY lifting) eff   1.941   joint oracle eff   1.151  (moment check 3.1e-16)
+channels 30 Jacobi-PCG steps    rel err 3.13e-02:  oracle (MVY lifting) eff   1.268   joint oracle eff   1.029  (moment check 1.9e-14)
+channels u_h + 10% noise        rel err 1.00e-01:  oracle (MVY lifting) eff  29.928   joint oracle eff   1.375  (moment check 9.3e-16)
+barriers u_c                    rel err 5.15e-01:  oracle (MVY lifting) eff   4.367   joint oracle eff   1.117  (moment check 1.7e-15)
+barriers 30 Jacobi-PCG steps    rel err 9.17e-01:  oracle (MVY lifting) eff   1.187   joint oracle eff   1.020  (moment check 1.4e-14)
+barriers u_h + 10% noise        rel err 1.00e-01:  oracle (MVY lifting) eff  15.605   joint oracle eff   1.344  (moment check 1.4e-15)

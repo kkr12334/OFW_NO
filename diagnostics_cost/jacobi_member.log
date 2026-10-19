@@ -1,0 +1,10 @@
+ch_s1: Jacobi member mean energy 4.0287e-02; Chebyshev reference 2.5865e-02; Chebyshev better on 1.00 of samples, G(Jacobi/Chebyshev) 1.57
+ba_s1: Jacobi member mean energy 8.6349e-02; Chebyshev reference 7.5060e-02; Chebyshev better on 0.98 of samples, G(Jacobi/Chebyshev) 1.51
+k00_s1: Jacobi member mean energy 1.1454e-01; Chebyshev reference 8.5185e-02; Chebyshev better on 1.00 of samples, G(Jacobi/Chebyshev) 1.35
+ch_s2: Jacobi member mean energy 3.8475e-02; Chebyshev reference 2.4952e-02; Chebyshev better on 1.00 of samples, G(Jacobi/Chebyshev) 1.55
+ba_s2: Jacobi member mean energy 9.6433e-02; Chebyshev reference 8.5056e-02; Chebyshev better on 0.96 of samples, G(Jacobi/Chebyshev) 1.45
+k00_s2: Jacobi member mean energy 1.0871e-01; Chebyshev reference 8.0357e-02; Chebyshev better on 1.00 of samples, G(Jacobi/Chebyshev) 1.36
+ch_s3: Jacobi member mean energy 4.0483e-02; Chebyshev reference 2.6316e-02; Chebyshev better on 1.00 of samples, G(Jacobi/Chebyshev) 1.54
+ba_s3: Jacobi member mean energy 9.4957e-02; Chebyshev reference 8.3314e-02; Chebyshev better on 0.99 of samples, G(Jacobi/Chebyshev) 1.50
+k00_s3: Jacobi member mean energy 1.1492e-01; Chebyshev reference 8.5476e-02; Chebyshev better on 1.00 of samples, G(Jacobi/Chebyshev) 1.35
+l4_s1: Jacobi member mean energy 3.0801e-02; Chebyshev reference 2.0078e-02; Chebyshev better on 1.00 of samples, G(Jacobi/Chebyshev) 1.54

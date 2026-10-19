@@ -1,0 +1,13 @@
+fine reference dt 0.01: 235.2 ms/sample (batched)
+  fine mesh, dt 0.02: rel-L2 7.309e-03  H1 1.643e-02    117.1 ms/sample
+  fine mesh, dt 0.05: rel-L2 2.775e-02  H1 6.222e-02     46.6 ms/sample
+  fine mesh, dt 0.1 : rel-L2 5.770e-02  H1 1.283e-01     23.5 ms/sample
+  fine mesh, dt 0.2 : rel-L2 1.071e-01  H1 2.328e-01     11.7 ms/sample
+  fine mesh, dt 0.5 : rel-L2 2.134e-01  H1 4.290e-01      4.7 ms/sample
+  coarse (level 2), dt 0.01: rel-L2 1.541e-01  H1 5.384e-01     57.0 ms/sample
+  coarse (level 2), dt 0.05: rel-L2 1.573e-01  H1 5.399e-01     11.1 ms/sample
+  coarse (level 2), dt 0.1 : rel-L2 1.641e-01  H1 5.443e-01      5.5 ms/sample
+  fine mesh, Strang (exact reaction + CN), dt 0.05: rel-L2 7.628e-03  H1 1.720e-02     23.5 ms/sample
+  fine mesh, Strang (exact reaction + CN), dt 0.1 : rel-L2 7.797e-03  H1 1.769e-02     11.5 ms/sample
+  fine mesh, Strang (exact reaction + CN), dt 0.2 : rel-L2 8.495e-03  H1 1.987e-02      6.6 ms/sample
+  fine mesh, Strang (exact reaction + CN), dt 0.5 : rel-L2 1.417e-02  H1 4.659e-02      3.4 ms/sample

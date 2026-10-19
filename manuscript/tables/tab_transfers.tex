@@ -1,0 +1,12 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Operator-adapted ($m=4$) vs geometric ($m=0$) transfers, separately trained OA-VCB models on the same data. OA-VCB error with each; paired $G$ (geometric-transfer error / adapted-transfer error) and $W$; the same ratio for the two classical references; and reference/learned $G$ for each choice of transfers.}\label{tab:transfers}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllllll}\toprule
+case & adapted & geometric & $G$ geom./adapt. & $W$ & references: geom./adapt. & reference/learned (adapt.) & reference/learned (geom.) \\\midrule
+channels, seed 1 & 2.55e-3 & 5.02e-3 & 1.91 [1.84, 2.00] & 1.00 & 1.24 & 10.23 & 6.65 \\
+channels, seed 2 & 2.79e-3 & 5.46e-3 & 1.92 [1.84, 2.00] & 1.00 & 1.24 & 9.76 & 6.30 \\
+channels, seed 3 & 2.92e-3 & 5.66e-3 & 1.87 [1.80, 1.95] & 1.00 & 1.25 & 9.68 & 6.50 \\
+barriers, seed 1 & 4.36e-2 & 1.13e-1 & 4.07 [3.50, 4.71] & 0.97 & 2.82 & 2.13 & 1.48 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

@@ -1,0 +1,24 @@
+% Hand-written positioning table (not generated from results).  Entries state only what the cited descriptions state.
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Learned components, inter-level transfers and use of related learned methods, as described in the cited works.
+``One pass'': a fixed evaluation returns the approximation; ``iteration'': the learned part is applied inside an iterative
+or Krylov solver run to a tolerance; ``precond.'': inside a Krylov method as a preconditioner.}\label{tab:related}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.27\linewidth}>{\raggedright\arraybackslash}p{0.25\linewidth}>{\raggedright\arraybackslash}p{0.25\linewidth}>{\raggedright\arraybackslash}p{0.15\linewidth}@{}}\toprule
+method & learned component & inter-level transfers & use \\\midrule
+FNO, WNO, LiNO \cite{li2021fno,tripura2023wno,pandey2026lino} & whole map (uniform grid) & none, or a fixed or learned transform & one pass \\
+MeshGraphNet-type GNN, Transolver \cite{pfaff2021,wu2024transolver} & whole map (mesh) & none & one pass \\
+MgNO \cite{he2024mgno} & multigrid-parameterised linear layers & learned convolutions & one pass \\
+Greenfeld et al.\ \cite{greenfeld2019}; Katrutsa et al.\ \cite{katrutsa2017} & prolongation (and restriction) & learned & iteration \\
+Luz et al.\ \cite{luz2020} & algebraic-multigrid prolongation & learned (graph network) & iteration \\
+Huang et al.\ \cite{huang2023} & smoothers & geometric & iteration \\
+UGrid \cite{han2024ugrid} & U-Net iterator built on a multigrid structure & fixed by the grid & iteration \\
+Fanaskov \cite{fanaskov2021} & smoothers, and transfers in some variants & fixed or learned & iteration \\
+Chill\'on et al.\ \cite{chillon2026} & smoother parameters & algebraic multigrid & iteration \\
+Wang and Luo \cite{wangluo2026} & smoothing and transfer operators & learned (graph convolutions) & iteration \\
+Zhang, Li and Saad \cite{zhanglisaad2026} & smoothing, restriction, interpolation & learned & precond. \\
+HINTS, FCG-NO, DeepONet preconditioners \cite{zhang2024hints,rudikov2024,kopanicakova2025} & neural operator & -- & iteration \\
+Melchers et al.\ \cite{melchers2026} & neural coarse correction & fixed coarse basis & precond. \\
+\midrule
+OA-VCB (this work) & smoothers (nonlinear, operator-informed) & operator-adapted, computed from each $A$ & one pass \\
+\bottomrule\end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+channels PCG(4)       matvec-eq/pass     30  G(CHEB->X) 1.62  G(X->OA-VCB init0) 6.307 [6.024, 6.584] W 1.00
+channels PCG(5)       matvec-eq/pass     36  G(CHEB->X) 2.62  G(X->OA-VCB init0) 3.906 [3.729, 4.082] W 1.00
+channels PCG(8)       matvec-eq/pass     54  G(CHEB->X) 6.86  G(X->OA-VCB init0) 1.492 [1.426, 1.559] W 0.98
+channels PCG(14)      matvec-eq/pass     90  G(CHEB->X) 24.87  G(X->OA-VCB init0) 0.411 [0.385, 0.440] W 0.01
+channels PCG(32)      matvec-eq/pass    198  G(CHEB->X) 669.40  G(X->OA-VCB init0) 0.015 [0.012, 0.019] W 0.00
+channels SGS-PCG(4)   matvec-eq/pass     90  G(CHEB->X) 8.22  G(X->OA-VCB init0) 1.245 [1.186, 1.303] W 0.84
+channels SGS-PCG(8)   matvec-eq/pass    162  G(CHEB->X) 54.75  G(X->OA-VCB init0) 0.187 [0.169, 0.207] W 0.00
+reproduction check vs dev JSON (PCG(4), SGS-PCG(4)): 0.0 0.0
+channels X3 pre K4: rho quantiles ['0.567', '0.624', '0.687'], rho <= 0.99 on 100/100
+channels X3 pre K5: rho quantiles ['0.658', '0.715', '0.780'], rho <= 0.99 on 100/100
+channels X3 pre K8: rho quantiles ['0.970', '1.024', '1.086'], rho <= 0.99 on 23/100
+channels X3 post K4: rho quantiles ['0.403', '0.498', '0.614'], rho <= 0.99 on 100/100
+channels X3 post K5: rho quantiles ['0.500', '0.620', '0.755'], rho <= 0.99 on 100/100
+channels X3 post K8: rho quantiles ['0.895', '1.079', '1.235'], rho <= 0.99 on 33/100
+exit 0

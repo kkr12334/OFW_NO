@@ -1,0 +1,38 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Classical cycles contained in the architecture (Proposition~\ref{prop:containment}, same hierarchy, coarse solution, deflation and Galerkin output; $\nu=4$): fixed-interval Chebyshev smoothing ($\lambda=3$, same weights on every level) and weighted Jacobi ($\omega=2/3$), together with the adaptive Chebyshev reference used in the other tables. The contained cycles are evaluated in double precision with the unregularised Galerkin solves of the mathematical construction; the regularisation and finite-precision safeguards of the deployed network are described in Section~\ref{sec:properties}. (a) Mean energy errors and paired $G$ of each contained cycle over the reference. (b) Paired $G$ of each classical cycle over OA-VCB ([95\% CI] for the contained cycles) and OA-VCB's win fraction $W$. Elasticity: no deflation; one data set.}\label{tab:contained}
+{\small (a) Mean energy errors}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllllll}\toprule
+set & OA-VCB & reference & fixed Cheb. & Jacobi & fixed Cheb./ref.\ $G$ & Jacobi/ref.\ $G$ \\\midrule
+channels, seed 1 & 2.55e-3 & 2.59e-2 & 2.58e-2 & 4.03e-2 & 0.995 & 1.57 \\
+channels, seed 2 & 2.79e-3 & 2.50e-2 & 2.49e-2 & 3.85e-2 & 0.995 & 1.55 \\
+channels, seed 3 & 2.92e-3 & 2.63e-2 & 2.62e-2 & 4.05e-2 & 0.995 & 1.54 \\
+barriers, seed 1 & 4.36e-2 & 7.51e-2 & 7.62e-2 & 8.63e-2 & 1.052 & 1.51 \\
+barriers, seed 2 & 6.96e-2 & 8.51e-2 & 8.61e-2 & 9.64e-2 & 1.040 & 1.45 \\
+barriers, seed 3 & 6.07e-2 & 8.33e-2 & 8.50e-2 & 9.50e-2 & 1.056 & 1.50 \\
+$k_0=0$, seed 1 & 7.62e-3 & 8.52e-2 & 8.84e-2 & 1.15e-1 & 1.039 & 1.35 \\
+$k_0=0$, seed 2 & 7.58e-3 & 8.04e-2 & 8.36e-2 & 1.09e-1 & 1.041 & 1.36 \\
+$k_0=0$, seed 3 & 8.13e-3 & 8.55e-2 & 8.85e-2 & 1.15e-1 & 1.036 & 1.35 \\
+L4, $k_0=3$, seed 1 & 2.21e-3 & 2.01e-2 & 2.02e-2 & 3.08e-2 & 1.008 & 1.54 \\
+elasticity (prelim.) & 2.47e-2 & 5.50e-2 & 5.38e-2 & 9.84e-2 & 0.975 & 1.82 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\par\medskip
+{\small (b) Gains of OA-VCB}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllll}\toprule
+set & ref./OA-VCB $G$ & fixed Cheb./OA-VCB $G$ & $W$ & Jacobi/OA-VCB $G$ & $W$ \\\midrule
+channels, seed 1 & 10.23 & 10.19 [9.69, 10.66] & 1.00 & 16.02 [15.27, 16.73] & 1.00 \\
+channels, seed 2 & 9.76 & 9.71 [9.12, 10.27] & 1.00 & 15.11 [14.16, 16.00] & 1.00 \\
+channels, seed 3 & 9.68 & 9.63 [9.07, 10.19] & 1.00 & 14.95 [14.08, 15.79] & 1.00 \\
+barriers, seed 1 & 2.13 & 2.24 [1.99, 2.51] & 0.93 & 3.22 [2.83, 3.64] & 0.94 \\
+barriers, seed 2 & 1.93 & 2.01 [1.76, 2.28] & 0.83 & 2.80 [2.39, 3.27] & 0.87 \\
+barriers, seed 3 & 1.93 & 2.04 [1.78, 2.32] & 0.90 & 2.90 [2.53, 3.33] & 0.93 \\
+$k_0=0$, seed 1 & 11.39 & 11.83 [11.38, 12.30] & 1.00 & 15.34 [14.74, 15.93] & 1.00 \\
+$k_0=0$, seed 2 & 10.91 & 11.36 [10.78, 11.91] & 1.00 & 14.80 [14.05, 15.52] & 1.00 \\
+$k_0=0$, seed 3 & 10.82 & 11.21 [10.77, 11.67] & 1.00 & 14.57 [14.01, 15.17] & 1.00 \\
+L4, $k_0=3$, seed 1 & 9.72 & 9.80 [9.13, 10.42] & 1.00 & 14.98 [13.93, 15.92] & 1.00 \\
+elasticity (prelim.) & 2.32 & 2.26 [2.15, 2.37] & 1.00 & 4.22 [3.93, 4.53] & 1.00 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

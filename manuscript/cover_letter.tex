@@ -1,0 +1,40 @@
+% Cover letter for the CMAME submission (13 Oct 2026).  Author to review, date and sign.
+\documentclass[11pt]{letter}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\signature{Kumar Kaushik Ranjan\\Department of Mechanical Engineering\\Tolani Maritime Institute, Pune, India\\kumarr@tmi.tolani.edu}
+\address{Department of Mechanical Engineering\\Tolani Maritime Institute\\Induri, Talegaon Dabhade, Pune 410507\\Maharashtra, India}
+\begin{document}
+\begin{letter}{The Editors\\Computer Methods in Applied Mechanics and Engineering}
+\opening{Dear Editors,}
+
+I submit the manuscript \emph{``Operator-adapted learned multigrid cycles for high-contrast elliptic problems: accuracy,
+failure modes and cost''} for consideration as a research article in \emph{Computer Methods in Applied Mechanics and
+Engineering}.
+
+The paper is a controlled methodological study. It asks what learned smoothing adds to one pass of a multigrid cycle for
+high-contrast diffusion problems on unstructured finite element meshes, when the transfers, Galerkin coarse operators and
+near-kernel deflation vectors are computed from each sample's operator and only the smoothers are learned. The architecture
+provably represents the classical cycles with fixed polynomial smoothers on the same hierarchy, is positively homogeneous in
+the load, and has an energy-norm safeguard. This allows a paired comparison with a classical cycle that receives exactly the
+same hierarchy, coarse solution, deflation and output projection.
+
+At four update stages per smoother, the learned pass is about ten times more accurate in the energy norm than the
+degree-four Chebyshev-smoothed pass on conductive channels and about twice as accurate on insulating barriers, reproducibly
+across held-out data seeds and training runs; ablations attribute parts of this gain to the operator-adapted transfers,
+deflation, Galerkin output and nonlinearity. The paper reports with equal weight where the result stops: the margin shrinks
+quickly when the classical pass receives more smoothing, and three classical passes are more accurate at a third of the
+cost; a network trained with one load loses its advantage on other loads; floating islands keep substantial error; and the
+implementation is 12--98 times slower than converged classical solvers at matched accuracy. The manuscript therefore does
+not claim a fast solver or a broadly superior neural operator. Its contribution is a reproducible measurement of what
+learned smoothing contributes inside a prescribed multilevel pass, and of why that contribution does not yet translate into
+solver efficiency, which I believe is useful to readers designing learned components for multilevel solvers in
+computational mechanics.
+
+All tables are regenerated from stored per-sample records by scripts that, with the code, records and checkpoints, are
+available from me on request. The manuscript has not been published and is not under consideration elsewhere. The use of generative
+AI tools in preparing this work is declared in the manuscript. There are no competing interests and no specific funding.
+
+\closing{Yours sincerely,}
+\end{letter}
+\end{document}

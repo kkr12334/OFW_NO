@@ -1,0 +1,17 @@
+  oa-vcb: island samples 42, E0 mean 0.0956; E1 mean 0.0956 (max rel gain 4.1e-20)
+    rho 1: E2 mean 0.0914 (R_cap +0.044)  E4 mean 0.0929  G24 1.020  kappa quartiles 0.021 / 0.058 / 0.184
+    rho 2: E2 mean 0.0876 (R_cap +0.083)  E4 mean 0.0941  G24 1.097  kappa quartiles 0.028 / 0.090 / 0.308
+    rho 4: E2 mean 0.0830 (R_cap +0.132)  E4 mean 0.0955  G24 1.175  kappa quartiles 0.031 / 0.116 / 0.376
+    rho 8: E2 mean 0.0817 (R_cap +0.146)  E4 mean 0.0955  G24 1.196  kappa quartiles 0.032 / 0.109 / 0.378
+  member: island samples 42, E0 mean 0.1561; E1 mean 0.1561 (max rel gain 4.7e-19)
+    rho 1: E2 mean 0.1414 (R_cap +0.094)  E4 mean 0.1458  G24 1.040  kappa quartiles 0.042 / 0.137 / 0.332
+    rho 2: E2 mean 0.1265 (R_cap +0.189)  E4 mean 0.1516  G24 1.235  kappa quartiles 0.111 / 0.277 / 0.559
+    rho 4: E2 mean 0.1144 (R_cap +0.267)  E4 mean 0.1560  G24 1.469  kappa quartiles 0.142 / 0.395 / 0.710
+    rho 8: E2 mean 0.1123 (R_cap +0.280)  E4 mean 0.1560  G24 1.525  kappa quartiles 0.154 / 0.409 / 0.722
+rho* rule (smallest rho within 10% of the best mean island error): 2   (means {1: np.float64(0.09139611157349727), 2: np.float64(0.08764804071331997), 4: np.float64(0.08301470142419212), 8: np.float64(0.08168951901274489)})
+oa-vcb: E3 subset 20 samples: E0 0.0974  E2(rho 2) 0.0887 (R_cap +0.090)  E3 global 0.0803 (R_cap +0.176)
+member: E3 subset 20 samples: E0 0.1474  E2(rho 2) 0.1178 (R_cap +0.201)  E3 global 0.1021 (R_cap +0.307)
+labels: detector 42, geometric 39, both 39, detector only 3, geometric only 0
+island samples: islands per sample 1.43; patch size (rho 2) median 68; build E2 median 0.5 ms, apply median 0.4 ms, detect median 1.5 ms
+retained/nominal E2 columns: 120/120;  E4: 120/120; max scaled cond E2 2.8e+02; max gain-check rel diff 1.0e+00
+non-island samples 58: max |E2 change| 0.0e+00 (empty by construction)

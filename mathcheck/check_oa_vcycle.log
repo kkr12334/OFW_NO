@@ -1,0 +1,4 @@
+1. containment: network with Jacobi weights vs numpy V(4,4) Jacobi cycle, max rel. diff 8.4e-16
+2. positive homogeneity, random weights: max |f(3r) - 3 f(r)| / max |3 f(r)| = 5.0e-16
+3. classical member (Chebyshev, q 10), barriers, 10 samples: 1.42e-01 / 0.138  (check_oa_transpose_pair: jac 4, nu 4 -> 1.42e-01 / 0.138)
+   parameters at width 16, nu 4, shared: 23,426

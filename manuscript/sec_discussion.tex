@@ -1,0 +1,69 @@
+% Sections 7-8 -- discussion and conclusion.  v3, 13 Oct 2026 (FINAL_SUBMISSION_REVIEW_ASTRA: four focused paragraphs; old
+% flexible-CG pilot removed; speculative uses reduced to one sentence; design lessons narrowed; conclusion ~180 words).
+\section{Discussion}\label{sec:discussion}
+
+\paragraph{What is learned, and what the control shows.} The classical reference receives the same transfers, Galerkin
+levels, coarse solution, deflation vectors and output projection as OA-VCB, and the contained fixed-interval Chebyshev member
+is within a few per cent of it, so the margins of Section~\ref{sec:accuracy} measure what four learned update stages per
+smoother add to one pass through this cycle. That contribution is reproducible across data seeds and training
+initialisations, and the ablations locate parts of it under this training protocol: the adapted hierarchy materially improves
+the learned cycle (the direct comparison with geometric transfers gives $1.9$ on channels and $4.1$ on barriers), learning
+already helps within the residual-linear class ($2.6$--$2.7$ on channels), and the nonlinearity adds a further $3.4$--$3.8$.
+The baseline tables of \appref{app:baselines} are supporting context, not evidence for this attribution. The comparison does
+not show that the learned pass approximates $A^{-1}$ in any uniform sense.
+
+\paragraph{Why the one-pass advantage does not buy a solver advantage.} Equal update count is a controlled architectural
+comparison, not equal work. Additional classical smoothing is cheap on the operator-adapted hierarchy, and with it the margin
+falls to $1.8$ on channels and reverses on barriers by the paired metric; three classical passes are more accurate than the
+learned pass on both families at about a third of its time (Section~\ref{sec:avt}). Against converged-to-target solvers the gap is one to two
+orders of magnitude and grows with the mesh (Section~\ref{sec:cost}); because the network inference alone exceeds a complete
+two-grid PCG solve including its set-up, no number of repeated solves amortises training on the tested configurations.
+Operator reuse across many right-hand sides and batched GPU execution remain untested and would have to be measured against
+equally optimised classical implementations; a correction that is nonlinear in the load would also need a suitable outer
+method if used inside an iteration. The operator complexity of the hierarchy ($4.5$ for three levels, $8.6$ for four) would
+limit the approach in three dimensions or with more levels unless the prolongations are truncated, as in smoothed aggregation
+\cite{vanek1996}, which was not tested.
+
+\paragraph{Loads and floating islands.} The network is positively homogeneous but not linear in the residual. Trained with
+one load, it learns corrections for the residuals that this load produces and loses or reverses its advantage on others;
+training on a load distribution restores a six-fold margin on that distribution and on smooth loads of both signs, and a
+smaller, less uniform one for localised sources (Section~\ref{sec:rhs}). A correction linear in the residual for each fixed
+operator would enforce superposition and sign symmetry but would not by itself guarantee accuracy on unseen load directions,
+and the tested residual-linear smoothers recover only part of the gain. Indicator deflation improves the tested barrier
+models, while substantial error remains on island samples. The tested sequential harmonic enrichment removes only a modest
+part of that error; richer coarse spaces, for example contrast-robust spaces built from local spectral problems
+\cite{galvis2010,spillane2014geneo,chung2018cem,ma2022} or learned ones \cite{rudikov2025lsino}, are one plausible
+continuation, not a remedy established here.
+
+\paragraph{Implications for learned multilevel components.} Four observations bear on how learned components of
+multigrid methods are evaluated, beyond the tested implementation. First, a margin measured at one classical smoothing budget
+can overstate what learning adds: on the same hierarchy the paired margin fell from $10.2$ to $4.2$ and $1.8$ on channels, and
+from $2.1$ to $1.25$ and $0.82$ on barriers, as the Chebyshev degree rose from four to eight and sixteen
+(Section~\ref{sec:avt}), so learned smoothers should be compared across that budget. Second, the hierarchy and the learning
+interact, and should be varied separately: with geometric transfers the learned cycle was $1.9$ and $4.1$ times less
+accurate, and its margin over the classical reference on the same transfers was also smaller ($6.3$--$6.7$ instead of
+$9.7$--$10.2$ on channels, $1.48$ instead of $2.13$ on barriers; Table~\ref{tab:transfers}), so in this study the learned
+smoothers gained more on the operator-adapted hierarchy than on the geometric one. Third, averages hide where a learned cycle
+fails: the error that remained on floating islands after learned smoothing and indicator deflation is visible only when those
+samples are reported separately (Section~\ref{sec:islands}). Fourth, a smoother that is nonlinear in the residual is trained
+for the residuals of its training loads, so those loads have to sample the loads of the intended use
+(Section~\ref{sec:rhs}). Finally, a one-pass accuracy gain at an equal update count does not by itself establish a
+computational benefit; that has to be shown at matched accuracy and cost (Section~\ref{sec:cost}).
+
+\paragraph{Scope.} All experiments are two-dimensional with $P_1$ elements; coefficient contrasts are $10^4$ for the
+isotropic families, tow coefficients $100$ and $5$ against a unit background for the anisotropic case and a stiffness ratio
+of $100$ for the preliminary elasticity case; one family of perforated domains and one polygon are used; models were trained
+on meshes of at most 14{,}398 unknowns, and one was applied without retraining to meshes of up to 235{,}774 unknowns, where its
+margin shrinks. The learned baselines are adaptations of published architectures to this setting.
+
+\section{Conclusion}\label{sec:conclusion}
+We asked what learned smoothing adds to one pass of a multigrid cycle whose transfers, coarse operators, coarsest solve and
+deflation vectors are computed from each operator. With four update stages per smoother, the learned pass is about ten times
+more accurate in the energy norm than a degree-four Chebyshev-smoothed pass on the same hierarchy for conductive channels and
+about twice as accurate for insulating barriers, reproducibly across data seeds and training runs, and the adapted transfers,
+deflation, Galerkin output and nonlinearity each contribute. The same experiments bound the result. The margin shrinks quickly
+when the classical pass receives more smoothing, and three classical passes are more accurate at a third of the cost; the advantage
+depends on the training load; floating islands keep substantial error; and the implementation is much slower than converged
+classical solvers at matched accuracy. Learned smoothing is therefore a measurable source of accuracy within a prescribed
+multilevel pass, not yet a practical solver. The open challenge is a workload, and an implementation, in which that accuracy
+lowers the total cost of reaching a required tolerance.

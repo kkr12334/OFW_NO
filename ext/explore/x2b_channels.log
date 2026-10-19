@@ -1,0 +1,12 @@
+op 300: best K5 log error after 1500/3000/4500 iterations: -5.4122 / -5.4163 / -5.4163; 111 s
+op 301: best K5 log error after 1500/3000/4500 iterations: -5.1482 / -5.1502 / -5.1506; 210 s
+op 302: best K5 log error after 1500/3000/4500 iterations: -4.7933 / -4.7934 / -4.7934; 277 s
+op 303: best K5 log error after 1500/3000/4500 iterations: -4.9152 / -4.9166 / -4.9166; 367 s
+op 304: best K5 log error after 1500/3000/4500 iterations: -5.1625 / -5.1625 / -5.1625; 416 s
+op 305: best K5 log error after 1500/3000/4500 iterations: -5.0453 / -5.0457 / -5.0460; 499 s
+op 306: best K5 log error after 1500/3000/4500 iterations: -5.0369 / -5.0469 / -5.0485; 580 s
+op 307: best K5 log error after 1500/3000/4500 iterations: -5.2103 / -5.2104 / -5.2104; 675 s
+op 308: best K5 log error after 1500/3000/4500 iterations: -5.2440 / -5.2440 / -5.2440; 747 s
+op 309: best K5 log error after 1500/3000/4500 iterations: -4.7599 / -4.7608 / -4.7609; 843 s
+G(K5 oracle -> OA-VCB init0) after 1500 / 3000 / 4500 iterations: {1500: 2.3915165022156097, 3000: 2.3869863394018505, 4500: 2.3863779721212466}
+exit 0

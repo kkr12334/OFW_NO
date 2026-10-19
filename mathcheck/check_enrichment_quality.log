@@ -1,0 +1,46 @@
+Part 1: slowest mode of B balanced with the detector's indicator vectors
+  301 (island): lambda_min 0.3540; ||x||^2 on the island (35 unknowns) 0.456, on its 4-ring neighbourhood 0.543, elsewhere 0.001; inside the island std/|mean| 0.000
+    301 island      none (M alone)                 #vec 0  delta 0.9059  kappa  10.629
+    301 island      indicator (detector, A only)   #vec 1  delta 0.6460  kappa   2.825
+    301 island      indicator (geometric)          #vec 1  delta 0.6460  kappa   2.825
+    301 island      A-only ext, 2 rings            #vec 1  delta 0.3383  kappa   1.511  patch    69 unknowns, local solves    0.4 ms, ||z - z_global||_A/||z_global||_A 4.0e-01, cond(Z^T A Z) 1.0e+00
+    301 island      A-only ext, 4 rings            #vec 1  delta 0.3383  kappa   1.511  patch   167 unknowns, local solves    0.6 ms, ||z - z_global||_A/||z_global||_A 6.6e-02, cond(Z^T A Z) 1.0e+00
+    301 island      A-only ext, 8 rings            #vec 1  delta 0.3383  kappa   1.511  patch   424 unknowns, local solves    1.1 ms, ||z - z_global||_A/||z_global||_A 1.3e-02, cond(Z^T A Z) 1.0e+00
+    301 island      A-only ext, global             #vec 1  delta 0.3383  kappa   1.511  patch  3451 unknowns, local solves    8.0 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.0e+00
+    301 island      geometric ext, 4 rings         #vec 1  delta 0.3383  kappa   1.511  patch   167 unknowns, local solves    0.6 ms, ||z - z_global||_A/||z_global||_A 6.6e-02, cond(Z^T A Z) 1.0e+00
+    301 island      geometric ext, global          #vec 1  delta 0.3383  kappa   1.511  patch  3451 unknowns, local solves    9.5 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.0e+00
+  304 (island): lambda_min 0.2887; ||x||^2 on the island (200 unknowns) 0.686, on its 4-ring neighbourhood 0.314, elsewhere 0.000; inside the island std/|mean| 0.000
+    304 island      none (M alone)                 #vec 0  delta 0.9817  kappa  54.712
+    304 island      indicator (detector, A only)   #vec 1  delta 0.7113  kappa   3.464
+    304 island      indicator (geometric)          #vec 1  delta 0.7113  kappa   3.464
+    304 island      A-only ext, 2 rings            #vec 1  delta 0.2316  kappa   1.301  patch   134 unknowns, local solves    0.5 ms, ||z - z_global||_A/||z_global||_A 4.1e-01, cond(Z^T A Z) 1.0e+00
+    304 island      A-only ext, 4 rings            #vec 1  delta 0.1484  kappa   1.174  patch   294 unknowns, local solves    0.8 ms, ||z - z_global||_A/||z_global||_A 6.3e-02, cond(Z^T A Z) 1.0e+00
+    304 island      A-only ext, 8 rings            #vec 1  delta 0.1483  kappa   1.174  patch   633 unknowns, local solves    1.7 ms, ||z - z_global||_A/||z_global||_A 9.0e-03, cond(Z^T A Z) 1.0e+00
+    304 island      A-only ext, global             #vec 1  delta 0.1483  kappa   1.174  patch  3286 unknowns, local solves    9.3 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.0e+00
+    304 island      geometric ext, 4 rings         #vec 1  delta 0.1484  kappa   1.174  patch   294 unknowns, local solves    0.8 ms, ||z - z_global||_A/||z_global||_A 6.3e-02, cond(Z^T A Z) 1.0e+00
+    304 island      geometric ext, global          #vec 1  delta 0.1483  kappa   1.174  patch  3286 unknowns, local solves    9.2 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.0e+00
+  306 (island): lambda_min 0.2782; ||x||^2 on the island (140 unknowns) 0.631, on its 4-ring neighbourhood 0.369, elsewhere 0.001; inside the island std/|mean| 0.000
+    306 island      none (M alone)                 #vec 0  delta 0.9464  kappa  18.672
+    306 island      indicator (detector, A only)   #vec 1  delta 0.7218  kappa   3.594
+    306 island      indicator (geometric)          #vec 1  delta 0.7218  kappa   3.594
+    306 island      A-only ext, 2 rings            #vec 1  delta 0.2629  kappa   1.357  patch   133 unknowns, local solves    0.5 ms, ||z - z_global||_A/||z_global||_A 5.0e-01, cond(Z^T A Z) 1.0e+00
+    306 island      A-only ext, 4 rings            #vec 1  delta 0.2221  kappa   1.286  patch   298 unknowns, local solves    0.9 ms, ||z - z_global||_A/||z_global||_A 6.3e-02, cond(Z^T A Z) 1.0e+00
+    306 island      A-only ext, 8 rings            #vec 1  delta 0.2221  kappa   1.286  patch   633 unknowns, local solves    1.6 ms, ||z - z_global||_A/||z_global||_A 1.3e-02, cond(Z^T A Z) 1.0e+00
+    306 island      A-only ext, global             #vec 1  delta 0.2221  kappa   1.286  patch  3346 unknowns, local solves    9.4 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.0e+00
+    306 island      geometric ext, 4 rings         #vec 1  delta 0.2221  kappa   1.286  patch   298 unknowns, local solves    0.8 ms, ||z - z_global||_A/||z_global||_A 6.3e-02, cond(Z^T A Z) 1.0e+00
+    306 island      geometric ext, global          #vec 1  delta 0.2221  kappa   1.286  patch  3346 unknowns, local solves    8.3 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.0e+00
+  308 (island): lambda_min 0.3001; ||x||^2 on the island (25 unknowns) 0.465, on its 4-ring neighbourhood 0.534, elsewhere 0.000; inside the island std/|mean| 0.000
+  308 (island): lambda_min 0.3001; ||x||^2 on the island (8 unknowns) 0.000, on its 4-ring neighbourhood 0.000, elsewhere 1.000; inside the island std/|mean| 0.000
+    308 island      none (M alone)                 #vec 0  delta 0.9782  kappa  45.887
+    308 island      indicator (detector, A only)   #vec 2  delta 0.6999  kappa   3.333
+    308 island      indicator (geometric)          #vec 2  delta 0.6999  kappa   3.333
+    308 island      A-only ext, 2 rings            #vec 2  delta 0.2047  kappa   1.257  patch    90 unknowns, local solves    0.7 ms, ||z - z_global||_A/||z_global||_A 4.6e-01, cond(Z^T A Z) 1.6e+00
+    308 island      A-only ext, 4 rings            #vec 2  delta 0.1378  kappa   1.160  patch   210 unknowns, local solves    1.0 ms, ||z - z_global||_A/||z_global||_A 6.8e-02, cond(Z^T A Z) 1.4e+00
+    308 island      A-only ext, 8 rings            #vec 2  delta 0.1378  kappa   1.160  patch   552 unknowns, local solves    2.1 ms, ||z - z_global||_A/||z_global||_A 6.9e-03, cond(Z^T A Z) 1.4e+00
+    308 island      A-only ext, global             #vec 2  delta 0.1378  kappa   1.160  patch  6939 unknowns, local solves   17.1 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.4e+00
+    308 island      geometric ext, 4 rings         #vec 2  delta 0.1378  kappa   1.160  patch   210 unknowns, local solves    1.3 ms, ||z - z_global||_A/||z_global||_A 6.8e-02, cond(Z^T A Z) 1.4e+00
+    308 island      geometric ext, global          #vec 2  delta 0.1378  kappa   1.160  patch  6939 unknowns, local solves   33.1 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.4e+00
+    309 near-island none (M alone)                 #vec 0  delta 0.6974  kappa   3.304
+    309 near-island indicator (geometric)          #vec 2  delta 0.5290  kappa   2.123
+    309 near-island geometric ext, 4 rings         #vec 2  delta 0.5284  kappa   2.120  patch   590 unknowns, local solves    1.5 ms, ||z - z_global||_A/||z_global||_A 4.1e-03, cond(Z^T A Z) 1.7e+00
+    309 near-island geometric ext, global          #vec 2  delta 0.5284  kappa   2.120  patch  6499 unknowns, local solves   19.0 ms, ||z - z_global||_A/||z_global||_A 0.0e+00, cond(Z^T A Z) 1.7e+00

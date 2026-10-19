@@ -1,0 +1,14 @@
+perforated level 2: 814 unknowns, channels 1e4, Route V local
+  rho 2 sample 0: Ritz lmin 0.811812; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (0.2s)
+  rho 2 sample 1: Ritz lmin 0.876310; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (0.3s)
+  rho 2 sample 2: Ritz lmin 0.899130; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (0.3s)
+  rho 4 sample 0: Ritz lmin 0.999795; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (0.5s)
+  rho 4 sample 1: Ritz lmin 0.999735; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (0.3s)
+  rho 4 sample 2: Ritz lmin 0.999732; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (0.3s)
+perforated level 3: 3486 unknowns, channels 1e4, Route V local
+  rho 2 sample 0: Ritz lmin 0.660652; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (3.1s)
+  rho 2 sample 1: Ritz lmin 0.611345; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (3.0s)
+  rho 2 sample 2: Ritz lmin 0.681330; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (3.2s)
+  rho 4 sample 0: Ritz lmin 0.997592; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (4.1s)
+  rho 4 sample 1: Ritz lmin 0.988884; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (4.9s)
+  rho 4 sample 2: Ritz lmin 0.997600; PSD at 0.999*lmin: True; at 1.001*lmin: False  -> certified, Ritz value sharp  (3.8s)

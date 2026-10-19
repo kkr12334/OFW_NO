@@ -1,0 +1,2 @@
+# Keep every file byte-identical on checkout (no CRLF conversion), so RELEASE_SHA256.txt and the frozen *_SHA256.txt files verify.
+* -text

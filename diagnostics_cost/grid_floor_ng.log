@@ -1,0 +1,4 @@
+ng  63 ( 3969 grid pts): round trip energy  12.868  L2 0.159 | best in range(T) energy 0.345  L2 0.202
+ng  90 ( 8100 grid pts): round trip energy   9.412  L2 0.115 | best in range(T) energy 0.000  L2 0.000
+ng 126 (15876 grid pts): round trip energy   6.974  L2 0.082 | best in range(T) energy 0.000  L2 0.000
+ng 180 (32400 grid pts): round trip energy   4.736  L2 0.058 | best in range(T) energy 0.000  L2 0.000

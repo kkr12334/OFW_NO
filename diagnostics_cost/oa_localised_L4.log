@@ -1,0 +1,8 @@
+
+=== L4 channels (10000), 4 levels, test samples 300-309 ===
+  current (unlocalised)  nnz/row by level 7 / 78 / 550 / 174 / 28    op. complexity  8.57  build    729 ms  | V(4,4) from u_c 0.0432, from zero 0.1276
+  filtered, m = 4        nnz/row by level 7 / 78 / 104 / 76 / 27     op. complexity  4.73  build     81 ms  | V(4,4) from u_c 0.0481, from zero 0.2644
+  filtered, m = 2        nnz/row by level 7 / 33 / 46 / 38 / 17      op. complexity  2.63  build     29 ms  | V(4,4) from u_c 0.0495, from zero 0.2019
+  strength 0.01, m = 4   nnz/row by level 7 / 73 / 155 / 133 / 28    op. complexity  5.10  build    120 ms  | V(4,4) from u_c 0.0491, from zero 0.2691
+  strength 0.05, m = 4   nnz/row by level 7 / 69 / 95 / 67 / 25      op. complexity  4.34  build     83 ms  | V(4,4) from u_c 0.0501, from zero 0.2689
+  strength 0.2, m = 4    nnz/row by level 7 / 35 / 32 / 18 / 8       op. complexity  2.53  build     42 ms  | V(4,4) from u_c 0.0662, from zero 0.6765

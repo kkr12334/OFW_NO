@@ -1,0 +1,5 @@
+grid 63x63 (3459 points inside the domain) for 3486 mesh unknowns ; T: (3486, 3969)
+rank(T) = 3140 of 3486 interior nodes (rank deficient)
+  detail t, round trip           energy 12.618 (min 9.854, max 16.086)   nodal rel-L2 0.155
+  u, round trip                  energy 6.481 (min 3.001, max 8.837)   nodal rel-L2 0.020
+  detail t, best in range(T)     energy 0.334 (min 0.235, max 0.514)   nodal rel-L2 0.188

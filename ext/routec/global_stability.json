@@ -1,0 +1,42 @@
+[
+ {
+  "family": "channels",
+  "contrast": 1.0,
+  "C_glob": 2.0696975650362077
+ },
+ {
+  "family": "channels",
+  "contrast": 100.0,
+  "C_glob": 2.132905180951768
+ },
+ {
+  "family": "channels",
+  "contrast": 10000.0,
+  "C_glob": 2.1367618018290115
+ },
+ {
+  "family": "channels",
+  "contrast": 1000000.0,
+  "C_glob": 2.136805703608629
+ },
+ {
+  "family": "barriers",
+  "contrast": 1.0,
+  "C_glob": 2.0696975650362077
+ },
+ {
+  "family": "barriers",
+  "contrast": 100.0,
+  "C_glob": 2.0586456791411583
+ },
+ {
+  "family": "barriers",
+  "contrast": 10000.0,
+  "C_glob": 2.058248026423025
+ },
+ {
+  "family": "barriers",
+  "contrast": 1000000.0,
+  "C_glob": 2.0582435653654496
+ }
+]

@@ -1,0 +1,36 @@
+% Submission master (Elsevier, CMAME; journal confirmed 11 Oct 2026).  elsarticle.cls / elsarticle-num.bst (CTAN 2026) are included
+% in this folder; Overleaf and TeX Live also provide them.
+% Local compile check without elsarticle: check.tex (same sections, article class).
+\documentclass[preprint,12pt]{elsarticle}
+\input{preamble}
+% elsarticle appends a period to \paragraph headings; the sources already end them with one, so use the article-class form
+\makeatletter\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}{3.25ex \@plus1ex \@minus.2ex}{-1em}{\normalfont\normalsize\bfseries}}\makeatother
+% float placement (Astra, 11 Oct: tables drifted to the end): allow larger top floats and float pages
+\renewcommand{\topfraction}{0.85}\renewcommand{\bottomfraction}{0.6}\renewcommand{\textfraction}{0.1}\renewcommand{\floatpagefraction}{0.75}
+\setcounter{topnumber}{3}\setcounter{totalnumber}{5}
+\journal{Computer Methods in Applied Mechanics and Engineering}
+\begin{document}
+\begin{frontmatter}
+\title{Operator-adapted learned multigrid cycles for high-contrast elliptic problems: accuracy, failure modes and cost}
+\author[aff1]{Kumar Kaushik Ranjan\corref{cor1}}
+\ead{kumarr@tmi.tolani.edu}
+\cortext[cor1]{Corresponding author}
+% 13 Oct: affiliation and corresponding e-mail given by the author; postal address to be confirmed by the author.
+\affiliation[aff1]{organization={Department of Mechanical Engineering, Tolani Maritime Institute},
+            addressline={Induri, Talegaon Dabhade},
+            city={Pune},
+            postcode={410507},
+            state={Maharashtra},
+            country={India}}
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+\begin{keyword} operator learning \sep multigrid \sep operator-adapted wavelets \sep high contrast \sep deflation \sep finite elements \end{keyword}
+\end{frontmatter}
+\input{sections}
+\input{declarations}
+\input{sec_appendix}
+\clearpage   % 13 Oct (Astra): flush the appendix floats before the references begin
+\bibliographystyle{elsarticle-num}
+\bibliography{refs}
+\end{document}

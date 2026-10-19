@@ -1,0 +1,6 @@
+oa-vcb: E3 subset 20 samples: E0 0.0974  E2(rho 2) 0.0887 (R_cap +0.090)  E3 global 0.0803 (R_cap +0.176)
+member: E3 subset 20 samples: E0 0.1474  E2(rho 2) 0.1178 (R_cap +0.201)  E3 global 0.1021 (R_cap +0.307)
+labels: detector 42, geometric 39, both 39, detector only 3, geometric only 0
+island samples: islands per sample 1.43; patch size (rho 2) median 68; build E2 median 0.5 ms, apply median 0.4 ms, detect median 1.5 ms
+retained/nominal E2 columns: 120/120;  E4: 120/120; max scaled cond E2 2.8e+02; max |gain - gain check| / ||e||_A^2 6.8e-11
+non-island samples 58: max |E2 change| 0.0e+00 (empty by construction)

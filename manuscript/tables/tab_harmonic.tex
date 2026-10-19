@@ -1,0 +1,22 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Post-hoc harmonic enrichment of the frozen OA-VCB predictions (barriers; patch radius 2, fixed on the development set; the fresh confirmation set has 100 new operators per checkpoint). (a) Detector-positive samples / all samples; mean energy error before and after the local correction; $R = 1-\overline{e}_{\mathrm{after}}/\overline{e}_{\mathrm{before}}$ in \% [95\% CI]; $G_{24}$: paired ratio of the patch-indicator control's error to the harmonic correction's [95\% CI]. (b) Per-sample captured fraction of squared energy error, median [quartiles]; on the fixed global-reference subset (number of samples), $R$ of the local and of the global correction, in \%.}\label{tab:harmonic}
+{\small (a) Primary outcome}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllll}\toprule
+set & samples & $e$ before & $e$ after & $R$ (\%) & $G_{24}$ \\\midrule
+development (seed 1) & 42/100 & 0.0956 & 0.0876 & 8.3 [5.1, 12.3] & 1.10 [1.06, 1.13] \\
+retrospective (seeds 2, 3) & 92/200 & 0.1352 & 0.1170 & 13.5 [9.6, 17.9] & 1.15 [1.11, 1.19] \\
+fresh confirmation & 89/200 & 0.1219 & 0.1043 & 14.4 [9.8, 19.5] & 1.13 [1.09, 1.16] \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\par\medskip
+{\small (b) Captured fraction and local versus global extension}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllll}\toprule
+set & captured fraction & subset size & local $R$ (\%) & global $R$ (\%) \\\midrule
+development (seed 1) & 0.09 [0.03, 0.31] & 20 & 9.0 & 17.6 \\
+retrospective (seeds 2, 3) & 0.13 [0.03, 0.40] & 40 & 12.2 & 16.2 \\
+fresh confirmation & 0.12 [0.02, 0.33] & 40 & 10.9 & 20.9 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

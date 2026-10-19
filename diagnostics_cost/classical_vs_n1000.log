@@ -1,0 +1,26 @@
+TG-PCG: mean rel-L2 / energy after j its
+   0: 1.586e-01 / 0.3988
+   1: 8.159e-02 / 0.1951
+   2: 2.071e-02 / 0.0662
+   3: 8.632e-03 / 0.0263
+   4: 3.339e-03 / 0.0105
+   5: 1.339e-03 / 0.0044
+   6: 5.680e-04 / 0.0018
+   7: 2.367e-04 / 0.0008
+   8: 9.129e-05 / 0.0003
+   to match oa-ll-op n=1000 (seed 0) 6.89e-03/0.0186: median 4 its (min 3, max 4)
+   to match gnn-op n=1000 (seed 0) 1.18e-02/0.0253: median 4 its (min 3, max 4)
+   to match oa-ll-op n=400 (3 seeds) 9.99e-03/0.0240: median 4 its (min 3, max 4)
+AMG-PCG: mean rel-L2 / energy after j its
+   0: 1.586e-01 / 0.3988
+   1: 8.363e-02 / 0.1284
+   2: 3.188e-02 / 0.0470
+   3: 1.140e-02 / 0.0169
+   4: 3.728e-03 / 0.0061
+   5: 1.192e-03 / 0.0021
+   6: 3.726e-04 / 0.0008
+   7: 1.196e-04 / 0.0003
+   8: 4.894e-05 / 0.0001
+   to match oa-ll-op n=1000 (seed 0) 6.89e-03/0.0186: median 4 its (min 3, max 5)
+   to match gnn-op n=1000 (seed 0) 1.18e-02/0.0253: median 3 its (min 3, max 4)
+   to match oa-ll-op n=400 (3 seeds) 9.99e-03/0.0240: median 4 its (min 3, max 4)

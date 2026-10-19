@@ -1,0 +1,39 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Sensitivity of two fixed choices (classical reference unless stated; L3, $k_0=2$). (a) Detector thresholds on the barrier test sets of held-out seeds 1--3 (300 operators, 202 coefficient islands in total; an operator may contain several). Recall: islands whose indicator lies in $\operatorname{span}Z$ (relative Euclidean distance below $10^{-8}$), out of all islands. Precision: detected vectors with at least $90\%$ of their support inside one island, out of all detected vectors (no one-to-one matching, so the two numerators count different objects and need not agree). Mean reference energy error over all samples and over the island samples. (b) The trained barrier OA-VCB models (trained with $\theta=0.1$) evaluated with $Z$ from $\theta=0.1$ and $0.05$ ($\tau=0.05$), pooled seeds 1--3: mean energy errors, reference/OA-VCB $G$ [95\% CI] and $W$. (c) Number $m$ of Jacobi steps in the transfers, held-out seed 1: operator complexity $\sum_k\operatorname{nnz}(A_k)/\operatorname{nnz}(A_L)$ (median), hierarchy build time (median, one CPU), reference energy error and the paired geometric-mean ratio of its errors to those at $m=4$; the learned cycle was trained only with $m=4$ and $m=0$ (Table~\ref{tab:transfers}).}\label{tab:sensitivity}
+{\small (a) detector thresholds, classical reference}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllll}\toprule
+$\theta$ & $\tau$ & recall & precision & energy, all & energy, island samples \\\midrule
+0.05 & 0.02 & 202/202 & 202/203 & 7.86e-2 & 1.65e-1 \\
+0.05 & 0.05 & 202/202 & 202/203 & 7.86e-2 & 1.65e-1 \\
+0.05 & 0.1 & 202/202 & 202/203 & 7.86e-2 & 1.65e-1 \\
+0.1 & 0.02 & 195/202 & 197/204 & 8.11e-2 & 1.72e-1 \\
+0.1 & 0.05 (used) & 195/202 & 199/211 & 8.11e-2 & 1.72e-1 \\
+0.1 & 0.1 & 201/202 & 208/224 & 7.86e-2 & 1.66e-1 \\
+0.2 & 0.02 & 79/202 & 95/116 & 1.97e-1 & 4.43e-1 \\
+0.2 & 0.05 & 81/202 & 131/211 & 1.95e-1 & 4.39e-1 \\
+0.2 & 0.1 & 86/202 & 187/498 & 1.91e-1 & 4.30e-1 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\par\medskip
+{\small (b) trained OA-VCB with the detector of a smaller $\theta$}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllll}\toprule
+$\theta$ & OA-VCB & reference & $G$ [95\% CI] & $W$ \\\midrule
+0.1 & 5.80e-2 & 8.11e-2 & 2.00 [1.86, 2.14] & 0.88 \\
+0.05 & 5.53e-2 & 7.86e-2 & 2.03 [1.90, 2.17] & 0.89 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\par\medskip
+{\small (c) Jacobi steps in the transfers, classical reference}\par\smallskip
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllllll}\toprule
+$m$ & op.\ complexity & build (ms) & channels & $G$ vs $m=4$ & barriers & $G$ vs $m=4$ \\\midrule
+0 & 1.27 & 2 & 3.23e-2 & 1.24 & 1.23e-1 & 2.82 \\
+1 & 1.82 & 6 & 2.88e-2 & 1.11 & 1.02e-1 & 1.77 \\
+2 & 2.63 & 13 & 2.78e-2 & 1.07 & 9.23e-2 & 1.38 \\
+4 (used) & 4.54 & 56 & 2.59e-2 & 1.00 & 7.51e-2 & 1.00 \\
+8 & 7.44 & 232 & 2.42e-2 & 0.93 & 5.19e-2 & 0.70 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

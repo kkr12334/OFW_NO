@@ -1,0 +1,5 @@
+channels L4 id 0 c=1e+00 nk=0: 214s; worst M3 effectivity 1.345; gates passed 362
+channels L4 id 0 c=1e+04 nk=0: 211s; worst M3 effectivity 1.359; gates passed 362
+channels L4 id 1 c=1e+00 nk=0: 206s; worst M3 effectivity 1.344; gates passed 362
+channels L4 id 1 c=1e+04 nk=0: 211s; worst M3 effectivity 1.358; gates passed 362
+complete -> /home/claude/ofw/ext/routec/runs/pilot_channels_L4.json

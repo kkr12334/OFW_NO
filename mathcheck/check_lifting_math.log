@@ -1,0 +1,28 @@
+level 2: 814 unknowns, coarse 174, new 640, contrast 1e4 channels
+
+1. Congruence T^T A T (what operator-adapted wavelets do)
+   HB       off-diagonal block / ||K|| = 2.87e-01
+   adapted  off-diagonal block / ||K|| = 6.79e-17
+   HB coarse block == Galerkin P^T A P ?  diff 1.1e-16
+
+2. Similarity T^-1 A T (what an exactly-invertible lifting network represents)
+   HB       off-diagonal block / ||S|| = 2.91e-01
+   adapted  off-diagonal block / ||S|| = 2.13e-01
+   -> no local lifting can block-diagonalise A by similarity: that needs range(T_F) to be an
+      invariant subspace of A (eigenvectors, global).  Congruence needs only A-orthogonality (local).
+
+3. The classical solve u = T D^-1 T^T f uses TWO different liftings
+   (T^T f)_C - (f_C + P^T f_F) = 7.8e-18   (update step, predict 0)
+   T D^-1 T^T f vs direct solve: rel err 5.0e-16
+   T D^-1 T^-1 f (inverse pair)   : rel err 7.3e-01
+
+4. How far is the adapted predict from HB at contrast 1e4?
+   ||P_oa - P_hb||_F / ||P_hb||_F = 0.62
+   support: HB 1.6 coarse nodes per new node, adapted 9.8 (|w| > 1e-3 max); row sums HB 0.82, adapted 0.76
+
+5. Can a predict that sees only COARSE-node features represent P_oa?
+   355 of 1856 elements touch no coarse node
+   coefficient x1e3 on those elements only: coarse-node coefficient data changed? no
+   change of the adapted predict ||dP||/||P|| = 0.86
+   -> the adapted weights depend on fine-scale coefficient data that a lifting predict acting on
+      the transformed coarse features cannot see; it must be CONDITIONED on the operator separately.

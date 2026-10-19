@@ -1,0 +1,6 @@
+L3 (3486 unknowns) sample 0: direct solve 10.7 ms; rho2: build 56 ms + Galerkin 19.0 ms; rho3: build 137 ms + Galerkin 36.9 ms
+L3 (3486 unknowns) sample 1: direct solve 10.3 ms; rho2: build 46 ms + Galerkin 18.9 ms; rho3: build 135 ms + Galerkin 35.7 ms
+L3 (3486 unknowns) sample 2: direct solve 10.1 ms; rho2: build 47 ms + Galerkin 19.4 ms; rho3: build 168 ms + Galerkin 36.2 ms
+L4 (14398 unknowns) sample 0: direct solve 59.5 ms; rho2: build 557 ms + Galerkin 186.4 ms; rho3: build 920 ms + Galerkin 403.5 ms
+L4 (14398 unknowns) sample 1: direct solve 59.1 ms; rho2: build 522 ms + Galerkin 184.7 ms; rho3: build 972 ms + Galerkin 396.1 ms
+L4 (14398 unknowns) sample 2: direct solve 57.4 ms; rho2: build 518 ms + Galerkin 177.5 ms; rho3: build 924 ms + Galerkin 393.9 ms

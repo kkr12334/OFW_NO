@@ -1,0 +1,20 @@
+
+L3 (k0 2, 3486 unknowns), 10 samples, CPU medians: direct 11.2 ms, Galerkin coarse solve 3.0 ms; per iteration: TG-PCG 0.21, J-PCG 0.07, AMG-PCG 0.71 ms (+ AMG setup 9.5 ms)
+  oa-ll-op target 9.99e-03 / 0.024
+  TG-PCG   mean err after j its (rel-L2/energy): 0:1.6e-01/0.399 1:8.2e-02/0.195 2:2.1e-02/0.066 3:8.6e-03/0.026 5:1.3e-03/0.004 8:9.1e-05/0.000
+           iterations to reach the target: median 4 (max 4, 10/10 reached in 30); cost from u_c ~ 0.8 ms + coarse 3.0 ms
+  J-PCG    mean err after j its (rel-L2/energy): 0:1.6e-01/0.399 1:1.5e-01/0.282 2:1.4e-01/0.224 3:1.3e-01/0.188 5:1.1e-01/0.141 8:8.8e-02/0.099
+           iterations to reach the target: median 26 (max 28, 7/10 reached in 30); cost from u_c ~ 1.9 ms + coarse 3.0 ms
+  AMG-PCG  mean err after j its (rel-L2/energy): 0:1.6e-01/0.399 1:8.4e-02/0.128 2:3.2e-02/0.047 3:1.1e-02/0.017 5:1.2e-03/0.002 8:4.9e-05/0.000
+           iterations to reach the target: median 4 (max 4, 10/10 reached in 30); cost from u_c ~ 12.3 ms + coarse 3.0 ms
+  oa-ll-op forward, batch 1, same CPU: 40.8 ms (33,163 params)  + residual/weights (one mat-vec) + coarse 3.0 ms
+
+L4 (k0 3, 14398 unknowns), 10 samples, CPU medians: direct 60.7 ms, Galerkin coarse solve 12.2 ms; per iteration: TG-PCG 0.91, J-PCG 0.30, AMG-PCG 1.93 ms (+ AMG setup 27.8 ms)
+  oa-ll-op target 8.09e-03 / 0.026
+  TG-PCG   mean err after j its (rel-L2/energy): 0:7.9e-02/0.280 1:4.3e-02/0.144 2:1.2e-02/0.055 3:6.2e-03/0.027 5:1.2e-03/0.006 8:1.0e-04/0.001
+           iterations to reach the target: median 4 (max 4, 10/10 reached in 30); cost from u_c ~ 3.2 ms + coarse 12.2 ms
+  J-PCG    mean err after j its (rel-L2/energy): 0:7.9e-02/0.280 1:7.7e-02/0.203 2:7.4e-02/0.165 3:7.2e-02/0.142 5:6.8e-02/0.113 8:6.1e-02/0.088
+           iterations to reach the target: median nan (max n/a, 0/10 reached in 30); cost from u_c ~ nan ms + coarse 12.2 ms
+  AMG-PCG  mean err after j its (rel-L2/energy): 0:7.9e-02/0.280 1:5.4e-02/0.106 2:2.7e-02/0.047 3:1.3e-02/0.021 5:2.7e-03/0.005 8:2.8e-04/0.001
+           iterations to reach the target: median 4 (max 5, 10/10 reached in 30); cost from u_c ~ 35.5 ms + coarse 12.2 ms
+  oa-ll-op forward, batch 1, same CPU: 122.8 ms (13,215 params)  + residual/weights (one mat-vec) + coarse 12.2 ms

@@ -1,0 +1,14 @@
+seed 1 (74711e0cb3, code f8653612eb84): energy 7.6192e-03 (GPU log 7.6190e-03, rel diff +2.8e-05); plain 7.7383e-03; worse than u=0: 0
+seed 2 (962c1c2e4f, code f8653612eb84): energy 7.5760e-03 (GPU log 7.5760e-03, rel diff -4.5e-06); plain 7.7067e-03; worse than u=0: 0
+seed 3 (e86afa9d01, code f8653612eb84): energy 8.1331e-03 (GPU log 8.1330e-03, rel diff +7.3e-06); plain 8.2784e-03; worse than u=0: 0
+-> /home/claude/ofw/diagnostics_cost/k0_0_oa-vcb_reeval.jsonl
+  oa-vcb    mean 7.6192e-03: member / model G 11.39 [10.95, 11.83], W 1.00; PCG+V(4,4) its to match median 3 (2-3), two-grid PCG 5 (4-7)
+  oa-vcb    mean 7.5760e-03: member / model G 10.91 [10.35, 11.44], W 1.00; PCG+V(4,4) its to match median 3 (2-3), two-grid PCG 5 (4-6)
+  oa-vcb    mean 8.1331e-03: member / model G 10.82 [10.40, 11.26], W 1.00; PCG+V(4,4) its to match median 3 (2-3), two-grid PCG 5 (5-7)
+k0 0 baselines, driver --reeval on CPU (records re_k00/results_*.jsonl):
+  seed 1 oa-ll-op  mean 8.1754e-02  model/OA-VCB G 11.04 [10.51,11.59] W 1.00;  member/model G 1.03 W 0.55
+  seed 1 gnn-op    mean 1.8588e-01  model/OA-VCB G 24.73 [23.45,26.15] W 1.00;  member/model G 0.46 W 0.00
+  seed 2 oa-ll-op  mean 7.8106e-02  model/OA-VCB G 10.74 [10.22,11.25] W 1.00;  member/model G 1.02 W 0.62
+  seed 2 gnn-op    mean 1.8751e-01  model/OA-VCB G 25.29 [23.65,26.98] W 1.00;  member/model G 0.43 W 0.00
+  seed 3 oa-ll-op  mean 8.1349e-02  model/OA-VCB G 10.33 [9.81,10.89] W 1.00;  member/model G 1.05 W 0.68
+  seed 3 gnn-op    mean 1.8685e-01  model/OA-VCB G 23.52 [22.08,25.13] W 1.00;  member/model G 0.46 W 0.00

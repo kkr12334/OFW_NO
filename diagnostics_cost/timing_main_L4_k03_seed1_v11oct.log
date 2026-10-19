@@ -1,0 +1,19 @@
+L4, k0 3, held-out data seed 1, 14398 unknowns, 100 test samples (ids 300-399), CPU 2 threads, min over 2 repeats
+
+oa-vcb (ckpt_b68267e41f_oa-vcb.pt, code f8653612eb84): mean energy error 2.2147e-03 (median 1.9294e-03); stored record reproduced to max rel diff 5.4e-06
+
+per-sample cost on this CPU, ms: mean (median).  u_c = level-3 Galerkin factor + solve:     9.59 (9.49)  [included in every row that starts from u_c]
+method                                                     energy err (mean)             ms/sample   notes
+fine-matrix assembly, common to all methods (excluded)                                 5.36 (5.32)   every row below starts from the assembled matrix
+oa-vcb, operator data (hierarchy + Galerkin levels + Z)                            841.27 (841.27)   per sample, from assembled A; + 871 ms once per mesh (patterns)
+  [10 Oct boundary: operator data incl. re-assembly]                               848.43 (848.43)   not used; operator data identical to max abs diff 0.0e+00
+oa-vcb, inference batch 8 (torch CPU)                                            1560.97 (1560.97)
+oa-vcb, inference batch 1 (torch CPU)                                            1461.85 (1461.85)
+oa-vcb TOTAL = u_c + operator data + inference (batch 8)           2.215e-03     2411.83 (2411.73)   batch 1:  2312.71 (2312.61)
+classical member, one pass (setup incl.) from u_c                  2.008e-02       769.13 (766.62)   G(member/oa-vcb) 9.72
+two-grid PCG (weighted Jacobi(1,1) + level-3 Galerkin), to oa-vcb error         (matched)         24.66 (24.54)   its median 6 (range 4-8), setup incl.
+SA-AMG PCG (pyamg 5.x defaults, V-cycle), to oa-vcb error          (matched)         41.54 (42.15)   its median 6 (range 4-7), setup incl.
+PCG + classical op.-adapted V(4,4) preconditioner, to oa-vcb error         (matched)       794.10 (785.80)   its median 3 (range 2-3), setup incl.
+direct (SuperLU factor + solve, exact)                                ~1e-15         48.11 (47.51)   does not use u_c
+
+ratios (mean time): oa-vcb total batch 8 / two-grid PCG 97.8, / SA-AMG PCG 58.1, / direct 50.1

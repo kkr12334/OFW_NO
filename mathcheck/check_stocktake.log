@@ -1,0 +1,19 @@
+1. linearisation about the interface: lowest eigenvalues [-0.      1.5     2.0017  2.0069]  (theory 0, 1.5, then >= 2)
+
+2. L2 perforated (Dirichlet), finest Route V block A_FF (640 new nodes): kappa(diag^-1 A_FF), lambda_min, lambda_max
+   homogeneous                                               8.91   2.048e-01  1.825
+   constant on coarse elements, log-uniform 1e-4..1e4       13.64   1.460e-01  1.991
+   channels 1e4 (fine centroids; the benchmark)             10.85   1.687e-01  1.831
+   adversarial: middle child 1e4, corner children 1        164.49   1.367e-02  2.249
+   adversarial: middle child 1, corner children 1e4          6.66   2.623e-01  1.748
+   elasticity L2, 2x2 block diagonal of A_FF:
+   homogeneous                                              21.60   9.619e-02  2.078
+   constant on coarse elements, log-uniform 1e-4..1e4       41.22   5.112e-02  2.107
+   adversarial: middle child 1e4, corner children 1      11193.82   2.492e-04  2.789
+
+2. L3 perforated (Dirichlet), finest Route V block A_FF (2672 new nodes): kappa(diag^-1 A_FF), lambda_min, lambda_max
+   homogeneous                                              11.63   1.642e-01  1.910
+   constant on coarse elements, log-uniform 1e-4..1e4       15.70   1.268e-01  1.991
+   channels 1e4 (fine centroids; the benchmark)             11.52   1.645e-01  1.896
+   adversarial: middle child 1e4, corner children 1        693.36   3.541e-03  2.455
+   adversarial: middle child 1, corner children 1e4          8.24   2.173e-01  1.790

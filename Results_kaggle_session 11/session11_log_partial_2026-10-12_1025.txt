@@ -1,0 +1,102 @@
+26.2s	636	wavelet backend pytorch_wavelets
+86.3s	637	03:21 zs_L5 None 
+86.3s	638	03:21 zs_L6 None 
+146.3s	639	03:22 zs_L5 None L5: 58494 unknowns, 4 cycle levels, k0 4; data ready (76s)
+146.3s	640	03:22 zs_L6 None 
+206.3s	641	03:23 zs_L5 None L5: 58494 unknowns, 4 cycle levels, k0 4; data ready (76s)
+206.3s	642	03:23 zs_L6 None L6: 235774 unknowns, 4 cycle levels, k0 5; data ready (154s)
+266.3s	643	03:24 zs_L5 None L5: 58494 unknowns, 4 cycle levels, k0 4; data ready (76s)
+266.3s	644	03:24 zs_L6 None L6: 235774 unknowns, 4 cycle levels, k0 5; data ready (154s)
+326.3s	645	03:25 zs_L5 None samples 300-301: OA-VCB 1.603e-03  reference 1.070e-02  (64.2 s/sample, operator data + inference)
+326.3s	646	03:25 zs_L6 None L6: 235774 unknowns, 4 cycle levels, k0 5; data ready (154s)
+926.3s	647	03:35 zs_L5 None samples 306-307: OA-VCB 1.511e-03  reference 1.619e-02  (65.3 s/sample, operator data + inference)
+926.3s	648	03:35 zs_L6 None L6: 235774 unknowns, 4 cycle levels, k0 5; data ready (154s)
+1526.3s	649	03:45 zs_L5 None samples 314-315: OA-VCB 2.965e-03  reference 1.780e-02  (65.3 s/sample, operator data + inference)
+1526.3s	650	03:45 zs_L6 None L6: 235774 unknowns, 4 cycle levels, k0 5; data ready (154s)
+2126.3s	651	03:55 zs_L5 None samples 320-321: OA-VCB 1.520e-03  reference 1.462e-02  (64.8 s/sample, operator data + inference)
+2126.3s	652	03:55 zs_L6 None L6: 235774 unknowns, 4 cycle levels, k0 5; data ready (154s)
+2726.3s	653	04:05 zs_L5 None samples 326-327: OA-VCB 1.518e-03  reference 1.552e-02  (64.1 s/sample, operator data + inference)
+2726.3s	654	04:05 zs_L6 None samples 300-300: OA-VCB 1.026e-02  reference 1.086e-02  (1400.2 s/sample, operator data + inference)
+3326.3s	655	04:15 zs_L5 None samples 334-335: OA-VCB 1.861e-03  reference 1.778e-02  (64.4 s/sample, operator data + inference)
+3326.3s	656	04:15 zs_L6 None samples 300-300: OA-VCB 1.026e-02  reference 1.086e-02  (1400.2 s/sample, operator data + inference)
+3926.4s	657	04:25 zs_L5 None samples 340-341: OA-VCB 1.777e-03  reference 1.684e-02  (64.0 s/sample, operator data + inference)
+3926.4s	658	04:25 zs_L6 None samples 300-300: OA-VCB 1.026e-02  reference 1.086e-02  (1400.2 s/sample, operator data + inference)
+4526.4s	659	04:35 zs_L5 None samples 346-347: OA-VCB 1.257e-03  reference 1.133e-02  (63.7 s/sample, operator data + inference)
+4526.4s	660	04:35 zs_L6 None samples 301-301: OA-VCB 1.691e-03  reference 8.690e-03  (1397.8 s/sample, operator data + inference)
+5126.4s	661	04:45 zs_L5 None samples 354-355: OA-VCB 8.041e-03  reference 2.143e-02  (64.8 s/sample, operator data + inference)
+5126.4s	662	04:45 zs_L6 None samples 301-301: OA-VCB 1.691e-03  reference 8.690e-03  (1397.8 s/sample, operator data + inference)
+5726.4s	663	04:55 zs_L5 None samples 360-361: OA-VCB 1.313e-03  reference 1.187e-02  (65.9 s/sample, operator data + inference)
+5726.4s	664	04:55 zs_L6 None samples 301-301: OA-VCB 1.691e-03  reference 8.690e-03  (1397.8 s/sample, operator data + inference)
+6326.4s	665	05:05 zs_L5 None samples 366-367: OA-VCB 3.651e-03  reference 1.305e-02  (64.3 s/sample, operator data + inference)
+6326.4s	666	05:05 zs_L6 None samples 301-301: OA-VCB 1.691e-03  reference 8.690e-03  (1397.8 s/sample, operator data + inference)
+6926.4s	667	05:15 zs_L5 None samples 374-375: OA-VCB 1.463e-03  reference 1.450e-02  (65.7 s/sample, operator data + inference)
+6926.4s	668	05:15 zs_L6 None samples 302-302: OA-VCB 4.190e-03  reference 1.503e-02  (1405.9 s/sample, operator data + inference)
+7526.4s	669	05:25 zs_L5 None samples 380-381: OA-VCB 1.386e-03  reference 1.242e-02  (63.5 s/sample, operator data + inference)
+7526.4s	670	05:25 zs_L6 None samples 302-302: OA-VCB 4.190e-03  reference 1.503e-02  (1405.9 s/sample, operator data + inference)
+8126.4s	671	05:35 zs_L5 None samples 388-389: OA-VCB 1.569e-03  reference 1.433e-02  (64.0 s/sample, operator data + inference)
+8126.4s	672	05:35 zs_L6 None samples 302-302: OA-VCB 4.190e-03  reference 1.503e-02  (1405.9 s/sample, operator data + inference)
+8726.4s	673	05:45 zs_L5 None samples 394-395: OA-VCB 1.443e-03  reference 1.334e-02  (63.3 s/sample, operator data + inference)
+8726.4s	674	05:45 zs_L6 None samples 303-303: OA-VCB 2.801e-03  reference 1.508e-02  (1402.9 s/sample, operator data + inference)
+9326.4s	675	05:55 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+9326.4s	676	05:55 zs_L6 None samples 303-303: OA-VCB 2.801e-03  reference 1.508e-02  (1402.9 s/sample, operator data + inference)
+9926.4s	677	06:05 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+9926.4s	678	06:05 zs_L6 None samples 303-303: OA-VCB 2.801e-03  reference 1.508e-02  (1402.9 s/sample, operator data + inference)
+10526.4s	679	06:15 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+10526.4s	680	06:15 zs_L6 None samples 304-304: OA-VCB 2.458e-03  reference 1.040e-02  (1378.3 s/sample, operator data + inference)
+11126.4s	681	06:25 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+11126.4s	682	06:25 zs_L6 None samples 304-304: OA-VCB 2.458e-03  reference 1.040e-02  (1378.3 s/sample, operator data + inference)
+11726.5s	683	06:35 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+11726.5s	684	06:35 zs_L6 None samples 304-304: OA-VCB 2.458e-03  reference 1.040e-02  (1378.3 s/sample, operator data + inference)
+12326.4s	685	06:45 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+12326.5s	686	06:45 zs_L6 None samples 304-304: OA-VCB 2.458e-03  reference 1.040e-02  (1378.3 s/sample, operator data + inference)
+12926.5s	687	06:55 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+12926.5s	688	06:55 zs_L6 None samples 305-305: OA-VCB 2.494e-03  reference 1.190e-02  (1349.7 s/sample, operator data + inference)
+13526.5s	689	07:05 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+13526.5s	690	07:05 zs_L6 None samples 305-305: OA-VCB 2.494e-03  reference 1.190e-02  (1349.7 s/sample, operator data + inference)
+14126.5s	691	07:15 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+14126.5s	692	07:15 zs_L6 None samples 305-305: OA-VCB 2.494e-03  reference 1.190e-02  (1349.7 s/sample, operator data + inference)
+14726.5s	693	07:25 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+14726.5s	694	07:25 zs_L6 None samples 306-306: OA-VCB 1.675e-03  reference 1.037e-02  (1357.8 s/sample, operator data + inference)
+15326.5s	695	07:35 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+15326.5s	696	07:35 zs_L6 None samples 306-306: OA-VCB 1.675e-03  reference 1.037e-02  (1357.8 s/sample, operator data + inference)
+15926.5s	697	07:45 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+15926.5s	698	07:45 zs_L6 None samples 306-306: OA-VCB 1.675e-03  reference 1.037e-02  (1357.8 s/sample, operator data + inference)
+16526.5s	699	07:55 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+16526.6s	700	07:55 zs_L6 None samples 306-306: OA-VCB 1.675e-03  reference 1.037e-02  (1357.8 s/sample, operator data + inference)
+17126.5s	701	08:05 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+17126.5s	702	08:05 zs_L6 None samples 307-307: OA-VCB 2.302e-03  reference 1.395e-02  (1366.9 s/sample, operator data + inference)
+17726.5s	703	08:15 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+17726.5s	704	08:15 zs_L6 None samples 307-307: OA-VCB 2.302e-03  reference 1.395e-02  (1366.9 s/sample, operator data + inference)
+18326.5s	705	08:25 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+18326.5s	706	08:25 zs_L6 None samples 307-307: OA-VCB 2.302e-03  reference 1.395e-02  (1366.9 s/sample, operator data + inference)
+18926.5s	707	08:35 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+18926.5s	708	08:35 zs_L6 None samples 308-308: OA-VCB 5.533e-03  reference 9.212e-03  (1368.3 s/sample, operator data + inference)
+19526.6s	709	08:45 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+19526.6s	710	08:45 zs_L6 None samples 308-308: OA-VCB 5.533e-03  reference 9.212e-03  (1368.3 s/sample, operator data + inference)
+20126.6s	711	08:55 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+20126.6s	712	08:55 zs_L6 None samples 308-308: OA-VCB 5.533e-03  reference 9.212e-03  (1368.3 s/sample, operator data + inference)
+20726.6s	713	09:05 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+20726.6s	714	09:05 zs_L6 None samples 309-309: OA-VCB 3.417e-03  reference 1.397e-02  (1349.7 s/sample, operator data + inference)
+21326.6s	715	09:15 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+21326.6s	716	09:15 zs_L6 None samples 309-309: OA-VCB 3.417e-03  reference 1.397e-02  (1349.7 s/sample, operator data + inference)
+25.3s	717	/usr/local/lib/python3.13/dist-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+25.3s	718	  from pkg_resources import resource_stream
+25.5s	719	/usr/local/lib/python3.13/dist-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+25.5s	720	  from pkg_resources import resource_stream
+25.5s	721	
+25.5s	722	/usr/local/lib/python3.13/dist-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+25.5s	723	  from pkg_resources import resource_stream
+21926.6s	724	09:25 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+21926.6s	725	09:25 zs_L6 None samples 309-309: OA-VCB 3.417e-03  reference 1.397e-02  (1349.7 s/sample, operator data + inference)
+22526.6s	726	09:35 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+22526.6s	727	09:35 zs_L6 None samples 309-309: OA-VCB 3.417e-03  reference 1.397e-02  (1349.7 s/sample, operator data + inference)
+23126.6s	728	09:45 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+23126.6s	729	09:45 zs_L6 None samples 310-310: OA-VCB 1.994e-03  reference 7.771e-03  (1354.9 s/sample, operator data + inference)
+23726.6s	730	09:55 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+23726.6s	731	09:55 zs_L6 None samples 310-310: OA-VCB 1.994e-03  reference 7.771e-03  (1354.9 s/sample, operator data + inference)
+24326.6s	732	10:05 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+24326.6s	733	10:05 zs_L6 None samples 310-310: OA-VCB 1.994e-03  reference 7.771e-03  (1354.9 s/sample, operator data + inference)
+24926.6s	734	10:15 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+24926.6s	735	10:15 zs_L6 None samples 311-311: OA-VCB 2.397e-03  reference 8.959e-03  (1351.8 s/sample, operator data + inference)
+25526.6s	736	10:25 zs_L5 0 RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 2.0423e-03  reference 1.5107e-02  u_c 1.7942e-01  G 8.12 [7.50, 8.67]  W 1.00  worse than u_c 0
+25526.6s	737	10:25 zs_L6 None samples 311-311: OA-VCB 2.397e-03  reference 8.959e-03  (1351.8 s/sample, operator data + inference)

@@ -1,0 +1,1 @@
+{'level': 3, 'parent_triangles': 7424, 'coarse_triangles': 116, 'min_beta2': 0.11995412385678368, 'inv_min_beta': 2.8873033084575193, 'distinct_values_rounded_1e10': 114, 'max_spread_within_coarse_triangle': 2.0261570199409107e-14, 'min_beta2_over_coarse': 0.11995412385678368}

@@ -1,0 +1,21 @@
+channels id 300: reference L5 built 0s; J(u_5) = 3.028128e-04 +- 2.27e-04; J(u_h) = 2.760314e-04; eta5_u/|||u5||| 1.512e-01
+  exact (u_h, z_h)             MVY multilevel, fixed lifting  D: |rem| 1.08e-19 rad 4.14e-31 (rad/(e_u e_z)    nan) ok | C: rad 7.78e-04 rel 2.6e+00 ok  eta_u_tot/|||u-v|||<= 2.04 | 20s
+  exact (u_h, z_h)             G2, lifting-free               D: |rem| 1.08e-19 rad 3.69e-32 (rad/(e_u e_z)    nan) ok | C: rad 7.78e-04 rel 2.6e+00 ok  eta_u_tot/|||u-v|||<= 2.04 | 13s
+  exact (u_h, z_h)             OA2+Z, lifting-free            D: |rem| 1.08e-19 rad 1.05e-32 (rad/(e_u e_z)    nan) ok | C: rad 7.78e-04 rel 2.6e+00 ok  eta_u_tot/|||u-v|||<= 2.04 | 21s
+  exact (u_h, z_h)             joint optimum (reference)      D: |rem| 1.08e-19 rad 1.04e-32 (rad/(e_u e_z)    nan) ok | C: rad 7.78e-04 rel 2.6e+00 ok  eta_u_tot/|||u-v|||<= 2.04 | 10s
+  coarse (u_c, z_c)            MVY multilevel, fixed lifting  D: |rem| 1.69e-04 rad 4.45e-03 (rad/(e_u e_z)   5.30) ok | C: rad 2.95e-03 rel 9.7e+00 ok  eta_u_tot/|||u-v|||<= 1.57 | 20s
+  coarse (u_c, z_c)            G2, lifting-free               D: |rem| 1.69e-04 rad 1.71e-03 (rad/(e_u e_z)   2.04) ok | C: rad 2.36e-03 rel 7.8e+00 ok  eta_u_tot/|||u-v|||<= 1.48 | 12s
+  coarse (u_c, z_c)            OA2+Z, lifting-free            D: |rem| 1.69e-04 rad 1.10e-03 (rad/(e_u e_z)   1.30) ok | C: rad 1.59e-03 rel 5.3e+00 ok  eta_u_tot/|||u-v|||<= 1.24 | 22s
+  coarse (u_c, z_c)            joint optimum (reference)      D: |rem| 1.69e-04 rad 1.06e-03 (rad/(e_u e_z)   1.26) ok | C: rad 1.52e-03 rel 5.0e+00 ok  eta_u_tot/|||u-v|||<= 1.22 | 10s
+  OA-VCB primal, coarse dual   MVY multilevel, fixed lifting  D: |rem| 1.54e-07 rad 2.25e-04 (rad/(e_u e_z)  52.66) ok | C: rad 1.64e-03 rel 5.4e+00 ok  eta_u_tot/|||u-v|||<= 2.06 | 20s
+  OA-VCB primal, coarse dual   G2, lifting-free               D: |rem| 1.54e-07 rad 2.69e-05 (rad/(e_u e_z)   6.31) ok | C: rad 1.37e-03 rel 4.5e+00 ok  eta_u_tot/|||u-v|||<= 2.03 | 12s
+  OA-VCB primal, coarse dual   OA2+Z, lifting-free            D: |rem| 1.54e-07 rad 5.55e-06 (rad/(e_u e_z)   1.30) ok | C: rad 1.11e-03 rel 3.7e+00 ok  eta_u_tot/|||u-v|||<= 2.04 | 21s
+  OA-VCB primal, coarse dual   joint optimum (reference)      D: |rem| 1.54e-07 rad 5.39e-06 (rad/(e_u e_z)   1.26) ok | C: rad 1.08e-03 rel 3.6e+00 ok  eta_u_tot/|||u-v|||<= 2.04 | 10s
+  Jacobi-PCG 30 (both)         MVY multilevel, fixed lifting  D: |rem| 1.34e-06 rad 2.34e-03 (rad/(e_u e_z) 587.47) ok | C: rad 2.90e-03 rel 9.6e+00 ok  eta_u_tot/|||u-v|||<= 5.06 | 20s
+  Jacobi-PCG 30 (both)         G2, lifting-free               D: |rem| 1.34e-06 rad 1.02e-04 (rad/(e_u e_z)  25.78) ok | C: rad 8.69e-04 rel 2.9e+00 ok  eta_u_tot/|||u-v|||<= 2.12 | 12s
+  Jacobi-PCG 30 (both)         OA2+Z, lifting-free            D: |rem| 1.34e-06 rad 4.30e-06 (rad/(e_u e_z)   1.08) ok | C: rad 7.45e-04 rel 2.5e+00 ok  eta_u_tot/|||u-v|||<= 1.96 | 21s
+  Jacobi-PCG 30 (both)         joint optimum (reference)      D: |rem| 1.34e-06 rad 4.26e-06 (rad/(e_u e_z)   1.07) ok | C: rad 7.04e-04 rel 2.3e+00 ok  eta_u_tot/|||u-v|||<= 1.93 | 10s
+  10% noise (both)             MVY multilevel, fixed lifting  D: |rem| 8.85e-07 rad 3.70e-02 (rad/(e_u e_z) 1110.06) ok | C: rad 8.54e-03 rel 2.8e+01 ok  eta_u_tot/|||u-v|||<= 8.66 | 20s
+  10% noise (both)             G2, lifting-free               D: |rem| 8.85e-07 rad 1.93e-04 (rad/(e_u e_z)   5.78) ok | C: rad 9.92e-04 rel 3.3e+00 ok  eta_u_tot/|||u-v|||<= 2.12 | 18s
+  10% noise (both)             OA2+Z, lifting-free            D: |rem| 8.85e-07 rad 6.34e-05 (rad/(e_u e_z)   1.90) ok | C: rad 8.01e-04 rel 2.6e+00 ok  eta_u_tot/|||u-v|||<= 1.70 | 32s
+  10% noise (both)             joint optimum (reference)      D: |rem| 8.85e-07 rad 6.28e-05 (rad/(e_u e_z)   1.88) ok | C: rad 8.16e-04 rel 2.7e+00 ok  eta_u_tot/|||u-v|||<= 1.71 | 15s

@@ -1,0 +1,46 @@
+darcy, pores dirichlet, level 2: 814 unknowns (0 insulated pore nodes), contrast 1e+04, 300 samples, device cpu
+  direct solve 3 ms/sample
+  coarse Galerkin solve to level 1: 1 ms/sample; alone it gives rel-L2 2.830e-01, energy 5.302e-01
+/home/claude/w/OFW_NO/mesh_lifting.py:48: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/Context.cpp:848.)
+  Pk = torch.sparse_coo_tensor(np.vstack([Pn.row, Pn.col]), Pn.data.astype('float32'),
+  residual input + operator weights a_ij/a_ii built in 0s
+
+[oa-ll-op-lin] width 42, params 21,252  (2 lifting levels (640, 146 detail nodes), coarse 28)
+    oa-ll-op-lin ep    1/100  train mix 9.709e-01  (1s)
+    oa-ll-op-lin ep   16/100  train mix 3.294e-01  (18s)
+    oa-ll-op-lin ep   32/100  train mix 3.274e-01  (35s)
+    oa-ll-op-lin ep   48/100  train mix 3.261e-01  (51s)
+    oa-ll-op-lin ep   64/100  train mix 3.245e-01  (68s)
+    oa-ll-op-lin ep   80/100  train mix 3.235e-01  (85s)
+    oa-ll-op-lin ep   96/100  train mix 3.234e-01  (102s)
+    oa-ll-op-lin TRAIN rel-L2 1.133e-01  energy 1.419e-01  (first 75 training samples)
+    oa-ll-op-lin TEST  rel-L2 1.063e-01  energy 1.369e-01
+
+[oa-ll-op-nomlp] width 23, params 19,503  (2 lifting levels (640, 146 detail nodes), coarse 28)
+    oa-ll-op-nomlp ep    1/100  train mix 6.170e+00  (2s)
+    oa-ll-op-nomlp ep   16/100  train mix 6.946e-01  (36s)
+    oa-ll-op-nomlp ep   32/100  train mix 2.325e-01  (71s)
+    oa-ll-op-nomlp ep   48/100  train mix 1.675e-01  (107s)
+    oa-ll-op-nomlp ep   64/100  train mix 1.121e-01  (143s)
+    oa-ll-op-nomlp ep   80/100  train mix 9.061e-02  (179s)
+    oa-ll-op-nomlp ep   96/100  train mix 8.292e-02  (215s)
+    oa-ll-op-nomlp TRAIN rel-L2 2.272e-02  energy 4.587e-02  (first 75 training samples)
+    oa-ll-op-nomlp TEST  rel-L2 2.502e-02  energy 4.812e-02
+
+[oa-ll-op] width 19, params 20,403  (2 lifting levels (640, 146 detail nodes), coarse 28)
+    oa-ll-op   ep    1/100  train mix 1.134e+01  (3s)
+    oa-ll-op   ep   16/100  train mix 9.226e-01  (52s)
+    oa-ll-op   ep   32/100  train mix 3.235e-01  (105s)
+    oa-ll-op   ep   48/100  train mix 1.871e-01  (156s)
+    oa-ll-op   ep   64/100  train mix 1.267e-01  (209s)
+    oa-ll-op   ep   80/100  train mix 9.064e-02  (262s)
+    oa-ll-op   ep   96/100  train mix 8.015e-02  (315s)
+    oa-ll-op   TRAIN rel-L2 2.324e-02  energy 4.382e-02  (first 75 training samples)
+    oa-ll-op   TEST  rel-L2 2.474e-02  energy 4.522e-02
+
+
+RESULTS  darcy, pores dirichlet, level 2, contrast 1e+04, 225/75, 100 epochs, loss mix, k0 1
+model          params  rel-L2 (T)  energy (flux)  train s  infer ms
+oa-ll-op-lin   21,252   1.063e-01      1.369e-01      106      1.8
+oa-ll-op-nomlp   19,503   2.502e-02      4.812e-02      224      3.5
+oa-ll-op       20,403   2.474e-02      4.522e-02      328      4.2

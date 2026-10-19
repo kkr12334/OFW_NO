@@ -1,0 +1,264 @@
+{
+ "values": {
+  "ENGINE_DIFF": "3.1\u00b710\u207b\u00b9\u00b3",
+  "BETA_DIFF": "4.3\u00b710\u207b\u00b9\u2075",
+  "BETA_NT": "7424",
+  "BETA_NC": "116",
+  "BETA_MIN2": "0.1199541238568",
+  "BETA_INV": "2.8873",
+  "BETA_SPREAD": "2.0\u00b710\u207b\u00b9\u2074",
+  "CGLOB_MIN": "2.06",
+  "CGLOB_MAX": "2.14",
+  "SMK_T_ch3": "129",
+  "SMK_M_ch3": "3.1",
+  "SMK_G_ch3": "955",
+  "SMK_T_ch4": "180",
+  "SMK_M_ch4": "2.2",
+  "SMK_G_ch4": "360",
+  "SMK_T_ba3": "128",
+  "SMK_M_ba3": "3.1",
+  "SMK_G_ba3": "955",
+  "SMK_T_ba4": "175",
+  "SMK_M_ba4": "2.1",
+  "SMK_G_ba4": "360",
+  "FALLBACK_G": "3",
+  "FALLBACK_OA": "0",
+  "L3_COARSE": "814",
+  "L4_COARSE": "3486",
+  "SMK_TABLE": "| M0 (our MVY adaptation) | 33.82 | 20.22 |\n| M0\u2032 (PRVW variant) | 33.88 | 20.45 |\n| M1 (geometric, coarse Dirichlet hats) | 7.00 | 5.07 |\n| M1S (matched, no Z) | 5.93 | 1.39 |\n| M1SZ (matched control) | 5.93 | 1.39 |\n| M2 (geometric level L\u22122) | 14.72 | 18.26 |\n| **M3 (candidate)** | 1.37 | 1.35 |\n| M4 (M3 without Z) | 1.37 | 1.35 |\n| M5 (M3 with fixed lifting) | 30.91 | 17.11 |\n| M6 (global optimum) | 1.37 | 1.35 |",
+  "SMK_M0_ch": "34",
+  "SMK_ch_Q": "4.32",
+  "SMK_ch_M1SZ": "5.93",
+  "SMK_ch_M3": "1.37",
+  "SMK_ch_M1": "7.00",
+  "SMK_ch_Qpct": "332%",
+  "SMK_ba_Q": "1.03",
+  "SMK_ba_M1SZ": "1.39",
+  "SMK_ba_M3": "1.35",
+  "SMK_ba_M1": "5.07",
+  "SMK_ba_Qpct": "3%",
+  "J_MIN": "2.8\u00b710\u207b\u2074",
+  "J_MAX": "2.1\u00b710\u207b\u00b2",
+  "WORK_TABLE": "| M0 | 28 | 5,342 | 126,914 | 100,550 | \u2014 | 2,722,165 | 32 |\n| M1 | 814 | 1,038 | 95,116 | 15,805 | 3.0 | 3,238,523 | 96 |\n| M1SZ | 818 | 1,265 | 88,991 | 15,126 | 2.8 | 3,043,594 | 96 |\n| M2 | 174 | 286 | 97,912 | 13,010 | 3.0 | 5,956,196 | 384 |\n| M3 | 815 | 1,262 | 657,317 | 84,267 | 20.1 | 56,780,098 | 816 |\n| M5 | 815 | 1,262 | 657,317 | 448,699 | 20.1 | 31,641,160 | 816 |\n| M6 | \u2014 | 1 | 33,632 | 3,486 | 1 | 7,761,340 | 22,272 |",
+  "W_RATIO_M6": "7.3",
+  "W_RATIO_M1SZ": "19",
+  "PILOT_HOURS": "3.0",
+  "FID_N": "16 641",
+  "FID_NE": "33 792",
+  "FID_NC": "132",
+  "FID_E1": "0.45",
+  "FID_M1": "1.105",
+  "FID_J1": "1.012",
+  "FID_E2": "0.31",
+  "FID_M2": "1.164",
+  "FID_J2": "1.045",
+  "FID_E3": "0.22",
+  "FID_M3": "1.170",
+  "FID_J3": "1.034",
+  "FID_E6": "0.09",
+  "FID_M6": "1.136",
+  "FID_J6": "1.040",
+  "FID_M0M0P": "2.2\u00b710\u207b\u00b9\u2076",
+  "FID_LOSS": "13\u201316% (iterations 3 and 6, the ones PRVW report)",
+  "POL_MIN": "0.086",
+  "POL_MAX": "0.462",
+  "POL_ch_c": "3.97 \u2192 1.83",
+  "POL_ch_n": "0.0201 \u2192 0.00748",
+  "POL_ch_p": "0.0156 \u2192 0.00167",
+  "POL_ba_c": "43.1 \u2192 17.3",
+  "POL_ba_n": "5.16 \u2192 1.51",
+  "POL_ba_p": "1.72 \u2192 0.148",
+  "POL_ba_n_pct": "151%",
+  "POL_ba_n_eff": "1.20",
+  "DIV_DEF": "5.29\u00b710\u207b\u00b9\u00b9",
+  "MOM_DEF": "3.19\u00b710\u207b\u00b9\u00b2",
+  "ANALYSIS_SHA": "4683bd7037ed445aa1f69424bbc9cb66ae7c185e9f3412231ae6d9d7e42e0e16"
+ },
+ "checks": [
+  {
+   "name": "engine self-check passed",
+   "passed": true,
+   "detail": "3.1417000825061994e-13"
+  },
+  {
+   "name": "engine self-check used current rc_fast.py and rc_fem.py",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "beta: 1/sqrt(min beta^2) consistent",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "beta agrees with ASTRA audit to 1e-12",
+   "passed": true,
+   "detail": "-4.343747583845925e-15"
+  },
+  {
+   "name": "beta constant identical on descendants of each coarse triangle (spread < 1e-12)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "development C_glob below 1/beta_*",
+   "passed": true,
+   "detail": "2.136805703608629"
+  },
+  {
+   "name": "smoke channels L3: complete, every gate passed",
+   "passed": true,
+   "detail": "complete"
+  },
+  {
+   "name": "smoke channels L3: produced by the current code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "smoke channels L3: no numerical warnings and nothing else unexpected",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "smoke channels L4: complete, every gate passed",
+   "passed": true,
+   "detail": "complete"
+  },
+  {
+   "name": "smoke channels L4: produced by the current code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "smoke channels L4: no numerical warnings and nothing else unexpected",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "smoke barriers L3: complete, every gate passed",
+   "passed": true,
+   "detail": "complete"
+  },
+  {
+   "name": "smoke barriers L3: produced by the current code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "smoke barriers L3: no numerical warnings and nothing else unexpected",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "smoke barriers L4: complete, every gate passed",
+   "passed": true,
+   "detail": "complete"
+  },
+  {
+   "name": "smoke barriers L4: produced by the current code",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "smoke barriers L4: no numerical warnings and nothing else unexpected",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "fallback counts identical across smoke runs",
+   "passed": true,
+   "detail": "({3}, {0})"
+  },
+  {
+   "name": "channels development operator has no near-kernel (coarse dims are plain level spaces)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "11.3 statement: barriers Q <= 1.10 on the development operator (would read \"no benefit\")",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "11.3 statement: M1S equals M1SZ on barriers to 1% (Z not the cause)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "development goal values well above tau_abs = 1e-12 (> 1e-6)",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "11.3 barriers: M1SZ much closer to M3 than M1 (gap < 1/3 of M1 gap)",
+   "passed": true,
+   "detail": "(5.071328238033694, 1.3880504296990295, 1.35296349088598)"
+  },
+  {
+   "name": "11.3 channels: matched control remains far from M3 (ratio >= 2)",
+   "passed": true,
+   "detail": "4.32023141188636"
+  },
+  {
+   "name": "11.3: M3 not cheaper than the global optimum (LU nnz ratio > 1)",
+   "passed": true,
+   "detail": "7.315759649751203"
+  },
+  {
+   "name": "eight logged C_glob timings found",
+   "passed": true,
+   "detail": "[55.0, 104.0, 88.0, 101.0, 52.0, 56.0, 74.0, 51.0]"
+  },
+  {
+   "name": "fidelity: M0 = M0p on Poisson to round-off (K constant on level-1 elements)",
+   "passed": true,
+   "detail": "2.220446049250313e-16"
+  },
+  {
+   "name": "11.1 statement: in the pilot setting M0 and M0p differ (smoke, relative > 1e-6)",
+   "passed": true,
+   "detail": "0.09055514396186251"
+  },
+  {
+   "name": "polarization: every development interval contains J_h",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "polarization: half-width = (hi - lo)/2",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "11.2 statement \"a factor of 2-12\": 1/ratio within [2, 12]",
+   "passed": true,
+   "detail": "(2.164690988614311, 11.580417004375311)"
+  },
+  {
+   "name": "11.2 statement: M3 product efficiency on the learned barrier pair is near one (< 1.3)",
+   "passed": true,
+   "detail": "1.1996959468091877"
+  },
+  {
+   "name": "11.2 statement: the dual (coarse) input error is the larger factor of the product, e_z > e_u",
+   "passed": true,
+   "detail": "(0.012484716465975867, 7.048825081299012)"
+  },
+  {
+   "name": "analysis script ran on the smoke records",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "name": "every placeholder has a value",
+   "passed": true,
+   "detail": "[]"
+  },
+  {
+   "name": "no placeholder left in the rendered amendment",
+   "passed": true,
+   "detail": ""
+  }
+ ]
+}

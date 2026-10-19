@@ -1,0 +1,5 @@
+1. oa-ll  : inverse(forward(X)) - X = 3.3e-16 (float64)
+1. oa-ll-s: inverse(forward(X)) - X = 3.9e-16 (float64)
+2. oa-ll-s on level 4: output (2, 14398)
+2. oa-ll (per-level networks) refuses a deeper hierarchy, as it should
+3. MeshGNN permutation equivariance: max |f(Px) - P f(x)| = 6.0e-08

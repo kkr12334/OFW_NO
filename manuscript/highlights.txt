@@ -1,0 +1,6 @@
+Highlights (CMAME: 3-5 bullets, max. 85 characters each)
+- Operator-adapted transfers support a learned finite element multigrid cycle
+- Fixed polynomial smoothers are represented; output energy is safeguarded
+- Four-stage smoothing yields about ten-fold paired accuracy gains on channels
+- Stronger classical smoothing narrows or reverses the paired accuracy gain
+- Load dependence, island errors and matched-accuracy CPU costs limit use

@@ -1,0 +1,15 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Baselines on the published piecewise-constant Darcy benchmark of \cite{li2021fno} ($85\times85$, 1000 training and 100 test samples, 500 epochs, one training run each): mean (median) relative $L^2$ test error in per cent, the value published for the same architecture, and their ratio. Implementations: FNO-port, faithful port of \cite{li2021fno}; FNO-var, the simplified variant behind our FNO-op rows; MgNO-off, the official MgNO model classes \cite{he2024mgno}; Transolver-re, our re-implementation of \cite{wu2024transolver}; WNO-db4 and WNO-db6, ports of version 2.0.0 of the authors' WNO code with the db4 transform of the paper and the db6 transform of the repository; WNO-light, our light WNO layer. Published values: FNO \cite{li2021fno}; WNO, db4 with four levels \cite{tripura2023wno}; Transolver \cite{wu2024transolver}, obtained with 200 test samples and an additional gradient term in the loss. The MgNO paper \cite{he2024mgno} reports a different smooth Darcy data set, so no value is listed. ``Used in'': the rows of Tables~\ref{tab:channels} and~\ref{tab:barriers} (or the excluded run of Table~\ref{tab:excluded}) that use the same implementation.}\label{tab:published}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrlll}\toprule
+implementation & used in & params & rel.\ $L^2$ (\%) & published (\%) & ratio \\\midrule
+FNO-port & -- & 1{,}188{,}353 & 0.96 (0.88) & 1.08 & 0.88 \\
+FNO-var & FNO-op & 595{,}265 & 1.74 (1.60) & 1.08 & 1.61 \\
+MgNO-off & MgNO, MgNO-op & 645{,}828 & 0.70 (0.62) & -- & -- \\
+Transolver-re & Transolver-op & 976{,}961 & 1.22 (1.08) & 0.57 & 2.13 \\
+WNO-db4 & -- & 7{,}955{,}201 & 2.27 (2.10) & 0.84 & 2.70 \\
+WNO-db6 & excl. & 14{,}770{,}945 & 2.14 (2.03) & 0.84 & 2.55 \\
+WNO-light & WNO-op & 334{,}209 & 3.53 (3.31) & -- & -- \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

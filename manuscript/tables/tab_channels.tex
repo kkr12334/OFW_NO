@@ -1,0 +1,26 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Channels (contrast $10^4$, L3, $k_0=2$), held-out data seeds 1--3, 100 test operators each. Energy error: mean and sample s.d.\ of the three per-seed means; $G$: paired geometric-mean ratio of the classical reference's error to the model's over the pooled 300 samples; $W$: fraction of samples on which the model is more accurate than the reference. $^\dagger$ Grid models, through the grid bridge (Section~\ref{sec:baselines}).}\label{tab:channels}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrllll}\toprule
+model & params & energy (mean $\pm$ s.d.) & nodal rel.\ $\ell^2$ & $G$ [95\% CI] & $W$ \\\midrule
+OA-VCB (ours) & 20{,}672 & 2.75e-3 $\pm$ 1.85e-4 & 8.76e-4 & 9.89 [9.57, 10.20] & 1.00 \\
+OA-VC & 20{,}672 & 3.46e-3 $\pm$ 5.44e-4 & 1.09e-3 & 8.80 [8.45, 9.12] & 1.00 \\
+OA-Lift & 21{,}603 & 2.39e-2 $\pm$ 3.69e-4 & 1.01e-2 & 1.06 [1.04, 1.09] & 0.63 \\
+GNN-op & 20{,}273 & 3.01e-2 $\pm$ 6.76e-4 & 1.46e-2 & 0.84 [0.82, 0.86] & 0.19 \\
+GNN & 20{,}257 & 4.21e-2 $\pm$ 1.28e-3 & 1.60e-2 & 0.60 [0.58, 0.61] & 0.01 \\
+Transolver-op & 19{,}521 & 1.85e-1 $\pm$ 2.57e-3 & 5.30e-2 & 0.14 [0.13, 0.14] & 0.00 \\
+FNO-op$^\dagger$ & 18{,}561 & 6.57e-1 $\pm$ 5.42e-2 & 8.03e-2 & 0.04 [0.04, 0.04] & 0.00 \\
+WNO-op$^\dagger$ & 21{,}377 & 4.56e-1 $\pm$ 8.01e-3 & 5.16e-2 & 0.06 [0.06, 0.06] & 0.00 \\
+LiNO-op$^\dagger$ & 19{,}482 & 6.08e-1 $\pm$ 2.45e-2 & 4.67e-2 & 0.04 [0.04, 0.05] & 0.00 \\
+MgNO$^\dagger$ & 21{,}140 & 5.76e-1 $\pm$ 4.04e-2 & 4.95e-2 & 0.05 [0.04, 0.05] & 0.00 \\
+MgNO-op$^\dagger$ & 21{,}140 & 5.60e-1 $\pm$ 3.48e-3 & 4.84e-2 & 0.05 [0.05, 0.05] & 0.00 \\
+\midrule
+classical reference & -- & 2.57e-2 $\pm$ 6.95e-4 & 1.19e-2 & 1 & -- \\
+classical V(4,4), no defl./proj. & -- & 5.36e-2 $\pm$ 2.04e-3 & 3.31e-2 & 0.48 [0.47, 0.48] & 0.00 \\
+two-grid PCG, 4 its & -- & 1.14e-2 $\pm$ 3.47e-4 & 3.58e-3 & 2.34 [2.29, 2.40] & 1.00 \\
+two-grid PCG, 6 its & -- & 2.08e-3 $\pm$ 2.06e-5 & 5.97e-4 & 14.13 [13.49, 14.81] & 1.00 \\
+two-grid PCG, 8 its & -- & 3.78e-4 $\pm$ 2.45e-5 & 1.08e-4 & 89.30 [83.44, 95.72] & 1.00 \\
+$u_c$ alone & -- & 3.73e-1 $\pm$ 5.82e-3 & 1.44e-1 & 0.07 [0.07, 0.07] & 0.00 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

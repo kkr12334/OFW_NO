@@ -1,0 +1,27 @@
+L2: 1820 dofs, bands E_f/E_m 1e2, Galerkin coarse solve to level 1
+  ||A e - r|| / ||r|| = 2.6e-14   (error equation holds)
+  network (op_block 2) vs 4-step block-Jacobi iterate: max |diff| = 3.2e-16  (|x| ~ 2.5e-03)
+  frame rotation by 0.7 rad: block iterate  |R^T x - x'| / |x| = 2.7e-16;  point iterate 2.0e-01
+
+  lambda_max of D^-1 A (generalised eigenproblem), block bound 3, point bound 6:
+    bands 1e2    block 2.401   point 2.967
+    bands 1e4    block 2.534   point 2.918
+    fibres 1e3   block 2.766   point 3.262
+    homogeneous  block 2.401   point 2.915
+
+  ceiling of the class ||e - x_nu||_A / ||e||_A (mean over samples):
+    L2 k0 1 galerkin       bands 1e+02 (10 samples, coarse alone rel-L2 0.342, 0s)
+      block Jacobi (omega 2/3): nu 1 0.806  nu 4 0.703  nu 10 0.651  nu 50 0.581
+      point Jacobi (omega 1/3): nu 1 0.871  nu 4 0.758  nu 10 0.691  nu 50 0.609
+    L2 k0 1 adapted        bands 1e+02 (10 samples, coarse alone rel-L2 0.049, 5s)
+      block Jacobi (omega 2/3): nu 1 0.674  nu 4 0.405  nu 10 0.248  nu 50 0.094
+      point Jacobi (omega 1/3): nu 1 0.801  nu 4 0.557  nu 10 0.367  nu 50 0.148
+    L3 k0 2 galerkin       bands 1e+02 (4 samples, coarse alone rel-L2 0.205, 0s)
+      block Jacobi (omega 2/3): nu 1 0.777  nu 4 0.660  nu 10 0.603  nu 50 0.537
+      point Jacobi (omega 1/3): nu 1 0.848  nu 4 0.720  nu 10 0.646  nu 50 0.561
+    L3 k0 2 adapted        bands 1e+02 (2 samples, coarse alone rel-L2 0.019, 85s)
+      block Jacobi (omega 2/3): nu 1 0.647  nu 4 0.369  nu 10 0.227  nu 50 0.104
+      point Jacobi (omega 1/3): nu 1 0.783  nu 4 0.521  nu 10 0.331  nu 50 0.148
+    L3 k0 2 adapted rho 3  bands 1e+02 (4 samples, coarse alone rel-L2 0.100, 6s)
+      block Jacobi (omega 2/3): nu 1 0.758  nu 4 0.535  nu 10 0.404  nu 50 0.324
+      point Jacobi (omega 1/3): nu 1 0.852  nu 4 0.656  nu 10 0.495  nu 50 0.342

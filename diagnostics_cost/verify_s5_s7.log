@@ -1,0 +1,47 @@
+== Session 5: geometric vs operator-adapted transfers (OA-VCB, each with its own classical member)
+  channels s1: OA-VCB adapted 2.555e-03 geometric 5.019e-03; geo/adapted G 1.91 [1.84,2.00] W 1.00; member geo/adapted G 1.24 (means 3.23e-02/2.59e-02); learned vs own member: adapted 10.23, geometric 6.65 W 1.00; u_c identical to 0e+00; codes f8653612eb84
+  channels s2: OA-VCB adapted 2.792e-03 geometric 5.463e-03; geo/adapted G 1.92 [1.84,2.00] W 1.00; member geo/adapted G 1.24 (means 3.09e-02/2.50e-02); learned vs own member: adapted 9.76, geometric 6.30 W 1.00; u_c identical to 0e+00; codes f8653612eb84
+  channels s3: OA-VCB adapted 2.918e-03 geometric 5.664e-03; geo/adapted G 1.87 [1.80,1.95] W 1.00; member geo/adapted G 1.25 (means 3.31e-02/2.63e-02); learned vs own member: adapted 9.68, geometric 6.50 W 1.00; u_c identical to 0e+00; codes f8653612eb84
+  barriers s1: OA-VCB adapted 4.357e-02 geometric 1.129e-01; geo/adapted G 4.07 [3.50,4.71] W 0.97; member geo/adapted G 2.82 (means 1.23e-01/7.51e-02); learned vs own member: adapted 2.13, geometric 1.48 W 0.76; u_c identical to 0e+00; codes f8653612eb84
+
+== Session 7 (+ Session 3 seed 1): barriers, held-out seeds 1-3
+  seed 1: OA-VCB 0.0436  member 0.0751  ratio of means 1.72  G 2.13 [1.90,2.38]  W 0.92  worst 0.15  coarse 0.4353
+     OA-VCB worse than u_c: 0; n_worse field 0
+     oa-vc          mean 0.2329  BELOW coarse (0.4353); worse than u_c on   7; model/OA-VCB G   3.01 W 0.96; vs member G 0.71
+     oa-ll-op       mean 0.3187  BELOW coarse (0.4353); worse than u_c on   1; model/OA-VCB G  14.25 W 1.00; vs member G 0.15
+     gnn-op         mean 0.3428  BELOW coarse (0.4353); worse than u_c on   0; model/OA-VCB G  17.99 W 1.00; vs member G 0.12
+     gnn            mean 0.4198  BELOW coarse (0.4353); worse than u_c on  12; model/OA-VCB G  26.88 W 1.00; vs member G 0.08
+     transolver-op  mean 0.3526  BELOW coarse (0.4353); worse than u_c on   0; model/OA-VCB G  19.95 W 1.00; vs member G 0.11
+     fno-op         mean 0.4520  at/above coarse (0.4353); worse than u_c on  18; model/OA-VCB G  26.23 W 1.00; vs member G 0.08
+     wno-op         mean 0.4778  at/above coarse (0.4353); worse than u_c on  17; model/OA-VCB G  25.99 W 1.00; vs member G 0.08
+     lino-op        mean 0.4557  at/above coarse (0.4353); worse than u_c on  20; model/OA-VCB G  26.90 W 1.00; vs member G 0.08
+     mgno           mean 0.4016  BELOW coarse (0.4353); worse than u_c on   3; model/OA-VCB G  24.89 W 1.00; vs member G 0.09
+     mgno-op        mean 0.4919  at/above coarse (0.4353); worse than u_c on  33; model/OA-VCB G  28.05 W 1.00; vs member G 0.08
+     two-grid PCG its to OA-VCB (energy only): median 5 (2-12)
+  seed 2: OA-VCB 0.0696  member 0.0851  ratio of means 1.22  G 1.93 [1.70,2.18]  W 0.83  worst 0.34  coarse 0.4793
+     OA-VCB worse than u_c: 0; n_worse field 0
+     oa-vc          mean 0.5410  at/above coarse (0.4793); worse than u_c on   7; model/OA-VCB G   2.98 W 0.96; vs member G 0.65
+     oa-ll-op       mean 0.3862  BELOW coarse (0.4793); worse than u_c on   6; model/OA-VCB G  12.61 W 1.00; vs member G 0.15
+     gnn-op         mean 0.3776  BELOW coarse (0.4793); worse than u_c on   0; model/OA-VCB G  14.06 W 1.00; vs member G 0.14
+     gnn            mean 0.4647  BELOW coarse (0.4793); worse than u_c on  21; model/OA-VCB G  22.81 W 1.00; vs member G 0.08
+     transolver-op  mean 0.4018  BELOW coarse (0.4793); worse than u_c on   0; model/OA-VCB G  17.25 W 1.00; vs member G 0.11
+     fno-op         mean 0.5004  at/above coarse (0.4793); worse than u_c on  24; model/OA-VCB G  22.90 W 1.00; vs member G 0.08
+     wno-op         mean 0.5679  at/above coarse (0.4793); worse than u_c on  20; model/OA-VCB G  23.13 W 1.00; vs member G 0.08
+     lino-op        mean 0.4906  at/above coarse (0.4793); worse than u_c on  18; model/OA-VCB G  22.79 W 1.00; vs member G 0.08
+     mgno           mean 0.4490  BELOW coarse (0.4793); worse than u_c on  10; model/OA-VCB G  21.44 W 1.00; vs member G 0.09
+     mgno-op        mean 0.6246  at/above coarse (0.4793); worse than u_c on  26; model/OA-VCB G  24.49 W 1.00; vs member G 0.08
+     two-grid PCG its to OA-VCB (energy only): median 5 (2-14)
+  seed 3: OA-VCB 0.0607  member 0.0833  ratio of means 1.37  G 1.93 [1.70,2.19]  W 0.89  worst 0.17  coarse 0.4636
+     OA-VCB worse than u_c: 0; n_worse field 0
+     oa-vc          mean 0.3455  BELOW coarse (0.4636); worse than u_c on  12; model/OA-VCB G   3.82 W 0.93; vs member G 0.51
+     oa-ll-op       mean 0.3511  BELOW coarse (0.4636); worse than u_c on   2; model/OA-VCB G  14.08 W 1.00; vs member G 0.14
+     gnn-op         mean 0.3634  BELOW coarse (0.4636); worse than u_c on   0; model/OA-VCB G  16.46 W 1.00; vs member G 0.12
+     gnn            mean 0.4482  BELOW coarse (0.4636); worse than u_c on   1; model/OA-VCB G  25.98 W 1.00; vs member G 0.07
+     transolver-op  mean 0.3822  BELOW coarse (0.4636); worse than u_c on   0; model/OA-VCB G  19.22 W 1.00; vs member G 0.10
+     fno-op         mean 0.4772  at/above coarse (0.4636); worse than u_c on  17; model/OA-VCB G  25.34 W 1.00; vs member G 0.08
+     wno-op         mean 0.4932  at/above coarse (0.4636); worse than u_c on  17; model/OA-VCB G  24.75 W 1.00; vs member G 0.08
+     lino-op        mean 0.4556  BELOW coarse (0.4636); worse than u_c on  21; model/OA-VCB G  25.54 W 1.00; vs member G 0.08
+     mgno           mean 0.4335  BELOW coarse (0.4636); worse than u_c on   6; model/OA-VCB G  24.36 W 1.00; vs member G 0.08
+     mgno-op        mean 0.4973  at/above coarse (0.4636); worse than u_c on  27; model/OA-VCB G  27.08 W 1.00; vs member G 0.07
+     two-grid PCG its to OA-VCB (energy only): median 4 (2-12)
+  pooled seeds 1-3: G 2.00  W 0.88

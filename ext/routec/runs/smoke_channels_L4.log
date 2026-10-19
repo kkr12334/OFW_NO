@@ -1,0 +1,2 @@
+channels L4 id 300 c=1e+04 nk=0: 180s; worst M3 effectivity 1.359; gates passed 360
+complete -> /home/claude/ofw/ext/routec/runs/smoke_channels_L4.json

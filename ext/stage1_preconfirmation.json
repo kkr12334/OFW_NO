@@ -1,0 +1,181 @@
+{
+ "note": "frozen before set C is generated; derived from set T fits and set D runs only",
+ "fitted_methods": "dev/stage1_fitted_methods.json",
+ "fitted_methods_sha256": "9dffe18716911af29afd32103c772ae30978b4e6adbc2bd3cc511a7c446fa2fd",
+ "families": {
+  "channels": {
+   "cheb_t": {
+    "selected": "lanczos,q=10",
+    "grid_mean_log_error_T": {
+     "gershgorin,q=4": -3.4076647620190914,
+     "gershgorin,q=10": -3.866689758417436,
+     "gershgorin,q=30": -3.5692542610260873,
+     "lanczos,q=4": -3.5078617677095516,
+     "lanczos,q=10": -3.9828831269593548,
+     "lanczos,q=30": -3.6137863265792833
+    }
+   },
+   "poly_s": {
+    "beta": 3.5562854054107844,
+    "runs": [
+     {
+      "start": "CHEB-equivalent",
+      "objective": -4.348699678924586,
+      "grad_inf": 6.158153769406961e-08,
+      "evaluations": 76
+     },
+     {
+      "start": "zero",
+      "objective": -4.3486996789246,
+      "grad_inf": 8.171687641421628e-08,
+      "evaluations": 99
+     }
+    ],
+    "kept": "zero"
+   },
+   "poly_l": {
+    "runs": [
+     {
+      "start": "CHEB-equivalent",
+      "objective": -4.356111899747265,
+      "grad_inf": 9.623549695665396e-07,
+      "evaluations": 528
+     },
+     {
+      "start": "zero",
+      "objective": -1.9244831699953382,
+      "grad_inf": 13.290915448731909,
+      "evaluations": 386
+     }
+    ],
+    "kept": "CHEB-equivalent"
+   },
+   "champion": {
+    "candidates_mean_log_error_D": {
+     "CHEB-T": -3.9600586769081083,
+     "POLY-S": -4.294519896431393,
+     "POLY-L": -4.32839183945073,
+     "SD": -3.488997912119199,
+     "MR": -3.505676781009178,
+     "PCG": -4.174436442162805
+    },
+    "selected": "POLY-L"
+   },
+   "spatial_trigger": {
+    "lower_limits": {
+     "OA-VCB init0": {
+      "PCG_lo": 6.0240251151035595,
+      "K2_lo": 10.06034554299692
+     },
+     "OA-VCB init1": {
+      "PCG_lo": 6.14178721298266,
+      "K2_lo": 10.264256190588526
+     },
+     "OA-VCB init2": {
+      "PCG_lo": 6.33412228951393,
+      "K2_lo": 10.587113672193276
+     }
+    },
+    "fired": true,
+    "include": [
+     "SGS",
+     "SGS-PCG"
+    ]
+   },
+   "labels_D": {
+    "strict non-island": 100
+   }
+  },
+  "barriers": {
+   "cheb_t": {
+    "selected": "lanczos,q=10",
+    "grid_mean_log_error_T": {
+     "gershgorin,q=4": -3.0610405410049037,
+     "gershgorin,q=10": -3.3594373095428685,
+     "gershgorin,q=30": -2.9776156946460026,
+     "lanczos,q=4": -3.1376950798289633,
+     "lanczos,q=10": -3.426689700299292,
+     "lanczos,q=30": -2.98690414890577
+    }
+   },
+   "poly_s": {
+    "beta": 4.25693550396474,
+    "runs": [
+     {
+      "start": "CHEB-equivalent",
+      "objective": -3.4596501845143712,
+      "grad_inf": 3.8781898050593844e-07,
+      "evaluations": 66
+     },
+     {
+      "start": "zero",
+      "objective": -3.459650184509916,
+      "grad_inf": 8.941475540926239e-07,
+      "evaluations": 84
+     }
+    ],
+    "kept": "CHEB-equivalent"
+   },
+   "poly_l": {
+    "runs": [
+     {
+      "start": "CHEB-equivalent",
+      "objective": -3.569162836158605,
+      "grad_inf": 9.891518575524255e-07,
+      "evaluations": 374
+     },
+     {
+      "start": "zero",
+      "objective": -2.5590938460948838,
+      "grad_inf": 7.921165088168973e-05,
+      "evaluations": 601
+     }
+    ],
+    "kept": "CHEB-equivalent"
+   },
+   "champion": {
+    "candidates_mean_log_error_D": {
+     "CHEB-T": -3.6889829029727808,
+     "POLY-S": -3.686681443269064,
+     "POLY-L": -3.8306477660681666,
+     "SD": -3.377542321262991,
+     "MR": -3.3406116682423264,
+     "PCG": -3.880609215593684
+    },
+    "selected": "PCG"
+   },
+   "spatial_trigger": {
+    "lower_limits": {
+     "OA-VCB init0": {
+      "PCG_lo": 1.4087478370234472,
+      "K2_lo": 1.3189788081256888
+     },
+     "OA-VCB init1": {
+      "PCG_lo": 1.379158138016694,
+      "K2_lo": 1.283993460504333
+     },
+     "OA-VCB init2": {
+      "PCG_lo": 1.3298114980123565,
+      "K2_lo": 1.2525348405569954
+     }
+    },
+    "fired": true,
+    "include": [
+     "SGS",
+     "SGS-PCG"
+    ]
+   },
+   "labels_D": {
+    "EDP": 4,
+    "discordant": 3,
+    "island": 39,
+    "strict non-island": 54
+   }
+  }
+ },
+ "input_scales": {
+  "channels/fixed-load": 0.0004684449243868195,
+  "barriers/fixed-load": 1.181379922392435,
+  "channels/random-load": 0.0004678465006335751
+ }
+}

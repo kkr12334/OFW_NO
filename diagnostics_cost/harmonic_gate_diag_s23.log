@@ -1,0 +1,10 @@
+seed 2: CPU32 vs stored(GPU32): max 2.41e-04 median 3.9e-06 | islands max 2.41e-04, no-island max 1.58e-05
+  CPU32 batch 8 vs batch 1: max 5.82e-05
+  float64 net vs CPU32: max 1.11e-04 median 3.1e-06;  float64 vs stored: max 2.79e-04
+  means: stored 0.069582 cpu32 0.069582 f64 0.069582
+  worst samples (id, island, stored, cpu32, f64): [(330, True, np.float64(0.057403), np.float64(0.057417), np.float64(0.057419)), (338, True, np.float64(0.022903), np.float64(0.022906), np.float64(0.022905)), (344, True, np.float64(0.039957), np.float64(0.039952), np.float64(0.039954)), (319, True, np.float64(0.0215), np.float64(0.021498), np.float64(0.021499)), (312, True, np.float64(0.0169), np.float64(0.016899), np.float64(0.016897))]
+seed 3: CPU32 vs stored(GPU32): max 1.82e-04 median 4.4e-06 | islands max 1.82e-04, no-island max 3.16e-05
+  CPU32 batch 8 vs batch 1: max 2.97e-05
+  float64 net vs CPU32: max 6.94e-05 median 4.1e-06;  float64 vs stored: max 1.13e-04
+  means: stored 0.060738 cpu32 0.060739 f64 0.060738
+  worst samples (id, island, stored, cpu32, f64): [(369, True, np.float64(0.024036), np.float64(0.02404), np.float64(0.024039)), (352, True, np.float64(0.026445), np.float64(0.026444), np.float64(0.026444)), (310, True, np.float64(0.063847), np.float64(0.063844), np.float64(0.063846)), (380, True, np.float64(0.096789), np.float64(0.096793), np.float64(0.096793)), (395, True, np.float64(0.068645), np.float64(0.068642), np.float64(0.068645))]

@@ -1,0 +1,14 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Separately trained design variants, held-out data seed 1. Deflation, output used at inference (plain cycle or Galerkin projection), training loss and smoother class; mean energy error with each model's own output and reference/model $G$, $W$. OA-VCQ was not run on channels, where no near-kernel vectors are detected.}\label{tab:factorial}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllllllll}\toprule
+ & deflation & output & loss & smoothers & params & \multicolumn{2}{c}{barriers: energy, ($G$, $W$)} & \multicolumn{2}{c}{channels: energy, ($G$, $W$)} \\\midrule
+OA-VC & no & plain & plain & learned & 20{,}672 & 2.33e-1 & 0.71, 0.44 & 4.08e-3 & 8.83, 0.99 \\
+OA-VCZ & yes & plain & plain & learned & 20{,}672 & 7.51e-2 & 1.52, 0.75 & 3.52e-3 & 8.72, 0.99 \\
+OA-VCQ & no & Galerkin & plain + proj. & learned & 20{,}672 & 1.07e-1 & 1.15, 0.65 & -- & -- \\
+OA-VCB & yes & Galerkin & plain + proj. & learned & 20{,}672 & 4.36e-2 & 2.13, 0.92 & 2.55e-3 & 10.23, 1.00 \\
+OA-VCL & yes & plain & plain & residual-linear & 21{,}600 & 1.51e-1 & 0.70, 0.16 & 1.11e-2 & 2.59, 0.97 \\
+OA-VCBL & yes & Galerkin & plain + proj. & residual-linear & 21{,}600 & 6.76e-2 & 1.13, 0.69 & 1.01e-2 & 2.72, 0.99 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

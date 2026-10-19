@@ -1,0 +1,8 @@
+L4, k0 3, 14398 unknowns, 100 test samples, CPU 2 threads
+oa-vcb (trained, L4_k03_seed0_oa-vcb__ckpt_94ccbb8e28.pt): rel-L2 4.369e-04  energy 1.954e-03
+  cost per sample: u_c 10.5 ms + operator data 723 ms (scipy) + inference 1600 ms (batch 8) / 1407 ms (batch 1)
+classical, from the same u_c, each sample run to oa-vcb's energy error on that sample:
+  direct (SuperLU factor + solve)                         47.9 ms/sample
+  two-grid PCG (Jacobi(1) + level-3 Galerkin)             28.1 ms/sample  its median 7 (max 8)
+  SA-AMG PCG (pyamg, V(1,1))                              45.0 ms/sample  its median 6 (max 7)
+  PCG, classical op.-adapted V(4,4) preconditioner       831.5 ms/sample  its median 3 (max 3)  [first 20 samples]

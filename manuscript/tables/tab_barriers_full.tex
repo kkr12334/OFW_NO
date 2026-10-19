@@ -1,0 +1,19 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Per-seed mean energy errors and the number of test samples on which the model is worse in energy than $u_c$ (seeds 1 / 2 / 3); barriers (contrast $10^{-4}$, source only where $a\ge1/2$, l3, $k_0=2$), held-out data seeds 1--3.}\label{tab:barriersfull}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllll}\toprule
+model & seed 1 & seed 2 & seed 3 & worse than $u_c$ \\\midrule
+OA-VCB (ours) & 4.36e-2 & 6.96e-2 & 6.07e-2 & 0 / 0 / 0 \\
+OA-VC & 2.33e-1 & 5.41e-1 & 3.45e-1 & 7 / 7 / 12 \\
+OA-Lift & 3.19e-1 & 3.86e-1 & 3.51e-1 & 1 / 6 / 2 \\
+GNN-op & 3.43e-1 & 3.78e-1 & 3.63e-1 & 0 / 0 / 0 \\
+GNN & 4.20e-1 & 4.65e-1 & 4.48e-1 & 12 / 21 / 1 \\
+Transolver-op & 3.53e-1 & 4.02e-1 & 3.82e-1 & 0 / 0 / 0 \\
+FNO-op$^\dagger$ & 4.52e-1 & 5.00e-1 & 4.77e-1 & 18 / 24 / 17 \\
+WNO-op$^\dagger$ & 4.78e-1 & 5.68e-1 & 4.93e-1 & 17 / 20 / 17 \\
+LiNO-op$^\dagger$ & 4.56e-1 & 4.91e-1 & 4.56e-1 & 20 / 18 / 21 \\
+MgNO$^\dagger$ & 4.02e-1 & 4.49e-1 & 4.33e-1 & 3 / 10 / 6 \\
+MgNO-op$^\dagger$ & 4.92e-1 & 6.25e-1 & 4.97e-1 & 33 / 26 / 27 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

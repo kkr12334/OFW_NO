@@ -1,0 +1,21 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Cost per test sample on one CPU (2 threads), channels, held-out seed 1, in ms. Every row starts from the assembled fine matrix; its assembly (1.4 / 5.4 ms, common to all methods) is not included. Per-operator set-up is included in every row; the sparsity patterns of the hierarchy, computed once per mesh (71 / 871 ms), and training are not. Classical rows: mean over the 100 samples of the per-sample minimum over 3 (L3) / 2 (L4) repetitions; OA-VCB operator data and inference: minimum over the repetitions of the whole-test-set time divided by 100. Iteration counts were determined beforehand, untimed, with the reference solution (a matched-accuracy benchmark, not a stopping criterion).}\label{tab:cost}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lll}\toprule
+ & L3, $k_0=2$ (3{,}486 unknowns) & L4, $k_0=3$ (14{,}398) \\\midrule
+\multicolumn{3}{l}{\emph{OA-VCB (one pass)}} \\
+$u_c$ (level-$k_0$ Galerkin factor and solve) & 2.1 & 9.6 \\
+operator data (hierarchy, Galerkin levels, $Z$) & 66.6 & 841.3 \\
+inference, batch 8 (batch 1) & 96.0 (176.7) & 1{,}561.0 (1{,}461.8) \\
+\textbf{total} (batch 8) & 164.8 & 2{,}411.8 \\
+\midrule\multicolumn{3}{l}{\emph{single classical pass, error not matched (10 times larger)}} \\
+classical reference, from $u_c$ & 60.1 & 769.1 \\
+\midrule\multicolumn{3}{l}{\emph{iterative, run to OA-VCB's error on each sample [median; range of iterations]}} \\
+two-grid PCG & 5.7 [6; 5--7] & 24.7 [6; 4--8] \\
+SA-AMG PCG & 13.5 [5; 4--6] & 41.5 [6; 4--7] \\
+PCG with the classical V(4,4) & 61.2 [3; 2--3] & 794.1 [3; 2--3] \\
+\midrule\multicolumn{3}{l}{\emph{direct, to solver accuracy}} \\
+sparse direct solve (SuperLU) & 8.2 & 48.1 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

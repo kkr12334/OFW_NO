@@ -1,0 +1,13 @@
+== oa-vcb, rho 2, set conf
+       2: n_island  37  E0 0.1344 -> E2 0.1105  R_cap +0.178 [+0.098, +0.261]  G24 1.155 [1.100, 1.222]  kappa q1/med/q3 0.096/0.154/0.402  -> LITTLE SUPPORT
+       3: n_island  52  E0 0.1130 -> E2 0.0999  R_cap +0.115 [+0.071, +0.167]  G24 1.105 [1.067, 1.150]  kappa q1/med/q3 0.019/0.085/0.258  -> LITTLE SUPPORT
+  pooled: n_island  89  E0 0.1219 -> E2 0.1043  R_cap +0.144 [+0.098, +0.196]  G24 1.126 [1.093, 1.164]  kappa q1/med/q3 0.025/0.119/0.325  -> LITTLE SUPPORT
+== member, rho 2, set conf
+       2: n_island  37  E0 0.1553 -> E2 0.1201  R_cap +0.227 [+0.181, +0.277]  G24 1.314 [1.232, 1.406]  kappa q1/med/q3 0.205/0.431/0.587  -> PARTIAL
+       3: n_island  52  E0 0.1421 -> E2 0.1203  R_cap +0.153 [+0.109, +0.209]  G24 1.219 [1.149, 1.299]  kappa q1/med/q3 0.078/0.192/0.531  -> LITTLE SUPPORT
+  pooled: n_island  89  E0 0.1476 -> E2 0.1202  R_cap +0.185 [+0.149, +0.225]  G24 1.258 [1.204, 1.319]  kappa q1/med/q3 0.108/0.339/0.557  -> LITTLE SUPPORT
+== learned vs classical, paired G(member / OA-VCB) [95% CI], W
+  E0     island samples  n  89: G 1.600 [1.398, 1.825]  W 0.82
+  E0     all samples     n 200: G 2.001 [1.847, 2.166]  W 0.91
+  E2_2   island samples  n  89: G 1.421 [1.266, 1.595]  W 0.79
+  E2_2   all samples     n 200: G 1.898 [1.756, 2.047]  W 0.89

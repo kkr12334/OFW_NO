@@ -1,0 +1,22 @@
+GATE pass: fitted coefficients hash = frozen
+D channels: data generated in 7 s (100 samples)
+GATE pass: frozen fixed-load scale = training scale of seed-1 set T (0.0004684449243868195)
+  classical 1/100 (0 s)
+  classical 21/100 (3 s)
+  classical 41/100 (5 s)
+  classical 61/100 (7 s)
+  classical 81/100 (10 s)
+GATE pass: CHEB common path = legacy anchor (rel. diff <= 1e-8 on every sample) (7.771561172376096e-16)
+GATE pass: all checkpoints match checkpoint_map SHA-256
+GATE pass: three OA-VCB initialisations present (['OA-VCB init0', 'OA-VCB init1', 'OA-VCB init2'])
+GATE pass: set D reproduces ext/dev/stage1_dev_D.json (all methods, rel. diff <= 1e-9) (0.0)
+GATE pass: set-D labels = frozen counts ({'strict non-island': 100})
+GATE pass: all checkpoints match checkpoint_map SHA-256 (final)
+
+== D channels: 100 samples, strata {'strict non-island': 100}, 421 s
+  OA-VCB init0: P1 R 6.307 [6.024, 6.584] W 1.00 -> not accounted for by Krylov smoothing;  P2 5.594 [5.333, 5.885]
+  OA-VCB init1: P1 R 6.396 [6.142, 6.645] W 1.00 -> not accounted for by Krylov smoothing;  P2 5.672 [5.410, 5.960]
+  OA-VCB init2: P1 R 6.622 [6.334, 6.904] W 1.00 -> not accounted for by Krylov smoothing;  P2 5.873 [5.600, 6.177]
+  P3 (CHEB-legacy -> PCG) 1.623 [1.595, 1.651];  P1 family label: not accounted for by Krylov smoothing
+  failures: none
+exit 0

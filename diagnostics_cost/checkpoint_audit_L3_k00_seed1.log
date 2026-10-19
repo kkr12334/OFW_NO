@@ -1,0 +1,9 @@
+L3 k0 0: 3486 unknowns, pool + coarse solves 9s; U_scale 3.585648e-03
+operator data for 100 test samples, 3 levels: 14s
+before  energy 7.5905e-03  nodal rel-l2 2.9323e-03  FE L2 2.7735e-03  worse than u_c 0/100 (max ratio to u_c 0.021555)  CPU 241 ms/sample
+after   energy 7.5905e-03  nodal rel-l2 2.9323e-03  FE L2 2.7735e-03  worse than u_c 0/100 (max ratio to u_c 0.021555)  CPU 259 ms/sample
+logged (Kaggle GPU, pre-review code): energy 7.5900e-03  rel-l2 2.9320e-03  -> BEFORE reproduces it to 0.01% / 0.01%
+PAIRED after vs before: mean energy change +0.0001%; per sample relative energy change median +0.0000%, range [-0.0006%, +0.0017%]; after lower on 42% of samples
+       relative change of the correction ||c_after - c_before|| / ||c_before||: median 3.89e-07, max 1.60e-06
+REPAIRED projection statistics: 200 projections (deflation + output), line-search backstop 0, rejected 0, rank deficit 0 of 300 live columns
+per-sample results: results/ckpt/L3_k00_seed1_oa-vcb__ckpt_73fbf6857e_audit_2026-10-05.json

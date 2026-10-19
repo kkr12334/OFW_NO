@@ -1,0 +1,3 @@
+barriers L3 id 0 c=1e+00 nk=0: 113s; worst M3 effectivity 1.344; gates passed 875
+barriers L3 id 0 c=1e+02 nk=0: 110s; worst M3 effectivity 1.356; gates passed 875
+barriers L3 id 0 c=1e+04 nk=0: 114s; worst M3 effectivity 3.071; gates passed 955

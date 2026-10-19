@@ -1,0 +1,24 @@
+mesh built 0.1s; FE elements 7424, flux elements 22272, flux edges 33632
+stiffness matches H.A_fine: 5.023481476925563e-15
+channels id 300: |||u_h||| = 4.4060e-02, near-kernel dim 0
+
+[exact u_h] |||u_h - v||| = 0.0000e+00 (0.00e+00 rel); lifting defect 1.1e-16; disc flux 4.2s, patch defect 7.5e-13, div defect 1.6e-12
+   oracle global RT0                             eta_alg 2.1106e-16  eff      nan  guarantee True  div defect 1.4e-26  compat 0.0e+00  eta_total 1.2689e-02 (div 1.6e-12)  0.2s
+   MVY multilevel (geometric)                    eta_alg 4.0761e-16  eff      nan  guarantee True  div defect 1.6e-27  compat 3.7e-30  eta_total 1.2689e-02 (div 1.6e-12)  5.9s
+   G2 (geometric level-2 hats)                   eta_alg 2.3840e-16  eff      nan  guarantee True  div defect 1.1e-26  compat 5.6e-30  eta_total 1.2689e-02 (div 1.6e-12)  1.6s
+   G1 (geometric level-1 hats)                   eta_alg 2.5335e-16  eff      nan  guarantee True  div defect 5.7e-27  compat 4.4e-30  eta_total 1.2689e-02 (div 1.6e-12)  0.7s
+   OA2 (operator-adapted level 2, Shepard, +Z)   eta_alg 2.2928e-16  eff      nan  guarantee True  div defect 4.0e-27  compat 4.3e-30  eta_total 1.2689e-02 (div 1.6e-12)  3.9s
+
+[u_c (k0=2 Galerkin)] |||u_h - v||| = 1.3317e-02 (3.02e-01 rel); lifting defect 1.5e-16; disc flux 4.3s, patch defect 5.6e-13, div defect 1.1e-12
+   oracle global RT0                             eta_alg 2.5851e-02  eff    1.941  guarantee True  div defect 1.9e-13  compat 0.0e+00  eta_total 1.8362e-02 (div 1.1e-12)  0.2s
+   MVY multilevel (geometric)                    eta_alg 2.8414e-02  eff    2.134  guarantee True  div defect 5.7e-14  compat 4.8e-17  eta_total 2.3055e-02 (div 1.2e-12)  5.9s
+   G2 (geometric level-2 hats)                   eta_alg 2.7668e-02  eff    2.078  guarantee True  div defect 2.8e-13  compat 3.6e-17  eta_total 2.2414e-02 (div 1.1e-12)  1.5s
+   G1 (geometric level-1 hats)                   eta_alg 2.6226e-02  eff    1.969  guarantee True  div defect 1.8e-13  compat 1.3e-17  eta_total 1.9062e-02 (div 1.1e-12)  0.6s
+   OA2 (operator-adapted level 2, Shepard, +Z)   eta_alg 2.6320e-02  eff    1.976  guarantee True  div defect 3.0e-13  compat 1.3e-16  eta_total 1.9454e-02 (div 1.2e-12)  3.8s
+
+[u_h + 10% white noise] |||u_h - v||| = 4.4060e-03 (1.00e-01 rel); lifting defect 2.3e-16; disc flux 4.0s, patch defect 6.6e-13, div defect 1.3e-12
+   oracle global RT0                             eta_alg 1.3186e-01  eff   29.928  guarantee True  div defect 2.7e-12  compat 0.0e+00  eta_total 3.8904e-02 (div 2.7e-12)  0.1s
+   MVY multilevel (geometric)                    eta_alg 1.4500e-01  eff   32.909  guarantee True  div defect 6.8e-13  compat 2.9e-16  eta_total 6.3109e-02 (div 1.3e-12)  5.6s
+   G2 (geometric level-2 hats)                   eta_alg 1.3306e-01  eff   30.201  guarantee True  div defect 5.5e-12  compat 4.0e-16  eta_total 3.0843e-02 (div 5.9e-12)  1.6s
+   G1 (geometric level-1 hats)                   eta_alg 1.3255e-01  eff   30.083  guarantee True  div defect 3.6e-12  compat 3.7e-16  eta_total 3.9209e-02 (div 3.6e-12)  0.6s
+   OA2 (operator-adapted level 2, Shepard, +Z)   eta_alg 1.3225e-01  eff   30.016  guarantee True  div defect 9.4e-13  compat 6.6e-17  eta_total 3.7644e-02 (div 1.4e-12)  3.6s

@@ -1,0 +1,5 @@
+near-kernel vectors per sample: [0, 1, 0, 0, 1, 0, 1, 0, 2, 0, 0, 0]
+1. containment (Jacobi weights): network vs numpy deflated + projected cycle, max rel. diff 3.6e-10
+2. energy guarantee, 3 random weight sets x 12 samples: 0 violations; ||e - x||_A / ||e||_A in [0.457, 0.919] (untrained);  homogeneity |f(2.5 r) - 2.5 f(r)| / |2.5 f(r)| = 6.5e-13
+3. near-kernel detection from A alone vs coefficient islands (100 test samples): 75 coefficient islands, 78 detected vectors; distance of each island indicator from span(Z): max 6.0e-01 (0 = contained); Rayleigh quotients of the detected vectors: max 3.0e-02, median 6.3e-05
+3b. detector vs coefficient-geometry ground truth: recall 74/75 islands exactly in span(Z); precision 75/78 detected vectors inside an island; the 3 others have Rayleigh quotients [0.0104, 0.0084, 0.015] (near-kernel by definition, not coefficient islands)

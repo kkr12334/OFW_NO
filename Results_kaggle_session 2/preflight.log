@@ -1,0 +1,43 @@
+device cuda (Tesla T4), torch 2.11.0+cu128
+1. barriers 1e-4  jacobi  deployed: ratio max 0.497870804214, median 0.1789, violations 0/24
+                          legacy  : ratio max 0.497899059734, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 228 live columns
+1. barriers 1e-4  seed0   deployed: ratio max 0.991076928465, median 0.9875, violations 0/24
+                          legacy  : ratio max 0.991076929732, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 228 live columns
+1. barriers 1e-4  seed1   deployed: ratio max 0.991947385706, median 0.9899, violations 0/24
+                          legacy  : ratio max 0.991947385181, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 228 live columns
+1. barriers 1e-4  seed2   deployed: ratio max 0.990380105908, median 0.9888, violations 0/24
+                          legacy  : ratio max 0.990380106212, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 228 live columns
+1. channels 1e4   jacobi  deployed: ratio max 0.153095261291, median 0.0984, violations 0/24
+                          legacy  : ratio max 0.153095273126, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 144 live columns
+1. channels 1e4   seed0   deployed: ratio max 0.999986867307, median 1.0000, violations 0/24
+                          legacy  : ratio max 0.999986867327, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 144 live columns
+1. channels 1e4   seed1   deployed: ratio max 0.999921632986, median 0.9997, violations 0/24
+                          legacy  : ratio max 0.999921632950, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 144 live columns
+1. channels 1e4   seed2   deployed: ratio max 0.999962418583, median 0.9999, violations 0/24
+                          legacy  : ratio max 0.999962418620, violations (tol 1e-6) 0/24
+                          backstop 0, rejected 0 of 96 projections; rank deficit 0 of 144 live columns
+2. near-duplicate / duplicate directions (eps 1e-2 .. 0), 210 cases each: projection worst ratio 0.999999998377, violations 0; deflation (+ zero padding) worst 0.999999999324, violations 0;  backstop 0, rejected 0 of 420 projections; rank deficit 300 of 1260 live columns
+3. r scaled by 0       finite True  max|x| 0.0e+00
+3. r scaled by 1e-30   finite True  ratio 0.999873032193
+3. r scaled by 1e-20   finite True  ratio 0.999873031319
+3. r scaled by 1e-08   finite True  ratio 0.999873031456
+3. r scaled by 1       finite True  ratio 0.999873031325
+3. r scaled by 1e+08   finite True  ratio 0.999873031323  homogeneity vs scale 1: 5.0e-07
+   positive homogeneity, relative deviation vs scale 1: 1e-30: 2.5e-05, 1e-20: 9.2e-07, 1e-08: 6.2e-07, 1e+08: 6.1e-07
+   enforced: scales with float32-normal data max 9.2e-07 (tolerance 1e-05); scales reaching the subnormal range (smallest |s r_i| or |s x_i| < 1.2e-38) max 2.5e-05 (tolerance 0.001; CUDA flushes subnormals to zero)
+4a. backward through _galerkin, |dL/dW|_max / |dL/dd|_max at column distance eps: eps 0.01: 2.33e-07, eps 0.0001: 1.02e-04, eps 1e-06: 7.41e-06, eps 0: 1.07e-08;  non-finite gradients: 0
+4b. whole network, training mode (projected + plain output), parameter-gradient norm at residual scale: 0: finite 0.00e+00, 1e-30: finite 0.00e+00, 1e-20: finite 4.94e-40, 1: finite 4.95e+00
+4c. torch.autograd.gradcheck of _galerkin (float64, 3 random directions): pass
+SUMMARY: deployed path worst ratio 0.999986867307 (0 violations, tol 1e-12); legacy path worst 0.999986867 (0 violations, tol 1e-6); stress violations 0; scale tests pass; gradient tests pass
+PREFLIGHT PASS (projection precision): deployed path, stress, scale (incl. homogeneity) and gradient checks all passed
+1. linear smoothers, random weights: max relative deviation from linearity 1.1e-14; params at width 8: 5,680
+1. non-linear smoothers, random weights: max relative deviation from linearity 1.6e+00; params at width 8: 6,210
+2. Jacobi member: linear vs non-linear class, max rel. diff 0.0e+00
+PREFLIGHT PASS (linear control): linearity 1e-10, non-linearity detectable, Jacobi member identical

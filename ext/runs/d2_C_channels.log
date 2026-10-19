@@ -1,0 +1,13 @@
+GATE pass: batched objective = numpy path (POLY-L start), max |diff| of log error <= 1e-8 (1.7763568394002505e-15)
+  PCG first-call start vs PCG cycle: mean log error -4.23286 vs -4.23286 (equal only if every call is the first call, which holds in a V-cycle)
+/home/claude/ofw/ext/stage1_d2.py:116: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  L = float(opt.step(closure)); gmax = float(th.grad.abs().max())
+  start CHEB-T*-equivalent   mean log error -4.02842 -> -4.53644; stops {'gradient': 8, 'iterations': 92}; median |grad| 2.4e-04; 56940 evals, 446 s
+  start POLY-S               mean log error -4.33477 -> -4.53956; stops {'gradient': 4, 'iterations': 96}; median |grad| 3.7e-04; 57449 evals, 440 s
+  start POLY-L               mean log error -4.37810 -> -4.53033; stops {'gradient': 11, 'iterations': 89}; median |grad| 6.2e-05; 56594 evals, 422 s
+  start PCG first-call       mean log error -4.23286 -> -4.53824; stops {'gradient': 16, 'iterations': 84}; median |grad| 9.1e-05; 55966 evals, 422 s
+  start zero                 mean log error -1.00566 -> -2.68553; stops {'gradient': 9, 'iterations': 87, 'stalled': 4}; median |grad| 4.2e-05; 56171 evals, 423 s
+GATE pass: numpy error of the kept D2 coefficients = batched optimum (|log diff| <= 1e-6) (2.6645352591003757e-15)
+== D2 C channels: geo-mean error 1.0548e-02; kept starts {'CHEB-T*-equivalent': 24, 'POLY-S': 24, 'POLY-L': 14, 'PCG first-call': 38, 'zero': 0}; 2166 s
+exit 0

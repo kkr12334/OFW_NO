@@ -1,0 +1,50 @@
+ch_s1: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.458 2.65  3.165], min per level [2.228 1.76  1.556]; lam* = 3.165
+  product form vs recurrence (adaptive): max rel diff 1.1e-15
+  fixed3: mean 2.5773e-02; G(fixed3/adaptive) 0.995; adaptive better on 0.35
+  fixedstar: mean 2.7487e-02; G(fixedstar/adaptive) 1.063; adaptive better on 1.00
+  jacobi: mean 4.0287e-02; G(jacobi/adaptive) 1.565; adaptive better on 1.00
+ba_s1: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.54  3.123 3.972], min per level [2.237 1.941 1.59 ]; lam* = 3.972
+  product form vs recurrence (adaptive): max rel diff 4.9e-10
+  fixed3: mean 7.6194e-02; G(fixed3/adaptive) 1.052; adaptive better on 0.81
+  fixedstar: mean 8.2224e-02; G(fixedstar/adaptive) 1.315; adaptive better on 0.99
+  jacobi: mean 8.6349e-02; G(jacobi/adaptive) 1.507; adaptive better on 0.98
+ch_s2: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.473 2.753 3.179], min per level [2.265 1.824 1.859]; lam* = 3.179
+  product form vs recurrence (adaptive): max rel diff 3.9e-14
+  fixed3: mean 2.4857e-02; G(fixed3/adaptive) 0.995; adaptive better on 0.33
+  fixedstar: mean 2.6643e-02; G(fixedstar/adaptive) 1.068; adaptive better on 1.00
+  jacobi: mean 3.8475e-02; G(jacobi/adaptive) 1.548; adaptive better on 1.00
+ba_s2: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.475 3.51  3.896], min per level [2.257 1.912 1.602]; lam* = 3.896
+  product form vs recurrence (adaptive): max rel diff 3.9e-10
+  fixed3: mean 8.6117e-02; G(fixed3/adaptive) 1.040; adaptive better on 0.79
+  fixedstar: mean 9.1754e-02; G(fixedstar/adaptive) 1.262; adaptive better on 0.98
+  jacobi: mean 9.6433e-02; G(jacobi/adaptive) 1.450; adaptive better on 0.96
+ch_s3: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.459 2.616 3.298], min per level [2.24  1.85  1.813]; lam* = 3.298
+  product form vs recurrence (adaptive): max rel diff 1.7e-15
+  fixed3: mean 2.6203e-02; G(fixed3/adaptive) 0.995; adaptive better on 0.32
+  fixedstar: mean 2.9270e-02; G(fixedstar/adaptive) 1.113; adaptive better on 1.00
+  jacobi: mean 4.0483e-02; G(jacobi/adaptive) 1.544; adaptive better on 1.00
+ba_s3: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.592 3.98  4.212], min per level [2.228 2.09  1.796]; lam* = 4.212
+  product form vs recurrence (adaptive): max rel diff 1.7e-10
+  fixed3: mean 8.4993e-02; G(fixed3/adaptive) 1.056; adaptive better on 0.81
+  fixedstar: mean 9.2277e-02; G(fixedstar/adaptive) 1.368; adaptive better on 0.99
+  jacobi: mean 9.4957e-02; G(jacobi/adaptive) 1.501; adaptive better on 0.99
+k00_s1: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.458 2.65  3.165], min per level [2.228 1.76  1.556]; lam* = 3.165
+  product form vs recurrence (adaptive): max rel diff 7.8e-16
+  fixed3: mean 8.8445e-02; G(fixed3/adaptive) 1.039; adaptive better on 1.00
+  fixedstar: mean 9.1505e-02; G(fixedstar/adaptive) 1.075; adaptive better on 1.00
+  jacobi: mean 1.1454e-01; G(jacobi/adaptive) 1.347; adaptive better on 1.00
+k00_s2: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.473 2.753 3.179], min per level [2.265 1.824 1.859]; lam* = 3.179
+  product form vs recurrence (adaptive): max rel diff 1.3e-14
+  fixed3: mean 8.3583e-02; G(fixed3/adaptive) 1.041; adaptive better on 1.00
+  fixedstar: mean 8.6786e-02; G(fixedstar/adaptive) 1.081; adaptive better on 1.00
+  jacobi: mean 1.0871e-01; G(jacobi/adaptive) 1.356; adaptive better on 1.00
+k00_s3: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.459 2.616 3.298], min per level [2.24  1.85  1.813]; lam* = 3.298
+  product form vs recurrence (adaptive): max rel diff 6.7e-16
+  fixed3: mean 8.8471e-02; G(fixed3/adaptive) 1.036; adaptive better on 1.00
+  fixedstar: mean 9.3957e-02; G(fixedstar/adaptive) 1.101; adaptive better on 1.00
+  jacobi: mean 1.1492e-01; G(jacobi/adaptive) 1.347; adaptive better on 1.00
+l4_s1: per-level power-iteration lam (x1.05) on 60 training samples: max per level [2.51  2.756 2.631 3.55 ], min per level [2.34  2.001 1.758 1.549]; lam* = 3.550
+  product form vs recurrence (adaptive): max rel diff 1.3e-12
+  fixed3: mean 2.0247e-02; G(fixed3/adaptive) 1.008; adaptive better on 0.85
+  fixedstar: mean 2.4157e-02; G(fixedstar/adaptive) 1.205; adaptive better on 1.00
+  jacobi: mean 3.0801e-02; G(jacobi/adaptive) 1.541; adaptive better on 1.00

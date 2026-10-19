@@ -1,0 +1,7 @@
+step weights w_t = [2.482852 0.882319 0.461548 0.345156]
+near-kernel vectors per sample: [0, 1, 0, 0, 1, 0, 1, 0, 2, 0, 0, 0]
+1. containment (fixed-interval Chebyshev weights, lam = 3): network vs numpy deflated + projected cycle, max rel. diff 4.8e-10
+Horner coefficients a_0..a_3 = [ 0.001845 -0.298746 -0.109655  0.04453 ]; residual-polynomial roots [ 4.3019+0.j     -2.3017+0.j      0.2312+1.4881j  0.2312-1.4881j]
+1b. containment (general correction polynomial, Horner construction, nu = 4): network vs numpy deflated + projected cycle, max rel. diff 3.7e-10
+    numpy Horner recursion vs direct power sum on every level operator: max rel. diff 1.9e-15
+1c. fixed-interval Chebyshev smoother vectors, product form vs three-term recurrence, all levels: max rel. diff 5.9e-16

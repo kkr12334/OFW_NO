@@ -1,0 +1,12 @@
+GATE pass: reserve seed 2026101604 absent from every record before generation ([])
+reserve barriers: data generated (100 operators) in 7 s
+GATE pass: three fixed-load OA-VCB initialisations ([0, 1, 2])
+GATE pass: CHEB common path = legacy anchor (<= 1e-8)
+GATE pass: PCG(4) row = stage1_core.pcg4 through the wrapper
+
+== reserve barriers (R2: bracket PCG(5) .. PCG(8))
+  init0: PCG(4) 1.539 [1.387, 1.703]; PCG(5) 1.208 [1.084, 1.345]; PCG(8) 0.724 [0.625, 0.836]; PCG(14) 0.354 [0.290, 0.431]; SGS-PCG(4) 0.639 [0.548, 0.745]  -> bracket confirmed: True
+  init1: PCG(4) 1.604 [1.451, 1.774]; PCG(5) 1.259 [1.133, 1.401]; PCG(8) 0.755 [0.655, 0.872]; PCG(14) 0.369 [0.302, 0.451]; SGS-PCG(4) 0.666 [0.573, 0.778]  -> bracket confirmed: True
+  init2: PCG(4) 1.546 [1.393, 1.722]; PCG(5) 1.213 [1.090, 1.359]; PCG(8) 0.728 [0.630, 0.844]; PCG(14) 0.355 [0.290, 0.436]; SGS-PCG(4) 0.642 [0.549, 0.752]  -> bracket confirmed: True
+  family bracket confirmed: True ; G(PCG14 -> SGS-PCG4): 0.554
+exit 0

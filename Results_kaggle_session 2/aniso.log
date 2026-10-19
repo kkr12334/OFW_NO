@@ -1,0 +1,72 @@
+aniso, pores insulated, level 3: 3678 unknowns (192 insulated pore nodes), contrast 1e+02, k_T 5, 400 samples, device cuda
+  direct solve 27 ms/sample
+  coarse Galerkin solve to level 2: 7 ms/sample; alone it gives rel-L2 8.068e-02, energy 2.732e-01
+  V-cycle operator data (3 levels, coarsest 52 nodes) built in 79s (196 ms/sample); near-kernel vectors per sample: max 2, 9% of samples have one
+
+[oa-vcb] width 15, params 20,672  (learned operator-adapted V-cycle, 3 levels, deflation + Galerkin output, loss on projected + plain)
+    oa-vcb     ep    1/300  train mix 1.650e+00  (10s)
+    oa-vcb     ep   50/300  train mix 5.129e-02  (491s)
+    oa-vcb     ep  100/300  train mix 4.272e-02  (987s)
+    oa-vcb     ep  150/300  train mix 3.550e-02  (1483s)
+    oa-vcb     ep  200/300  train mix 3.184e-02  (1978s)
+    oa-vcb     ep  250/300  train mix 2.833e-02  (2474s)
+    oa-vcb     ep  300/300  train mix 2.729e-02  (2970s)
+    oa-vcb     TRAIN rel-L2 6.696e-04  energy 5.173e-03  (first 100 training samples)
+    oa-vcb     TEST  nodal rel-l2 8.782e-04  FE rel-L2 8.417e-04  energy 6.208e-03  (worse than u_c in energy on 0/100)
+  classical V(4,4), op.-adapted        nodal rel-l2 1.034e-02  FE rel-L2 1.009e-02  energy 2.882e-02
+  classical member (+ defl. + proj.)   nodal rel-l2 4.285e-03  FE rel-L2 4.204e-03  energy 2.102e-02
+
+
+RESULTS  aniso, pores insulated, level 3, contrast 1e+02, 300/100, 300 epochs, loss mix, k0 2
+model          params  rel-L2 (T)  energy (flux)  train s  infer ms
+oa-vcb         20,672   8.782e-04      6.208e-03     2970     15.9
+classical V(4,4), op.-adapted        0   1.034e-02      2.882e-02        0    204.6
+classical member (+ defl. + proj.)        0   4.285e-03      2.102e-02        0    213.5
+aniso, pores insulated, level 3: 3678 unknowns (192 insulated pore nodes), contrast 1e+02, k_T 5, 400 samples, device cuda
+  direct solve 27 ms/sample
+  coarse Galerkin solve to level 2: 7 ms/sample; alone it gives rel-L2 7.962e-02, energy 2.726e-01
+  V-cycle operator data (3 levels, coarsest 52 nodes) built in 82s (206 ms/sample); near-kernel vectors per sample: max 2, 10% of samples have one
+
+[oa-vcb] width 15, params 20,672  (learned operator-adapted V-cycle, 3 levels, deflation + Galerkin output, loss on projected + plain)
+    oa-vcb     ep    1/300  train mix 1.652e+00  (10s)
+    oa-vcb     ep   50/300  train mix 4.873e-02  (495s)
+    oa-vcb     ep  100/300  train mix 3.972e-02  (991s)
+    oa-vcb     ep  150/300  train mix 3.261e-02  (1487s)
+    oa-vcb     ep  200/300  train mix 2.977e-02  (1981s)
+    oa-vcb     ep  250/300  train mix 2.672e-02  (2476s)
+    oa-vcb     ep  300/300  train mix 2.601e-02  (2971s)
+    oa-vcb     TRAIN rel-L2 6.135e-04  energy 4.985e-03  (first 100 training samples)
+    oa-vcb     TEST  nodal rel-l2 8.833e-04  FE rel-L2 8.475e-04  energy 6.009e-03  (worse than u_c in energy on 0/100)
+  classical V(4,4), op.-adapted        nodal rel-l2 9.967e-03  FE rel-L2 9.762e-03  energy 2.772e-02
+  classical member (+ defl. + proj.)   nodal rel-l2 4.240e-03  FE rel-L2 4.175e-03  energy 2.035e-02
+
+
+RESULTS  aniso, pores insulated, level 3, contrast 1e+02, 300/100, 300 epochs, loss mix, k0 2
+model          params  rel-L2 (T)  energy (flux)  train s  infer ms
+oa-vcb         20,672   8.833e-04      6.009e-03     2971     15.9
+classical V(4,4), op.-adapted        0   9.967e-03      2.772e-02        0    201.1
+classical member (+ defl. + proj.)        0   4.240e-03      2.035e-02        0    210.0
+aniso, pores insulated, level 3: 3678 unknowns (192 insulated pore nodes), contrast 1e+02, k_T 5, 400 samples, device cuda
+  direct solve 27 ms/sample
+  coarse Galerkin solve to level 2: 8 ms/sample; alone it gives rel-L2 8.253e-02, energy 2.780e-01
+  V-cycle operator data (3 levels, coarsest 52 nodes) built in 80s (200 ms/sample); near-kernel vectors per sample: max 2, 9% of samples have one
+
+[oa-vcb] width 15, params 20,672  (learned operator-adapted V-cycle, 3 levels, deflation + Galerkin output, loss on projected + plain)
+    oa-vcb     ep    1/300  train mix 1.643e+00  (10s)
+    oa-vcb     ep   50/300  train mix 4.985e-02  (495s)
+    oa-vcb     ep  100/300  train mix 4.195e-02  (991s)
+    oa-vcb     ep  150/300  train mix 3.384e-02  (1488s)
+    oa-vcb     ep  200/300  train mix 3.056e-02  (1984s)
+    oa-vcb     ep  250/300  train mix 2.807e-02  (2480s)
+    oa-vcb     ep  300/300  train mix 2.707e-02  (2974s)
+    oa-vcb     TRAIN rel-L2 5.732e-04  energy 4.851e-03  (first 100 training samples)
+    oa-vcb     TEST  nodal rel-l2 9.398e-04  FE rel-L2 8.939e-04  energy 6.165e-03  (worse than u_c in energy on 0/100)
+  classical V(4,4), op.-adapted        nodal rel-l2 1.070e-02  FE rel-L2 1.046e-02  energy 2.912e-02
+  classical member (+ defl. + proj.)   nodal rel-l2 4.397e-03  FE rel-L2 4.324e-03  energy 2.123e-02
+
+
+RESULTS  aniso, pores insulated, level 3, contrast 1e+02, 300/100, 300 epochs, loss mix, k0 2
+model          params  rel-L2 (T)  energy (flux)  train s  infer ms
+oa-vcb         20,672   9.398e-04      6.165e-03     2974     15.9
+classical V(4,4), op.-adapted        0   1.070e-02      2.912e-02        0    190.4
+classical member (+ defl. + proj.)        0   4.397e-03      2.123e-02        0    199.2

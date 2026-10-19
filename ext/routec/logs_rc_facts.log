@@ -1,0 +1,8 @@
+channels elements 7424 all nodes 3934 unknowns 3486 Dirichlet nodes 448 h max/min 0.0312/0.0066 min angle 21.2 max angle 126.5 area 0.8673467678494038
+  coefficient values [1.e+00 1.e+04]  unknowns per level [28, 174, 814, 3486]
+  near-kernel dims on dev ids 300-399: [100]
+  obtuse elements 2048
+barriers elements 7424 all nodes 3934 unknowns 3486 Dirichlet nodes 448 h max/min 0.0312/0.0066 min angle 21.2 max angle 126.5 area 0.8673467678494038
+  coefficient values [1.e-04 1.e+00]  unknowns per level [28, 174, 814, 3486]
+  near-kernel dims on dev ids 300-399: [58 31  4  7]
+  obtuse elements 2048

@@ -1,0 +1,12 @@
+one pass, classical V(4,4) : rel-L2 1.114e-01  energy 0.1324
+one pass, classical member : rel-L2 4.596e-02  energy 0.0836
+PCG from zero, preconditioner = the classical V(4,4)-cycle (mean rel-L2 / energy after j its):
+   0: 1.000e+00 / 1.00000
+   1: 4.739e-02 / 0.08543
+   2: 3.906e-03 / 0.00864
+   3: 4.661e-04 / 0.00105
+   4: 5.531e-05 / 0.00012
+   5: 6.047e-06 / 0.00001
+   6: 5.152e-07 / 0.00000
+   to match oa-ll-op 3.95e-02 / 0.0806 per sample: median 2 its (min 1, max 2)
+   to match oa-vcb 2.49e-03 / 0.0068 per sample: median 3 its (min 2, max 3)

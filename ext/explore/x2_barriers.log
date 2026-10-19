@@ -1,0 +1,26 @@
+op 300: K4 kept -4.3013 -> continued -4.7068 (iterations); PCG(5) cycle -2.3120 (start check -2.3120); K5 oracle -5.0124; 59 s
+op 301: K4 kept -5.5402 -> continued -5.5409 (iterations); PCG(5) cycle -5.5056 (start check -5.5056); K5 oracle -6.0903; 108 s
+op 302: K4 kept -6.0140 -> continued -6.0141 (iterations); PCG(5) cycle -5.8257 (start check -5.8257); K5 oracle -6.6666; 146 s
+op 303: K4 kept -6.0445 -> continued -6.0445 (iterations); PCG(5) cycle -6.4959 (start check -6.4959); K5 oracle -6.7783; 187 s
+op 304: K4 kept -3.2701 -> continued -3.4412 (iterations); PCG(5) cycle -2.1458 (start check -2.1458); K5 oracle -4.5141; 240 s
+op 305: K4 kept -5.9816 -> continued -5.9816 (iterations); PCG(5) cycle -6.1755 (start check -6.1755); K5 oracle -6.6095; 274 s
+op 306: K4 kept -6.0004 -> continued -6.0188 (iterations); PCG(5) cycle -6.0186 (start check -6.0186); K5 oracle -6.6729; 332 s
+op 307: K4 kept -5.7309 -> continued -5.7309 (iterations); PCG(5) cycle -4.9624 (start check -4.9624); K5 oracle -6.2748; 362 s
+op 308: K4 kept -5.3015 -> continued -5.3015 (iterations); PCG(5) cycle -4.7991 (start check -4.7991); K5 oracle -6.1098; 394 s
+op 309: K4 kept -3.7453 -> continued -3.7978 (iterations); PCG(5) cycle -2.0561 (start check -2.0561); K5 oracle -4.4952; 438 s
+op 310: K4 kept -4.2527 -> continued -4.5930 (iterations); PCG(5) cycle -3.0581 (start check -3.0581); K5 oracle -5.1260; 494 s
+op 311: K4 kept -5.2284 -> continued -5.2463 (iterations); PCG(5) cycle -4.8697 (start check -4.8697); K5 oracle -5.6721; 537 s
+op 312: K4 kept -4.5431 -> continued -4.5498 (iterations); PCG(5) cycle -3.7361 (start check -3.7361); K5 oracle -5.1490; 588 s
+op 313: K4 kept -6.2559 -> continued -6.2559 (iterations); PCG(5) cycle -6.6284 (start check -6.6284); K5 oracle -6.9290; 627 s
+op 314: K4 kept -5.8578 -> continued -5.8578 (iterations); PCG(5) cycle -6.2024 (start check -6.2024); K5 oracle -6.5314; 660 s
+op 315: K4 kept -4.6309 -> continued -4.6309 (iterations); PCG(5) cycle -4.1970 (start check -4.1970); K5 oracle -4.9650; 693 s
+op 316: K4 kept -2.7259 -> continued -2.8124 (iterations); PCG(5) cycle -1.7616 (start check -1.7616); K5 oracle -3.3231; 751 s
+op 317: K4 kept -5.9658 -> continued -5.9658 (iterations); PCG(5) cycle -5.8491 (start check -5.8491); K5 oracle -6.4176; 806 s
+op 318: K4 kept -3.9925 -> continued -4.2548 (iterations); PCG(5) cycle -1.9119 (start check -1.9119); K5 oracle -4.6598; 862 s
+op 319: K4 kept -5.9414 -> continued -5.9417 (iterations); PCG(5) cycle -5.9697 (start check -5.9697); K5 oracle -6.5123; 900 s
+barriers K4 kept (D2) {'G_over_CHEB': 3.225, 'G_to_OA_VCB_init0': 0.77}
+barriers K4 continued {'G_over_CHEB': 3.453, 'G_to_OA_VCB_init0': 0.719}
+barriers PCG(5) cycle {'G_over_CHEB': 1.875, 'G_to_OA_VCB_init0': 1.324}
+barriers K5 oracle {'G_over_CHEB': 6.235, 'G_to_OA_VCB_init0': 0.398}
+barriers OA-VCB init0 {'G_over_CHEB': 2.483}
+exit 0

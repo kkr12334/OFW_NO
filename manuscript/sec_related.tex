@@ -1,0 +1,53 @@
+% Section 2 -- related work.  Draft v2, 13 Oct 2026 (positioning table moved to Appendix B).  Every work cited here was checked against its arXiv / publisher page
+% on 11 Oct 2026; Table 1 states only what the cited descriptions state (entries to be re-checked against the full texts).
+\section{Related work}\label{sec:related}
+
+\paragraph{Neural operators.} Neural operators learn maps between function spaces from samples
+\cite{kovachki2023,lu2021deeponet}. Spectral and wavelet variants act on uniform grids: the Fourier neural operator
+\cite{li2021fno}, the wavelet neural operator \cite{tripura2023wno} and lifting-based multiresolution operators
+\cite{pandey2026lino}; general geometries are handled by deforming the domain onto a latent grid \cite{li2023geofno}, by
+message passing on the mesh \cite{pfaff2021}, or by attention over learned groupings of the mesh points
+\cite{wu2024transolver}. Multigrid structure has entered operator learning mainly as a parameterisation: MgNet relates
+convolutional networks to multigrid \cite{hexu2019mgnet}, and MgNO parameterises the linear operators between neurons by
+multigrid cycles with learned convolutional restriction and prolongation \cite{he2024mgno}; hybrid variants correct the
+output of a low-order solver with such a network \cite{hu2025hmgno}. In all of these the inter-level transfers, if any, are
+learned or fixed by the grid; none of them is computed from the operator of the sample at hand. Experiment-design
+critiques \cite{mcgreivy2024,chatain2025,zhang2026breakeven} have shown that comparisons against weak or unmatched classical
+baselines overstate the benefit of learned PDE solvers. We therefore compare OA-VCB with a classical reference that uses the same operator-dependent hierarchy and correction
+ingredients, and report cost against converged-to-target solvers (Section~\ref{sec:cost}).
+
+\paragraph{Learned multigrid and learned preconditioners.} A second line keeps the iterative solver and learns some of its
+components. Learned prolongations for geometric multigrid \cite{greenfeld2019}, learned restriction and prolongation
+matrices \cite{katrutsa2017}, learned algebraic-multigrid prolongations predicted by graph networks \cite{luz2020}, and
+learned smoothers \cite{huang2023,fanaskov2021} are trained to reduce the error-propagation of a cycle that is then
+iterated. Recent work learns smoothing and transfer operators with graph convolutions \cite{wangluo2026}, learns the
+smoothing, restriction and interpolation operators of an algebraic-multigrid-type hierarchy for use as a preconditioner
+\cite{zhanglisaad2026}, or tunes smoother parameters inside an algebraic multigrid pressure solver with a graph network
+\cite{chillon2026}. Other hybrids interleave a neural operator with relaxation sweeps \cite{zhang2024hints}, modify an
+iterative solver while preserving its convergence \cite{hsieh2019}, combine a U-Net with a multigrid solver
+\cite{han2024ugrid}, or use a neural operator as a preconditioner or coarse correction inside a Krylov method
+\cite{rudikov2024,kopanicakova2025,melchers2026,liu2025nodal}. These methods are evaluated as iterative or preconditioned solvers, with convergence and cost assessed at prescribed
+tolerances. Our setting is different: one pass through a fixed multilevel architecture, and the accuracy reached by that
+pass. We do not learn the transfers; we compute them deterministically from the operator of each sample and learn only the
+smoothers. The architecture then represents the classical cycles with fixed polynomial smoothers on the same hierarchy
+(Proposition~\ref{prop:containment}), which makes a controlled comparison with classical smoothing possible. Table~\ref{tab:related}
+summarises the learned components, transfers and use of the methods cited here.
+\input{tab_related}
+
+\paragraph{Operator-adapted multiresolution and high-contrast coarse spaces.} The transfers of Section~\ref{sec:routev} come
+from operator-adapted finite element wavelets \cite{sudarshan2003,sudarshan2005proc,amaratunga2006,sudarshan2006,sudarshan2005thesis,dheedene2005thesis}
+and gamblets
+\cite{owhadi2017,owhadi2019book}, whose multilevel decomposition is the exact Schur-complement recursion of
+Lemma~\ref{lem:routev}; operator-adapted wavelets have since been extended to finite-element differential forms
+\cite{budninskiy2019}, to material-adapted bases and preconditioners for heterogeneous elasticity \cite{chen2019tog,chen2021tog}
+and to multiscale electromagnetics \cite{sik2025}. The same objects appear as ideal interpolation in algebraic multigrid \cite{vanek1996,xu2017acta}.
+For high-contrast coefficients the localisation of such bases depends on the contrast unless the coarse space resolves the
+high-conductivity structures, and contrast-robust coarse spaces add spectral or problem-adapted functions
+\cite{malqvist2014,kornhuber2018,peterseim2016,hellman2017,galvis2010,spillane2014geneo,babuska2011,chung2018cem,ma2022}.
+Deflation \cite{frank2001,tang2009} targets the low-energy components represented by the selected vectors; the indicator deflation of
+Section~\ref{sec:deflation} is the simplest instance, and Section~\ref{sec:islands} measures what it leaves. Neural networks
+have been used to approximate these constructions: to map coefficients to compressed operators or to localized orthogonal
+decomposition surrogates \cite{kropfl2021,kropfl2022,kropfl2025}, to predict generalised multiscale finite element subspaces
+\cite{rudikov2025lsino}, and to learn operators with losses equivalent to errors in problem-adapted norms \cite{qiu2025}.
+These works learn the coarse space or the coarse operator; here the operator-adapted hierarchy is computed deterministically from each
+sample, using the approximate transfers of \eqref{eq:jacobi}, and the learning acts on the residuals that remain after it.

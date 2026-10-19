@@ -1,0 +1,6 @@
+barriers ds1 theta 0.1: OA-VCB 4.3567e-02  reference 7.5060e-02  G 2.133  W 0.92
+barriers ds1 theta 0.05: OA-VCB 4.1561e-02  reference 7.5064e-02  G 2.206  W 0.93
+barriers ds2 theta 0.1: OA-VCB 6.9582e-02  reference 8.5056e-02  G 1.930  W 0.83
+barriers ds2 theta 0.05: OA-VCB 6.8006e-02  reference 8.3455e-02  G 1.940  W 0.83
+barriers ds3 theta 0.1: OA-VCB 6.0739e-02  reference 8.3314e-02  G 1.932  W 0.89
+barriers ds3 theta 0.05: OA-VCB 5.6385e-02  reference 7.7426e-02  G 1.959  W 0.90

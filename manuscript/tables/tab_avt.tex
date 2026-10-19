@@ -1,0 +1,22 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Stronger classical smoothers and repeated classical passes, held-out seed 1, measured on one CPU (Intel(R) Xeon(R) Processor @ 2.80GHz, 2 threads; a different machine from Table~\ref{tab:cost}, so OA-VCB was re-timed): energy, the arithmetic mean relative energy error over the 100 test samples (the quantity plotted in Figure~\ref{fig:avt}); $G$, the paired geometric-mean ratio of each classical variant's error to OA-VCB's [95\% CI] (below 1: the classical variant is more accurate in this metric); $W$, the fraction of samples on which OA-VCB is more accurate; and the mean time per sample from $u_c$ with set-up, in ms (classical rows: per-sample minimum over the repetitions; OA-VCB: operator data and batched inference, minimum over the repetitions of the whole-test-set time divided by the number of samples). The eight- and sixteen-step rows exceed the residual-polynomial degree covered by Proposition~\ref{prop:containment} for the four-stage architecture; no learned model with that larger budget was trained.}\label{tab:avt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllll}\toprule
+method & energy & $G$ [95\% CI] & $W$ & ms \\\midrule
+\multicolumn{5}{l}{\emph{channels}: OA-VCB 2.55e-3, 268\,ms} \\
+\quad reference, Chebyshev $\nu=4$ (Table~\ref{tab:core}) & 2.59e-2 & 10.23 [9.75, 10.71] & 1.00 & 83 \\
+\quad reference, Chebyshev $\nu=8$ & 1.08e-2 & 4.23 [4.00, 4.46] & 1.00 & 79 \\
+\quad reference, Chebyshev $\nu=16$ & 4.72e-3 & 1.83 [1.73, 1.93] & 0.99 & 85 \\
+\quad reference, symmetric Gauss--Seidel, 4 sweeps & 2.06e-2 & 8.10 [7.69, 8.49] & 1.00 & 77 \\
+\quad reference ($\nu=4$) applied twice & 3.50e-3 & 1.30 [1.21, 1.40] & 0.79 & 87 \\
+\quad reference ($\nu=4$) applied 3 times & 5.51e-4 & 0.19 [0.17, 0.21] & 0.00 & 88 \\
+\multicolumn{5}{l}{\emph{barriers}: OA-VCB 4.36e-2, 273\,ms} \\
+\quad reference, Chebyshev $\nu=4$ (Table~\ref{tab:core}) & 7.51e-2 & 2.13 [1.90, 2.38] & 0.92 & 80 \\
+\quad reference, Chebyshev $\nu=8$ & 6.47e-2 & 1.25 [1.09, 1.42] & 0.64 & 83 \\
+\quad reference, Chebyshev $\nu=16$ & 5.87e-2 & 0.82 [0.69, 0.97] & 0.45 & 85 \\
+\quad reference, symmetric Gauss--Seidel, 4 sweeps & 7.30e-2 & 2.11 [1.87, 2.36] & 0.92 & 80 \\
+\quad reference ($\nu=4$) applied twice & 2.66e-2 & 0.29 [0.24, 0.35] & 0.13 & 84 \\
+\quad reference ($\nu=4$) applied 3 times & 1.21e-2 & 0.05 [0.03, 0.06] & 0.02 & 88 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

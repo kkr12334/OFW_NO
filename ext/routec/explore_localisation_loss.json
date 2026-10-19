@@ -1,0 +1,1139 @@
+[
+ {
+  "id": 0,
+  "contrast": 10000.0,
+  "near_kernel": 0,
+  "n_K1_components": 12,
+  "n_islands": 1,
+  "island_sizes": [
+   1
+  ],
+  "index_max": 14.335392158575294,
+  "n_members_index_ge_3": 2,
+  "multi_component_among_index_ge_3": 2,
+  "multi_component_all": 4,
+  "worst": [
+   {
+    "member": 395,
+    "index": 14.335392158575294,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.594754322703841,
+     0.7943776396150153
+    ],
+    "barrier_fraction": 0.3072289156626506
+   },
+   {
+    "member": 274,
+    "index": 3.1545788240775234,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.5205259752204213,
+     0.7040739870350831
+    ],
+    "barrier_fraction": 0.46938775510204084
+   },
+   {
+    "member": 749,
+    "index": 1.5284706400265657,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.8757044460516958,
+     0.7316944818291724
+    ],
+    "barrier_fraction": 0.3933649289099526
+   },
+   {
+    "member": 50,
+    "index": 1.3673040652714084,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.9138123096251645,
+     0.6330499329845531
+    ],
+    "barrier_fraction": 0.5114942528735632
+   },
+   {
+    "member": 503,
+    "index": 1.3097173629861716,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5152267366013092,
+     0.509633034822062
+    ],
+    "barrier_fraction": 0.7986111111111112
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "id": 1,
+  "contrast": 10000.0,
+  "near_kernel": 2,
+  "n_K1_components": 12,
+  "n_islands": 5,
+  "island_sizes": [
+   45,
+   18,
+   1,
+   1,
+   1
+  ],
+  "index_max": 3.329594454436635,
+  "n_members_index_ge_3": 1,
+  "multi_component_among_index_ge_3": 1,
+  "multi_component_all": 6,
+  "worst": [
+   {
+    "member": 503,
+    "index": 3.329594454436635,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.5152267366013092,
+     0.509633034822062
+    ],
+    "barrier_fraction": 0.6597222222222222
+   },
+   {
+    "member": 767,
+    "index": 2.7500881874848515,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.04569722585899561,
+     0.6969836026130187
+    ],
+    "barrier_fraction": 0.3333333333333333
+   },
+   {
+    "member": 381,
+    "index": 1.9077676852006835,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.9310042906495528,
+     0.4474246586359915
+    ],
+    "barrier_fraction": 0.3401360544217687
+   },
+   {
+    "member": 508,
+    "index": 1.3106512086617954,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5134036454916631,
+     0.4932599458734793
+    ],
+    "barrier_fraction": 0.6
+   },
+   {
+    "member": 702,
+    "index": 1.271554092979486,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "id": 2,
+  "contrast": 10000.0,
+  "near_kernel": 1,
+  "n_K1_components": 10,
+  "n_islands": 3,
+  "island_sizes": [
+   1,
+   1,
+   1
+  ],
+  "index_max": 1.394132610824213,
+  "n_members_index_ge_3": 0,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 4,
+  "worst": [
+   {
+    "member": 535,
+    "index": 1.394132610824213,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.12329061195048134,
+     0.3057829277611935
+    ],
+    "barrier_fraction": 0.8333333333333334
+   },
+   {
+    "member": 683,
+    "index": 1.3433603063577382,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.1175473016272012,
+     0.27919540920802743
+    ],
+    "barrier_fraction": 0.9791666666666666
+   },
+   {
+    "member": 702,
+    "index": 1.271554092979486,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   },
+   {
+    "member": 312,
+    "index": 1.267482547795901,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.4007733376860644,
+     0.19464546737456564
+    ],
+    "barrier_fraction": 0.6352201257861635
+   },
+   {
+    "member": 445,
+    "index": 1.170501563581875,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.7353599430524816,
+     0.1381998393837564
+    ],
+    "barrier_fraction": 0.6264367816091954
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "id": 3,
+  "contrast": 10000.0,
+  "near_kernel": 0,
+  "n_K1_components": 13,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 10.125391281547326,
+  "n_members_index_ge_3": 9,
+  "multi_component_among_index_ge_3": 8,
+  "multi_component_all": 8,
+  "worst": [
+   {
+    "member": 395,
+    "index": 10.125391281547326,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.594754322703841,
+     0.7943776396150153
+    ],
+    "barrier_fraction": 0.3132530120481928
+   },
+   {
+    "member": 806,
+    "index": 9.393224378695965,
+    "n_components": 3,
+    "carries_island": false,
+    "centroid": [
+     0.16153969067412208,
+     0.6832644388561319
+    ],
+    "barrier_fraction": 0.3888888888888889
+   },
+   {
+    "member": 719,
+    "index": 7.952842880589428,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.21794380331316818,
+     0.9122635127382765
+    ],
+    "barrier_fraction": 0.2857142857142857
+   },
+   {
+    "member": 220,
+    "index": 5.58199722030598,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.5632157618579889,
+     0.33457027606380374
+    ],
+    "barrier_fraction": 0.24170616113744076
+   },
+   {
+    "member": 222,
+    "index": 5.519583376259527,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.5287865781825754,
+     0.3827580038103769
+    ],
+    "barrier_fraction": 0.24509803921568626
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "id": 4,
+  "contrast": 10000.0,
+  "near_kernel": 0,
+  "n_K1_components": 13,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 4.89722003146723,
+  "n_members_index_ge_3": 1,
+  "multi_component_among_index_ge_3": 1,
+  "multi_component_all": 2,
+  "worst": [
+   {
+    "member": 434,
+    "index": 4.89722003146723,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.682537481216875,
+     0.8213072440862915
+    ],
+    "barrier_fraction": 0.43373493975903615
+   },
+   {
+    "member": 54,
+    "index": 2.462336022636007,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.502507821695258,
+     0.7094636525473301
+    ],
+    "barrier_fraction": 0.3770491803278688
+   },
+   {
+    "member": 82,
+    "index": 1.7387233401896443,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.8856264110598565,
+     0.5078004063473001
+    ],
+    "barrier_fraction": 0.4540229885057471
+   },
+   {
+    "member": 63,
+    "index": 1.6588381526356777,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.30499483292984114,
+     0.06980094237776222
+    ],
+    "barrier_fraction": 0.32222222222222224
+   },
+   {
+    "member": 238,
+    "index": 1.6312451542756952,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.7257505745401234,
+     0.3690668631419577
+    ],
+    "barrier_fraction": 0.445
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "id": 5,
+  "contrast": 10000.0,
+  "near_kernel": 0,
+  "n_K1_components": 16,
+  "n_islands": 1,
+  "island_sizes": [
+   2
+  ],
+  "index_max": 9.97530798343423,
+  "n_members_index_ge_3": 4,
+  "multi_component_among_index_ge_3": 4,
+  "multi_component_all": 10,
+  "worst": [
+   {
+    "member": 683,
+    "index": 9.97530798343423,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.1175473016272012,
+     0.27919540920802743
+    ],
+    "barrier_fraction": 0.375
+   },
+   {
+    "member": 502,
+    "index": 7.287472951537247,
+    "n_components": 3,
+    "carries_island": false,
+    "centroid": [
+     0.4915073403558134,
+     0.5318411071934318
+    ],
+    "barrier_fraction": 0.4444444444444444
+   },
+   {
+    "member": 388,
+    "index": 6.812632900472635,
+    "n_components": 3,
+    "carries_island": false,
+    "centroid": [
+     0.8568613136536193,
+     0.505180517301901
+    ],
+    "barrier_fraction": 0.4027777777777778
+   },
+   {
+    "member": 436,
+    "index": 4.460391569005043,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.6978749771002961,
+     0.8649554737709324
+    ],
+    "barrier_fraction": 0.29901960784313725
+   },
+   {
+    "member": 389,
+    "index": 2.5061315968302695,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.8790085188637202,
+     0.5269949664615835
+    ],
+    "barrier_fraction": 0.3888888888888889
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "id": 6,
+  "contrast": 10000.0,
+  "near_kernel": 0,
+  "n_K1_components": 10,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 10.231297198557545,
+  "n_members_index_ge_3": 2,
+  "multi_component_among_index_ge_3": 2,
+  "multi_component_all": 2,
+  "worst": [
+   {
+    "member": 297,
+    "index": 10.231297198557545,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.45214889447970563,
+     0.40455212598037404
+    ],
+    "barrier_fraction": 0.5347222222222222
+   },
+   {
+    "member": 511,
+    "index": 3.3586443221125206,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.4283086778760236,
+     0.44206328334258554
+    ],
+    "barrier_fraction": 0.48333333333333334
+   },
+   {
+    "member": 438,
+    "index": 2.477083341502494,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.4005666180963775,
+     0.9562038619512114
+    ],
+    "barrier_fraction": 0.3333333333333333
+   },
+   {
+    "member": 267,
+    "index": 2.3942093650913114,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.7407534697095901,
+     0.28658816100257295
+    ],
+    "barrier_fraction": 0.3058252427184466
+   },
+   {
+    "member": 107,
+    "index": 1.315256530129173,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.45037245994909436,
+     0.5684498232322451
+    ],
+    "barrier_fraction": 0.32786885245901637
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "id": 7,
+  "contrast": 10000.0,
+  "near_kernel": 0,
+  "n_K1_components": 10,
+  "n_islands": 2,
+  "island_sizes": [
+   1,
+   1
+  ],
+  "index_max": 2.8235677276398694,
+  "n_members_index_ge_3": 0,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 4,
+  "worst": [
+   {
+    "member": 405,
+    "index": 2.8235677276398694,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.5281002872577527,
+     0.8298003818873393
+    ],
+    "barrier_fraction": 0.4223300970873786
+   },
+   {
+    "member": 85,
+    "index": 2.2329347578097187,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.4921534140535616,
+     0.8162738912541794
+    ],
+    "barrier_fraction": 0.3872549019607843
+   },
+   {
+    "member": 395,
+    "index": 1.4459925753984266,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.594754322703841,
+     0.7943776396150153
+    ],
+    "barrier_fraction": 0.463855421686747
+   },
+   {
+    "member": 494,
+    "index": 1.2974018755157786,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.4849076686330979,
+     0.2193683564489937
+    ],
+    "barrier_fraction": 0.81
+   },
+   {
+    "member": 702,
+    "index": 1.2715540929794866,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   }
+  ],
+  "family": "barriers"
+ },
+ {
+  "family": "channels",
+  "id": 0,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 5,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 41.67535107242935,
+  "n_members_index_ge_3": 4,
+  "multi_component_among_index_ge_3": 1,
+  "multi_component_all": 2,
+  "worst": [
+   {
+    "member": 378,
+    "index": 41.67535107242935,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.9368307402237777,
+     0.41630470981906026
+    ],
+    "barrier_fraction": 0.6041666666666666
+   },
+   {
+    "member": 392,
+    "index": 16.89781207830719,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.863220224351453,
+     0.4875315115646124
+    ],
+    "barrier_fraction": 0.5222222222222223
+   },
+   {
+    "member": 376,
+    "index": 12.153309558463006,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.9134206059583134,
+     0.42894475112496167
+    ],
+    "barrier_fraction": 0.5944444444444444
+   },
+   {
+    "member": 80,
+    "index": 11.34317501152847,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.9047418540410715,
+     0.4579657768723376
+    ],
+    "barrier_fraction": 0.6120218579234973
+   },
+   {
+    "member": 425,
+    "index": 1.3458077335874357,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.5874740950951188,
+     0.9303167548899828
+    ],
+    "barrier_fraction": 0.2578616352201258
+   }
+  ]
+ },
+ {
+  "family": "channels",
+  "id": 1,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 2,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 6.84936540613065,
+  "n_members_index_ge_3": 1,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 0,
+  "worst": [
+   {
+    "member": 44,
+    "index": 6.84936540613065,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.7152457669225261,
+     0.3402143073590508
+    ],
+    "barrier_fraction": 0.594059405940594
+   },
+   {
+    "member": 276,
+    "index": 1.5774344975958572,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5559391725737074,
+     0.7336717324824538
+    ],
+    "barrier_fraction": 0.5964912280701754
+   },
+   {
+    "member": 399,
+    "index": 1.4463791610842975,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5661672025577525,
+     0.7487395732638277
+    ],
+    "barrier_fraction": 0.5298507462686567
+   },
+   {
+    "member": 197,
+    "index": 1.431869451005934,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.9506494906444521,
+     0.04897593257567605
+    ],
+    "barrier_fraction": 0.40229885057471265
+   },
+   {
+    "member": 702,
+    "index": 1.271554092979486,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   }
+  ]
+ },
+ {
+  "family": "channels",
+  "id": 2,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 3,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 20.12123420385802,
+  "n_members_index_ge_3": 1,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 0,
+  "worst": [
+   {
+    "member": 475,
+    "index": 20.12123420385802,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.5102961727330774,
+     0.2848919940077672
+    ],
+    "barrier_fraction": 0.63
+   },
+   {
+    "member": 702,
+    "index": 1.271554092979486,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   },
+   {
+    "member": 273,
+    "index": 1.2612367951054688,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5306189156108762,
+     0.7476410736177224
+    ],
+    "barrier_fraction": 0.28921568627450983
+   },
+   {
+    "member": 312,
+    "index": 1.26002920879339,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.4007733376860644,
+     0.19464546737456564
+    ],
+    "barrier_fraction": 0.36477987421383645
+   },
+   {
+    "member": 405,
+    "index": 1.2553499907361243,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5281002872577527,
+     0.8298003818873393
+    ],
+    "barrier_fraction": 0.4368932038834951
+   }
+  ]
+ },
+ {
+  "family": "channels",
+  "id": 3,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 2,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 54.63799368128735,
+  "n_members_index_ge_3": 1,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 0,
+  "worst": [
+   {
+    "member": 289,
+    "index": 54.63799368128735,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.6309433828481277,
+     0.23020701490598658
+    ],
+    "barrier_fraction": 0.6842105263157895
+   },
+   {
+    "member": 425,
+    "index": 1.2994873950443442,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.5874740950951188,
+     0.9303167548899828
+    ],
+    "barrier_fraction": 0.44025157232704404
+   },
+   {
+    "member": 496,
+    "index": 1.2990983521768018,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.4877439253194823,
+     0.19661466954098505
+    ],
+    "barrier_fraction": 0.2669902912621359
+   },
+   {
+    "member": 702,
+    "index": 1.271554092979486,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   },
+   {
+    "member": 743,
+    "index": 1.245042841142399,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.8059295797860142,
+     0.7511656446373067
+    ],
+    "barrier_fraction": 0.18055555555555555
+   }
+  ]
+ },
+ {
+  "family": "channels",
+  "id": 4,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 2,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 1.3320842072508097,
+  "n_members_index_ge_3": 0,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 0,
+  "worst": [
+   {
+    "member": 333,
+    "index": 1.3320842072508097,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.04363477859218143,
+     0.3572574988415747
+    ],
+    "barrier_fraction": 0.39552238805970147
+   },
+   {
+    "member": 702,
+    "index": 1.271554092979486,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   },
+   {
+    "member": 65,
+    "index": 1.2517828284375028,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.4575933365779633,
+     0.1889850283875686
+    ],
+    "barrier_fraction": 0.31313131313131315
+   },
+   {
+    "member": 306,
+    "index": 1.2319310829631525,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.42345218682322106,
+     0.05786174021028
+    ],
+    "barrier_fraction": 0.4305555555555556
+   },
+   {
+    "member": 751,
+    "index": 1.2160169799622915,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.8719904210374491,
+     0.6638987803088053
+    ],
+    "barrier_fraction": 0.44654088050314467
+   }
+  ]
+ },
+ {
+  "family": "channels",
+  "id": 5,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 3,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 1.271554092979486,
+  "n_members_index_ge_3": 0,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 0,
+  "worst": [
+   {
+    "member": 702,
+    "index": 1.271554092979486,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.0
+   },
+   {
+    "member": 391,
+    "index": 1.2487159818749696,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.9083910724227388,
+     0.5096477530050102
+    ],
+    "barrier_fraction": 0.3103448275862069
+   },
+   {
+    "member": 494,
+    "index": 1.2460568414288264,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.4849076686330979,
+     0.2193683564489937
+    ],
+    "barrier_fraction": 0.295
+   },
+   {
+    "member": 444,
+    "index": 1.2259624262989675,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.7329894007930007,
+     0.16133578776627247
+    ],
+    "barrier_fraction": 0.5595854922279793
+   },
+   {
+    "member": 358,
+    "index": 1.1961640110521836,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.27965728413111984,
+     0.1664282420005367
+    ],
+    "barrier_fraction": 0.2986111111111111
+   }
+  ]
+ },
+ {
+  "family": "channels",
+  "id": 6,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 5,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 1.2715450573600589,
+  "n_members_index_ge_3": 0,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 1,
+  "worst": [
+   {
+    "member": 702,
+    "index": 1.2715450573600589,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.03441535283870202,
+     0.9377063847594199
+    ],
+    "barrier_fraction": 0.008771929824561403
+   },
+   {
+    "member": 546,
+    "index": 1.260852998210147,
+    "n_components": 0,
+    "carries_island": false,
+    "centroid": [
+     0.943338931462645,
+     0.25248009015798367
+    ],
+    "barrier_fraction": 0.375
+   },
+   {
+    "member": 795,
+    "index": 1.2255065457014565,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.24458375764204687,
+     0.8867004667673112
+    ],
+    "barrier_fraction": 0.1836734693877551
+   },
+   {
+    "member": 388,
+    "index": 1.191125231987449,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.8568613136536193,
+     0.505180517301901
+    ],
+    "barrier_fraction": 0.2847222222222222
+   },
+   {
+    "member": 520,
+    "index": 1.1821249795116315,
+    "n_components": 2,
+    "carries_island": false,
+    "centroid": [
+     0.41708282906256816,
+     0.6245791904452715
+    ],
+    "barrier_fraction": 0.2847222222222222
+   }
+  ]
+ },
+ {
+  "family": "channels",
+  "id": 7,
+  "contrast": 1000000.0,
+  "near_kernel": 0,
+  "n_K1_components": 3,
+  "n_islands": 0,
+  "island_sizes": [],
+  "index_max": 17.11883202388876,
+  "n_members_index_ge_3": 1,
+  "multi_component_among_index_ge_3": 0,
+  "multi_component_all": 0,
+  "worst": [
+   {
+    "member": 367,
+    "index": 17.11883202388876,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.18392435483779537,
+     0.04627549561398363
+    ],
+    "barrier_fraction": 0.7619047619047619
+   },
+   {
+    "member": 246,
+    "index": 1.3437225320285122,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5735215741942544,
+     0.4747019796079665
+    ],
+    "barrier_fraction": 0.1736111111111111
+   },
+   {
+    "member": 427,
+    "index": 1.2929509221034228,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.5080828748896311,
+     0.9540984840065427
+    ],
+    "barrier_fraction": 0.1791044776119403
+   },
+   {
+    "member": 678,
+    "index": 1.2888551888139612,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.14645169179643147,
+     0.22289403923140216
+    ],
+    "barrier_fraction": 0.2578616352201258
+   },
+   {
+    "member": 92,
+    "index": 1.2867817570977527,
+    "n_components": 1,
+    "carries_island": false,
+    "centroid": [
+     0.6370884962982102,
+     0.877078522049189
+    ],
+    "barrier_fraction": 0.37948717948717947
+   }
+  ]
+ }
+]

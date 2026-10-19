@@ -1,0 +1,66 @@
+data from cache /kaggle/working/pd_data_85.npz
+fno: train (1000, 85, 85), test (100, 85, 85), device cuda
+/usr/local/lib/python3.13/dist-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+fno: 595,265 parameters, batch 20, 500 epochs
+fno ep    1  train 1.8804e-01  test rel L2 1.3137e-01  (3s)
+fno ep   51  train 2.7612e-02  test rel L2 2.9220e-02  (100s)
+fno ep  101  train 2.0670e-02  test rel L2 2.3054e-02  (198s)
+fno ep  151  train 1.9025e-02  test rel L2 2.3573e-02  (295s)
+fno ep  201  train 1.6675e-02  test rel L2 1.9840e-02  (393s)
+fno ep  251  train 1.5724e-02  test rel L2 1.9329e-02  (490s)
+fno ep  301  train 1.4834e-02  test rel L2 1.7969e-02  (588s)
+fno ep  351  train 1.4384e-02  test rel L2 1.7929e-02  (686s)
+fno ep  401  train 1.3687e-02  test rel L2 1.7520e-02  (783s)
+fno ep  451  train 1.3587e-02  test rel L2 1.7503e-02  (881s)
+fno ep  500  train 1.3363e-02  test rel L2 1.7434e-02  (977s)
+RESULT fno: test mean relative L2 1.7434% (published 0.0108)
+data from cache /kaggle/working/pd_data_85.npz
+fno-official: train (1000, 85, 85), test (100, 85, 85), device cuda
+fno-official: 1,188,353 parameters, batch 20, 500 epochs
+fno-official ep    1  train 1.6073e-01  test rel L2 1.1255e-01  (4s)
+fno-official ep   51  train 1.7152e-02  test rel L2 1.9891e-02  (147s)
+fno-official ep  101  train 1.1744e-02  test rel L2 1.3054e-02  (291s)
+fno-official ep  151  train 1.0310e-02  test rel L2 1.1980e-02  (435s)
+fno-official ep  201  train 8.9909e-03  test rel L2 1.0722e-02  (579s)
+fno-official ep  251  train 8.6215e-03  test rel L2 1.1487e-02  (723s)
+fno-official ep  301  train 7.6972e-03  test rel L2 1.0076e-02  (867s)
+fno-official ep  351  train 7.4255e-03  test rel L2 1.0208e-02  (1011s)
+fno-official ep  401  train 6.9996e-03  test rel L2 9.6077e-03  (1155s)
+fno-official ep  451  train 6.8296e-03  test rel L2 9.7922e-03  (1299s)
+fno-official ep  500  train 6.6729e-03  test rel L2 9.5544e-03  (1440s)
+RESULT fno-official: test mean relative L2 0.9554% (published 0.0108)
+data from cache /kaggle/working/pd_data_85.npz
+wno-db4: train (1000, 85, 85), test (100, 85, 85), device cuda
+/usr/local/lib/python3.13/dist-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+wno-db4: 7,955,201 parameters, batch 20, 500 epochs
+wno-db4 ep    1  train 1.5519e-01  test rel L2 1.3420e-01  (9s)
+wno-db4 ep   51  train 1.7449e-02  test rel L2 2.6726e-02  (420s)
+wno-db4 ep  101  train 1.1304e-02  test rel L2 2.3041e-02  (830s)
+wno-db4 ep  151  train 9.4670e-03  test rel L2 2.2194e-02  (1239s)
+wno-db4 ep  201  train 8.4338e-03  test rel L2 2.1944e-02  (1648s)
+wno-db4 ep  251  train 7.4439e-03  test rel L2 2.1475e-02  (2056s)
+wno-db4 ep  301  train 7.3187e-03  test rel L2 2.1574e-02  (2465s)
+wno-db4 ep  351  train 7.9020e-03  test rel L2 2.2182e-02  (2874s)
+wno-db4 ep  401  train 8.1986e-03  test rel L2 2.2438e-02  (3283s)
+wno-db4 ep  451  train 7.9284e-03  test rel L2 2.2468e-02  (3691s)
+wno-db4 ep  500  train 7.9715e-03  test rel L2 2.2686e-02  (4092s)
+RESULT wno-db4: test mean relative L2 2.2686% (published 0.0084)
+data from cache /kaggle/working/pd_data_85.npz
+wno-db6: train (1000, 85, 85), test (100, 85, 85), device cuda
+/usr/local/lib/python3.13/dist-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+wno-db6: 14,770,945 parameters, batch 20, 500 epochs
+wno-db6 ep    1  train 1.5675e-01  test rel L2 1.3281e-01  (11s)
+wno-db6 ep   51  train 1.9912e-02  test rel L2 2.5233e-02  (534s)
+wno-db6 ep  101  train 1.7017e-02  test rel L2 2.3376e-02  (1055s)
+wno-db6 ep  151  train 1.5504e-02  test rel L2 2.3543e-02  (1577s)
+wno-db6 ep  201  train 1.5017e-02  test rel L2 2.6256e-02  (2097s)
+wno-db6 ep  251  train 1.4132e-02  test rel L2 2.2191e-02  (2618s)
+wno-db6 ep  301  train 1.4178e-02  test rel L2 2.1760e-02  (3138s)
+wno-db6 ep  351  train 1.3754e-02  test rel L2 2.2513e-02  (3658s)
+wno-db6 ep  401  train 1.3668e-02  test rel L2 2.1699e-02  (4177s)
+wno-db6 ep  451  train 1.3045e-02  test rel L2 2.1685e-02  (4697s)
+wno-db6 ep  500  train 1.2827e-02  test rel L2 2.1383e-02  (5207s)
+RESULT wno-db6: test mean relative L2 2.1383% (published 0.0084)

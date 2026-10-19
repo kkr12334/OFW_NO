@@ -1,0 +1,8 @@
+{
+ "note": "frozen input scales from each model's own training data (amendment 1, A7.2); never recomputed on C/S/LC",
+ "scales": {
+  "channels/fixed-load": 0.0004684449243868195,
+  "barriers/fixed-load": 1.181379922392435,
+  "channels/random-load": 0.0004678465006335751
+ }
+}

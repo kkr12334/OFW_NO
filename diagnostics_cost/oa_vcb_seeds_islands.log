@@ -1,0 +1,5 @@
+islands 50/100
+classical member (V(4,4) op.-adapted + deflation + projection): all 0.0959, island 0.1754, no island 0.0164
+oa-vcb seed 1: all 0.0714, island 0.1349, no island 0.0078;  beats the classical member on 85% of samples (island 76%, no island 94%);  worst 3: [0.375 0.538 0.57 ], samples > classical x2: 3
+oa-vcb seed 2: all 0.0708, island 0.1338, no island 0.0079;  beats the classical member on 87% of samples (island 76%, no island 98%);  worst 3: [0.316 0.451 0.59 ], samples > classical x2: 4
+seed-to-seed per-sample spread: mean |log(en_s1/en_s2)| = 0.233

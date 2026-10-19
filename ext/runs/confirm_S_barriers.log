@@ -1,0 +1,19 @@
+GATE pass: fitted coefficients hash = frozen
+set S: {'draws': 1208, 'category_counts_among_draws': {'island': 538, 'discordant': 20, 'EDP': 46, 'strict non-island': 604}, 'kept': {'island': 20, 'discordant': 20, 'EDP': 20, 'strict non-island': 20}, 'cap_reached': False}
+S barriers: data generated in 17 s (80 samples)
+  classical 1/80 (0 s)
+  classical 21/80 (2 s)
+  classical 41/80 (5 s)
+  classical 61/80 (7 s)
+GATE pass: CHEB common path = legacy anchor (rel. diff <= 1e-8 on every sample) (4.762856775641922e-13)
+GATE pass: all checkpoints match checkpoint_map SHA-256
+GATE pass: three OA-VCB initialisations present (['OA-VCB init0', 'OA-VCB init1', 'OA-VCB init2'])
+GATE pass: all checkpoints match checkpoint_map SHA-256 (final)
+
+== S barriers: 80 samples, strata {'EDP': 20, 'discordant': 20, 'island': 20, 'strict non-island': 20}, 78 s
+  OA-VCB init0: P1 R 1.375 [1.202, 1.569] W 0.79 -> partly accounted for / inconclusive;  P2 1.804 [1.557, 2.085]
+  OA-VCB init1: P1 R 1.403 [1.215, 1.609] W 0.78 -> partly accounted for / inconclusive;  P2 1.841 [1.580, 2.131]
+  OA-VCB init2: P1 R 1.391 [1.213, 1.590] W 0.81 -> partly accounted for / inconclusive;  P2 1.824 [1.572, 2.109]
+  P3 (CHEB-legacy -> PCG) 1.420 [1.358, 1.486];  P1 family label: partly accounted for / inconclusive
+  failures: none
+exit 0

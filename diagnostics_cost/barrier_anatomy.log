@@ -1,0 +1,20 @@
+
+=== barriers 1e-4, load f=1 (as run) (10 samples, L3, k0 2 Galerkin) ===
+  barrier nodes 14.6% of unknowns carry 95.5% of ||u||^2; barrier elements carry 97.3% of ||u||_A^2;  max|u|/median|u| 831
+  coarse                 rel-L2 7.961e-01  energy 0.8937
+  cheb4                  rel-L2 2.965e-01  energy 0.3091
+  cheb16                 rel-L2 9.778e-02  energy 0.1021
+  barrier_solve          rel-L2 8.621e-02  energy 0.1289
+  barrier_solve+coarse   rel-L2 8.648e-02  energy 0.1264
+  TG_-PCG after 1/2/4/8 its: 3.64e-01/0.419 1.89e-01/0.207 6.02e-02/0.077 3.21e-03/0.005;  its to the networks' 2.89e-1/0.293: median 2 [max 6]
+  AMG-PCG after 1/2/4/8 its: 2.73e-01/0.273 1.34e-01/0.132 7.95e-02/0.084 1.43e-03/0.002;  its to the networks' 2.89e-1/0.293: median 1 [max 6]
+
+=== barriers 1e-4, load f=1 off barriers (10 samples, L3, k0 2 Galerkin) ===
+  barrier nodes 14.6% of unknowns carry 16.6% of ||u||^2; barrier elements carry 8.8% of ||u||_A^2;  max|u|/median|u| 5
+  coarse                 rel-L2 2.097e-01  energy 0.3205
+  cheb4                  rel-L2 1.871e-01  energy 0.1968
+  cheb16                 rel-L2 1.687e-01  energy 0.1590
+  barrier_solve          rel-L2 1.945e-01  energy 0.3203
+  barrier_solve+coarse   rel-L2 1.944e-01  energy 0.3203
+  TG_-PCG after 1/2/4/8 its: 1.52e-01/0.176 7.37e-02/0.096 9.78e-03/0.017 3.77e-03/0.004;  its to the networks' 2.89e-1/0.293: median 0 [max 3]
+  AMG-PCG after 1/2/4/8 its: 1.47e-01/0.147 1.18e-01/0.115 2.86e-02/0.050 3.31e-03/0.004;  its to the networks' 2.89e-1/0.293: median 0 [max 5]

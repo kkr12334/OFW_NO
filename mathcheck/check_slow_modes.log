@@ -1,0 +1,81 @@
+# NOTE (6 Oct): 'best alignment with a conductive-component constant' below = max squared Euclidean cosine between the mode
+# and a component INDICATOR; not constancy inside the component (see check_enrichment_quality.log part 1).
+L3: 3486 unknowns, 3 levels; B = symmetric V(4,4) Chebyshev, operator-adapted transfers; balanced with the detected Z where the detector returns vectors
+  barriers 1e-4 300: geometric islands 0, detector vectors 0 | M_oa delta 0.234 -> B delta 0.234 kappa 1.30 | PCG its f=1 7, no-low 7
+      slow mode lambda 0.766: best alignment with a conductive-component constant 0.00 (component of 320 unknowns, touching 44 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.16e-01
+      slow mode lambda 0.837: best alignment with a conductive-component constant 0.00 (component of 226 unknowns, touching 12 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.09e-01
+      slow mode lambda 0.842: best alignment with a conductive-component constant 0.00 (component of 639 unknowns, touching 101 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.32e-01
+  barriers 1e-4 301: geometric islands 1, detector vectors 1 | M_oa delta 0.906 -> B delta 0.646 kappa 2.82 | PCG its f=1 8, no-low 8
+      slow mode lambda 0.354: best alignment with a conductive-component constant 0.46 (component of 35 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.79e-05
+      slow mode lambda 0.662: best alignment with a conductive-component constant 0.00 (component of 302 unknowns, touching 51 Dirichlet nodes); Rayleigh x^T A x / x^T D x 8.97e-02
+      slow mode lambda 0.817: best alignment with a conductive-component constant 0.00 (component of 35 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.66e-02
+  barriers 1e-4 302: geometric islands 0, detector vectors 0 | M_oa delta 0.160 -> B delta 0.160 kappa 1.19 | PCG its f=1 6, no-low 6
+      slow mode lambda 0.840: best alignment with a conductive-component constant 0.00 (component of 270 unknowns, touching 20 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.09e-01
+      slow mode lambda 0.867: best alignment with a conductive-component constant 0.00 (component of 349 unknowns, touching 37 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.38e-01
+      slow mode lambda 0.873: best alignment with a conductive-component constant 0.00 (component of 349 unknowns, touching 37 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.20e-01
+  barriers 1e-4 303: geometric islands 0, detector vectors 0 | M_oa delta 0.199 -> B delta 0.199 kappa 1.25 | PCG its f=1 7, no-low 6
+      slow mode lambda 0.801: best alignment with a conductive-component constant 0.26 (component of 330 unknowns, touching 31 Dirichlet nodes); Rayleigh x^T A x / x^T D x 7.26e-03
+      slow mode lambda 0.836: best alignment with a conductive-component constant 0.00 (component of 202 unknowns, touching 40 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.07e-01
+      slow mode lambda 0.845: best alignment with a conductive-component constant 0.43 (component of 277 unknowns, touching 25 Dirichlet nodes); Rayleigh x^T A x / x^T D x 5.66e-03
+  barriers 1e-4 304: geometric islands 1, detector vectors 1 | M_oa delta 0.982 -> B delta 0.711 kappa 3.46 | PCG its f=1 7, no-low 7
+      slow mode lambda 0.289: best alignment with a conductive-component constant 0.69 (component of 200 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 4.56e-06
+      slow mode lambda 0.859: best alignment with a conductive-component constant 0.00 (component of 690 unknowns, touching 88 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.13e-01
+      slow mode lambda 0.863: best alignment with a conductive-component constant 0.00 (component of 200 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.20e-02
+  barriers 1e-4 305: geometric islands 0, detector vectors 0 | M_oa delta 0.228 -> B delta 0.228 kappa 1.30 | PCG its f=1 7, no-low 6
+      slow mode lambda 0.772: best alignment with a conductive-component constant 0.66 (component of 236 unknowns, touching 12 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.74e-03
+      slow mode lambda 0.834: best alignment with a conductive-component constant 0.00 (component of 869 unknowns, touching 73 Dirichlet nodes); Rayleigh x^T A x / x^T D x 7.83e-02
+      slow mode lambda 0.883: best alignment with a conductive-component constant 0.09 (component of 418 unknowns, touching 65 Dirichlet nodes); Rayleigh x^T A x / x^T D x 9.18e-02
+  barriers 1e-4 306: geometric islands 1, detector vectors 1 | M_oa delta 0.946 -> B delta 0.722 kappa 3.59 | PCG its f=1 8, no-low 8
+      slow mode lambda 0.278: best alignment with a conductive-component constant 0.63 (component of 140 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 5.49e-06
+      slow mode lambda 0.778: best alignment with a conductive-component constant 0.24 (component of 1287 unknowns, touching 152 Dirichlet nodes); Rayleigh x^T A x / x^T D x 6.52e-03
+      slow mode lambda 0.784: best alignment with a conductive-component constant 0.00 (component of 140 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.10e-02
+  barriers 1e-4 307: geometric islands 0, detector vectors 0 | M_oa delta 0.141 -> B delta 0.141 kappa 1.16 | PCG its f=1 6, no-low 6
+      slow mode lambda 0.859: best alignment with a conductive-component constant 0.00 (component of 10 unknowns, touching 6 Dirichlet nodes); Rayleigh x^T A x / x^T D x 8.87e-02
+      slow mode lambda 0.872: best alignment with a conductive-component constant 0.00 (component of 121 unknowns, touching 24 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.47e-01
+      slow mode lambda 0.893: best alignment with a conductive-component constant 0.00 (component of 380 unknowns, touching 40 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.23e-01
+  barriers 1e-4 308: geometric islands 2, detector vectors 2 | M_oa delta 0.978 -> B delta 0.700 kappa 3.33 | PCG its f=1 8, no-low 8
+      slow mode lambda 0.300: best alignment with a conductive-component constant 0.47 (component of 25 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 2.67e-05
+      slow mode lambda 0.448: best alignment with a conductive-component constant 0.32 (component of 8 unknowns, touching 0 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.11e-04
+      slow mode lambda 0.862: best alignment with a conductive-component constant 0.00 (component of 224 unknowns, touching 40 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.23e-01
+  barriers 1e-4 309: geometric islands 0, detector vectors 0 | M_oa delta 0.697 -> B delta 0.697 kappa 3.30 | PCG its f=1 9, no-low 8
+      slow mode lambda 0.303: best alignment with a conductive-component constant 0.81 (component of 149 unknowns, touching 2 Dirichlet nodes); Rayleigh x^T A x / x^T D x 5.47e-04
+      slow mode lambda 0.571: best alignment with a conductive-component constant 0.84 (component of 324 unknowns, touching 4 Dirichlet nodes); Rayleigh x^T A x / x^T D x 2.72e-04
+      slow mode lambda 0.800: best alignment with a conductive-component constant 0.00 (component of 152 unknowns, touching 8 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.18e-01
+  barriers 1e-4 310: geometric islands 0, detector vectors 0 | M_oa delta 0.193 -> B delta 0.193 kappa 1.24 | PCG its f=1 7, no-low 6
+      slow mode lambda 0.807: best alignment with a conductive-component constant 0.00 (component of 107 unknowns, touching 15 Dirichlet nodes); Rayleigh x^T A x / x^T D x 7.94e-02
+      slow mode lambda 0.811: best alignment with a conductive-component constant 0.00 (component of 1046 unknowns, touching 70 Dirichlet nodes); Rayleigh x^T A x / x^T D x 9.03e-02
+      slow mode lambda 0.866: best alignment with a conductive-component constant 0.31 (component of 1046 unknowns, touching 70 Dirichlet nodes); Rayleigh x^T A x / x^T D x 4.16e-03
+  barriers 1e-4 311: geometric islands 0, detector vectors 0 | M_oa delta 0.155 -> B delta 0.155 kappa 1.18 | PCG its f=1 6, no-low 6
+      slow mode lambda 0.845: best alignment with a conductive-component constant 0.00 (component of 334 unknowns, touching 26 Dirichlet nodes); Rayleigh x^T A x / x^T D x 9.87e-02
+      slow mode lambda 0.867: best alignment with a conductive-component constant 0.05 (component of 266 unknowns, touching 37 Dirichlet nodes); Rayleigh x^T A x / x^T D x 2.25e-02
+      slow mode lambda 0.877: best alignment with a conductive-component constant 0.00 (component of 334 unknowns, touching 26 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.17e-01
+  channels 1e4 300: geometric islands 0, detector vectors 0 | M_oa delta 0.302 -> B delta 0.302 kappa 1.43 | PCG its f=1 8
+      slow mode lambda 0.698: best alignment with a conductive-component constant 0.02 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 4.17e-02
+      slow mode lambda 0.773: best alignment with a conductive-component constant 0.04 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 3.91e-02
+      slow mode lambda 0.784: best alignment with a conductive-component constant 0.05 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 3.24e-02
+  channels 1e4 301: geometric islands 0, detector vectors 0 | M_oa delta 0.244 -> B delta 0.244 kappa 1.32 | PCG its f=1 7
+      slow mode lambda 0.756: best alignment with a conductive-component constant 0.03 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 6.62e-02
+      slow mode lambda 0.768: best alignment with a conductive-component constant 0.02 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 5.40e-02
+      slow mode lambda 0.771: best alignment with a conductive-component constant 0.05 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 2.90e-02
+  channels 1e4 302: geometric islands 0, detector vectors 0 | M_oa delta 0.244 -> B delta 0.244 kappa 1.32 | PCG its f=1 8
+      slow mode lambda 0.756: best alignment with a conductive-component constant 0.05 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 2.32e-02
+      slow mode lambda 0.764: best alignment with a conductive-component constant 0.05 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 3.47e-02
+      slow mode lambda 0.789: best alignment with a conductive-component constant 0.01 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 7.26e-02
+  channels 1e4 303: geometric islands 0, detector vectors 0 | M_oa delta 0.226 -> B delta 0.226 kappa 1.29 | PCG its f=1 7
+      slow mode lambda 0.774: best alignment with a conductive-component constant 0.04 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 4.13e-02
+      slow mode lambda 0.777: best alignment with a conductive-component constant 0.10 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 1.99e-02
+      slow mode lambda 0.803: best alignment with a conductive-component constant 0.05 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 3.64e-02
+  channels 1e4 304: geometric islands 0, detector vectors 0 | M_oa delta 0.267 -> B delta 0.267 kappa 1.36 | PCG its f=1 7
+      slow mode lambda 0.733: best alignment with a conductive-component constant 0.04 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 4.70e-02
+      slow mode lambda 0.811: best alignment with a conductive-component constant 0.06 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 2.71e-02
+      slow mode lambda 0.812: best alignment with a conductive-component constant 0.04 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 2.90e-02
+  channels 1e4 305: geometric islands 0, detector vectors 0 | M_oa delta 0.249 -> B delta 0.249 kappa 1.33 | PCG its f=1 7
+      slow mode lambda 0.751: best alignment with a conductive-component constant 0.04 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 3.40e-02
+      slow mode lambda 0.815: best alignment with a conductive-component constant 0.04 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 3.53e-02
+      slow mode lambda 0.824: best alignment with a conductive-component constant 0.02 (component of 3486 unknowns, touching 448 Dirichlet nodes); Rayleigh x^T A x / x^T D x 4.98e-02
+
+SUMMARY (pilot, per class): delta of B = 1 - lambda_min (median / worst), PCG its (median / worst)
+  channels                       n= 6  M_oa delta median 0.247 worst 0.302 | balanced delta median 0.247 worst 0.302 | PCG f=1 7/8, no-low 7/8 | slowest mode: alignment median 0.04, Dirichlet nodes of its component [448, 448, 448, 448, 448, 448]
+  barriers, geometric island     n= 4  M_oa delta median 0.962 worst 0.982 | balanced delta median 0.706 worst 0.722 | PCG f=1 8/8, no-low 8/8 | slowest mode: alignment median 0.55, Dirichlet nodes of its component [0, 0, 0, 0]
+  barriers, no geometric island  n= 8  M_oa delta median 0.196 worst 0.697 | balanced delta median 0.196 worst 0.697 | PCG f=1 7/9, no-low 6/8 | slowest mode: alignment median 0.00, Dirichlet nodes of its component [44, 20, 31, 12, 6, 2, 15, 26]
+  detector vs geometry (barriers): 300: geo 0 / det 0, 301: geo 1 / det 1, 302: geo 0 / det 0, 303: geo 0 / det 0, 304: geo 1 / det 1, 305: geo 0 / det 0, 306: geo 1 / det 1, 307: geo 0 / det 0, 308: geo 2 / det 2, 309: geo 0 / det 0, 310: geo 0 / det 0, 311: geo 0 / det 0

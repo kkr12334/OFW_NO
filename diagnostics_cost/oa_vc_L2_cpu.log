@@ -1,0 +1,82 @@
+# CPU screens, 3 Oct evening: Darcy L2 perforated, 150/50, 100 epochs, k0 1 Galerkin (geometric u_c), seed 0, --classical 1
+## barriers 1e-4, --load no-low
+coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 2x
+coarse mesh perforated, bc dirichlet
+level 2: 814 interior nodes, field channels, contrast 1e-04, 200 samples, device cpu, load no-low
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=0  rank_scale=None
+  exact coarse solve to level 1 (Galerkin on the level-1 mesh): 0 ms/sample, on its own it already gives rel-L2 6.340e-01 -- the network learns the rest
+
+[oa-ll-op] already in /tmp/claude-0/-home-claude/ab724cc1-0dd6-5ec9-8146-148b166585b8/scratchpad/l2bar/results_train_oa_L2_perforatedd9_channels_routeV.jsonl -- skipped
+
+[gnn-op] already in /tmp/claude-0/-home-claude/ab724cc1-0dd6-5ec9-8146-148b166585b8/scratchpad/l2bar/results_train_oa_L2_perforatedd9_channels_routeV.jsonl -- skipped
+
+[oa-ll-op-oa] already in /tmp/claude-0/-home-claude/ab724cc1-0dd6-5ec9-8146-148b166585b8/scratchpad/l2bar/results_train_oa_L2_perforatedd9_channels_routeV.jsonl -- skipped
+  V-cycle operator data (2 levels, 4 smoothing steps of the predict, coarsest 28 nodes) built in 2s (11 ms/sample)
+
+[oa-vc] width 12, params 20,672 (target 22,033), learned V-cycle, 2 levels, operator-adapted transfers, Galerkin levels, exact coarsest solve, operator-consistent smoothers (nu 4, shared)
+    oa-vc      TEST  rel-L2 3.137e-01  energy 2.524e-01  (train 746s; model saved)
+
+
+RESULTS  route V, level 2, coarse mesh perforated (n=9), bc dirichlet, channels, contrast 1e-04, 150 train / 50 test, 100 epochs, rank 0, loss mix, exact coarse solve to level 1 (galerkin)
+model          params  test rel-L2  energy err  train s  infer ms  +transform ms
+oa-ll-op       20,403    4.985e-01   4.120e-01      238       4.1              0
+oa-ll-op-oa    20,403    4.768e-01   3.925e-01      300       5.3              0
+oa-vc          20,672    3.137e-01   2.524e-01      746      13.3              0
+gnn-op         20,273    5.265e-01   4.393e-01      442       6.8              0
+
+CLASSICAL, same u_c (galerkin coarse space), same 50 test samples (CPU; coarse factor+solve 0.7 ms, one TG-PCG iteration 0.09 ms per sample)
+method                              test rel-L2  energy err
+coarse solve alone                    5.688e-01   5.633e-01
+Chebyshev post(4), best q=10          5.474e-01   4.175e-01
+Chebyshev post(16), best q=100        4.760e-01   3.342e-01
+two-grid PCG, 1 its                   4.881e-01   3.874e-01
+two-grid PCG, 2 its                   4.040e-01   2.981e-01
+two-grid PCG, 3 its                   3.727e-01   2.608e-01
+two-grid PCG, 4 its                   3.454e-01   2.380e-01
+two-grid PCG, 6 its                   2.554e-01   1.754e-01
+two-grid PCG, 8 its                   8.599e-02   7.963e-02
+V(4,4) Chebyshev, geometric           4.745e-01   3.387e-01   (2.1 ms incl. build)
+V(4,4) Chebyshev, operator-adapted    3.692e-01   2.555e-01   (8.6 ms incl. build)
+  two-grid PCG iterations to match oa-ll-op        : median 1  (min 0, max 10)
+  two-grid PCG iterations to match oa-ll-op-oa     : median 1  (min 0, max 10)
+  two-grid PCG iterations to match oa-vc           : median 2  (min 1, max 10)
+  two-grid PCG iterations to match gnn-op          : median 1  (min 0, max 10)
+
+## channels 1e4
+coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 2x
+coarse mesh perforated, bc dirichlet
+level 2: 814 interior nodes, field channels, contrast 1e+04, 200 samples, device cpu
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=0  rank_scale=None
+  solved 200 samples in 1s
+  exact coarse solve to level 1 (Galerkin on the level-1 mesh): 1 ms/sample, on its own it already gives rel-L2 3.005e-01 -- the network learns the rest
+  operator data for the energy loss built in 1s
+  operator weights a_ij/a_ii (4432 edges) + residual input built in 0s; rel. spread of |D^-1 r| over samples 0.07
+
+[oa-ll-op] width 16, params 20,403 (target 22,033), learnable lifting on the mesh hierarchy: 2 lifting levels (640, 146 detail nodes), coarse 28
+    oa-ll-op   TEST  rel-L2 2.814e-02  energy 5.093e-02  (train 246s; model saved)
+  V-cycle operator data (2 levels, 4 smoothing steps of the predict, coarsest 28 nodes) built in 2s (10 ms/sample)
+
+[oa-vc] width 12, params 20,672 (target 22,033), learned V-cycle, 2 levels, operator-adapted transfers, Galerkin levels, exact coarsest solve, operator-consistent smoothers (nu 4, shared)
+    oa-vc      TEST  rel-L2 2.224e-03  energy 5.674e-03  (train 745s; model saved)
+
+
+RESULTS  route V, level 2, coarse mesh perforated (n=9), bc dirichlet, channels, contrast 1e+04, 150 train / 50 test, 100 epochs, rank 0, loss mix, exact coarse solve to level 1 (galerkin)
+model          params  test rel-L2  energy err  train s  infer ms  +transform ms
+oa-ll-op       20,403    2.814e-02   5.093e-02      246       4.3              0
+oa-vc          20,672    2.224e-03   5.674e-03      745      13.0              0
+
+CLASSICAL, same u_c (galerkin coarse space), same 50 test samples (CPU; coarse factor+solve 0.7 ms, one TG-PCG iteration 0.09 ms per sample)
+method                              test rel-L2  energy err
+coarse solve alone                    3.047e-01   5.488e-01
+Chebyshev post(4), best q=30          1.707e-01   2.175e-01
+Chebyshev post(16), best q=100        2.208e-02   3.480e-02
+two-grid PCG, 1 its                   1.419e-01   2.440e-01
+two-grid PCG, 2 its                   4.234e-02   8.254e-02
+two-grid PCG, 3 its                   1.483e-02   2.916e-02
+two-grid PCG, 4 its                   4.869e-03   1.058e-02
+two-grid PCG, 6 its                   6.940e-04   1.641e-03
+two-grid PCG, 8 its                   9.902e-05   2.275e-04
+V(4,4) Chebyshev, geometric           6.460e-02   7.453e-02   (2.0 ms incl. build)
+V(4,4) Chebyshev, operator-adapted    4.624e-02   5.655e-02   (8.2 ms incl. build)
+  two-grid PCG iterations to match oa-ll-op        : median 3  (min 2, max 3)
+  two-grid PCG iterations to match oa-vc           : median 5  (min 4, max 7)

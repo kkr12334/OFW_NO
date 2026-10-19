@@ -1,0 +1,5 @@
+barriers L4 id 0 c=1e+00 nk=0: 207s; worst M3 effectivity 1.344; gates passed 362
+barriers L4 id 0 c=1e+04 nk=1: 206s; worst M3 effectivity 1.343; gates passed 362
+barriers L4 id 1 c=1e+00 nk=0: 207s; worst M3 effectivity 1.342; gates passed 362
+barriers L4 id 1 c=1e+04 nk=2: 201s; worst M3 effectivity 1.345; gates passed 362
+complete -> /home/claude/ofw/ext/routec/runs/pilot_barriers_L4.json

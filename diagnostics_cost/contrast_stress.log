@@ -1,0 +1,5 @@
+contrast 1e+04: coarse alone 1.586e-01 / 0.399;  iterations median [max] -- to oa-ll-op's accuracy: TG-PCG 4 [4], AMG-PCG 4 [4];  to energy 1e-6: TG-PCG 15 [18], AMG-PCG 12 [14]  (AMG setup 7 ms)
+contrast 1e+06: coarse alone 1.588e-01 / 0.399;  iterations median [max] -- to oa-ll-op's accuracy: TG-PCG 4 [4], AMG-PCG 4 [4];  to energy 1e-6: TG-PCG 15 [18], AMG-PCG 12 [14]  (AMG setup 7 ms)
+contrast 1e+08: coarse alone 1.588e-01 / 0.399;  iterations median [max] -- to oa-ll-op's accuracy: TG-PCG 4 [4], AMG-PCG 4 [4];  to energy 1e-6: TG-PCG 15 [16], AMG-PCG 12 [14]  (AMG setup 10 ms)
+contrast 1e-04: coarse alone 7.961e-01 / 0.894;  iterations median [max] -- to oa-ll-op's accuracy: TG-PCG 6 [14], AMG-PCG 4 [13];  to energy 1e-6: TG-PCG 16 [24], AMG-PCG 12 [21]  (AMG setup 12 ms)
+contrast 1e-08: coarse alone 8.014e-01 / 0.906;  iterations median [max] -- to oa-ll-op's accuracy: TG-PCG 6 [32], AMG-PCG 4 [26];  to energy 1e-6: TG-PCG 16 [41], AMG-PCG 10 [32]  (AMG setup 8 ms)

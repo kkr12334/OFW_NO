@@ -1,0 +1,320 @@
+{
+ "K.astra_A=I_probe": {
+  "ok": true,
+  "rank": 1,
+  "distance": 1.0
+ },
+ "K.b=0": {
+  "ok": true,
+  "rank": 0
+ },
+ "K.diagonal_A_gives_B=I": {
+  "ok": true,
+  "rank": 1
+ },
+ "K.eigenvector_input": {
+  "ok": true,
+  "rank": 1
+ },
+ "K.three_eigencomponents": {
+  "ok": true,
+  "rank": 3
+ },
+ "K.repeated_eigenvalues(2 distinct)": {
+  "ok": true,
+  "rank": 2
+ },
+ "K.clustered(2 groups, splits 1e-13)": {
+  "ok": true,
+  "rank": 2
+ },
+ "K.six_distinct_capped_at_4": {
+  "ok": true,
+  "rank": 4
+ },
+ "K.A_orthonormal": {
+  "ok": true
+ },
+ "K.diag_zero_output_flag": {
+  "ok": true,
+  "out": "{'rank': 1, 'E_nn': 0.5773502691896257, 'E_K': 0.0, 'norm_nn': 0.0, 'delta': None, 'flag': 'exact convergence in K', 'rho': None}"
+ },
+ "K.diag_exact_convergence_flag": {
+  "ok": true,
+  "out": "{'rank': 1, 'E_nn': 0.0, 'E_K': 0.0, 'norm_nn': 0.5773502691896257, 'delta': 0.0, 'rho': None, 'flag': 'exact convergence in K'}"
+ },
+ "W.barriers.wrapper_vs_legacy": {
+  "ok": true,
+  "max_rel": 8.394396289190809e-13,
+  "backstop": 0,
+  "tolerance": 1e-08
+ },
+ "L.barriers.level0": {
+  "ok": true,
+  "rank": 4,
+  "pcg_vs_Kmin": 2.220446049250313e-16,
+  "max_dist": 1.155244999703659e-15,
+  "lam": 3.0,
+  "dist": [
+   [
+    "cheb",
+    5.499660387018449e-16
+   ],
+   [
+    "sd",
+    8.083802620288324e-16
+   ],
+   [
+    "mr",
+    5.11205756855361e-16
+   ],
+   [
+    "pcg",
+    1.155244999703659e-15
+   ]
+  ]
+ },
+ "L.barriers.level1": {
+  "ok": true,
+  "rank": 4,
+  "pcg_vs_Kmin": -5.4289905904170155e-14,
+  "max_dist": 6.322508888695333e-16,
+  "lam": 2.1679301181700477,
+  "dist": [
+   [
+    "cheb",
+    6.125990553031097e-16
+   ],
+   [
+    "sd",
+    5.258821755752211e-16
+   ],
+   [
+    "mr",
+    3.8882665763876587e-16
+   ],
+   [
+    "pcg",
+    6.322508888695333e-16
+   ]
+  ]
+ },
+ "L.barriers.level2": {
+  "ok": true,
+  "rank": 4,
+  "pcg_vs_Kmin": 2.4424906541753444e-15,
+  "max_dist": 5.33102270636685e-15,
+  "lam": 2.465865528063171,
+  "dist": [
+   [
+    "cheb",
+    2.854769667535895e-15
+   ],
+   [
+    "sd",
+    2.659157140627119e-15
+   ],
+   [
+    "mr",
+    2.323324168899237e-15
+   ],
+   [
+    "pcg",
+    5.33102270636685e-15
+   ]
+  ]
+ },
+ "P.barriers.deflated_start_nonincrease": {
+  "ok": true,
+  "worst": -3.3160439805168807e-07,
+  "n_island_vectors": 1,
+  "backstop": 0
+ },
+ "S.barriers.pcg_cycle_gershgorin": {
+  "ok": true,
+  "symmetry_defect": 3.0894944111465895e-16,
+  "MA_min": 0.0683449915460195,
+  "MA_max": 1.0000000000000127,
+  "gershgorin": [
+   2.698747718056158,
+   2.757558408444249,
+   3.0020513513451994
+  ],
+  "lanczos_x1_1": [
+   2.3875226541340764,
+   2.3263384255326174,
+   2.5791110840930878
+  ],
+  "legacy": [
+   3.0,
+   2.1679301181700477,
+   2.465865528063171
+  ]
+ },
+ "S.barriers.balanced_deflation": {
+  "ok": true,
+  "symmetry_defect": 3.0894944111465895e-16,
+  "min_eig_M": 0.0825811180739201
+ },
+ "S.barriers.legacy_interval_cycle_info": {
+  "MA_min": 0.06957036765644324,
+  "MA_max": 1.0000000000000036,
+  "symmetry_defect": 4.1496112115173336e-16
+ },
+ "W.channels.wrapper_vs_legacy": {
+  "ok": true,
+  "max_rel": 7.771561172376096e-16,
+  "backstop": 0,
+  "tolerance": 1e-08
+ },
+ "L.channels.level0": {
+  "ok": true,
+  "rank": 4,
+  "pcg_vs_Kmin": 0.0,
+  "max_dist": 1.786630013075396e-15,
+  "lam": 3.0,
+  "dist": [
+   [
+    "cheb",
+    1.786630013075396e-15
+   ],
+   [
+    "sd",
+    3.070054538203462e-16
+   ],
+   [
+    "mr",
+    1.0370713076472108e-15
+   ],
+   [
+    "pcg",
+    1.3258476379604004e-15
+   ]
+  ]
+ },
+ "L.channels.level1": {
+  "ok": true,
+  "rank": 4,
+  "pcg_vs_Kmin": -2.220446049250313e-16,
+  "max_dist": 8.555683022254557e-16,
+  "lam": 2.3317313154866626,
+  "dist": [
+   [
+    "cheb",
+    4.928048227503032e-16
+   ],
+   [
+    "sd",
+    8.555683022254557e-16
+   ],
+   [
+    "mr",
+    6.14193924339198e-16
+   ],
+   [
+    "pcg",
+    6.228275332048164e-16
+   ]
+  ]
+ },
+ "L.channels.level2": {
+  "ok": true,
+  "rank": 4,
+  "pcg_vs_Kmin": 8.881784197001252e-16,
+  "max_dist": 8.107184083691355e-16,
+  "lam": 2.9176119365192723,
+  "dist": [
+   [
+    "cheb",
+    4.96246926537093e-16
+   ],
+   [
+    "sd",
+    6.654647881672624e-16
+   ],
+   [
+    "mr",
+    7.182233693185264e-16
+   ],
+   [
+    "pcg",
+    8.107184083691355e-16
+   ]
+  ]
+ },
+ "P.channels.deflated_start_nonincrease": {
+  "ok": true,
+  "worst": -1.0357337432154168e-08,
+  "n_island_vectors": 0,
+  "backstop": 0
+ },
+ "S.channels.pcg_cycle_gershgorin": {
+  "ok": true,
+  "symmetry_defect": 6.983363037132115e-16,
+  "MA_min": 0.756008480165365,
+  "MA_max": 1.0000000000000122,
+  "gershgorin": [
+   2.643845431931281,
+   2.7941320462546475,
+   3.395521550699277
+  ],
+  "lanczos_x1_1": [
+   2.4026329688743515,
+   2.4427585068480506,
+   3.0565454463355315
+  ],
+  "legacy": [
+   3.0,
+   2.3317313154866626,
+   2.9176119365192723
+  ]
+ },
+ "S.channels.legacy_interval_cycle_info": {
+  "MA_min": 0.734008205322514,
+  "MA_max": 1.0000000000000135,
+  "symmetry_defect": 6.980873497526605e-16
+ },
+ "H.records": {
+  "barriers.pcg": {
+   "odd": 0.0,
+   "hom_neg": 1.1496607631615363e-15,
+   "additivity": 0.02850349461482592
+  },
+  "barriers.sd": {
+   "odd": 0.0,
+   "hom_neg": 1.2160123092807766e-15,
+   "additivity": 0.0030859750618332836
+  },
+  "barriers.mr": {
+   "odd": 0.0,
+   "hom_neg": 8.012542938258553e-16,
+   "additivity": 0.001909458623254628
+  },
+  "barriers.cheb": {
+   "odd": 0.0,
+   "hom_neg": 5.496635733195946e-16,
+   "additivity": 1.671260983169265e-16
+  },
+  "channels.pcg": {
+   "odd": 0.0,
+   "hom_neg": 1.1695515579093095e-15,
+   "additivity": 0.04348552835502901
+  },
+  "channels.sd": {
+   "odd": 0.0,
+   "hom_neg": 9.191109505466353e-16,
+   "additivity": 0.001704475862917215
+  },
+  "channels.mr": {
+   "odd": 0.0,
+   "hom_neg": 9.50809807028453e-16,
+   "additivity": 0.006978114786874208
+  },
+  "channels.cheb": {
+   "odd": 0.0,
+   "hom_neg": 5.476479945125496e-16,
+   "additivity": 1.508467080707048e-16
+  }
+ },
+ "failed": []
+}

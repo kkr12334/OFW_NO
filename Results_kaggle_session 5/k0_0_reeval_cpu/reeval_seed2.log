@@ -1,0 +1,27 @@
+coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 3x
+coarse mesh perforated, bc dirichlet
+level 3: 3486 interior nodes, field channels, contrast 1e+04, 400 samples, device cpu
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=16  rank_scale=None
+  solved 400 samples in 6s
+code version (md5 of the *.py files) f8653612eb84; run key 962c1c2e4f
+  operator data for the energy loss built in 4s
+  operator weights a_ij/a_ii (20016 edges) + residual input built in 1s; rel. spread of |D^-1 r| over samples 0.02
+
+[oa-ll-op] width 16, params 21,603 (target 22,000), learnable lifting on the mesh hierarchy: 3 lifting levels (2672, 640, 146 detail nodes), coarse 28
+    oa-ll-op   training already finished (checkpoint) -- going straight to evaluation
+    oa-ll-op   TEST  nodal rel-l2 3.617e-02  FE rel-L2 3.524e-02  energy 7.811e-02  (train 596s; model saved)
+               energy worse than u_c alone on 0/100 test samples
+               + energy line search: rel-L2 3.477e-02  energy 7.744e-02  (alpha median 1.000, range 0.97-1.02)
+
+[gnn-op] width 16, params 20,273 (target 22,000), MeshGraphNet-style GNN, 10 steps, + residual input and operator edge weights (= oa-ll-op inputs)
+    gnn-op     training already finished (checkpoint) -- going straight to evaluation
+    gnn-op     TEST  nodal rel-l2 1.271e-01  FE rel-L2 1.238e-01  energy 1.875e-01  (train 1094s; model saved)
+               energy worse than u_c alone on 0/100 test samples
+               + energy line search: rel-L2 1.083e-01  energy 1.756e-01  (alpha median 0.981, range 0.90-1.45)
+
+
+RESULTS  route V, level 3, coarse mesh perforated (n=9), bc dirichlet, channels, contrast 1e+04, 300 train / 100 test, 300 epochs, rank 16, loss mix
+(rel-l2 = nodal Euclidean; FE-L2 = mass-matrix norm; +setup = per-sample operator data the model needs (transform / hierarchy), CPU, excluding the coarse solve)
+model          params nodal rel-l2      FE-L2  energy err  train s  infer ms  +setup ms
+oa-ll-op       21,603    3.617e-02  3.524e-02   7.811e-02      596      26.0          0
+gnn-op         20,273    1.271e-01  1.238e-01   1.875e-01     1094      47.1          0

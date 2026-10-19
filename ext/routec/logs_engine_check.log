@@ -1,0 +1,5 @@
+channels: build 1.9s, all five fluxes per input 23.5s; max relative difference so far 1.3e-16
+channels: build 1.9s, all five fluxes per input 23.0s; max relative difference so far 2.6e-15
+barriers: build 1.8s, all five fluxes per input 22.8s; max relative difference so far 3.1e-13
+barriers: build 1.8s, all five fluxes per input 24.3s; max relative difference so far 3.1e-13
+PASS max relative difference 3.14e-13

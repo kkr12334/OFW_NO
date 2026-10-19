@@ -1,0 +1,34 @@
+# CPU screen, 3 Oct: Darcy L2 perforated, barriers 1e-4 with --load no-low (no source inside the barriers), 150/50, 100 epochs, k0 1 Galerkin, seed 0
+# python -u train_oa_layer.py --level 2 --coarse perforated --field channels --contrast 1e-4 --load no-low --n 200 --epochs 100 --k0 1 --coarse-solve galerkin --loss mix --rank 0 --certify 0 --classical 1 --models oa-ll-op gnn-op
+coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 2x
+coarse mesh perforated, bc dirichlet
+level 2: 814 interior nodes, field channels, contrast 1e-04, 200 samples, device cpu, load no-low
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=0  rank_scale=None
+  solved 200 samples in 1s
+  exact coarse solve to level 1 (Galerkin on the level-1 mesh): 1 ms/sample, on its own it already gives rel-L2 6.340e-01 -- the network learns the rest
+  operator data for the energy loss built in 1s
+  operator weights a_ij/a_ii (4432 edges) + residual input built in 0s; rel. spread of |D^-1 r| over samples 0.24
+
+[oa-ll-op] width 16, params 20,403 (target 22,033), learnable lifting on the mesh hierarchy: 2 lifting levels (640, 146 detail nodes), coarse 28
+    oa-ll-op   TEST  rel-L2 4.985e-01  energy 4.120e-01  (train 238s; model saved)
+
+[gnn-op] width 16, params 20,273 (target 22,033), MeshGraphNet-style GNN, 10 steps, + residual input and operator edge weights (= oa-ll-op inputs)
+    gnn-op     TEST  rel-L2 5.265e-01  energy 4.393e-01  (train 442s; model saved)
+
+
+oa-ll-op       20,403    4.985e-01   4.120e-01      238       4.1              0
+gnn-op         20,273    5.265e-01   4.393e-01      442       6.8              0
+
+CLASSICAL, same u_c, same 50 test samples (CPU; coarse factor+solve 0.7 ms, one TG-PCG iteration 0.08 ms per sample)
+method                              test rel-L2  energy err
+coarse solve alone                    5.688e-01   5.633e-01
+Chebyshev post(4), best q=10          5.474e-01   4.175e-01
+Chebyshev post(16), best q=100        4.760e-01   3.342e-01
+two-grid PCG, 1 its                   4.881e-01   3.874e-01
+two-grid PCG, 2 its                   4.040e-01   2.981e-01
+two-grid PCG, 3 its                   3.727e-01   2.608e-01
+two-grid PCG, 4 its                   3.454e-01   2.380e-01
+two-grid PCG, 6 its                   2.554e-01   1.754e-01
+two-grid PCG, 8 its                   8.599e-02   7.963e-02
+  two-grid PCG iterations to match oa-ll-op        : median 1  (min 0, max 10)
+  two-grid PCG iterations to match gnn-op          : median 1  (min 0, max 10)

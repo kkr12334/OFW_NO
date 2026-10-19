@@ -1,0 +1,15 @@
+% Abstract.  v6, 13 Oct 2026 (FINAL_SUBMISSION_REVIEW_ASTRA: no baseline claim; paired-metric qualification on barriers;
+% residual-polynomial containment; ~220 words).  Numbers: tables/numbers.txt (tab_core, tab_initseeds, tab_avt, tab_loads, tab_cost).
+We study what learned smoothing adds to a multigrid correction for high-contrast elliptic problems on unstructured finite
+element meshes. Transfers and Galerkin coarse operators are computed from each sample's operator; only the smoothers are
+learned. The architecture represents the classical cycles with fixed, level-independent polynomial smoothers of bounded
+degree and combines near-kernel deflation with an energy-norm safeguard relative to a supplied coarse approximation. With four update stages per smoother, one learned pass reduces the energy error relative
+to a degree-four Chebyshev-smoothed reference on the same hierarchy by paired geometric-mean factors of about ten on
+conductive channels and two on insulating barriers, reproducibly across data seeds and training runs.
+The advantage depends strongly on the classical smoothing budget: sixteen-step Chebyshev smoothing narrows it to 1.8 on
+channels and reverses the paired advantage on barriers, and three classical passes are more accurate on both at about a
+third of the learned pass's time. A network trained with one load loses its advantage on other loads; training on a load
+distribution restores a six-fold gain within that distribution. Floating islands retain substantial error. On the tested
+CPU configurations the implementation is 12--98 times slower than two-grid or algebraic-multigrid preconditioned conjugate
+gradients at matched accuracy. The study separates the contribution of learned smoothing within a prescribed multilevel pass
+from practical solver efficiency.

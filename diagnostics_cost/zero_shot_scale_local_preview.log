@@ -1,0 +1,6 @@
+L5: 58494 unknowns, 4 cycle levels, k0 4; data ready (11s)
+  samples 300-301: OA-VCB 1.603e-03  reference 1.070e-02  (35.1 s/sample, operator data + inference)
+  samples 302-303: OA-VCB 2.048e-03  reference 2.185e-02  (36.5 s/sample, operator data + inference)
+  samples 304-305: OA-VCB 2.324e-03  reference 1.757e-02  (35.2 s/sample, operator data + inference)
+  samples 306-307: OA-VCB 1.511e-03  reference 1.619e-02  (37.7 s/sample, operator data + inference)
+RESULT zs_L4toL5_k4: 58494 unknowns; OA-VCB 1.8717e-03  reference 1.6576e-02  u_c 1.8872e-01  G 8.86 [7.02, 10.60]  W 1.00  worse than u_c 0

@@ -1,0 +1,11 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Published-size grid models trained under the protocol (channels, seed 1, same loss and schedule, no parameter cap) and excluded from superiority claims: mean energy error, nodal relative $\ell^2$ error, and samples worse than $u_c$ in energy.}\label{tab:excluded}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llllll}\toprule
+model & implementation & params & energy & nodal rel.\ $\ell^2$ & worse than $u_c$ \\\midrule
+WNO{,} published architecture & Tripura--Chakraborty v2.0.0 port{,} pytorch\_wavelets & 74{,}865 & 1.54e0 & 1.43e-1 & 100/100 \\
+MgNO{,} published size & official model code{,} width 24 & 658{,}020 & 3.76e-1 & 1.46e-1 & 0/100 \\
+$u_c$ alone (reference) & -- & -- & 3.76e-1 & 1.46e-1 & -- \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

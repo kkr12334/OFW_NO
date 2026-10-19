@@ -1,0 +1,36 @@
+L3: 3486 unknowns, 3 levels, V(4,4) Chebyshev (q 10), symmetric
+  channels 1e4, sample 300: 0 near-kernel vector(s)
+    M_geo (geometric V)        sym 2.6e-16  lambda [5.978e-01, 1.0000]  kappa      1.67  delta 0.4022  PCG its   9
+    M_oa (op.-adapted V)       sym 3.1e-16  lambda [6.976e-01, 1.0000]  kappa      1.43  delta 0.3024  PCG its   8
+  channels 1e4, sample 301: 0 near-kernel vector(s)
+    M_geo (geometric V)        sym 2.6e-16  lambda [3.375e-01, 1.0000]  kappa      2.96  delta 0.6625  PCG its  11
+    M_oa (op.-adapted V)       sym 3.1e-16  lambda [7.562e-01, 1.0000]  kappa      1.32  delta 0.2438  PCG its   7
+  channels 1e4, sample 302: 0 near-kernel vector(s)
+    M_geo (geometric V)        sym 2.3e-16  lambda [2.756e-01, 1.0000]  kappa      3.63  delta 0.7244  PCG its  12
+    M_oa (op.-adapted V)       sym 2.8e-16  lambda [7.556e-01, 1.0000]  kappa      1.32  delta 0.2444  PCG its   8
+  barriers 1e-4, sample 301: 1 near-kernel vector(s)
+    M_geo (geometric V)        sym 1.4e-16  lambda [1.390e-03, 1.0000]  kappa    719.25  delta 0.9986  PCG its  13
+    M_oa (op.-adapted V)       sym 1.8e-16  lambda [9.408e-02, 1.0000]  kappa     10.63  delta 0.9059  PCG its   9
+    B_bal (balanced, Z)        sym 1.7e-16  lambda [3.540e-01, 1.0000]  kappa      2.82  delta 0.6460  PCG its   8  |BAZ-Z|/|Z| 2.4e-13  |(I-BA) - Q(I-MA)Q|/|I-BA| 9.6e-13
+    B_bal geo (balanced, Z)    sym 1.4e-16  lambda [2.884e-01, 1.0000]  kappa      3.47  delta 0.7116  PCG its  11  |BAZ-Z|/|Z| 1.0e-13  |(I-BA) - Q(I-MA)Q|/|I-BA| 1.8e-12
+  barriers 1e-4, sample 304: 1 near-kernel vector(s)
+    M_geo (geometric V)        sym 1.4e-16  lambda [8.248e-04, 1.0000]  kappa   1212.45  delta 0.9992  PCG its  14
+    M_oa (op.-adapted V)       sym 1.5e-16  lambda [1.828e-02, 1.0000]  kappa     54.71  delta 0.9817  PCG its   8
+    B_bal (balanced, Z)        sym 1.4e-16  lambda [2.887e-01, 1.0000]  kappa      3.46  delta 0.7113  PCG its   7  |BAZ-Z|/|Z| 8.5e-13  |(I-BA) - Q(I-MA)Q|/|I-BA| 2.7e-12
+    B_bal geo (balanced, Z)    sym 1.3e-16  lambda [2.753e-01, 1.0000]  kappa      3.63  delta 0.7247  PCG its  12  |BAZ-Z|/|Z| 8.5e-13  |(I-BA) - Q(I-MA)Q|/|I-BA| 5.1e-12
+  barriers 1e-4, sample 300: 0 near-kernel vector(s)
+    M_geo (geometric V)        sym 1.3e-16  lambda [3.505e-01, 1.0000]  kappa      2.85  delta 0.6495  PCG its  11
+    M_oa (op.-adapted V)       sym 1.3e-16  lambda [7.664e-01, 1.0000]  kappa      1.30  delta 0.2336  PCG its   7
+  barriers 1e-4, sample 302: 0 near-kernel vector(s)
+    M_geo (geometric V)        sym 1.4e-16  lambda [2.965e-01, 1.0000]  kappa      3.37  delta 0.7035  PCG its  12
+    M_oa (op.-adapted V)       sym 1.4e-16  lambda [8.404e-01, 1.0000]  kappa      1.19  delta 0.1596  PCG its   6
+
+SUMMARY (mean over samples): delta / kappa / PCG its
+  channels 1e4   no island    M_geo (geometric V)        delta 0.5964  kappa      2.75  its  10.7
+  channels 1e4   no island    M_oa (op.-adapted V)       delta 0.2635  kappa      1.36  its   7.7
+  barriers 1e-4  with island  M_geo (geometric V)        delta 0.9989  kappa    965.85  its  13.5
+  barriers 1e-4  with island  M_oa (op.-adapted V)       delta 0.9438  kappa     32.67  its   8.5
+  barriers 1e-4  with island  B_bal (balanced, Z)        delta 0.6787  kappa      3.14  its   7.5
+  barriers 1e-4  with island  B_bal geo (balanced, Z)    delta 0.7181  kappa      3.55  its  11.5
+  barriers 1e-4  no island    M_geo (geometric V)        delta 0.6765  kappa      3.11  its  11.5
+  barriers 1e-4  no island    M_oa (op.-adapted V)       delta 0.1966  kappa      1.25  its   6.5

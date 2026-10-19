@@ -1,0 +1,580 @@
+8.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.0s 3 0.00s - to python to disable frozen modules.
+8.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.8s 7 0.00s - to python to disable frozen modules.
+8.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+11.1s 9 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_train_oa_L4.log
+11.1s 10 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/show_commands.py
+11.1s 11 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_regime_sweep.log
+11.1s 12 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/README_oa_lifting.md
+11.1s 13 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/wavelet_fallback.py
+11.1s 14 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_level_spectra_L6.log
+11.1s 15 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_pod.log
+11.1s 16 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/train_allen_cahn.py
+11.1s 17 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_layer.py
+11.1s 18 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/model_zoo.py
+11.1s 19 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/oa_layer_torch.py
+11.1s 20 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/MATHEMATICAL_DIRECTION_REVIEW_2026-10-05.md
+11.1s 21 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mesh_grid_bridge.py
+11.1s 22 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/time_models.py
+11.1s 23 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/ofwno_nets.py
+11.1s 24 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_certify_A_level6.log
+11.1s 25 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/MATH_DIRECTION_ASSESSMENT_2026-10-05.md
+11.1s 26 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/MANIFEST.txt
+11.1s 27 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_oa_lifting.py
+11.1s 28 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/PAPER_PLAN_2026-10-05.md
+11.1s 29 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/CMAME_PLAN_REVIEW_2026-10-06.md
+11.1s 30 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/README.md
+11.1s 31 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_params.py
+11.1s 32 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/baselines_extra.py
+11.1s 33 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/elasticity.py
+11.1s 34 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/OA_VCYCLE_DESIGN_2026-10-03.md
+11.1s 35 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_gamblet.py
+11.1s 36 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_models.py
+11.1s 37 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/grf_field.py
+11.1s 38 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/ofwno_core.py
+11.1s 39 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_grf_level5.log
+11.1s 40 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/ofwno_benchmark_grf.py
+11.1s 41 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/INDEPENDENT_REVIEW_2_RESPONSE_2026-10-06.md
+11.1s 42 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_channel.py
+11.1s 43 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/allen_cahn.py
+11.1s 44 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/oa_lifting.py
+11.1s 45 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/train_elasticity.py
+11.1s 46 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/OPTION_A_ASSESSMENT_2026-10-05.md
+11.1s 47 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/train_compare.py
+11.1s 48 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/exp_oracle_layer.py
+11.1s 49 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/train_compare_grf.py
+11.1s 50 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/run_suite.py
+11.1s 51 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_level5.log
+11.1s 52 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/kaggle_cells_2026-10-05.py
+11.1s 53 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/exp_compact_wavelets.py
+11.1s 54 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/frozen_basis.py
+11.1s 55 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/scalar_problems.py
+11.1s 56 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/exp_linear_floor.py
+11.1s 57 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/exp_pod_amortization.py
+11.1s 58 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_level_spectra_L6_routeV.log
+11.1s 59 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/STOCKTAKE_2026-10-03.md
+11.1s 60 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_lowrank.py
+11.1s 61 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mesh_lifting.py
+11.1s 62 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/coarse_meshes.py
+11.1s 63 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/verify_local.py
+11.1s 64 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results_objective_2x2.md
+11.1s 65 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/HANDOFF_where_the_project_stands.md
+11.1s 66 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/ofwno_benchmark_v2.py
+11.1s 67 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/INDEPENDENT_REVIEW_2026-10-05.md
+11.1s 68 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/PATH_TO_TOP_LEVEL_2026-10-03.md
+11.1s 69 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/oa_vcycle.py
+11.1s 70 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/exp_regime_sweep.py
+11.1s 71 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/run_identity.py
+11.1s 72 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/exp_level_spectra.py
+11.1s 73 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/exp_certify_A.py
+11.1s 74 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/fe_metrics.py
+11.1s 75 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/fast_woodbury.py
+11.1s 76 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/publication-readiness-review.md
+11.1s 77 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/FOLLOWUP_REVIEW_2026-10-06.md
+11.1s 78 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/kaggle_cells_2026-10-04.py
+11.1s 79 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/REVIEW_paper_plan_2026-10-05.txt
+11.1s 80 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/train_scalar.py
+11.1s 81 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/rbm_constraint.py
+11.1s 82 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/summarize_runs.py
+11.1s 83 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/MATHEMATICAL_STRENGTHENING_OPTIONS_2026-10-06.md
+11.1s 84 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/train_oa_layer.py
+11.1s 85 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/OA_VC_METHOD_2026-10-04.md
+11.1s 86 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/legacy/oa_vcycle_2026-10-05_pre_review.py
+11.1s 87 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/adapted_coarse.py
+11.1s 88 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/probe.py
+11.1s 89 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/meanpred.py
+11.1s 90 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/energy_loc.py
+11.1s 91 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/verify_elasticity.py
+11.1s 92 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/loadcase_scales.py
+11.1s 93 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/verify_elasticity.log
+11.1s 94 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/hbshare.py
+11.1s 95 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/darcy_mean.py
+11.1s 96 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/emin_coarse.py
+11.1s 97 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/field_compare.py
+11.1s 98 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/adapted_coarse_rbm.py
+11.1s 99 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_elasticity/fit_fixed.py
+11.1s 100 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/kaggle_k0_0_ch_seeds12.log
+11.1s 101 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/kaggle_L4_vcb_seed0.log
+11.1s 102 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/kaggle_L4_ch_seed0_oom.log
+11.1s 103 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/kaggle_oa_vcb_channels_seeds12.jsonl
+11.1s 104 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/kaggle_k0_0_ch_seed0.log
+11.1s 105 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/kaggle_L4_vcb_partial_ep250.log
+11.1s 106 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/kaggle_oa_vcb_barriers_seeds12.jsonl
+11.1s 107 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L3_k00_seed2_oa-vcb__ckpt_15cd458f47_audit_2026-10-05.json
+11.1s 108 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L3_k00_seed2_oa-ll-op__ckpt_15cd458f47.pt
+11.1s 109 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L3_k00_seed2_oa-vcb__ckpt_15cd458f47.pt
+11.1s 110 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L4_k03_seed0_oa-vcb__ckpt_94ccbb8e28.pt
+11.1s 111 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/README.txt
+11.1s 112 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L3_k00_seed1_oa-vcb__ckpt_73fbf6857e_audit_2026-10-05.json
+11.1s 113 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L4_k03_seed0_oa-vcb__ckpt_94ccbb8e28_audit_2026-10-05.json
+11.1s 114 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L3_k00_seed1_oa-vcb__ckpt_73fbf6857e.pt
+11.1s 115 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/results/ckpt/L3_k00_seed1_oa-ll-op__ckpt_73fbf6857e.pt
+11.1s 116 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/check.pdf
+11.1s 117 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/preamble.tex
+11.1s 118 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/sec_method.tex
+11.1s 119 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/sections.tex
+11.1s 120 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/main.tex
+11.1s 121 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/refs.bib
+11.1s 122 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/abstract.tex
+11.1s 123 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/manuscript/check.tex
+11.1s 124 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/reviews_2026-10-06/REVIEW_3_2026-10-06.md
+11.1s 125 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/reviews_2026-10-06/REVIEW_4_2026-10-06.md
+11.1s 126 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/reviews_2026-10-06/ASSESSMENT_2026-10-06.md
+11.1s 127 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_allen_cahn/verify_allen_cahn.log
+11.1s 128 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_allen_cahn/ac_design_checks.log
+11.1s 129 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_allen_cahn/verify_allen_cahn.py
+11.1s 130 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_allen_cahn/ac_design_checks.py
+11.1s 131 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_linear_smoother.log
+11.1s 132 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcb_tensor.py
+11.1s 133 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcp.py
+11.1s 134 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcp.log
+11.1s 135 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_jacobi_ceiling.py
+11.1s 136 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_op_block_representability.log
+11.1s 137 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_model_properties.py
+11.1s 138 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcb_tensor.log
+11.1s 139 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_balanced_preconditioner.log
+11.1s 140 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_projection_precision.py
+11.1s 141 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_model_properties.log
+11.1s 142 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcb_elasticity.py
+11.1s 143 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_stocktake.log
+11.1s 144 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_transpose_pair.log
+11.1s 145 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_enrichment_quality.log
+11.1s 146 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_slow_modes.py
+11.1s 147 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_predict_lifting.py
+11.1s 148 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_linear_smoother.py
+11.1s 149 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_balanced_preconditioner.py
+11.1s 150 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_correction_locality.log
+11.1s 151 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_predict_lifting.log
+11.1s 152 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_stocktake.py
+11.1s 153 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_certificate_lmin.py
+11.1s 154 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcycle.py
+11.1s 155 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_slow_modes.log
+11.1s 156 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcb_elasticity.log
+11.1s 157 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_certificate_lmin.log
+11.1s 158 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_lifting_math.py
+11.1s 159 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_correction_locality.py
+11.1s 160 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_op_representability.py
+11.1s 161 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_transpose_pair.py
+11.1s 162 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_lifting_math.log
+11.1s 163 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_op_representability.log
+11.1s 164 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_op_block_representability.py
+11.1s 165 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_enrichment_quality.py
+11.1s 166 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_projection_precision.log
+11.1s 167 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_oa_vcycle.log
+11.1s 168 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/mathcheck/check_jacobi_ceiling.log
+11.1s 169 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/ac_classical_cost.log
+11.1s 170 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/stationary_comparators.log
+11.1s 171 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/ablation_linear_L2_cpu.log
+11.2s 172 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/classical_vs_surrogate.log
+11.2s 173 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_vcp_L2_cpu.log
+11.2s 174 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/rhs_generalisation_L3_k00.log
+11.2s 175 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_tail.py
+11.2s 176 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_localised_L3.log
+11.2s 177 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/rhs_generalisation_L4_k03.log
+11.2s 178 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_vcb_seeds_islands.py
+11.2s 179 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_noload_L2_cpu.log
+11.2s 180 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/operator_dependent_coarse.py
+11.2s 181 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/tg_certificate.log
+11.2s 182 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/tg_certificate.py
+11.2s 183 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_islands.log
+11.2s 184 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/aniso_classical.log
+11.2s 185 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/operator_dependent_coarse.log
+11.2s 186 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_localised_L4.log
+11.2s 187 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_islands.py
+11.2s 188 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/classical_vs_n1000.log
+11.2s 189 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_vcb_seeds_islands.log
+11.2s 190 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/checkpoint_audit_L3_k00_seed1.log
+11.2s 191 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/classical_vs_n1000.py
+11.2s 192 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_sparsity.py
+11.2s 193 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/classical_vs_surrogate.py
+11.2s 194 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_tail.log
+11.2s 195 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_anatomy.py
+11.2s 196 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/elasticity_classical.log
+11.2s 197 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_localised.py
+11.2s 198 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/rhs_generalisation_L3_k00_seed2.log
+11.2s 199 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/stationary_comparators.py
+11.2s 200 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/fcg_learned_preconditioner.log
+11.2s 201 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/nwidth_corrections.py
+11.2s 202 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/cheap_oa_predict.log
+11.2s 203 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_anatomy.log
+11.2s 204 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/stationary_comparators_L2.py
+11.2s 205 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/checkpoint_audit_L3_k00_seed2.log
+11.2s 206 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/checkpoint_audit_L4_k03_seed0.log
+11.2s 207 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/contrast_stress.py
+11.2s 208 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/timing_one_platform.py
+11.2s 209 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_coarse_timing.log
+11.2s 210 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/elasticity_classical.py
+11.2s 211 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/k0_0_classical.log
+11.2s 212 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/ac_classical_cost.py
+11.2s 213 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/timing_one_platform_L4_k03.log
+11.2s 214 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_vc_L2_cpu.log
+11.2s 215 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_coarse_timing.py
+11.2s 216 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/oa_sparsity.log
+11.2s 217 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/rhs_generalisation.py
+11.2s 218 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/stationary_comparators_L2.log
+11.2s 219 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/barrier_anatomy_L2.log
+11.2s 220 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/cheap_oa_predict.py
+11.2s 221 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/fcg_learned_preconditioner.py
+11.2s 222 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/contrast_stress.log
+11.2s 223 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/k0_0_classical.py
+11.2s 224 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/timing_one_platform_L3_k00.log
+11.2s 225 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/checkpoint_audit.py
+11.2s 226 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/nwidth_corrections.log
+11.2s 227 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/diagnostics_cost/aniso_classical.py
+11.2s 228 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/kaggle_runs/account_B.py
+11.2s 229 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/kaggle_runs/account_A.py
+11.2s 230 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/kaggle_runs/account_A_L4.py
+11.2s 231 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/eval_cheap_predict.py
+11.2s 232 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/learned_predict.py
+11.2s 233 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/eval_learned.log
+11.2s 234 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/train_predict.py
+11.2s 235 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/eval_learned.py
+11.2s 236 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/predict_lib.py
+11.2s 237 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/time_fast.py
+11.2s 238 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/train_predict.log
+11.2s 239 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/noise_sensitivity.py
+11.2s 240 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO/OFW_NO/feasibility/fast_local.py
+11.3s 241 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_train_oa_L4.log
+11.3s 242 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/show_commands.py
+11.3s 243 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_regime_sweep.log
+11.3s 244 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/README_oa_lifting.md
+11.3s 245 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/wavelet_fallback.py
+11.3s 246 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_level_spectra_L6.log
+11.3s 247 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_pod.log
+11.3s 248 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_allen_cahn.py
+11.3s 249 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_layer.py
+11.3s 250 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/model_zoo.py
+11.3s 251 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/oa_layer_torch.py
+11.3s 252 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/MATHEMATICAL_DIRECTION_REVIEW_2026-10-05.md
+11.3s 253 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mesh_grid_bridge.py
+11.3s 254 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/time_models.py
+11.3s 255 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/ofwno_nets.py
+11.3s 256 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_certify_A_level6.log
+11.3s 257 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/MATH_DIRECTION_ASSESSMENT_2026-10-05.md
+11.3s 258 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/MANIFEST.txt
+11.3s 259 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_oa_lifting.py
+11.3s 260 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/PAPER_PLAN_2026-10-05.md
+11.3s 261 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/CMAME_PLAN_REVIEW_2026-10-06.md
+11.3s 262 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/README.md
+11.3s 263 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_params.py
+11.3s 264 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/baselines_extra.py
+11.3s 265 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/elasticity.py
+11.3s 266 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/OA_VCYCLE_DESIGN_2026-10-03.md
+11.3s 267 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_gamblet.py
+11.3s 268 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_models.py
+11.3s 269 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/grf_field.py
+11.3s 270 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/ofwno_core.py
+11.3s 271 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_grf_level5.log
+11.3s 272 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/ofwno_benchmark_grf.py
+11.3s 273 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/INDEPENDENT_REVIEW_2_RESPONSE_2026-10-06.md
+11.3s 274 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_channel.py
+11.3s 275 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/allen_cahn.py
+11.3s 276 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/oa_lifting.py
+11.3s 277 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_elasticity.py
+11.3s 278 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/OPTION_A_ASSESSMENT_2026-10-05.md
+11.3s 279 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_compare.py
+11.3s 280 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/exp_oracle_layer.py
+11.3s 281 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_compare_grf.py
+11.3s 282 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/run_suite.py
+11.3s 283 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_level5.log
+11.3s 284 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/kaggle_cells_2026-10-05.py
+11.3s 285 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/exp_compact_wavelets.py
+11.3s 286 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/frozen_basis.py
+11.3s 287 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/scalar_problems.py
+11.3s 288 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/exp_linear_floor.py
+11.3s 289 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/exp_pod_amortization.py
+11.3s 290 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_level_spectra_L6_routeV.log
+11.3s 291 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/STOCKTAKE_2026-10-03.md
+11.3s 292 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_lowrank.py
+11.3s 293 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mesh_lifting.py
+11.3s 294 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/coarse_meshes.py
+11.3s 295 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/verify_local.py
+11.3s 296 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results_objective_2x2.md
+11.3s 297 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/HANDOFF_where_the_project_stands.md
+11.3s 298 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/ofwno_benchmark_v2.py
+11.3s 299 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/INDEPENDENT_REVIEW_2026-10-05.md
+11.3s 300 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/PATH_TO_TOP_LEVEL_2026-10-03.md
+11.3s 301 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/oa_vcycle.py
+11.3s 302 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/exp_regime_sweep.py
+11.3s 303 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/run_identity.py
+11.3s 304 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/exp_level_spectra.py
+11.3s 305 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/exp_certify_A.py
+11.3s 306 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/fe_metrics.py
+11.3s 307 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/fast_woodbury.py
+11.3s 308 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/publication-readiness-review.md
+11.3s 309 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/FOLLOWUP_REVIEW_2026-10-06.md
+11.3s 310 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/kaggle_cells_2026-10-04.py
+11.3s 311 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/REVIEW_paper_plan_2026-10-05.txt
+11.3s 312 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_scalar.py
+11.3s 313 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/rbm_constraint.py
+11.3s 314 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/summarize_runs.py
+11.3s 315 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/MATHEMATICAL_STRENGTHENING_OPTIONS_2026-10-06.md
+11.3s 316 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_oa_layer.py
+11.3s 317 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/OA_VC_METHOD_2026-10-04.md
+11.3s 318 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/legacy/oa_vcycle_2026-10-05_pre_review.py
+11.3s 319 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/adapted_coarse.py
+11.3s 320 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/probe.py
+11.3s 321 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/meanpred.py
+11.3s 322 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/energy_loc.py
+11.3s 323 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/verify_elasticity.py
+11.3s 324 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/loadcase_scales.py
+11.3s 325 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/verify_elasticity.log
+11.3s 326 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/hbshare.py
+11.3s 327 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/darcy_mean.py
+11.3s 328 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/emin_coarse.py
+11.3s 329 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/field_compare.py
+11.3s 330 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/adapted_coarse_rbm.py
+11.3s 331 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_elasticity/fit_fixed.py
+11.3s 332 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/kaggle_k0_0_ch_seeds12.log
+11.3s 333 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/kaggle_L4_vcb_seed0.log
+11.3s 334 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/kaggle_L4_ch_seed0_oom.log
+11.3s 335 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/kaggle_oa_vcb_channels_seeds12.jsonl
+11.3s 336 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/kaggle_k0_0_ch_seed0.log
+11.3s 337 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/kaggle_L4_vcb_partial_ep250.log
+11.3s 338 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/kaggle_oa_vcb_barriers_seeds12.jsonl
+11.3s 339 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L3_k00_seed2_oa-vcb__ckpt_15cd458f47_audit_2026-10-05.json
+11.3s 340 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L3_k00_seed2_oa-ll-op__ckpt_15cd458f47.pt
+11.3s 341 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L3_k00_seed2_oa-vcb__ckpt_15cd458f47.pt
+11.3s 342 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L4_k03_seed0_oa-vcb__ckpt_94ccbb8e28.pt
+11.3s 343 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/README.txt
+11.3s 344 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L3_k00_seed1_oa-vcb__ckpt_73fbf6857e_audit_2026-10-05.json
+11.3s 345 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L4_k03_seed0_oa-vcb__ckpt_94ccbb8e28_audit_2026-10-05.json
+11.3s 346 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L3_k00_seed1_oa-vcb__ckpt_73fbf6857e.pt
+11.3s 347 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/results/ckpt/L3_k00_seed1_oa-ll-op__ckpt_73fbf6857e.pt
+11.3s 348 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/check.pdf
+11.3s 349 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/preamble.tex
+11.3s 350 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/sec_method.tex
+11.3s 351 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/sections.tex
+11.3s 352 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/main.tex
+11.3s 353 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/refs.bib
+11.3s 354 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/abstract.tex
+11.3s 355 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/manuscript/check.tex
+11.3s 356 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/reviews_2026-10-06/REVIEW_3_2026-10-06.md
+11.3s 357 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/reviews_2026-10-06/REVIEW_4_2026-10-06.md
+11.3s 358 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/reviews_2026-10-06/ASSESSMENT_2026-10-06.md
+11.3s 359 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_allen_cahn/verify_allen_cahn.log
+11.3s 360 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_allen_cahn/ac_design_checks.log
+11.3s 361 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_allen_cahn/verify_allen_cahn.py
+11.3s 362 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_allen_cahn/ac_design_checks.py
+11.3s 363 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_linear_smoother.log
+11.3s 364 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcb_tensor.py
+11.3s 365 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcp.py
+11.3s 366 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcp.log
+11.3s 367 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_jacobi_ceiling.py
+11.3s 368 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_op_block_representability.log
+11.3s 369 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_model_properties.py
+11.3s 370 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcb_tensor.log
+11.3s 371 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_balanced_preconditioner.log
+11.3s 372 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_projection_precision.py
+11.3s 373 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_model_properties.log
+11.3s 374 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcb_elasticity.py
+11.3s 375 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_stocktake.log
+11.3s 376 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_transpose_pair.log
+11.3s 377 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_enrichment_quality.log
+11.3s 378 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_slow_modes.py
+11.3s 379 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_predict_lifting.py
+11.3s 380 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_linear_smoother.py
+11.3s 381 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_balanced_preconditioner.py
+11.3s 382 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_correction_locality.log
+11.3s 383 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_predict_lifting.log
+11.3s 384 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_stocktake.py
+11.3s 385 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_certificate_lmin.py
+11.3s 386 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcycle.py
+11.3s 387 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_slow_modes.log
+11.3s 388 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcb_elasticity.log
+11.3s 389 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_certificate_lmin.log
+11.3s 390 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_lifting_math.py
+11.3s 391 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_correction_locality.py
+11.3s 392 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_op_representability.py
+11.3s 393 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_transpose_pair.py
+11.3s 394 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_lifting_math.log
+11.3s 395 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_op_representability.log
+11.3s 396 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_op_block_representability.py
+11.3s 397 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_enrichment_quality.py
+11.3s 398 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_projection_precision.log
+11.3s 399 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_oa_vcycle.log
+11.3s 400 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/mathcheck/check_jacobi_ceiling.log
+11.3s 401 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/ac_classical_cost.log
+11.3s 402 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/stationary_comparators.log
+11.3s 403 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/ablation_linear_L2_cpu.log
+11.3s 404 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/classical_vs_surrogate.log
+11.3s 405 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_vcp_L2_cpu.log
+11.3s 406 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/rhs_generalisation_L3_k00.log
+11.3s 407 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_tail.py
+11.3s 408 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_localised_L3.log
+11.3s 409 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/rhs_generalisation_L4_k03.log
+11.3s 410 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_vcb_seeds_islands.py
+11.3s 411 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_noload_L2_cpu.log
+11.3s 412 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/operator_dependent_coarse.py
+11.3s 413 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/tg_certificate.log
+11.3s 414 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/tg_certificate.py
+11.3s 415 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_islands.log
+11.3s 416 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/aniso_classical.log
+11.3s 417 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/operator_dependent_coarse.log
+11.3s 418 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_localised_L4.log
+11.3s 419 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_islands.py
+11.3s 420 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/classical_vs_n1000.log
+11.3s 421 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_vcb_seeds_islands.log
+11.3s 422 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/checkpoint_audit_L3_k00_seed1.log
+11.3s 423 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/classical_vs_n1000.py
+11.3s 424 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_sparsity.py
+11.3s 425 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/classical_vs_surrogate.py
+11.3s 426 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_tail.log
+11.3s 427 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_anatomy.py
+11.3s 428 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/elasticity_classical.log
+11.3s 429 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_localised.py
+11.3s 430 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/rhs_generalisation_L3_k00_seed2.log
+11.3s 431 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/stationary_comparators.py
+11.3s 432 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/fcg_learned_preconditioner.log
+11.3s 433 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/nwidth_corrections.py
+11.3s 434 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/cheap_oa_predict.log
+11.3s 435 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_anatomy.log
+11.3s 436 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/stationary_comparators_L2.py
+11.3s 437 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/checkpoint_audit_L3_k00_seed2.log
+11.3s 438 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/checkpoint_audit_L4_k03_seed0.log
+11.4s 439 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/contrast_stress.py
+11.4s 440 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/timing_one_platform.py
+11.4s 441 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_coarse_timing.log
+11.4s 442 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/elasticity_classical.py
+11.4s 443 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/k0_0_classical.log
+11.4s 444 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/ac_classical_cost.py
+11.4s 445 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/timing_one_platform_L4_k03.log
+11.4s 446 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_vc_L2_cpu.log
+11.4s 447 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_coarse_timing.py
+11.4s 448 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/oa_sparsity.log
+11.4s 449 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/rhs_generalisation.py
+11.4s 450 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/stationary_comparators_L2.log
+11.4s 451 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/barrier_anatomy_L2.log
+11.4s 452 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/cheap_oa_predict.py
+11.4s 453 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/fcg_learned_preconditioner.py
+11.4s 454 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/contrast_stress.log
+11.4s 455 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/k0_0_classical.py
+11.4s 456 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/timing_one_platform_L3_k00.log
+11.4s 457 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/checkpoint_audit.py
+11.4s 458 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/nwidth_corrections.log
+11.4s 459 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/diagnostics_cost/aniso_classical.py
+11.4s 460 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/kaggle_runs/account_B.py
+11.4s 461 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/kaggle_runs/account_A.py
+11.4s 462 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/kaggle_runs/account_A_L4.py
+11.4s 463 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/eval_cheap_predict.py
+11.4s 464 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/learned_predict.py
+11.4s 465 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/eval_learned.log
+11.4s 466 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/train_predict.py
+11.4s 467 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/eval_learned.py
+11.4s 468 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/predict_lib.py
+11.4s 469 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/time_fast.py
+11.4s 470 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/train_predict.log
+11.4s 471 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/noise_sensitivity.py
+11.4s 472 /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/feasibility/fast_local.py
+12.6s 473 code from /kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO
+13.1s 474 code hash f8653612eb84
+612.9s 475 09:28 barriers_ablation None oa-vc      ep   50/300  train mix 4.061e-01  (379s)
+612.9s 476 09:28 geometry_wno None oa-vcb     ep    1/300  train mix 1.780e+02  (10s)
+1212.9s 477 09:38 barriers_ablation None oa-vc      ep  100/300  train mix 3.948e-01  (755s)
+1212.9s 478 09:38 geometry_wno None oa-vcb     ep  100/300  train mix 4.118e-02  (1007s)
+1812.9s 479 09:48 barriers_ablation None oa-vc      ep  200/300  train mix 3.013e-01  (1503s)
+1812.9s 480 09:48 geometry_wno None oa-vcb     ep  150/300  train mix 2.682e-02  (1507s)
+2412.9s 481 09:58 barriers_ablation None oa-vcz     ep    1/300  train mix 4.914e+00  (7s)
+2412.9s 482 09:58 geometry_wno None oa-vcb     ep  200/300  train mix 2.086e-02  (2007s)
+3012.9s 483 10:08 barriers_ablation None oa-vcz     ep   50/300  train mix 2.465e-01  (377s)
+3012.9s 484 10:08 geometry_wno None oa-vcb     ep  250/300  train mix 1.582e-02  (2506s)
+3612.9s 485 10:18 barriers_ablation None oa-vcz     ep  150/300  train mix 1.187e-01  (1145s)
+3612.9s 486 10:18 geometry_wno None oa-ll-op   ep  200/300  train mix 8.901e-02  (427s)
+4212.9s 487 10:28 barriers_ablation None oa-vcz     ep  200/300  train mix 7.573e-02  (1531s)
+4212.9s 488 10:28 geometry_wno None gnn-op     ep  100/300  train mix 2.862e-01  (392s)
+4812.9s 489 10:38 barriers_ablation None oa-vcq     ep    1/300  train mix 4.535e+00  (8s)
+4812.9s 490 10:38 geometry_wno None gnn-op     ep  250/300  train mix 1.092e-01  (979s)
+5412.9s 491 10:48 barriers_ablation None oa-vcq     ep   50/300  train mix 7.190e-01  (393s)
+5412.9s 492 10:48 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+6012.9s 493 10:58 barriers_ablation None oa-vcq     ep  150/300  train mix 6.411e-01  (1198s)
+6012.9s 494 10:58 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+6612.9s 495 11:08 barriers_ablation None oa-vcq     ep  200/300  train mix 4.693e-01  (1601s)
+6612.9s 496 11:08 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+7212.9s 497 11:18 barriers_ablation None oa-vcb     ep    1/300  train mix 5.793e+00  (8s)
+7212.9s 498 11:18 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+7812.9s 499 11:28 barriers_ablation None oa-vcb     ep   50/300  train mix 3.798e-01  (423s)
+7812.9s 500 11:28 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+8412.9s 501 11:38 barriers_ablation None oa-vcb     ep  100/300  train mix 2.819e-01  (850s)
+8412.9s 502 11:38 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+9012.9s 503 11:48 barriers_ablation None oa-vcb     ep  200/300  train mix 1.406e-01  (1698s)
+9012.9s 504 11:48 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+9612.9s 505 11:58 barriers_ablation None oa-vcb     ep  250/300  train mix 1.037e-01  (2121s)
+9612.9s 506 11:58 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+10212.9s 507 12:08 barriers_ablation None oa-vcl     ep  150/300  train mix 2.944e-01  (327s)
+10212.9s 508 12:08 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+10812.9s 509 12:18 barriers_ablation None oa-vcbl    ep  100/300  train mix 4.143e-01  (262s)
+10812.9s 510 12:18 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+11412.9s 511 12:28 barriers_ablation None oa-ll-op   ep   50/300  train mix 1.640e+00  (95s)
+11412.9s 512 12:28 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+12012.9s 513 12:38 barriers_ablation None gnn-op     ep    1/300  train mix 1.929e+01  (4s)
+12012.9s 514 12:38 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+12612.9s 515 12:48 barriers_ablation None gnn-op     ep  200/300  train mix 9.530e-01  (765s)
+12612.9s 516 12:48 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+13212.9s 517 12:58 barriers_ablation 0 gnn-op + line search                 7.65e-01/0.614 | 9.67e-01/0.516   1.73e-01/0.163 | 1.19e-01/0.127
+13212.9s 518 12:58 geometry_wno 1 ModuleNotFoundError: No module named 'pytorch_wavelets'
+13212.9s 519 finished: {'barriers_ablation': 0, 'geometry_wno': 1}
+13212.9s 520 --- geometry_wno.log (tail) ---
+13212.9s 521 two-grid PCG, 4 its                   4.953e-03   1.563e-02  4.461e-03
+13212.9s 522 two-grid PCG, 6 its                   9.407e-04   3.212e-03  8.472e-04
+13212.9s 523 two-grid PCG, 8 its                   1.736e-04   6.300e-04  1.557e-04
+13212.9s 524 V(4,4) Chebyshev, geometric           6.985e-02   9.847e-02  6.762e-02   (6.0 ms incl. build)
+13212.9s 525 V(4,4) Chebyshev, operator-adapted    4.551e-02   7.213e-02  4.405e-02   (166.3 ms incl. build)
+13212.9s 526 V(4,4) op.-adapted + defl. + proj.    1.406e-02   3.303e-02  1.316e-02   (168.4 ms incl. build)
+13212.9s 527 two-grid PCG iterations to match oa-ll-op        : median 4  (min 3, max 5)
+13212.9s 528 two-grid PCG iterations to match oa-vcb          : median 6  (min 5, max 8)
+13212.9s 529 two-grid PCG iterations to match gnn-op          : median 3  (min 3, max 4)
+13212.9s 530 coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 3x
+13212.9s 531 coarse mesh perforated, bc dirichlet
+13212.9s 532 level 3: 3486 interior nodes, field channels, contrast 1e+04, 400 samples, device cuda
+13212.9s 533 ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=16  rank_scale=None
+13212.9s 534 solved 400 samples in 7s
+13212.9s 535 code version (md5 of the *.py files) f8653612eb84; run key b5dbb3938b
+13212.9s 536 exact coarse solve to level 2 (Galerkin on the level-2 mesh): 6 ms/sample, on its own it already gives rel-L2 1.429e-01 -- the network learns the rest
+13212.9s 537 baselines: grid 63x63 (3459 points inside the domain) for 3486 mesh unknowns
+13212.9s 538 operator data for the energy loss built in 5s
+13212.9s 539 Traceback (most recent call last):
+13212.9s 540 File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_oa_layer.py", line 783, in <module>
+13212.9s 541 model = build(kind, lo).to(dev)
+13212.9s 542 ~~~~~^^^^^^^^^^
+13212.9s 543 File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/train_oa_layer.py", line 766, in build
+13212.9s 544 return WNO2dOfficial(cin, width=h, size=(ng, ng))
+13212.9s 545 File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/baselines_extra.py", line 206, in __init__
+13212.9s 546 self.conv = nn.ModuleList([WaveConv2dOfficial(width, width, self.level, sz, wavelet) for _ in range(layers)])
+13212.9s 547 ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13212.9s 548 File "/kaggle/input/datasets/<kaggle-user>/new-run1/OFW_NO (1)/OFW_NO/baselines_extra.py", line 162, in __init__
+13212.9s 549 from pytorch_wavelets import DWT, IDWT
+13212.9s 550 ModuleNotFoundError: No module named 'pytorch_wavelets'
+13213.5s 551 Traceback (most recent call last):
+13213.5s 552 File "<string>", line 1, in <module>
+13213.5s 553 import sys;import papermill as pm;pm.execute_notebook("__notebook__.ipynb","__notebook__.ipynb",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)
+13213.5s 554 ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13213.5s 555 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 131, in execute_notebook
+13213.5s 556 raise_for_execution_errors(nb, output_path)
+13213.5s 557 ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+13213.5s 558 File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+13213.5s 559 raise error
+13213.5s 560 papermill.exceptions.PapermillExecutionError:
+13213.5s 561 ---------------------------------------------------------------------------
+13213.5s 562 Exception encountered at "In [2]":
+13213.5s 563 ---------------------------------------------------------------------------
+13213.5s 564 RuntimeError                              Traceback (most recent call last)
+13213.5s 565 /tmp/ipykernel_23/2394327718.py in <cell line: 0>()
+13213.5s 566 58 if bad:
+13213.5s 567 59     for n in bad: print(f"--- {n}.log (tail) ---\n" + "\n".join(open(f"{OUT}/{n}.log").read().splitlines()[-30:]))
+13213.5s 568 ---> 60     raise RuntimeError(f"job(s) failed: {bad} -- see {OUT}/<job>.log")
+13213.5s 569 61 print(f"ALL JOBS PASSED (account {ACCOUNT}, session {SESSION})" + (" -- PREFLIGHT PASS" if SESSION == 0 else ""))
+13213.5s 570 
+13213.5s 571 RuntimeError: job(s) failed: ['geometry_wno'] -- see /kaggle/working/<job>.log
+13213.5s 572 
+13215.6s 573 /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+13215.6s 574 cells[i][c] = re.sub('\\\\\|', '|', cell)
+13215.8s 575 /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+13215.8s 576 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+13216.5s 577 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+13216.6s 578 [NbConvertApp] Writing 68537 bytes to __notebook__.ipynb
+13219.1s 579 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+13219.6s 580 [NbConvertApp] Writing 350158 bytes to __results__.html

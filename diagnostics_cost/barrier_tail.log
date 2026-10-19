@@ -1,0 +1,22 @@
+islands 50/100;  lambda_min(D^-1 A): with island median 9.5e-06, without 1.9e-03
+
+the 12 worst NO-island samples for oa-vc (test index, lambda_min, max|u|, oa-vc, oa-ll-op, classical V(4,4)):
+   59  2.6e-04  2.40e-01  2.2239  0.4987  0.1975
+    9  2.6e-04  2.27e-01  0.2575  0.6068  0.3613
+   98  2.0e-03  4.50e-02  0.1350  0.1023  0.0151
+   53  6.7e-04  8.65e-02  0.0830  0.1658  0.0497
+   97  3.6e-04  1.98e-01  0.0812  0.0900  0.0210
+   83  9.2e-04  7.33e-02  0.0370  0.1527  0.0298
+   25  2.0e-03  3.63e-02  0.0293  0.0640  0.0120
+   39  2.6e-03  2.67e-02  0.0217  0.1071  0.0475
+   74  1.6e-03  5.71e-02  0.0177  0.0854  0.0053
+   76  2.9e-03  3.07e-02  0.0172  0.0783  0.0596
+   49  1.3e-03  4.53e-02  0.0134  0.1282  0.0225
+   38  1.7e-03  3.61e-02  0.0124  0.0717  0.0288
+
+no-island samples: Spearman(log lambda_min, oa-vc error) = -0.46; (log lambda_min, classical) = -0.33; (classical, oa-vc) = +0.59
+  no-island, lambda_min < 1e-03: 6 samples, oa-vc mean 0.449 vs classical 0.115;  lambda_min >= 1e-03: 44 samples, oa-vc mean 0.011 (median 0.0063) vs classical 0.020, oa-ll-op 0.088
+  no-island, lambda_min < 3e-04: 2 samples, oa-vc mean 1.241 vs classical 0.279;  lambda_min >= 3e-04: 48 samples, oa-vc mean 0.014 (median 0.0067) vs classical 0.021, oa-ll-op 0.093
+  no-island, lambda_min < 1e-04: 0 samples, oa-vc mean nan vs classical nan;  lambda_min >= 1e-04: 50 samples, oa-vc mean 0.063 (median 0.0070) vs classical 0.031, oa-ll-op 0.112
+
+with islands: oa-vc beats the classical member on 86% of samples; oa-vc > 1 (worse than doing nothing) on 2 samples: [np.int64(26), np.int64(59)], island flags [np.int64(1), np.int64(0)]

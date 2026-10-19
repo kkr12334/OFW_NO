@@ -1,0 +1,936 @@
+{
+ "levels": [
+  {
+   "n": 3486,
+   "nnz": 23502,
+   "m_net": 19926,
+   "nnzX": 47428,
+   "nc": 814
+  },
+  {
+   "n": 814,
+   "nnz": 52224,
+   "m_net": 51410,
+   "nnzX": 66895,
+   "nc": 174
+  },
+  {
+   "n": 174,
+   "nnz": 30276,
+   "m_net": 30102,
+   "nnzX": 4088,
+   "nc": 28
+  }
+ ],
+ "coarse": {
+  "n0": 28,
+  "lu_nnz": 812
+ },
+ "conventions": "Operation ledger per one pass (amendment 2, B3).  Structure only; output runs/stage1_ledger.json.\nConventions: MAC = one multiply + one add; a diagonal scaling, division or vector update of length n counts n; a dot\nproduct counts n and one scalar global reduction; GELU evaluations, nonlinear global reductions (max, rms, median) and\nbias additions are listed separately (bias additions are also included in MACs); stored sparse entries (including\nstructural zeros) are what a scipy SpMV executes, while the network uses its own pattern (fine level: 19 926 off-diagonal\nentries).  Terms per pass: initial residual, wrapper (deflation x0 with k near-kernel columns, b = r - A x0, Galerkin output\nover W = [x, xc, xp, Z]), smoothers, cycle residuals, transfers, coarsest solve; method-specific set-up separately; common\nset-up (operator-adapted hierarchy, near-kernel basis, coarse factorisation) is reported as measured time only (timing v2).\nTotals are also given as 'fine-SpMV-equivalent arithmetic' = MACs / fine nnz (an arithmetic unit, not SpMV calls or time).\nCross-check: SpMV-equivalents per level of the cycle part equal the counters recorded in runs/confirm_C_*.json.",
+ "near_kernel_columns": {
+  "channels": {
+   "mean": 0.0,
+   "counts": {
+    "0": 100
+   }
+  },
+  "barriers": {
+   "mean": 0.72,
+   "counts": {
+    "0": 56,
+    "1": 27,
+    "2": 11,
+    "3": 2,
+    "4": 3,
+    "5": 1
+   }
+  }
+ },
+ "learned_call": [
+  {
+   "MAC": 89404110,
+   "GELU": 1561590,
+   "nonlinear_reductions": 3,
+   "dense_nodes": 24733170,
+   "dense_edges": 58582440
+  },
+  {
+   "MAC": 169610906,
+   "GELU": 3170070,
+   "nonlinear_reductions": 3,
+   "dense_nodes": 5775330,
+   "dense_edges": 151145400
+  },
+  {
+   "MAC": 97053198,
+   "GELU": 1824390,
+   "nonlinear_reductions": 3,
+   "dense_nodes": 1234530,
+   "dense_edges": 88499880
+  }
+ ],
+ "families": {
+  "channels": {
+   "CHEB": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 1044872,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1721656.0,
+    "per_pass_fine_spmv_equiv": 73.25572291719854,
+    "setup_MAC": 2593560,
+    "setup_fine_spmv_equiv": 110.35486341587949,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 11.0,
+    "OA_VCB_over_method": 414.02764779956044,
+    "OA_VCB_over_method_incl_setup": 165.18598002973664
+   },
+   "CHEB-T": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 1044872,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1721656.0,
+    "per_pass_fine_spmv_equiv": 73.25572291719854,
+    "setup_MAC": 1987864,
+    "setup_fine_spmv_equiv": 84.58275891413497,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 11.0,
+    "OA_VCB_over_method": 414.02764779956044,
+    "OA_VCB_over_method_incl_setup": 192.15779507860856
+   },
+   "POLY-S": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 806024,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1482808.0,
+    "per_pass_fine_spmv_equiv": 63.09284316228406,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     8,
+     8,
+     8
+    ],
+    "scalar_dots": 11.0,
+    "OA_VCB_over_method": 480.7184638874352,
+    "OA_VCB_over_method_incl_setup": 480.7184638874352
+   },
+   "POLY-L": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 806024,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1482808.0,
+    "per_pass_fine_spmv_equiv": 63.09284316228406,
+    "setup_MAC": 1987864,
+    "setup_fine_spmv_equiv": 84.58275891413497,
+    "cycle_spmv_per_level": [
+     8,
+     8,
+     8
+    ],
+    "scalar_dots": 11.0,
+    "OA_VCB_over_method": 480.7184638874352,
+    "OA_VCB_over_method_incl_setup": 205.3818926133037
+   },
+   "SD": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 1026976,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1703760.0,
+    "per_pass_fine_spmv_equiv": 72.49425580801633,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 59.0,
+    "OA_VCB_over_method": 418.37652251490823,
+    "OA_VCB_over_method_incl_setup": 418.37652251490823
+   },
+   "MR": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 1098560,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1775344.0,
+    "per_pass_fine_spmv_equiv": 75.54012424474513,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 59.0,
+    "OA_VCB_over_method": 401.507079191413,
+    "OA_VCB_over_method_incl_setup": 401.507079191413
+   },
+   "PCG": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 1080664,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1757448.0,
+    "per_pass_fine_spmv_equiv": 74.77865713556294,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 65.0,
+    "OA_VCB_over_method": 405.59560453566763,
+    "OA_VCB_over_method_incl_setup": 405.59560453566763
+   },
+   "SGS": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 883808,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1560592.0,
+    "per_pass_fine_spmv_equiv": 66.40251893455876,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 11.0,
+    "OA_VCB_over_method": 456.7581943262557,
+    "OA_VCB_over_method_incl_setup": 456.7581943262557
+   },
+   "SGS-PCG": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 3245444,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 3922228.0,
+    "per_pass_fine_spmv_equiv": 166.88911581993023,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     30,
+     30,
+     30
+    ],
+    "scalar_dots": 65.0,
+    "OA_VCB_over_method": 181.7368046936588,
+    "OA_VCB_over_method_incl_setup": 181.7368046936588
+   },
+   "PCG(5)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 1346356,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 2023140.0,
+    "per_pass_fine_spmv_equiv": 86.0837375542507,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     12,
+     12,
+     12
+    ],
+    "scalar_dots": 77.0,
+    "OA_VCB_over_method": 352.3301323684965,
+    "OA_VCB_over_method_incl_setup": 352.3301323684965
+   },
+   "PCG(8)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 2143432,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 2820216.0,
+    "per_pass_fine_spmv_equiv": 119.99897881031401,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     18,
+     18,
+     18
+    ],
+    "scalar_dots": 113.0,
+    "OA_VCB_over_method": 252.75127295214267,
+    "OA_VCB_over_method_incl_setup": 252.75127295214267
+   },
+   "PCG(14)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 3737584,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 4414368.0,
+    "per_pass_fine_spmv_equiv": 187.82946132244064,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     30,
+     30,
+     30
+    ],
+    "scalar_dots": 185.0,
+    "OA_VCB_over_method": 161.47570478945119,
+    "OA_VCB_over_method_incl_setup": 161.47570478945119
+   },
+   "K2 (CHEB)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 2248072,
+     "cycle_residuals": 723660,
+     "transfers": 396414,
+     "coarsest": 3248,
+     "cycle_vector_ops": 34860
+    },
+    "per_pass_MAC": 3616986.0,
+    "per_pass_fine_spmv_equiv": 153.90119989788104,
+    "setup_MAC": 2593560,
+    "setup_fine_spmv_equiv": 110.35486341587949,
+    "cycle_spmv_per_level": [
+     10,
+     22,
+     44
+    ],
+    "scalar_dots": 29.0,
+    "OA_VCB_over_method": 197.0738023315545,
+    "OA_VCB_over_method_incl_setup": 114.77464042613967
+   },
+   "OA-VCB": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 183744.0,
+     "smoother": 712136428,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 784,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 712813184.0,
+    "per_pass_fine_spmv_equiv": 30329.894647264064,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     2,
+     2,
+     2
+    ],
+    "scalar_dots": 11.0,
+    "OA_VCB_over_method": 1.0,
+    "OA_VCB_over_method_incl_setup": 1.0,
+    "GELU_per_pass": 13112100,
+    "nonlinear_global_reductions_per_pass": 18
+   }
+  },
+  "barriers": {
+   "CHEB": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 1044872,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1805301.28,
+    "per_pass_fine_spmv_equiv": 76.81479363458429,
+    "setup_MAC": 2593560,
+    "setup_fine_spmv_equiv": 110.35486341587949,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 17.82,
+    "OA_VCB_over_method": 394.89077927203374,
+    "OA_VCB_over_method_incl_setup": 162.06394880449605
+   },
+   "CHEB-T": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 1044872,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1805301.28,
+    "per_pass_fine_spmv_equiv": 76.81479363458429,
+    "setup_MAC": 1987864,
+    "setup_fine_spmv_equiv": 84.58275891413497,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 17.82,
+    "OA_VCB_over_method": 394.89077927203374,
+    "OA_VCB_over_method_incl_setup": 187.9424640520805
+   },
+   "POLY-S": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 806024,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1566453.28,
+    "per_pass_fine_spmv_equiv": 66.65191387966982,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     8,
+     8,
+     8
+    ],
+    "scalar_dots": 17.82,
+    "OA_VCB_over_method": 455.1025162269761,
+    "OA_VCB_over_method_incl_setup": 455.1025162269761
+   },
+   "POLY-L": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 806024,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1566453.28,
+    "per_pass_fine_spmv_equiv": 66.65191387966982,
+    "setup_MAC": 1987864,
+    "setup_fine_spmv_equiv": 84.58275891413497,
+    "cycle_spmv_per_level": [
+     8,
+     8,
+     8
+    ],
+    "scalar_dots": 17.82,
+    "OA_VCB_over_method": 455.1025162269761,
+    "OA_VCB_over_method_incl_setup": 200.572085472347
+   },
+   "SD": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 1026976,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1787405.28,
+    "per_pass_fine_spmv_equiv": 76.0533265254021,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 65.82,
+    "OA_VCB_over_method": 398.8445358514326,
+    "OA_VCB_over_method_incl_setup": 398.8445358514326
+   },
+   "MR": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 1098560,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1858989.28,
+    "per_pass_fine_spmv_equiv": 79.09919496213088,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 65.82,
+    "OA_VCB_over_method": 383.4862508082887,
+    "OA_VCB_over_method_incl_setup": 383.4862508082887
+   },
+   "PCG": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 1080664,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1841093.28,
+    "per_pass_fine_spmv_equiv": 78.33772785294869,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 71.82,
+    "OA_VCB_over_method": 387.21385658417046,
+    "OA_VCB_over_method_incl_setup": 387.21385658417046
+   },
+   "SGS": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 883808,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 1644237.28,
+    "per_pass_fine_spmv_equiv": 69.96158965194452,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     10,
+     10,
+     10
+    ],
+    "scalar_dots": 17.82,
+    "OA_VCB_over_method": 433.5729629485107,
+    "OA_VCB_over_method_incl_setup": 433.5729629485107
+   },
+   "SGS-PCG": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 3245444,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 4005873.2800000003,
+    "per_pass_fine_spmv_equiv": 170.448186537316,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     30,
+     30,
+     30
+    ],
+    "scalar_dots": 71.82,
+    "OA_VCB_over_method": 177.9629008334482,
+    "OA_VCB_over_method_incl_setup": 177.9629008334482
+   },
+   "PCG(5)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 1346356,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 2106785.2800000003,
+    "per_pass_fine_spmv_equiv": 89.64280827163647,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     12,
+     12,
+     12
+    ],
+    "scalar_dots": 83.82,
+    "OA_VCB_over_method": 338.38134149105116,
+    "OA_VCB_over_method_incl_setup": 338.38134149105116
+   },
+   "PCG(8)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 2143432,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 2903861.2800000003,
+    "per_pass_fine_spmv_equiv": 123.55804952769978,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     18,
+     18,
+     18
+    ],
+    "scalar_dots": 119.82,
+    "OA_VCB_over_method": 245.4996160422649,
+    "OA_VCB_over_method_incl_setup": 245.4996160422649
+   },
+   "PCG(14)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 3737584,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 812,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 4498013.28,
+    "per_pass_fine_spmv_equiv": 191.3885320398264,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     30,
+     30,
+     30
+    ],
+    "scalar_dots": 191.82,
+    "OA_VCB_over_method": 158.49149055424752,
+    "OA_VCB_over_method_incl_setup": 158.49149055424752
+   },
+   "K2 (CHEB)": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 2248072,
+     "cycle_residuals": 723660,
+     "transfers": 396414,
+     "coarsest": 3248,
+     "cycle_vector_ops": 34860
+    },
+    "per_pass_MAC": 3700631.2800000003,
+    "per_pass_fine_spmv_equiv": 157.4602706152668,
+    "setup_MAC": 2593560,
+    "setup_fine_spmv_equiv": 110.35486341587949,
+    "cycle_spmv_per_level": [
+     10,
+     22,
+     44
+    ],
+    "scalar_dots": 35.82,
+    "OA_VCB_over_method": 192.64195088358002,
+    "OA_VCB_over_method_incl_setup": 113.26265719716099
+   },
+   "OA-VCB": {
+    "terms": {
+     "initial_residual": 26988.0,
+     "wrapper": 267389.28,
+     "smoother": 712136428,
+     "cycle_residuals": 212004,
+     "transfers": 237838,
+     "coarsest": 784,
+     "cycle_vector_ops": 15398
+    },
+    "per_pass_MAC": 712896829.28,
+    "per_pass_fine_spmv_equiv": 30333.453717981447,
+    "setup_MAC": 0,
+    "setup_fine_spmv_equiv": 0.0,
+    "cycle_spmv_per_level": [
+     2,
+     2,
+     2
+    ],
+    "scalar_dots": 17.82,
+    "OA_VCB_over_method": 1.0,
+    "OA_VCB_over_method_incl_setup": 1.0,
+    "GELU_per_pass": 13112100,
+    "nonlinear_global_reductions_per_pass": 18
+   }
+  }
+ },
+ "counter_cross_check": {
+  "channels CHEB": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "channels PCG": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "channels SD": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "channels MR": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "channels POLY-S": {
+   "ledger": [
+    8,
+    8,
+    8
+   ],
+   "counters": [
+    8.0,
+    8.0,
+    8.0
+   ],
+   "equal": true
+  },
+  "channels SGS": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "channels SGS-PCG": {
+   "ledger": [
+    30,
+    30,
+    30
+   ],
+   "counters": [
+    30.0,
+    30.0,
+    30.0
+   ],
+   "equal": true
+  },
+  "channels K2 (CHEB)": {
+   "ledger": [
+    10,
+    22,
+    44
+   ],
+   "counters": [
+    10.0,
+    22.0,
+    44.0
+   ],
+   "equal": true
+  },
+  "barriers CHEB": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "barriers PCG": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "barriers SD": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "barriers MR": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "barriers POLY-S": {
+   "ledger": [
+    8,
+    8,
+    8
+   ],
+   "counters": [
+    8.0,
+    8.0,
+    8.0
+   ],
+   "equal": true
+  },
+  "barriers SGS": {
+   "ledger": [
+    10,
+    10,
+    10
+   ],
+   "counters": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "equal": true
+  },
+  "barriers SGS-PCG": {
+   "ledger": [
+    30,
+    30,
+    30
+   ],
+   "counters": [
+    30.0,
+    30.0,
+    30.0
+   ],
+   "equal": true
+  },
+  "barriers K2 (CHEB)": {
+   "ledger": [
+    10,
+    22,
+    44
+   ],
+   "counters": [
+    10.0,
+    22.0,
+    44.0
+   ],
+   "equal": true
+  }
+ }
+}

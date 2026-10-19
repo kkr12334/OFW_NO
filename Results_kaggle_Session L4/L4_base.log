@@ -1,0 +1,40 @@
+coarse mesh 'perforated': 84 nodes, 116 elements, 21.2 deg min angle -> refined 4x
+coarse mesh perforated, bc dirichlet
+level 4: 14398 interior nodes, field channels, contrast 1e+04, 400 samples, device cuda
+ROUTE V  (operator in the PREDICT, D_k = A_FF)   rho=2  rank=16  rank_scale=None
+  solved 400 samples in 47s
+code version (md5 of the *.py files) f8653612eb84; run key b68267e41f
+  exact coarse solve to level 3 (Galerkin on the level-3 mesh): 28 ms/sample, on its own it already gives rel-L2 6.925e-02 -- the network learns the rest
+  operator data for the energy loss built in 19s
+  operator weights a_ij/a_ii (84592 edges) + residual input built in 5s; rel. spread of |D^-1 r| over samples 0.06
+
+[oa-ll-op] width 12, params 13,215 (target 22,000), learnable lifting on the mesh hierarchy: 4 lifting levels (10912, 2672, 640, 146 detail nodes), coarse 28
+    oa-ll-op   ep    1/300  train mix 6.882e+01  (7s)
+    oa-ll-op   ep   50/300  train mix 5.070e-01  (298s)
+    oa-ll-op   ep  100/300  train mix 1.572e-01  (601s)
+    oa-ll-op   ep  150/300  train mix 1.273e-01  (901s)
+    oa-ll-op   ep  200/300  train mix 9.487e-02  (1200s)
+    oa-ll-op   ep  250/300  train mix 8.115e-02  (1499s)
+    oa-ll-op   ep  300/300  train mix 7.692e-02  (1798s)
+    oa-ll-op   TEST  nodal rel-l2 6.309e-03  FE rel-L2 6.323e-03  energy 2.026e-02  (train 1798s; model saved)
+               energy worse than u_c alone on 0/100 test samples
+               + energy line search: rel-L2 6.260e-03  energy 2.020e-02  (alpha median 0.997, range 0.99-1.02)
+
+[gnn-op] width 16, params 20,273 (target 22,000), MeshGraphNet-style GNN, 10 steps, + residual input and operator edge weights (= oa-ll-op inputs)
+    gnn-op     ep    1/300  train mix 2.721e+00  (14s)
+    gnn-op     ep   50/300  train mix 3.418e-01  (713s)
+    gnn-op     ep  100/300  train mix 2.525e-01  (1426s)
+    gnn-op     ep  150/300  train mix 2.373e-01  (2139s)
+    gnn-op     ep  200/300  train mix 1.776e-01  (2851s)
+    gnn-op     ep  250/300  train mix 1.564e-01  (3563s)
+    gnn-op     ep  300/300  train mix 1.505e-01  (4275s)
+    gnn-op     TEST  nodal rel-l2 1.258e-02  FE rel-L2 1.208e-02  energy 2.857e-02  (train 4275s; model saved)
+               energy worse than u_c alone on 0/100 test samples
+               + energy line search: rel-L2 1.256e-02  energy 2.848e-02  (alpha median 0.993, range 0.97-1.01)
+
+
+RESULTS  route V, level 4, coarse mesh perforated (n=9), bc dirichlet, channels, contrast 1e+04, 300 train / 100 test, 300 epochs, rank 16, loss mix, exact coarse solve to level 3 (galerkin)
+(rel-l2 = nodal Euclidean; FE-L2 = mass-matrix norm; +setup = per-sample operator data the model needs (transform / hierarchy), CPU, excluding the coarse solve (27 ms/sample))
+model          params nodal rel-l2      FE-L2  energy err  train s  infer ms  +setup ms
+oa-ll-op       13,215    6.309e-03  6.323e-03   2.026e-02     1798      11.1          0
+gnn-op         20,273    1.258e-02  1.208e-02   2.857e-02     4275      24.7          0

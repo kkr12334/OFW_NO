@@ -1,0 +1,47 @@
+data from cache /kaggle/working/pd_data_85.npz
+mgno: train (1000, 85, 85), test (100, 85, 85), device cuda
+mgno: 645,828 parameters, batch 20, 500 epochs
+mgno ep    1  train 1.5639e-01  test rel L2 1.3378e-01  (7s)
+mgno ep   51  train 1.8690e-02  test rel L2 2.4066e-02  (241s)
+mgno ep  101  train 1.1621e-02  test rel L2 1.2386e-02  (482s)
+mgno ep  151  train 9.9388e-03  test rel L2 1.3476e-02  (723s)
+mgno ep  201  train 8.1213e-03  test rel L2 1.0995e-02  (964s)
+mgno ep  251  train 7.1846e-03  test rel L2 9.6422e-03  (1206s)
+mgno ep  301  train 6.3544e-03  test rel L2 7.8174e-03  (1447s)
+mgno ep  351  train 5.5643e-03  test rel L2 7.7457e-03  (1687s)
+mgno ep  401  train 5.1426e-03  test rel L2 7.2309e-03  (1928s)
+mgno ep  451  train 4.9697e-03  test rel L2 6.9515e-03  (2168s)
+mgno ep  500  train 5.0125e-03  test rel L2 6.9898e-03  (2404s)
+RESULT mgno: test mean relative L2 0.6990% (published None)
+data from cache /kaggle/working/pd_data_85.npz
+wno-light: train (1000, 85, 85), test (100, 85, 85), device cuda
+/usr/local/lib/python3.13/dist-packages/pytorch_wavelets/dtcwt/coeffs.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream
+wno-light: 334,209 parameters, batch 20, 500 epochs
+wno-light ep    1  train 1.7189e-01  test rel L2 1.3866e-01  (11s)
+wno-light ep   51  train 3.7305e-02  test rel L2 4.4203e-02  (493s)
+wno-light ep  101  train 2.7746e-02  test rel L2 3.7479e-02  (975s)
+wno-light ep  151  train 2.3274e-02  test rel L2 3.6316e-02  (1456s)
+wno-light ep  201  train 2.0846e-02  test rel L2 3.5709e-02  (1939s)
+wno-light ep  251  train 1.9227e-02  test rel L2 3.6289e-02  (2421s)
+wno-light ep  301  train 1.8281e-02  test rel L2 3.5486e-02  (2903s)
+wno-light ep  351  train 1.7521e-02  test rel L2 3.5365e-02  (3385s)
+wno-light ep  401  train 1.7008e-02  test rel L2 3.5332e-02  (3868s)
+wno-light ep  451  train 1.6528e-02  test rel L2 3.5267e-02  (4352s)
+wno-light ep  500  train 1.6307e-02  test rel L2 3.5349e-02  (4829s)
+RESULT wno-light: test mean relative L2 3.5349% (published None)
+data from cache /kaggle/working/pd_data_85.npz
+transolver: train (1000, 85, 85), test (100, 85, 85), device cuda
+transolver: 976,961 parameters, batch 4, 500 epochs
+transolver ep    1  train 1.7097e-01  test rel L2 1.7485e-01  (54s)
+transolver ep   51  train 4.3572e-02  test rel L2 4.6602e-02  (2703s)
+transolver ep  101  train 2.6433e-02  test rel L2 2.7459e-02  (5392s)
+transolver ep  151  train 1.8010e-02  test rel L2 2.0585e-02  (8107s)
+transolver ep  201  train 1.3300e-02  test rel L2 1.6110e-02  (10832s)
+transolver ep  251  train 9.8884e-03  test rel L2 1.3406e-02  (13557s)
+transolver ep  301  train 7.5149e-03  test rel L2 1.2270e-02  (16269s)
+transolver ep  351  train 5.7996e-03  test rel L2 1.2382e-02  (18993s)
+transolver ep  401  train 4.3762e-03  test rel L2 1.2194e-02  (21716s)
+transolver ep  451  train 3.7329e-03  test rel L2 1.2133e-02  (24437s)
+transolver ep  500  train 3.6005e-03  test rel L2 1.2168e-02  (27103s)
+RESULT transolver: test mean relative L2 1.2168% (published None)

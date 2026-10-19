@@ -1,0 +1,4 @@
+1. linear smoothers, random weights: max relative deviation from linearity 1.1e-14; params at width 8: 5,680
+1. non-linear smoothers, random weights: max relative deviation from linearity 1.6e+00; params at width 8: 6,210
+2. Jacobi member: linear vs non-linear class, max rel. diff 0.0e+00
+PREFLIGHT PASS (linear control): linearity 1e-10, non-linearity detectable, Jacobi member identical

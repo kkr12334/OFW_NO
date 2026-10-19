@@ -1,0 +1,15 @@
+barriers PCG(4)       matvec-eq/pass     30  G(CHEB->X) 1.36  G(X->OA-VCB init0) 1.570 [1.409, 1.736] W 0.88
+barriers PCG(5)       matvec-eq/pass     36  G(CHEB->X) 1.76  G(X->OA-VCB init0) 1.212 [1.084, 1.351] W 0.64
+barriers PCG(8)       matvec-eq/pass     54  G(CHEB->X) 2.90  G(X->OA-VCB init0) 0.737 [0.638, 0.851] W 0.33
+barriers PCG(14)      matvec-eq/pass     90  G(CHEB->X) 6.21  G(X->OA-VCB init0) 0.343 [0.278, 0.425] W 0.19
+barriers PCG(32)      matvec-eq/pass    198  G(CHEB->X) 25.36  G(X->OA-VCB init0) 0.084 [0.059, 0.121] W 0.12
+barriers SGS-PCG(4)   matvec-eq/pass     90  G(CHEB->X) 3.33  G(X->OA-VCB init0) 0.641 [0.549, 0.749] W 0.30
+barriers SGS-PCG(8)   matvec-eq/pass    162  G(CHEB->X) 8.48  G(X->OA-VCB init0) 0.251 [0.200, 0.315] W 0.14
+reproduction check vs dev JSON (PCG(4), SGS-PCG(4)): 0.0 0.0
+barriers X3 pre K4: rho quantiles ['0.943', '1.005', '6.104'], rho <= 0.99 on 41/100
+barriers X3 pre K5: rho quantiles ['0.994', '1.054', '6.127'], rho <= 0.99 on 6/100
+barriers X3 pre K8: rho quantiles ['1.090', '1.232', '6.223'], rho <= 0.99 on 0/100
+barriers X3 post K4: rho quantiles ['0.660', '0.848', '0.981'], rho <= 0.99 on 93/100
+barriers X3 post K5: rho quantiles ['0.859', '0.976', '1.050'], rho <= 0.99 on 63/100
+barriers X3 post K8: rho quantiles ['1.016', '1.159', '1.621'], rho <= 0.99 on 1/100
+exit 0

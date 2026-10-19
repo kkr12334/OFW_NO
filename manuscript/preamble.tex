@@ -1,0 +1,10 @@
+\usepackage{lmodern}   % 13 Oct (pm): Type-1 Latin Modern fonts with the T1 encoding that elsarticle loads (otherwise bitmap EC fonts on installations without cm-super)
+\usepackage{url}
+\usepackage{adjustbox,array,tikz,algorithm,algpseudocode}\usetikzlibrary{positioning}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,xcolor,hyperref}\usepackage[expansion=false]{microtype}
+\setlength{\emergencystretch}{3em}
+\hypersetup{hidelinks}   % 13 Oct (Astra): no coloured link boxes
+\newtheorem{lemma}{Lemma}\newtheorem{proposition}{Proposition}\newtheorem{remark}{Remark}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+% 12 Oct: elsarticle's \ref of an appendix section already reads "Appendix X"; the article class (check.tex) gives "X".
+\makeatletter\@ifclassloaded{elsarticle}{\newcommand{\appref}[1]{\ref{#1}}}{\newcommand{\appref}[1]{Appendix~\ref{#1}}}\makeatother

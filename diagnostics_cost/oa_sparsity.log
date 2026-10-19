@@ -1,0 +1,12 @@
+
+=== channels 1e4: 3458 detail coefficients (L3 -> L0, exact route-V basis), coarse block kept; energy error of the truncated correction, relative to ||e||_A, mean of 10 samples ===
+kept fraction           1%        3%       10%       20%
+oracle top-N         0.761     0.639     0.454     0.318
+indicator top-N      0.761     0.640     0.496     0.405
+overlap of the top-10% sets (indicator vs oracle): 0.71
+
+=== barriers 1e-4, --load no-low: 3458 detail coefficients (L3 -> L0, exact route-V basis), coarse block kept; energy error of the truncated correction, relative to ||e||_A, mean of 10 samples ===
+kept fraction           1%        3%       10%       20%
+oracle top-N         0.656     0.520     0.373     0.272
+indicator top-N      0.685     0.595     0.462     0.400
+overlap of the top-10% sets (indicator vs oracle): 0.66

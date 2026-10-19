@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+# LaTeX build products (manuscript/main.pdf and check.pdf are kept)
+manuscript/*.aux
+manuscript/*.fls
+manuscript/*.fdb_latexmk
+manuscript/*.out
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.toc
+manuscript/*.synctex.gz
+manuscript/*.log
+Thumbs.db
+desktop.ini
+.DS_Store

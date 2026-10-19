@@ -1,0 +1,2 @@
+channels id 300 L3: eta_total(u_h) / |||u_h||| = 0.2880
+barriers id 300 L3: eta_total(u_h) / |||u_h||| = 0.3903

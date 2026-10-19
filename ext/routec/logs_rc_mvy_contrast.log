@@ -1,0 +1,10 @@
+channels c= 1e+00 | PCG30: MVY    1.13 oracle(MVY lift)  1.06 G2-LF   1.04 OA2-LF  1.04 joint  1.04 | u_c: MVY    1.40 oracle(MVY lift)  1.36 G2-LF   1.29 OA2-LF  1.25 joint  1.25
+channels c= 1e+01 | PCG30: MVY    1.25 oracle(MVY lift)  1.07 G2-LF   1.04 OA2-LF  1.03 joint  1.03 | u_c: MVY    1.60 oracle(MVY lift)  1.50 G2-LF   1.31 OA2-LF  1.22 joint  1.21
+channels c= 1e+02 | PCG30: MVY    2.74 oracle(MVY lift)  1.09 G2-LF   1.09 OA2-LF  1.03 joint  1.02 | u_c: MVY    2.02 oracle(MVY lift)  1.85 G2-LF   1.40 OA2-LF  1.17 joint  1.17
+channels c= 1e+03 | PCG30: MVY    8.77 oracle(MVY lift)  1.11 G2-LF   1.72 OA2-LF  1.02 joint  1.02 | u_c: MVY    2.12 oracle(MVY lift)  1.93 G2-LF   1.42 OA2-LF  1.16 joint  1.15
+channels c= 1e+04 | PCG30: MVY   22.05 oracle(MVY lift)  1.27 G2-LF   3.68 OA2-LF  1.03 joint  1.03 | u_c: MVY    2.13 oracle(MVY lift)  1.94 G2-LF   1.42 OA2-LF  1.17 joint  1.15
+barriers c= 1e+00 | PCG30: MVY    1.13 oracle(MVY lift)  1.06 G2-LF   1.04 OA2-LF  1.04 joint  1.04 | u_c: MVY    1.40 oracle(MVY lift)  1.36 G2-LF   1.29 OA2-LF  1.25 joint  1.25
+barriers c= 1e+01 | PCG30: MVY    1.22 oracle(MVY lift)  1.06 G2-LF   1.05 OA2-LF  1.04 joint  1.03 | u_c: MVY    1.59 oracle(MVY lift)  1.49 G2-LF   1.31 OA2-LF  1.23 joint  1.22
+barriers c= 1e+02 | PCG30: MVY    2.05 oracle(MVY lift)  1.10 G2-LF   1.06 OA2-LF  1.03 joint  1.03 | u_c: MVY    2.64 oracle(MVY lift)  2.40 G2-LF   1.63 OA2-LF  1.20 joint  1.19
+barriers c= 1e+03 | PCG30: MVY    2.91 oracle(MVY lift)  1.17 G2-LF   1.09 OA2-LF  1.02 joint  1.02 | u_c: MVY    4.35 oracle(MVY lift)  3.98 G2-LF   2.28 OA2-LF  1.15 joint  1.14
+barriers c= 1e+04 | PCG30: MVY    3.09 oracle(MVY lift)  1.19 G2-LF   1.10 OA2-LF  1.02 joint  1.02 | u_c: MVY    4.78 oracle(MVY lift)  4.37 G2-LF   2.45 OA2-LF  1.12 joint  1.12

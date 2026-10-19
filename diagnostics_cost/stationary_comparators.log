@@ -1,0 +1,16 @@
+
+Darcy L3 (k0 2); oa-ll-op (trained, one coarse solve): 9.99e-03 / 0.024;  coarse alone 1.59e-01 / 0.399
+  post nu  4: Jacobi(best omega) 1.34e-01 / 0.201 | Chebyshev(best q) 1.25e-01 / 0.186 | sym. Gauss-Seidel 1.29e-01 / 0.182
+  post nu  8: Jacobi(best omega) 1.21e-01 / 0.165 | Chebyshev(best q) 1.06e-01 / 0.121 | sym. Gauss-Seidel 1.16e-01 / 0.143
+  post nu 16: Jacobi(best omega) 1.11e-01 / 0.132 | Chebyshev(best q) 5.93e-02 / 0.058 | sym. Gauss-Seidel 9.68e-02 / 0.106
+  V    nu  4: Jacobi(best omega) 1.17e-01 / 0.171 | Chebyshev(best q) 1.00e-01 / 0.144 | sym. Gauss-Seidel 1.13e-01 / 0.153
+  V    nu  8: Jacobi(best omega) 9.76e-02 / 0.130 | Chebyshev(best q) 5.26e-02 / 0.070 | sym. Gauss-Seidel 9.21e-02 / 0.109
+  V    nu 16: Jacobi(best omega) 8.22e-02 / 0.094 | Chebyshev(best q) 2.69e-02 / 0.026 | sym. Gauss-Seidel 6.68e-02 / 0.070
+
+Darcy L4 (k0 3); oa-ll-op (trained, one coarse solve): 8.09e-03 / 0.026;  coarse alone 7.69e-02 / 0.277
+  post nu  4: Jacobi(best omega) 7.07e-02 / 0.149 | Chebyshev(best q) 6.83e-02 / 0.137 | sym. Gauss-Seidel 6.96e-02 / 0.135
+  post nu  8: Jacobi(best omega) 6.87e-02 / 0.128 | Chebyshev(best q) 6.34e-02 / 0.098 | sym. Gauss-Seidel 6.60e-02 / 0.111
+  post nu 16: Jacobi(best omega) 6.46e-02 / 0.104 | Chebyshev(best q) 5.03e-02 / 0.060 | sym. Gauss-Seidel 6.10e-02 / 0.089
+  V    nu  4: Jacobi(best omega) 6.61e-02 / 0.137 | Chebyshev(best q) 6.14e-02 / 0.121 | sym. Gauss-Seidel 6.53e-02 / 0.123
+  V    nu  8: Jacobi(best omega) 6.26e-02 / 0.114 | Chebyshev(best q) 4.56e-02 / 0.076 | sym. Gauss-Seidel 5.90e-02 / 0.096
+  V    nu 16: Jacobi(best omega) 5.57e-02 / 0.087 | Chebyshev(best q) 3.44e-02 / 0.039 | sym. Gauss-Seidel 5.08e-02 / 0.071

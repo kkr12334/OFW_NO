@@ -1,0 +1,8 @@
+channels c= 1e+00: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.0697  (55s)
+channels c= 1e+02: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.1329  (104s)
+channels c= 1e+04: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.1368  (88s)
+channels c= 1e+06: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.1368  (101s)
+barriers c= 1e+00: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.0697  (52s)
+barriers c= 1e+02: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.0586  (56s)
+barriers c= 1e+04: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.0582  (74s)
+barriers c= 1e+06: worst-case efficiency of the global moment-constrained RT0(T_b) flux C_glob = 2.0582  (51s)

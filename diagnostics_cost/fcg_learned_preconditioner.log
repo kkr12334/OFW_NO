@@ -1,0 +1,21 @@
+data: 300 samples, 814 unknowns, 1s
+  [coarse-residual] ep 1/100 loss 6.774e+00 (6s)
+  [coarse-residual] ep 21/100 loss 3.412e-01 (61s)
+  [coarse-residual] ep 41/100 loss 1.430e-01 (114s)
+  [coarse-residual] ep 61/100 loss 1.033e-01 (168s)
+  [coarse-residual] ep 81/100 loss 7.483e-02 (222s)
+  [coarse-residual] ep 100/100 loss 6.264e-02 (275s)
+  one-pass (surrogate) test error, coarse-residual training, 20,403 params: rel-L2 1.981e-02  energy 0.038
+  [augmented] ep 1/100 loss 2.363e+00 (18s)
+  [augmented] ep 21/100 loss 1.545e-01 (389s)
+  [augmented] ep 41/100 loss 1.048e-01 (755s)
+  [augmented] ep 61/100 loss 8.459e-02 (1140s)
+  [augmented] ep 81/100 loss 7.103e-02 (1536s)
+  [augmented] ep 100/100 loss 6.584e-02 (1876s)
+  one-pass (surrogate) test error, augmented training, 20,403 params: rel-L2 1.383e-02  energy 0.029
+
+flexible CG from 0 (energy error relative to ||u||_A), 75 test samples:
+  two-grid                     its to 1e-6: median 14 [max 18], reached 75/75;  error after 1 / 2 / 4 its: 3.56e-01 / 1.31e-01 / 1.97e-02
+  AMG (SA)                     its to 1e-6: median 10 [max 13], reached 75/75;  error after 1 / 2 / 4 its: 2.48e-01 / 6.49e-02 / 3.38e-03
+  learned (coarse-residual)    its to 1e-6: median 38 [max 40], reached 24/75;  error after 1 / 2 / 4 its: 3.77e-02 / 1.77e-02 / 9.60e-03
+  learned (augmented)          its to 1e-6: median 11 [max 16], reached 75/75;  error after 1 / 2 / 4 its: 2.84e-02 / 1.17e-02 / 2.41e-03

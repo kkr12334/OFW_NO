@@ -1,0 +1,10 @@
+# Versions used to regenerate the tables, figures and CPU diagnostics (13 Oct 2026).  Training ran on Kaggle (NVIDIA T4)
+# with the platform's PyTorch; the code hash f8653612eb84 identifies the model/training code of every stored record.
+numpy==2.5.3
+scipy==1.18.1
+torch==2.14.1
+pyamg==5.3.0
+matplotlib==3.11.2
+# WNO baselines only (installed by kaggle_runs/*.py):
+# pytorch_wavelets
+# PyWavelets

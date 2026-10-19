@@ -1,0 +1,19 @@
+\begin{table}[tbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Plane-strain elasticity (stiff bands, $E_f/E_m=100$, traction-free pores; one data set, test samples 300--399; preliminary). Mean energy error, and paired reference/model $G$ [95\% CI] and $W$. OA-VCB has one training run; the two baselines were trained with three initialisation seeds on the same data. Two-grid PCG first reaches OA-VCB's per-sample energy error after a median of 11 iterations (range 4--32).}\label{tab:elasticity}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrlll}\toprule
+model & params & energy & $G$ [95\% CI] & $W$ \\\midrule
+OA-VCB (ours) & 20{,}672 & 2.47e-2 & 2.32 [2.20, 2.44] & 1.00 \\
+OA-Lift, init.\ seed 0 & 21{,}910 & 2.11e-1 & 0.25 [0.24, 0.26] & 0.00 \\
+OA-Lift, init.\ seed 1 & 21{,}910 & 2.18e-1 & 0.24 [0.23, 0.26] & 0.00 \\
+OA-Lift, init.\ seed 2 & 21{,}910 & 2.12e-1 & 0.25 [0.23, 0.26] & 0.00 \\
+GNN-op, init.\ seed 0 & 20{,}354 & 1.96e-1 & 0.27 [0.25, 0.28] & 0.00 \\
+GNN-op, init.\ seed 1 & 20{,}354 & 1.95e-1 & 0.27 [0.25, 0.28] & 0.00 \\
+GNN-op, init.\ seed 2 & 20{,}354 & 1.96e-1 & 0.27 [0.25, 0.28] & 0.00 \\
+\midrule
+classical reference & -- & 5.50e-2 & 1 & -- \\
+classical V(4,4), no proj. & -- & 7.53e-2 & 0.72 [0.71, 0.73] & 0.00 \\
+$u_c$ alone & -- & 3.87e-1 & 0.13 [0.13, 0.14] & 0.00 \\
+\bottomrule\end{tabular}
+\end{adjustbox}
+\end{table}

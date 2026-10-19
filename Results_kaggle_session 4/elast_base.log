@@ -1,0 +1,96 @@
+elasticity, porous bands composite, level 3: 7356 dofs (192 traction-free pore nodes), E_f/E_m 1e+02, vf 0.3, 400 samples, device cuda
+  direct solve 59 ms/sample
+  coarse galerkin solve to level 2: 17 ms/sample; alone it gives rel-L2 1.663e-01
+/kaggle/input/datasets/<kaggle-user>/ofw-no-4/OFW_NO/mesh_lifting.py:48: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  Pk = torch.sparse_coo_tensor(np.vstack([Pn.row, Pn.col]), Pn.data.astype('float32'),
+  residual input D^-1 r + operator blocks D_i^-1 A_ij built in 15s; rel. spread of |D^-1 r| over samples 0.16
+
+[oa-ll-op] width 19, params 21,910  (3 lifting levels (2768, 688, 170 detail nodes), coarse 52)
+    oa-ll-op   ep    1/300  train mix 6.370e+00  (3s)
+    oa-ll-op   ep   50/300  train mix 5.762e-01  (116s)
+    oa-ll-op   ep  100/300  train mix 4.936e-01  (231s)
+    oa-ll-op   ep  150/300  train mix 4.463e-01  (346s)
+    oa-ll-op   ep  200/300  train mix 4.116e-01  (460s)
+    oa-ll-op   ep  250/300  train mix 3.936e-01  (572s)
+    oa-ll-op   ep  300/300  train mix 3.871e-01  (683s)
+    oa-ll-op   TEST  nodal rel-l2 6.412e-02  FE rel-L2 6.351e-02  energy 2.105e-01  (worse than u_c in energy on 0/100)
+
+[gnn-op] width 16, params 20,354  (3934 mesh nodes, native)
+    gnn-op     ep    1/300  train mix 1.763e+00  (3s)
+    gnn-op     ep   50/300  train mix 6.482e-01  (166s)
+    gnn-op     ep  100/300  train mix 5.689e-01  (332s)
+    gnn-op     ep  150/300  train mix 5.502e-01  (498s)
+    gnn-op     ep  200/300  train mix 5.195e-01  (664s)
+    gnn-op     ep  250/300  train mix 5.096e-01  (830s)
+    gnn-op     ep  300/300  train mix 4.985e-01  (996s)
+    gnn-op     TEST  nodal rel-l2 8.157e-02  FE rel-L2 8.053e-02  energy 1.961e-01  (worse than u_c in energy on 0/100)
+
+
+RESULTS  elasticity, level 3, E_f/E_m 1e+02, 300/100, 300 epochs, loss mix, k0 2
+model          params  rel-L2 (u)  energy (stress)  train s  infer ms
+oa-ll-op       21,910   6.412e-02        2.105e-01      683       3.3
+gnn-op         20,354   8.157e-02        1.961e-01      996       4.9
+elasticity, porous bands composite, level 3: 7356 dofs (192 traction-free pore nodes), E_f/E_m 1e+02, vf 0.3, 400 samples, device cuda
+  direct solve 59 ms/sample
+  coarse galerkin solve to level 2: 17 ms/sample; alone it gives rel-L2 1.663e-01
+/kaggle/input/datasets/<kaggle-user>/ofw-no-4/OFW_NO/mesh_lifting.py:48: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  Pk = torch.sparse_coo_tensor(np.vstack([Pn.row, Pn.col]), Pn.data.astype('float32'),
+  residual input D^-1 r + operator blocks D_i^-1 A_ij built in 13s; rel. spread of |D^-1 r| over samples 0.16
+
+[oa-ll-op] width 19, params 21,910  (3 lifting levels (2768, 688, 170 detail nodes), coarse 52)
+    oa-ll-op   ep    1/300  train mix 2.497e+00  (3s)
+    oa-ll-op   ep   50/300  train mix 5.809e-01  (112s)
+    oa-ll-op   ep  100/300  train mix 4.905e-01  (225s)
+    oa-ll-op   ep  150/300  train mix 4.439e-01  (337s)
+    oa-ll-op   ep  200/300  train mix 4.080e-01  (449s)
+    oa-ll-op   ep  250/300  train mix 3.897e-01  (560s)
+    oa-ll-op   ep  300/300  train mix 3.850e-01  (672s)
+    oa-ll-op   TEST  nodal rel-l2 6.641e-02  FE rel-L2 6.572e-02  energy 2.182e-01  (worse than u_c in energy on 0/100)
+
+[gnn-op] width 16, params 20,354  (3934 mesh nodes, native)
+    gnn-op     ep    1/300  train mix 1.229e+00  (3s)
+    gnn-op     ep   50/300  train mix 6.421e-01  (166s)
+    gnn-op     ep  100/300  train mix 5.809e-01  (332s)
+    gnn-op     ep  150/300  train mix 5.474e-01  (497s)
+    gnn-op     ep  200/300  train mix 5.203e-01  (663s)
+    gnn-op     ep  250/300  train mix 4.977e-01  (829s)
+    gnn-op     ep  300/300  train mix 4.901e-01  (995s)
+    gnn-op     TEST  nodal rel-l2 7.958e-02  FE rel-L2 7.848e-02  energy 1.952e-01  (worse than u_c in energy on 0/100)
+
+
+RESULTS  elasticity, level 3, E_f/E_m 1e+02, 300/100, 300 epochs, loss mix, k0 2
+model          params  rel-L2 (u)  energy (stress)  train s  infer ms
+oa-ll-op       21,910   6.641e-02        2.182e-01      672       3.2
+gnn-op         20,354   7.958e-02        1.952e-01      995       4.9
+elasticity, porous bands composite, level 3: 7356 dofs (192 traction-free pore nodes), E_f/E_m 1e+02, vf 0.3, 400 samples, device cuda
+  direct solve 59 ms/sample
+  coarse galerkin solve to level 2: 17 ms/sample; alone it gives rel-L2 1.663e-01
+/kaggle/input/datasets/<kaggle-user>/ofw-no-4/OFW_NO/mesh_lifting.py:48: UserWarning: Sparse invariant checks are implicitly disabled. Memory errors (e.g. SEGFAULT) will occur when operating on a sparse tensor which violates the invariants, but checks incur performance overhead. To silence this warning, explicitly opt in or out. See `torch.sparse.check_sparse_tensor_invariants.__doc__` for guidance.  (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:760.)
+  Pk = torch.sparse_coo_tensor(np.vstack([Pn.row, Pn.col]), Pn.data.astype('float32'),
+  residual input D^-1 r + operator blocks D_i^-1 A_ij built in 13s; rel. spread of |D^-1 r| over samples 0.16
+
+[oa-ll-op] width 19, params 21,910  (3 lifting levels (2768, 688, 170 detail nodes), coarse 52)
+    oa-ll-op   ep    1/300  train mix 3.426e+00  (3s)
+    oa-ll-op   ep   50/300  train mix 5.805e-01  (113s)
+    oa-ll-op   ep  100/300  train mix 4.986e-01  (225s)
+    oa-ll-op   ep  150/300  train mix 4.508e-01  (338s)
+    oa-ll-op   ep  200/300  train mix 4.175e-01  (450s)
+    oa-ll-op   ep  250/300  train mix 4.000e-01  (562s)
+    oa-ll-op   ep  300/300  train mix 3.948e-01  (674s)
+    oa-ll-op   TEST  nodal rel-l2 6.474e-02  FE rel-L2 6.411e-02  energy 2.123e-01  (worse than u_c in energy on 0/100)
+
+[gnn-op] width 16, params 20,354  (3934 mesh nodes, native)
+    gnn-op     ep    1/300  train mix 1.393e+00  (3s)
+    gnn-op     ep   50/300  train mix 6.498e-01  (166s)
+    gnn-op     ep  100/300  train mix 5.791e-01  (332s)
+    gnn-op     ep  150/300  train mix 5.422e-01  (498s)
+    gnn-op     ep  200/300  train mix 5.158e-01  (663s)
+    gnn-op     ep  250/300  train mix 4.987e-01  (829s)
+    gnn-op     ep  300/300  train mix 4.917e-01  (995s)
+    gnn-op     TEST  nodal rel-l2 7.982e-02  FE rel-L2 7.874e-02  energy 1.961e-01  (worse than u_c in energy on 0/100)
+
+
+RESULTS  elasticity, level 3, E_f/E_m 1e+02, 300/100, 300 epochs, loss mix, k0 2
+model          params  rel-L2 (u)  energy (stress)  train s  infer ms
+oa-ll-op       21,910   6.474e-02        2.123e-01      674       3.1
+gnn-op         20,354   7.982e-02        1.961e-01      995       4.9
