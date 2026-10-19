@@ -90,4 +90,8 @@ not included. They are not inputs to any table or figure (see `manuscript/tables
 
 Code (`*.py`, `*.sh` and the generators under `manuscript/`): MIT (`LICENSE`). Data and records (raw evaluation records, logs, checkpoints, Stage 1 records): CC BY 4.0
 (`LICENSE-DATA.md`). The manuscript text and figures are not covered by either licence (author copyright; the journal's
-terms apply on publication). Cite the paper and the Zenodo DOI of this release (see `CITATION.cff`; the DOI is not yet assigned).
+terms apply on publication). Cite the paper and this release: Zenodo DOI [10.5281/zenodo.23477955](https://doi.org/10.5281/zenodo.23477955)
+(version v1.0.1; the concept DOI for all versions is [10.5281/zenodo.23477954](https://doi.org/10.5281/zenodo.23477954)). The
+archived v1.0.1 tree is the one described by `RELEASE_SHA256.txt`. This README note and `CITATION.cff` were edited after
+the tag to add the DOI, so `python -I tools/release_manifest.py --check` on the current `main` reports exactly these two files
+as changed; run the check on the tagged release (`git checkout v1.0.1`) or on the Zenodo archive to verify the full tree.

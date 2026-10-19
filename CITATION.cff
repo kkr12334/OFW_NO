@@ -7,6 +7,14 @@ authors:
     given-names: Kumar Kaushik
     affiliation: "Department of Mechanical Engineering, Tolani Maritime Institute, Pune, India"
 license: MIT
-# doi: 10.5281/zenodo.XXXXXXX   # placeholder: set only after the Zenodo record exists
-# repository-code: set after the repository is public
-# version / date-released: set at the tagged release
+version: v1.0.1
+date-released: 2026-10-19
+doi: 10.5281/zenodo.23477955
+repository-code: "https://github.com/kkr12334/OFW_NO"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23477955
+    description: "Zenodo record of version v1.0.1 (the archived release described by RELEASE_SHA256.txt)"
+  - type: doi
+    value: 10.5281/zenodo.23477954
+    description: "Zenodo concept DOI: all versions of this release"
