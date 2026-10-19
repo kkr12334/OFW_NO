@@ -88,6 +88,6 @@ not included. They are not inputs to any table or figure (see `manuscript/tables
 
 ## Licence and citation
 
-Code: MIT (`LICENSE`). Data and records (raw evaluation records, logs, checkpoints, Stage 1 records): CC BY 4.0
+Code (`*.py`, `*.sh` and the generators under `manuscript/`): MIT (`LICENSE`). Data and records (raw evaluation records, logs, checkpoints, Stage 1 records): CC BY 4.0
 (`LICENSE-DATA.md`). The manuscript text and figures are not covered by either licence (author copyright; the journal's
 terms apply on publication). Cite the paper and the Zenodo DOI of this release (see `CITATION.cff`; the DOI is not yet assigned).
